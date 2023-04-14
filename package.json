@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "A hexo theme like A4 paper",
   "author": "nino",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
 }
