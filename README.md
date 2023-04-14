@@ -1,10 +1,5 @@
-# hexo-theme-sheet
-
-## 来源：
-
-https://github.com/zheli-design/hexo-theme-one-paper
-
-原主题主打简洁，认可该设计理念。我将在原作基础上新增一些`必要功能`，页面进行微调。
+# hexo-theme-A4
+模仿A4纸张的一个hexo极简主题。主打一个简洁。
 
 ## 新增
 
@@ -63,6 +58,12 @@ https://github.com/zheli-design/hexo-theme-one-paper
 - 如果你想关闭某个post的comment，在对应post的font-matter中添加：`comment:false`即可
 
 
+## 灵感来源：
 
+https://github.com/zheli-design/hexo-theme-one-paper
+
+原主题主打博客网站纯粹写作阅读体验，认可该设计理念。
+
+我在原作基础上联想到调整为A4页面的设计，后续将会新增一些`必要功能`，页面进行微调。
 
 
