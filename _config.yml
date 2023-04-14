@@ -15,4 +15,4 @@ comment:
   # See: https://waline.js.org/guide/get-started.html
   waline:
     serverUrl:   # Waline server url(vercel) example: https://example.example.com
-    lang:  # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
+    lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
