@@ -1,0 +1,25 @@
+<% if(
+        theme.comment.use === 'waline'
+        && theme.comment.waline.serverUrl
+        && theme.comment.waline.lang
+) { %>
+ 
+    <div id="waline"></div>
+    <script type="module"  >
+        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: '<%= theme.comment.waline.serverUrl %>',
+                lang: '<%= theme.comment.waline.lang %>',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+        const loadWalineTimeout = setTimeout(() => {
+            loadWaline();
+            clearTimeout(loadWalineTimeout);
+        }, 1000);
+    </script>
+
+<% } %>

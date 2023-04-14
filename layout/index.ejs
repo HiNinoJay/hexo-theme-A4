@@ -1,0 +1,15 @@
+<div class="post-main">
+    <% page.posts.each(function (post) { %>
+        <% if (post.index == true) { %>
+            <!-- <div class="post-main-title">
+                <%= post.title %>
+            </div> -->
+            <!-- <div class="post-meta">
+                <%- date(page.date, "YYYY-MM-DD") %>
+            </div> -->
+            <div class="post-md">
+                <%- post.content %>
+            </div>
+        <% } %> 
+    <% }) %>
+</div>

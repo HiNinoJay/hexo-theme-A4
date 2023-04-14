@@ -1,0 +1,19 @@
+<div class="archive-list">
+    <ul class="archive">
+        <% page.posts.each(function (post) { %>
+            <% if (post.hasOwnProperty('newYear')) { %> 
+                <li><span  style="color:rgb(8, 8, 8)"><%= (post.newYear) %></span></li>
+                <% } %> 
+            <% if (!post.hasOwnProperty('hide') || post.hide == false) { %>
+                <li>
+                    <span class="archive-date"><%= date(post.date, "MM/DD") %></span>
+                    <div class="archive-main">
+                        <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                        <!-- <a class="read-more" href="<%- url_for(post.path) %>"> ... </a> -->
+                    </div>
+                </li>
+            <% } %> 
+        <% }) %>
+    </ul>
+</div>
+<%- partial('_partial/paginator') %>
