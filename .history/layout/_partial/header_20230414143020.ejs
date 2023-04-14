@@ -1,0 +1,14 @@
+<div class="header">
+    <div>
+        <!-- <img src="<%- url_for('/img/favicon.png') %>" width="10%"></img> -->
+        <a class="logo" href="<%- url_for() %>"><%= config.title %></a> 
+        <span class="description"><%= config.description %></span>
+    </div>
+    
+   
+    <ul class="nav">
+        <% for (name in theme.menu) { %>
+        <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
+        <% } %>
+    </ul>
+</div>

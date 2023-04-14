@@ -48,7 +48,7 @@ a:not([class])
 img,
 picture
 {
-    /* width: auto; */
+    width: auto;
     max-width: 100%;
     display: block;
 }
