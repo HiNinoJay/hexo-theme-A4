@@ -12,19 +12,22 @@
           }) 
         %>
         <% for (let i = 0; i < array.length; i++) { %>
-                <% if('newYear' in array[i] || i == 0) { %>
-                    <li><span  style="color:rgb(8, 8, 8)"><%= array[i].newYear %></span></li>
-                <% } %> 
-                <% if (!('hide' in array[i]) || array[i].hide == false) {%>
-                    <li>
-                    <span class="archive-date"><%= date(array[i].date, "MM/DD") %></span>
-                    <div class="archive-main">
-                        <a class="archive-title" href="<%- url_for(array[i].path) %>"><%= array[i].title %></a>
-                        <!-- <a class="read-more" href="<%- url_for(array[i].path) %>"> ... </a> -->
-                    </div>
-                    </li>
-                <% } %>
-          <%  } %>
+          <% if(i == 0) { %>
+            <li><span  style="color:rgb(8, 8, 8)"><%= date(array[i].date, "YYYY") %>🖊️</span></li>
+          <% } %>
+          <% if(i != 0 && 'newYear' in array[i] ) { %>
+              <li><span  style="color:rgb(8, 8, 8)"><%= array[i].newYear %></span></li>
+          <% } %> 
+          <% if (!('hide' in array[i]) || array[i].hide == false) {%>
+              <li>
+              <span class="archive-date"><%= date(array[i].date, "MM/DD") %></span>
+              <div class="archive-main">
+                  <a class="archive-title" href="<%- url_for(array[i].path) %>"><%= array[i].title %></a>
+                  <!-- <a class="read-more" href="<%- url_for(array[i].path) %>"> ... </a> -->
+              </div>
+              </li>
+          <% } %>
+        <% } %>
     </ul>
 </div>
 <%- partial('_partial/paginator') %>
