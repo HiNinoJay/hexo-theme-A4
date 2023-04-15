@@ -6,7 +6,7 @@
  
     <div id="waline"></div>
     <script type="module"  >
-        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
         function loadWaline() {
             init({
                 el: '#waline',
@@ -16,10 +16,7 @@
                 requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
             });
         }
-        const loadWalineTimeout = setTimeout(() => {
-            loadWaline();
-            clearTimeout(loadWalineTimeout);
-        }, 1000);
+        window.addEventListener('DOMContentLoaded', loadWaline);
     </script>
 
 <% } %>
