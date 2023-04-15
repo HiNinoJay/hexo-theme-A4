@@ -14,6 +14,10 @@
                 lang: '<%= theme.comment.waline.lang %>',
                 dark: 'body[class~="dark-mode"]',
                 requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+                search: false, // 禁止表情包搜索
+                reaction: false, // 对文章打分
+                pageview: false, // 浏览量统计
+                comment: false, // 评论数统计
             });
         }
         window.addEventListener('DOMContentLoaded', loadWaline);
