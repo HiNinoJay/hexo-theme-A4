@@ -36,7 +36,7 @@
 ### 如何使用list文章页面？
 - 执行命令`hexo new page list`
 - 修改该页面的`front-matter`，新增：`layout: list`
-- 执行命令`hexo s`，访问localhost:4000/list查看效果
+- 执行命令`hexo s`，访问`localhost:4000/list`查看效果
 ### 如何使用代码块高亮
 - 修改你的博客网站目录下的```_config.yml```文件（注意不是该主题下的```_config.yml```文件）
 - 设置```_config.yml```中的```highlight```和```prismjs```的```enable是否为true```
