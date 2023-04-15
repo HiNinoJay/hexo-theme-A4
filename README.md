@@ -33,7 +33,7 @@
 
 你可以设置多个`post`的`front-matter`中添加：`index:true`，内容都将显示到主页
 
-### 如何使用list文章页面
+### 如何使用list文章页面？
 - 执行命令`hexo new page list`
 - 修改该页面的`front-matter`，新增：`layout: list`
 - 执行命令`hexo s`，访问localhost:4000/list查看效果
@@ -48,7 +48,7 @@
 - 在该主题配置文件`_config`中把`comment`设置为`enable: true`，填写waline相关信息
 - 启用过后，默认所有新建的`post`都开启评论模块
 - 如果你想关闭某个`post`的`comment`，在对应`post`的`front-matter`中添加：`comment: false`即可
-### 注意
+### footer链接如何生效？
 目前已在footer底部栏默认有三个`<a>链接`（*将来会改为配置化*）
 需要手动生成：
 - `联系`页面，执行命令`hexo new page contact`
