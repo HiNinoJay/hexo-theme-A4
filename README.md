@@ -42,7 +42,7 @@
 
 新增了waline评论，在waline官网申请好了服务过后，
 你只需要做如下配置:
-- 在该主题配置文件`_config`中把`comment`设置为`enable: true`
+- 在该主题配置文件`_config`中把`comment`设置为`enable: true`，填写相关信息
 - 启用过后，默认所有新建的`post`都开启评论模块
 - 如果你想关闭某个`post`的`comment`，在对应`post`的`front-matter`中添加：`comment: false`即可
 ### 注意
