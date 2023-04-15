@@ -37,7 +37,10 @@
 - 执行命令`hexo new page list`
 - 修改该页面的`front-matter`，新增：`layout: list`
 - 执行命令`hexo s`，访问localhost:4000/list查看效果
-
+### 如何使用代码块高亮
+- 修改你的博客网站目录下的```_config.yml```文件（注意不是该主题下的```_config.yml```文件）
+- 设置```_config.yml```中的```highlight```和```prismjs```的```enable是否为true```
+  
 ### 评论模块如何生效？
 
 新增了waline评论，在waline官网申请好了服务过后，
@@ -67,7 +70,6 @@
 - [x] footer新增a标签（待配置化）
 - [x] 归档页面自动年份分隔且统计该年文章数量（待自动化）
 - [x] 首页简历化，和主要内容做区分（待配置化）（待从源代码复制过来）
-- [ ] 代码模块美化
 - [ ] 文章目录
 - [ ] 归档页面搜索功能
 - [ ] RSS
