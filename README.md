@@ -1,7 +1,7 @@
 # hexo-theme-A4
 模仿A4纸张的一个hexo极简主题。主打一个简洁。
 
-## 效果展示
+## 🔥效果展示
 ### 首页
 
 ![](/source/img/index.png)
@@ -20,7 +20,7 @@
 - 执行命令：`git clone git@github.com:HiNinoJay/hexo-theme-A4.git themes/A4`
 - 执行命令：`hexo s` 运行项目查看效果
 
-## 必读配置
+## ⚠️必读配置
 
 ### 首页内容如何产生？
 
@@ -60,7 +60,7 @@
 举例：
 你想修改`联系`页面的内容，只需要修改`website\source\contact\`文件夹下的`index.md`文件即可
 
-## TODO
+## 🏹️TODO
 
 - [x] waline评论功能
 - [x] a标签互动颜色改变
@@ -78,15 +78,13 @@
 - [ ] 写关于本主题的使用手册的博客
 - [ ] readme翻译至英语
 
-## 灵感来源：
+## 🍺感谢：
+以下开源项目给予我很多灵感，促使我也能来开源这款主题：
+- https://github.com/zheli-design/hexo-theme-one-paper
+- https://github.com/EvanNotFound/hexo-theme-redefine
 
-https://github.com/zheli-design/hexo-theme-one-paper
 
-原主题主打博客网站纯粹写作阅读体验，十分认可该设计理念。
-
-我在原作基础上联想到调整为A4页面的设计，后续将只会新增一些`必要功能`，页面进行微调。
-
-## 支持
+## ☕️支持
 
 如果觉得我做的不错，请给我一个start，感谢。
 
