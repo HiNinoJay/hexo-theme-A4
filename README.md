@@ -80,8 +80,9 @@
 
 ## 🍺感谢：
 以下开源项目给予我很多灵感，促使我也能来开源这款主题：
-- https://github.com/zheli-design/hexo-theme-one-paper
+- https://github.com/fluid-dev/hexo-theme-fluid
 - https://github.com/EvanNotFound/hexo-theme-redefine
+- https://github.com/zheli-design/hexo-theme-one-paper
 
 
 ## ☕️支持
