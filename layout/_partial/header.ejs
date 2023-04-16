@@ -1,10 +1,16 @@
-<div class="header">
-    <a class="logo" href="<%- url_for() %>"><%= config.title %></a>
-    <ul class="nav">
-        <% for (name in theme.menu) { %>
-            <% if(name == '首页' || name == '文章' || name == '关于') { %>
-                <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
-            <% } %>
+<!-- 这个header就是特指首页的header -->
+
+<div class="index-header-line"><span>看过大海的人不会忘记海的广阔。</span></div>
+<a class="index-logo" href="<%- url_for() %>"><%= config.title %></a>
+<div class="index-header">
+    首页&nbsp / &nbsp  
+    <% for (name in theme.menu) { %>
+        <% if(name == '文章' || name == '关于') { %>
+            <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>&nbsp / &nbsp 
         <% } %>
-    </ul>
+
+        <% if(name == 'Now') { %>
+            <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+        <% } %>
+    <% } %>
 </div>

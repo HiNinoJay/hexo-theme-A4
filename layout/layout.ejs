@@ -5,9 +5,9 @@
         <div class="paper">
             <% if (is_post() || is_page()) { %>
                 <div class="paper-main">
-                <%- partial('_partial/post-header') %>
-                <%- body %>
-                <%- partial('_partial/footer') %>
+                    <%- partial('_partial/post-header') %>
+                    <%- body %>
+                    <%- partial('_partial/footer') %>
                 </div>
             <% } else { %>
                 <div class="index-main">
