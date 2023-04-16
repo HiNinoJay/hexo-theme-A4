@@ -21,7 +21,8 @@
     "simple",
     "pure",
     "powerful",
-    "hexo-theme"
+    "hexo-theme",
+    "blog"
   ],
   "author": "Nino",
   "license": "MIT",
