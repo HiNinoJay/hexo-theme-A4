@@ -59,10 +59,11 @@ a
 {
     margin-top: -28px;
     margin-bottom: 18px;
-    border-bottom: 1px solid var(--line-1);
+    /* border-bottom: 1px solid var(--line-1); */
     font-size: 0.6rem;
     color: var(--font-color-3);
     text-align: center;
+    font-style: italic;
 }
 
 .header
@@ -418,7 +419,7 @@ a
 }
 
 /* add by myself */
-.poem {
+.circle-green {
     padding: 40px 25px 50px;
     border: solid 1px green;
     margin-bottom: 15px;
@@ -428,12 +429,44 @@ a
     justify-content: flex-start;
     align-content: center;
 }
+.circle-red {
+    padding: 40px 25px 50px;
+    border: solid 1px rgb(156, 0, 0);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.circle-green {
+    padding: 40px 25px 50px;
+    border: solid 1px rgb(0, 146, 85);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.circle-blue {
+    padding: 40px 25px 50px;
+    border: solid 1px rgb(81, 114, 221);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
 .poem-header{
     font-size: larger;
 }
 .poem span {
     color: #000
 }
+
 /* comment*/
 .paper-comment {
     padding: 4vw;
