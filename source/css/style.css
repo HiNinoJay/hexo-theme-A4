@@ -298,7 +298,6 @@ a
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
-    border-bottom: 1px solid var(--line-1);
 }
 .footer-last
 {
@@ -319,9 +318,10 @@ a
 .footer-last-span
 {
     margin-bottom: 1px;
-    margin-top: -20px;
+    margin-top: -30px;
     font-size: 10px;
     text-align: left;
+    border-top: 1px solid var(--line-1);
 }
 .index-footer-last-span
 {
@@ -329,6 +329,7 @@ a
     margin-top: -20px;
     font-size: 10px; 
     text-align: center;
+    border-top: 1px solid var(--line-1);
 }
 .footer a
 {

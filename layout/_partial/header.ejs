@@ -1,6 +1,8 @@
 <!-- 这个header就是特指首页的header -->
 
-<div class="index-header-line"><span>看过大海的人不会忘记海的广阔。</span></div>
+<% if(theme.index.header != null || theme.index.header == "") {%>
+<div class="index-header-line"><span><%= theme.index.header %></span></div>
+<% } %>
 <a class="index-logo" href="<%- url_for() %>"><%= config.title %></a>
 <div class="index-header">
     首页&nbsp / &nbsp  

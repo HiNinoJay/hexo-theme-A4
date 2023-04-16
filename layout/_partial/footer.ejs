@@ -9,10 +9,12 @@
     <% } %>
 </div>
 <div class="footer-last">
-    <% if(path == 'index.html') { %>
-        <span class="index-footer-last-span">Email:<a href="mailto:ninojay@foxmail.com">ninojay@foxmail.com</a></span>
+    <% if(path == 'index.html'){ %>
+         <% if(theme.index.footer != null || theme.index.footer == "") { %>
+            <span class="index-footer-last-span"><%= theme.index.footer %></span>
+        <% } %>
     <% } else { %>
-        <span class="footer-last-span">🌊看过大海的人不会忘记海的广阔。🌊</span>
+        <span class="footer-last-span"><%= theme.post.footer %></span>
     <% } %>
 </div>
 
