@@ -8,10 +8,16 @@
         </span>
     <% } %>
 </div>
+<!--这是指一条线往下的内容-->
 <div class="footer-last">
     <% if(path == 'index.html'){ %>
-         <% if(theme.index.footer != null || theme.index.footer == "") { %>
-            <span class="index-footer-last-span"><%= theme.index.footer %></span>
+         <% if(theme.index.footer != null || theme.index.footer != "") { %>
+            <% if(theme.index.footer.length > "Email:".length && theme.index.footer.substring(0, 6) == "Email:") { %>
+                <% var email = theme.index.footer.substring(6, theme.index.footer.length) %>
+                <span class="index-footer-last-span">Email:<%- mail_to(email) %></span>
+            <% } else { %>
+                <span class="index-footer-last-span"><%= theme.index.footer %></span>
+            <% } %>
         <% } %>
     <% } else { %>
         <span class="footer-last-span"><%= theme.post.footer %></span>

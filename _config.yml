@@ -2,11 +2,13 @@ menu:
   首页: /
   文章: /list # 需要hexo new page list 并且在对应页面的 front-matter添加 layout: list
   关于: /about # 需要hexo new page about
+  标签: /tags #需要hexo new page tags
+  分类: /categories # 需要hexo new page categories
 
 
 index:  # 首页
   header: 看过大海的人不会忘记海的广阔 # 首页的页眉
-  footer: Email:123456789@gmail.com # 首页的页脚
+  footer: Email:123456789@gmail.com # 首页的页脚，除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
 
 post:
   footer: 🌊看过大海的人不会忘记海的广阔🌊 #除首页之外的页面页脚

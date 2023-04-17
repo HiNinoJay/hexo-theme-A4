@@ -1,0 +1,20 @@
+<ul class="" >
+<% var allTag = eval(site.tags.data) %>
+
+<% allTag.sort((a, b) => {
+    if (a.posts.length > b.posts.length) {
+      return -1;
+    }
+    if (a.posts.length < b.posts.length) {
+      return 1;
+    }
+    return 0;
+  }) 
+%>
+
+<% for (let i = 0; i < allTag.length; i++) { %>
+    <li class="">
+        <a href="<%- url_for(allTag[i].path) %>"><%= allTag[i].name %></a>
+    </li>
+<% } %>
+</ul>

@@ -1,23 +1,17 @@
 <div class="post-main">
 
-    <% if (is_post()) { %>
+    <% if(is_post()) { %>
         <div class="post-main-title">
             <%= page.title %>
         </div>
         <div class="post-meta">
             <%- date(page.date, "YYYY-MM-DD") %>
         </div>
-        <div class="post-md">
-            <%- page.content %>
-        </div>
-
-    <% } else { %>
-
-        <div class="post-md">
-            <%- page.content %>
-        </div>
-
     <% } %>
+
+    <div class="post-md">
+        <%- page.content %>
+    </div>
     
     <% if (!page.hasOwnProperty('comment') || page.comment == true) { %>
         <%- partial('_partial/comments/comment') %>
