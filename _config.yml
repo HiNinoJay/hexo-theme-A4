@@ -1,6 +1,6 @@
 menu:
   首页: /
-  文章: /list # 需要hexo new page list 并且在对应页面的 front-matter添加 layout: list
+  文章: /list # 需要hexo new page list 
   关于: /about # 需要hexo new page about
   标签: /tags #需要hexo new page tags
   分类: /categories # 需要hexo new page categories

@@ -3,7 +3,7 @@
         && theme.comment.waline.serverUrl
         && theme.comment.waline.lang
 ) { %>
- 
+
     <div id="waline"></div>
     <script type="module"  >
         import { init } from 'https://evan.beee.top/js/waline.mjs';
@@ -18,11 +18,13 @@
                 reaction: false, // 对文章打分
                 pageview: false, // 浏览量统计
                 comment: false, // 评论数统计
+
                 locale: {
                     placeholder: '正确的邮箱地址，回复将能得到邮件通知。', 
                     sofa: ''
                 },
             });
+            
         }
         window.addEventListener('DOMContentLoaded', loadWaline);
     </script>
