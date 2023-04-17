@@ -561,13 +561,23 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 .about-achievement-container{
     max-width: 100%;
     display: flex;
-   
 }
 
 .about-achievement-container img{
-    max-width: 85%;
-    margin-left: 46px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
 }
+
+.about-achievement-container img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
 @media only screen and (max-width: 600px) {
     .about-achievement-container {
         max-width: 100%;
@@ -576,8 +586,12 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     }
 
     .about-achievement-container img{
-        max-width: 100%;
+        max-width: 50%;
         margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+        vertical-align: middle;
     }
   }
+  
   
