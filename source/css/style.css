@@ -459,6 +459,16 @@ a
     justify-content: flex-start;
     align-content: center;
 }
+.circle-black {
+    padding: 40px 25px 50px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
 
 .poem-header{
     font-size: larger;
@@ -573,6 +583,11 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 }
 
 .about-achievement-container img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.about-achievement-container img:active::before{
     opacity: 1;
     cursor: pointer;
     transform: scale(1.5);
