@@ -556,3 +556,28 @@ display: flex;
 flex-direction: column;
 margin-left: 10px; /* 调整a标签和span之间的距离 */
 }
+
+/*img adj*/
+.about-achievement-container{
+    max-width: 100%;
+    display: flex;
+   
+}
+
+.about-achievement-container img{
+    max-width: 85%;
+    margin-left: 46px;
+}
+@media only screen and (max-width: 600px) {
+    .about-achievement-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-achievement-container img{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+  }
+  
