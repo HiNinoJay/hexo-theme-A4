@@ -16,7 +16,7 @@
     --waline-bq-color       : #f0f0f0;
     --waline-avatar-size    : 3.25rem;
     --waline-m-avatar-size  : calc(var(--waline-avatar-size) * 9 / 13);
-    --waline-badge-color    : #3498db;
+    --waline-badge-color    : #000000;
     --waline-badge-font-size: 0.75em;
     --waline-info-bgcolor   : #f8f8f8;
     --waline-info-color     : #999;
