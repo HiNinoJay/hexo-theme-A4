@@ -439,9 +439,9 @@ a
     justify-content: flex-start;
     align-content: center;
 }
-.circle-green {
+.circle-orange {
     padding: 40px 25px 50px;
-    border: solid 1px rgb(0, 146, 85);
+    border: solid 1px rgb(244, 135, 26);
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
