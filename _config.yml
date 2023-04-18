@@ -6,7 +6,7 @@ menu:
   分类: /categories # 需要hexo new page categories
 
 footerLink: # 底部的链接自定义
-  info: © 2022-1999 nino # info关键词固定，以下可选
+  info: © 1949-2023 china  # info这个单词不能修改，不想使用可为空
   # 格式举例 友链: /friends (需要hexo new page friends)
   友链: /friends
   # 联系: /contact
