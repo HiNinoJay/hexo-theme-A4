@@ -9,7 +9,7 @@
             <% if(path == "index.html") { %>
                 <div class="index-main">
                     <%- partial('_partial/header') %>
-                    <%- body %>
+                    <%- partial('index') %> 
                     <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "list/index.html") { %>
@@ -40,6 +40,7 @@
                     <% if (!tags && !categories && !tagsInside && !categoriesInside) { %>
                         <%- partial('post') %>
                     <% } %>
+                    
                     <%- partial('_partial/footer') %>
                 </div>
             <% } %>

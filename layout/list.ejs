@@ -1,33 +1,111 @@
 <div class="archive-list">
-    <ul class="archive">
-        <% var array = eval('site.posts.data') %>
-        <% array.sort((a, b) => {
-            if (a.date > b.date) {
-              return -1;
-            }
-            if (a.date < b.date) {
-              return 1;
-            }
-            return 0;
-          }) 
-        %>
-        <% for (let i = 0; i < array.length; i++) { %>
-          <% if(i == 0) { %>
-            <li><span  style="color:rgb(8, 8, 8)"><%= date(array[i].date, "YYYY") %>🖊️</span></li>
-          <% } %>
-          <% if(i != 0 && 'newYear' in array[i] ) { %>
-              <li><span  style="color:rgb(8, 8, 8)"><%= array[i].newYear %></span></li>
-          <% } %> 
-          <% if (!('hide' in array[i]) || array[i].hide == false) {%>
-              <li>
-              <span class="archive-date"><%= date(array[i].date, "MM/DD") %></span>
-              <div class="archive-main">
-                  <a class="archive-title" href="<%- url_for(array[i].path) %>"><%= array[i].title %></a>
-                  <!-- <a class="read-more" href="<%- url_for(array[i].path) %>"> ... </a> -->
-              </div>
-              </li>
-          <% } %>
+  <ul class="archive">
+      <% var array = eval('site.posts.data') %>
+
+      <% array.sort((a, b) => {
+          if (a.date > b.date) {
+            return -1;
+          }
+          if (a.date < b.date) {
+            return 1;
+          }
+          return 0;
+        }) 
+      %>
+      
+      <% class HashMap {
+        constructor() {
+          this.map = {};
+        }
+      
+        put(key, value) {
+          this.map[key] = value;
+        }
+      
+        get(key) {
+          return this.map[key];
+        }
+      
+        containsKey(key) {
+          return key in this.map;
+        }
+      
+        remove(key) {
+          delete this.map[key];
+        }
+      
+        size() {
+          return Object.keys(this.map).length;
+        }
+      
+        isEmpty() {
+          return this.size() === 0;
+        }
+      
+        clear() {
+          this.map = {};
+        }
+      }
+      %>
+
+      <% class List {
+        constructor() {
+          this.items = [];
+        }
+      
+        add(item) {
+          this.items.push(item);
+        }
+      
+        remove(item) {
+          const index = this.items.indexOf(item);
+          if (index > -1) {
+            this.items.splice(index, 1);
+          }
+        }
+      
+        get(index) {
+          return this.items[index];
+        }
+      
+        size() {
+          return this.items.length;
+        }
+      }
+       %>
+
+      <% const hashmap = new HashMap() %>
+      <% const allYearList = new List() %>
+
+      <% for (let i = 0; i < array.length; i++) { 
+        if(!('hide' in array[i]) || array[i].hide == false){
+          var postYear = new Date(array[i].date).getFullYear();
+          if(!hashmap.containsKey(postYear)) {
+            hashmap.put(postYear, new List());
+            allYearList.add(postYear);
+          } 
+          hashmap.get(postYear).add(array[i]);
+        }
+      }  %>
+
+      <% for (let i = 0; i < allYearList.size(); i++) { %>
+        <% var year = allYearList.get(i) %>
+        <li>
+          <span  style="color:rgb(8, 8, 8)"><%= year %>[<%= hashmap.get(year).size() %>]
+            <% if(i==0) { %> 🍃 <% } %>
+          </span>
+        </li>
+        <% var thisYearPostList = hashmap.get(year) %>
+        <% for(var j = 0; j < thisYearPostList.size(); j++) { %>
+          <% var thisPost = thisYearPostList.get(j) %>
+          <li>
+            <span class="archive-date"><%= date(thisPost.date, "MM/DD") %></span>
+            <div class="archive-main">
+                <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>
+            </div>
+          </li>
         <% } %>
-    </ul>
+      <% } %>
+  </ul>
 </div>
 <%- partial('_partial/paginator') %>

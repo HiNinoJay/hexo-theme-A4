@@ -2,6 +2,7 @@
   <ul class="archive">
 
     <% var pageTagName = path.substring("tags/".length, path.indexOf("/index.html")) %>
+    <span>📌<i><%= pageTagName %></i></span>
       <% var tagsArray = eval('site.tags.data') %>
       <% var pageTagData %>
       <% for (let i = 0; i < tagsArray.length; i++) { 
@@ -24,7 +25,7 @@
   <% for (let i = 0; i < array.length; i++) { %>
     <% if (!('hide' in array[i]) || array[i].hide == false) {%>
         <li>
-        <span class="archive-date"><%= date(array[i].date, "YYYY/MM/DD") %></span>
+        <span class="archive-date"><%= date(array[i].date, "YYYY-MM-DD") %></span>
         <div class="archive-main">
             <a class="archive-title" href="<%- url_for(array[i].path) %>"><%= array[i].title %></a>
         </div>

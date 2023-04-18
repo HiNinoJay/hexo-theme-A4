@@ -2,6 +2,7 @@
   <ul class="archive">
 
     <% var pageCategoriesName = path.substring("categories/".length, path.indexOf("/index.html")) %>
+    <span>🔖<i><%= pageCategoriesName %></i></span>
       <% var categoriesArray = eval('site.categories.data') %>
       <% var pageCategoriesData %>
       <% for (let i = 0; i < categoriesArray.length; i++) { 

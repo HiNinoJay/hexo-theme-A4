@@ -1,9 +1,9 @@
 <div class="post-main">
-    <% page.posts.each(function (post) { %>
-        <% if (post.index == true) { %>
+    <% var allPages = site.pages.data %>
+    <% for(var i = 0; i < allPages.length; i++) {  %>
+       <% if(allPages[i].path == "index/index.html") { %>
             <div class="post-md">
-                <%- post.content %>
+                <%- allPages[i].content %>
             </div>
-        <% } %> 
-    <% }) %>
+    <% break; }} %>
 </div>

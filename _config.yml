@@ -1,5 +1,5 @@
 menu:
-  首页: /
+  首页: /  #需要hexo new page index,在index/index.md填写的内容将会展现在首页上
   文章: /list # 需要hexo new page list 
   关于: /about # 需要hexo new page about
   标签: /tags #需要hexo new page tags

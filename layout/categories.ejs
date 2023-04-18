@@ -1,20 +1,90 @@
 <ul class="" >
-    <% var allCategories = eval(site.categories.data) %>
-    <% allCategories.sort((a, b) => {
-        if (a.posts.length > b.posts.length) {
-          return -1;
-        }
-        if (a.posts.length < b.posts.length) {
-          return 1;
-        }
-        return 0;
-      }) 
-    %>
+  <% class HashMap {
+    constructor() {
+      this.map = {};
+    }
+  
+    put(key, value) {
+      this.map[key] = value;
+    }
+  
+    get(key) {
+      return this.map[key];
+    }
+  
+    containsKey(key) {
+      return key in this.map;
+    }
+  
+    remove(key) {
+      delete this.map[key];
+    }
+  
+    size() {
+      return Object.keys(this.map).length;
+    }
+  
+    isEmpty() {
+      return this.size() === 0;
+    }
+  
+    clear() {
+      this.map = {};
+    }
+  }
+  %>
 
-    <% for (let i = 0; i < allCategories.length; i++) { %>
+  <% class List {
+    constructor() {
+      this.items = [];
+    }
+  
+    add(item) {
+      this.items.push(item);
+    }
+  
+    remove(item) {
+      const index = this.items.indexOf(item);
+      if (index > -1) {
+        this.items.splice(index, 1);
+      }
+    }
+  
+    get(index) {
+      return this.items[index];
+    }
+  
+    size() {
+      return this.items.length;
+    }
+  }
+   %>
+
+  <% var array = eval('site.posts.data') %>
+
+  <% var categoriesHashMap = new HashMap() %>
+  <% var categoriesList = new List() %>
+  
+  <% for(var i = 0; i < array.length; i++) {
+     if(!('hide' in array[i]) || array[i].hide == false){
+        var postCategories = array[i].categories.data;
+        for(var j = 0; j < postCategories.length; j++) {
+          if(!categoriesHashMap.containsKey(postCategories[j].name)) {
+            categoriesHashMap.put(postCategories[j].name, 1);
+            categoriesList.add(postCategories[j].name);
+          } else {
+            categoriesHashMap.put(postCategories[j].name, categoriesHashMap.get(postCategories[j].name) + 1);
+          }
+        } 
+     }
+  } %>
+      <% for (let i = 0; i < categoriesList.size(); i++) { %>
         <li class="">
-            <a href="<%- url_for(allCategories[i].path) %>"><%= allCategories[i].name %></a>
+            <a href="/categories<%- url_for(categoriesList.get(i)) %>"><%= categoriesList.get(i) %></a>
+            <span><%= categoriesHashMap.get(categoriesList.get(i)) %></span>
         </li>
     <% } %>
+    
+
     
 </ul>

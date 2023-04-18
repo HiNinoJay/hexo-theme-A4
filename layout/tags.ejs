@@ -1,20 +1,89 @@
 <ul class="" >
-<% var allTag = eval(site.tags.data) %>
 
-<% allTag.sort((a, b) => {
-    if (a.posts.length > b.posts.length) {
-      return -1;
+  <% class HashMap {
+    constructor() {
+      this.map = {};
     }
-    if (a.posts.length < b.posts.length) {
-      return 1;
+  
+    put(key, value) {
+      this.map[key] = value;
     }
-    return 0;
-  }) 
-%>
+  
+    get(key) {
+      return this.map[key];
+    }
+  
+    containsKey(key) {
+      return key in this.map;
+    }
+  
+    remove(key) {
+      delete this.map[key];
+    }
+  
+    size() {
+      return Object.keys(this.map).length;
+    }
+  
+    isEmpty() {
+      return this.size() === 0;
+    }
+  
+    clear() {
+      this.map = {};
+    }
+  }
+  %>
 
-<% for (let i = 0; i < allTag.length; i++) { %>
-    <li class="">
-        <a href="<%- url_for(allTag[i].path) %>"><%= allTag[i].name %></a>
-    </li>
-<% } %>
+  <% class List {
+    constructor() {
+      this.items = [];
+    }
+  
+    add(item) {
+      this.items.push(item);
+    }
+  
+    remove(item) {
+      const index = this.items.indexOf(item);
+      if (index > -1) {
+        this.items.splice(index, 1);
+      }
+    }
+  
+    get(index) {
+      return this.items[index];
+    }
+  
+    size() {
+      return this.items.length;
+    }
+  }
+   %>
+
+  <% var array = eval('site.posts.data') %>
+
+  <% var tagHashMap = new HashMap() %>
+  <% var tagList = new List() %>
+  
+  <% for(var i = 0; i < array.length; i++) {
+     if(!('hide' in array[i]) || array[i].hide == false){
+        var postTags = array[i].tags.data;
+        for(var j = 0; j < postTags.length; j++) {
+          if(!tagHashMap.containsKey(postTags[j].name)) {
+            tagHashMap.put(postTags[j].name, 1);
+            tagList.add(postTags[j].name);
+          } else {
+            tagHashMap.put(postTags[j].name, tagHashMap.get(postTags[j].name) + 1);
+          }
+        } 
+     }
+  } %>
+      <% for (let i = 0; i < tagList.size(); i++) { %>
+        <li class="">
+            <a href="/tags<%- url_for(tagList.get(i)) %>"><%= tagList.get(i) %></a>
+            <span><%= tagHashMap.get(tagList.get(i)) %></span>
+        </li>
+    <% } %>
+    
 </ul>
