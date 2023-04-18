@@ -2,6 +2,8 @@
         theme.comment.use === 'waline'
         && theme.comment.waline.serverUrl
         && theme.comment.waline.lang
+        && (!page.hasOwnProperty('comment'))
+        || (page.hasOwnProperty('comment') && page.comment)
 ) { %>
 
     <div id="waline"></div>

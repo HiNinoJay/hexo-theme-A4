@@ -6,8 +6,9 @@
     <%- css('css/reset.css') %>
     <%- css('css/style.css') %>
     <%- css('css/markdown.css') %>
-    <%- css('css/fonts.css') %>
-    <% if(theme.comment.enable ) { %>
+    <%- css('css/fonts.css') %> 
+    <!--注意：首页既不是post也不是page-->
+    <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
         <%- css('css/waline.css') %>
     <% } %>
 </head>
