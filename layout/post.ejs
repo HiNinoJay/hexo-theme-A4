@@ -4,15 +4,39 @@
         <div class="post-main-title">
             <%= page.title %>
         </div>
-        <div class="post-meta">
-            <%- date(page.date, "YYYY-MM-DD") %>
-        </div>
+        
     <% } %>
 
     <div class="post-md">
         <%- page.content %>
     </div>
-    
+
+    <div class="post-meta">
+        <i>
+        <% if(is_post()) { %>
+            <span><%- date(page.date, "YYYY-MM-DD") %></span>
+            <span>该篇文章被<%= config.author %>打上标签:
+                <% var postTags = page.tags.data; %>
+                <% console.log(postTags) %>
+                 <%   for(var j = 0; j < postTags.length; j++) { %>
+                    <a href='<%- url_for(postTags[j].path)%>'>
+                        <%= postTags[j].name %>
+                    </a>
+                <% }  %>
+            </span>
+             
+            <span>，归为分类:
+                <% var postCategories = page.categories.data; %>
+                 <%   for(var j = 0; j < postCategories.length; j++) { %>
+                    <a href='<%- url_for(postCategories[j].path)%>'>
+                        <%= postCategories[j].name %>
+                    </a>
+                <% }  %>
+            </span>
+
+        <% } %>
+        </i>
+    </div>
     <% if (!page.hasOwnProperty('comment') || page.comment == true) { %>
         <%- partial('_partial/comments/comment') %>
     <% } %> 
