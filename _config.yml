@@ -5,13 +5,19 @@ menu:
   标签: /tags #需要hexo new page tags
   分类: /categories # 需要hexo new page categories
 
+footerLink: # 底部的链接自定义
+  info: © 2022-1999 nino # info关键词固定，以下可选
+  # 格式举例 友链: /friends (需要hexo new page friends)
+  友链: /friends
+  # 联系: /contact
+  # 支持: /support
 
-index:  # 首页
-  header: 看过大海的人不会忘记海的广阔 # 首页的页眉
-  footer: Email:123456789@gmail.com # 首页的页脚，除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
+index:  # 首页的页眉页脚
+  header: 看过大海的人不会忘记海的广阔 
+  footer: Email:123456789@gmail.com # 除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
 
-post:
-  footer: 🌊看过大海的人不会忘记海的广阔🌊 #除首页之外的页面页脚
+post: #除首页之外页面的页脚 
+  footer: 🌊看过大海的人不会忘记海的广阔🌊 
 
 
 # ---------------------------------------------------------------------------------------

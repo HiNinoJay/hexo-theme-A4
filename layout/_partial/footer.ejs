@@ -1,10 +1,14 @@
 <div class="footer">
     <% if(path != 'index.html') { %>
-        <span>© 2022-1999 nino 
-            / <a href="/contact">联系</a>
-            / <a href="/support">支持</a>
-            / <a href="/subscribe">订阅</a>
-            / <a href="/friends">近邻</a>
+        <span> 
+            <%= theme.footerLink.info %> 
+
+            <% for (name in theme.footerLink) { %>
+                <% if(name != 'info') { %>
+                    / <a href="<%- url_for(theme.footerLink[name]) %>"> <%= name %> </a>
+                <% } %>
+
+            <% } %>
         </span>
     <% } %>
 </div>
