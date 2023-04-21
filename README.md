@@ -32,6 +32,7 @@
 - 确认已通过命令`hexo init`创建好了文件夹,这里举例你的文件夹名为`website`
 - `命令行`进入到`website`文件夹路径下
 - 执行命令：`git clone git@github.com:HiNinoJay/hexo-theme-A4.git themes/A4`
+- 在website的`_config.yml`中将主题设置为A4
 - 执行命令：`hexo s` 运行项目查看效果
 
 ## ⚠️必读配置
