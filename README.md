@@ -71,8 +71,8 @@
 - 如果你想关闭某个`post`的`comment`，在对应`post`的`front-matter`中添加：`comment: false`即可
 
 ### footer链接如何生效？
-目前已在footer底部栏默认有三个`<a>链接`（*将来会改为配置化*）
-需要手动生成：
+主题的_config文件已支持手动配置。（*~~将来会改为配置化~~*）
+添加好了配置，对应手动生成，如：
 - `联系`页面，执行命令`hexo new page contact`
 - `支持`页面，执行命令`hexo new page support`
 - `近邻`页面，执行命令`hexo new page friends`
