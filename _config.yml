@@ -34,4 +34,7 @@ comment:
     serverUrl:   # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
 
+cdn:
+  enable: true
+
 version: v1.6.1-dev
