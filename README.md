@@ -63,6 +63,10 @@
 - 执行命令`hexo new page list`
 - 执行命令`hexo s`，访问`localhost:4000/list`查看效果
 
+### 如何添加自己的favicon头像
+- 在`source`文件夹下创建`img`文件夹
+- 在`img`文件夹中添加你的图片，名称必须为`favicon.webp`
+
 ### 如何使用tags标签页面？
 - 执行命令`hexo new page tags`
 - 执行命令`hexo s`，访问`localhost:4000/list`查看效果
