@@ -1,11 +1,11 @@
 {
-  "name": "hexo-theme-A4",
-  "version": "1.1.3-dev",
+  "name": "hexo-theme-a4",
+  "version": "1.6.1",
   "private": false,
   "description": "A hexo theme that looks like an A4 paper.",
   "scripts": {
     "npm:publish": "npm publish",
-    "format": "prettier --write ./source/js/*.js ./scripts",
+    "format": "prettier --write ./source/js/*.js ./scripts ",
     "lint:style": "stylelint --fix ./source/css",
     "git:push": "git push --tag && git push -u origin dev",
     "git:add": "npm run lint:style && git add ."
@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/HiNinojay/hexo-theme-A4/issues"
   },
-  "homepage": "https://github.com/HiNinojay/hexo-theme-A4#readme"
+  "homepage": "https://github.com/HiNinojay/hexo-theme-A4#readme",
+  "main": "_config.yml"
 }
