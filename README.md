@@ -14,6 +14,7 @@
 - [x] 自定义隐藏文章
 - [x] 配置化首部/底部链接
 - [x] RSS
+- [x] 一键CDN加速
 
 ## 🔥效果展示
 ### 首页
@@ -29,10 +30,22 @@
 ![](/source/img/comment.png)
 
 ## 如何使用
+
 - 确认已通过命令`hexo init`创建好了文件夹,这里举例你的文件夹名为`website`
 - `命令行`进入到`website`文件夹路径下
+- 将`website`文件夹下的`_config.yml`文件中将主题设置为A4
+- 接下来正式安装`a4主题`，有两种方式
+
+### npm方式
+- 执行命令 `npm install hexo-theme-a4@latest`
+- 在`website`文件夹路径下创建`_config.a4.yml`文件，将[这里的内容](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)复制进去
+- 对主题的所有个性化配置都将在`_config.a4.yml`文件中进行，可按照文件中的注释自行配置
+- 执行命令：`hexo s` 运行项目查看效果
+
+### git方式
 - 执行命令：`git clone git@github.com:HiNinoJay/hexo-theme-A4.git themes/A4`
-- 在website的`_config.yml`中将主题设置为A4
+- 在`website`文件夹路径下创建`_config.a4.yml`文件，将[这里的内容](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) 复制进去
+- 对主题的所有个性化配置都将在`_config.a4.yml`文件中进行，可按照文件中的注释自行配置
 - 执行命令：`hexo s` 运行项目查看效果
 
 ## ⚠️必读配置
@@ -59,19 +72,19 @@
 - 执行命令`hexo s`，访问`localhost:4000/categories`查看效果
 
 ### 如何使用代码块高亮
-- 修改你的博客网站目录下的```_config.yml```文件（注意不是该主题下的```_config.yml```文件）
-- 设置```_config.yml```中的```highlight```和```prismjs```的```enable是否为true```
+- 修改你的博客网站目录下的```_config.yml```文件（注意不是该主题的```_config.a4.yml```文件）
+- 设置```_config.yml```中的```highlight```和```prismjs```的```enable为false```
   
 ### 评论模块如何生效？
 
 新增了waline评论，在waline官网申请好了服务过后，
 你只需要做如下配置:
-- 在该主题配置文件`_config`中把`comment`设置为`enable: true`，填写waline相关信息
+- 在该主题配置文件`_config.a4.yml`中把`comment`设置为`enable: true`，填写waline相关信息
 - 启用过后，默认所有新建的`post`都开启评论模块
 - 如果你想关闭某个`post`的`comment`，在对应`post`的`front-matter`中添加：`comment: false`即可
 
 ### footer链接如何生效？
-主题的_config文件已支持手动配置。（*~~将来会改为配置化~~*）
+主题的`_config.a4.yml`文件已支持手动配置。（*~~将来会改为配置化~~*）
 添加好了配置，对应手动生成，如：
 - `联系`页面，执行命令`hexo new page contact`
 - `支持`页面，执行命令`hexo new page support`
