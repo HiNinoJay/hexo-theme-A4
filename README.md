@@ -34,9 +34,9 @@
 - 确认已通过命令`hexo init`创建好了文件夹,这里举例你的文件夹名为`website`
 - `命令行`进入到`website`文件夹路径下
 - 将`website`文件夹下的`_config.yml`文件中将主题设置为A4
-- 接下来正式安装`a4主题`，有两种方式
+- 接下来正式安装`a4主题`，有两种方式,任选其一
 
-### npm方式
+### npm方式（推荐）
 - 执行命令 `npm install hexo-theme-a4@latest`
 - 在`website`文件夹路径下创建`_config.a4.yml`文件，将[这里的内容](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)复制进去
 - 对主题的所有个性化配置都将在`_config.a4.yml`文件中进行，可按照文件中的注释自行配置
