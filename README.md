@@ -9,6 +9,8 @@
 
 
 ➡️ [效果展示](https://ninojay.top)
+➡️ [使用文档](https://doc.ninojay.top)
+
 
 ## 🏹️特点
 
