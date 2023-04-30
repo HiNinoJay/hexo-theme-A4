@@ -1,4 +1,12 @@
 # hexo-theme-A4
+
+
+
+<a href="https://ninojay.top"><img align="center" src="source/img/favicon/hexo-theme-a4.png"  alt="A4"></a>
+
+
+
+
 模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。
 
 [![](https://img.shields.io/npm/v/hexo-theme-a4?label=VERSION&logo=npm&style=for-the-badge)]()
