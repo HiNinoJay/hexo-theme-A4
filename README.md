@@ -7,7 +7,8 @@
 </div>
 
 <div align="center">
-<span algin="center">模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。</span>
+
+模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。
 
 
 
