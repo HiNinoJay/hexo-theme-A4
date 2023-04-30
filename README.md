@@ -60,7 +60,13 @@
 - 执行命令：`hexo s` 运行项目查看效果
 
 ## ⚠️必读配置
-➡️ [使用文档](https://doc.ninojay.top)已上线。
+首页和文章列表页需要手动生成，执行以下命令即可：
+```shell
+hexo new page index
+hexo new page list
+```
+其他详细配置请看：
+➡️ [使用文档](https://doc.ninojay.top)，已上线。
 
 
 ## 🍺感谢：
