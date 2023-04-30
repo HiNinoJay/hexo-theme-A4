@@ -2,7 +2,7 @@
 
 
 
-<a href="https://ninojay.top"><img align="center" src="source/img/favicon/hexo-theme-a4.png"  alt="A4"></a>
+<a href="https://ninojay.top"><img width="150" height="150" align="center" src="source/img/favicon/hexo-theme-a4.png"  alt="A4"></a>
 
 
 
