@@ -1,13 +1,15 @@
 # hexo-theme-A4
 
 
+<div align="center" >
+<img width=200px height=200px src="source/img/favicon/hexo-theme-a4.png"/>
 
-<a href="https://ninojay.top"><img width="150" height="150" align="center" src="source/img/favicon/hexo-theme-a4.png"  alt="A4"></a>
+</div>
+
+<div align="center">
+<span algin="center">模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。</span>
 
 
-
-
-模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。
 
 [![](https://img.shields.io/npm/v/hexo-theme-a4?label=VERSION&logo=npm&style=for-the-badge)]()
 [![](https://img.shields.io/npm/v/hexo?color=blue&label=hexo&logo=hexo&style=for-the-badge)](https://hexo.io/zh-cn/index.html)
@@ -16,6 +18,7 @@
 
 「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
 
+</div>
 
 ## 🏹️特点
 
