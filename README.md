@@ -1,7 +1,7 @@
 # hexo-theme-A4
 模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，开箱即用。
 
-[![](https://img.shields.io/npm/v/hexo-theme-a4?color=red&label=version&logo=npm&style=for-the-badge)]()
+[![](https://img.shields.io/npm/v/hexo-theme-a4?label=VERSION&logo=npm&style=for-the-badge)]()
 [![](https://img.shields.io/npm/v/hexo?color=blue&label=hexo&logo=hexo&style=for-the-badge)](https://hexo.io/zh-cn/index.html)
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge)](https://nodejs.org/en)
 [![](https://img.shields.io/npm/dw/hexo-theme-a4?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/hexo-theme-a4)
