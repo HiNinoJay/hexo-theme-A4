@@ -2,8 +2,9 @@
 
 
 <div align="center" >
+<a href="https://ninojay.top">
 <img width=200px height=200px src="source/img/favicon/hexo-theme-a4.png"/>
-
+</a>
 </div>
 
 <div align="center">
