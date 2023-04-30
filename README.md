@@ -2,7 +2,7 @@
 
 
 <div align="center" >
-<a href="https://ninojay.top">
+<a href="https://github.com/HiNinoJay/hexo-theme-A4">
 <img width=200px height=200px src="source/img/favicon/hexo-theme-a4.png"/>
 </a>
 </div>
