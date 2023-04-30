@@ -32,6 +32,10 @@
 
 ![](/source/img/archive.png)
 
+### 文章标签和分类信息
+
+![](/source/img/tags&&categories.png)
+
 ### 评论
 
 ![](/source/img/comment.png)
