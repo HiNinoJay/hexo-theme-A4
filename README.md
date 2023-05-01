@@ -38,7 +38,7 @@
 
 ![](/source/img/index.png)
 
-### 归档
+### 文章列表
 
 ![](/source/img/archive.png)
 
