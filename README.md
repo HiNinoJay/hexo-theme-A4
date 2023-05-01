@@ -3,7 +3,7 @@
 
 <div align="center" >
 <a href="https://github.com/HiNinoJay/hexo-theme-A4">
-<img width=200px height=200px src="source/img/A4-favicon.png"/>
+<img width=200px height=200px src="source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
