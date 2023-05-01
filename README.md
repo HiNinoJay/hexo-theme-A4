@@ -3,7 +3,7 @@
 
 <div align="center" >
 <a href="https://github.com/HiNinoJay/hexo-theme-A4">
-<img width=200px height=200px src="source/img/favicon/hexo-theme-a4.png"/>
+<img width=200px height=200px src="source/img/A4-favicon.png"/>
 </a>
 </div>
 
@@ -21,6 +21,8 @@
 「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
 
 </div>
+
+![](source/img/market.png)
 
 ## 🏹️特点
 
