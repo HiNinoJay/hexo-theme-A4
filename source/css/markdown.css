@@ -125,9 +125,6 @@
 .post-md .video-container iframe
 {
     width: 100%;
-    height: 100vh;
-    max-height: 360px;
-    margin: 12px 0;
 }
 
 .post-md>table
