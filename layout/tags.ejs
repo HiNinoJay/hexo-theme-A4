@@ -1,4 +1,6 @@
-<ul class="" >
+<br>
+<span>📌<i>tags</i></span>
+<ul class="inline-ul" >
 
   <% class HashMap {
     constructor() {
@@ -80,9 +82,9 @@
      }
   } %>
       <% for (let i = 0; i < tagList.size(); i++) { %>
-        <li class="">
+        <li class="inline-li">
             <a href="/tags<%- url_for(tagList.get(i)) %>"><%= tagList.get(i) %></a>
-            <span><%= tagHashMap.get(tagList.get(i)) %></span>
+            <span><i><%= tagHashMap.get(tagList.get(i)) %></i></span>
         </li>
     <% } %>
     

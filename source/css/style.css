@@ -44,11 +44,9 @@ a
     padding: 36px 4vw 0px; /*上 宽 第*/
     background: #fff;
     /*border-radius: 24px;*/
-    background: #fff;
     border-radius: 0px;
-background: #ffffff;
-box-shadow:  0px 5px 13px #616161,
-             -5px -5px 13px #ffffff;
+    background: #ffffff;
+    box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff;
 }
 .index-main
 {
@@ -57,9 +55,8 @@ box-shadow:  0px 5px 13px #616161,
     margin: 0 auto;
     padding: 36px 4.5vw 0px;
     border-radius: 0px;
-background: #ffffff;
-box-shadow:  0px 5px 13px #616161,
-             -5px -5px 13px #ffffff;
+    background: #ffffff;
+    box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff;
 }
 
 .index-header-line
@@ -616,4 +613,11 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     }
   }
   
-  
+.inline-ul {
+    list-style: none;
+    padding: 0;
+} 
+.inline-li {
+    display: inline-block;
+    margin-right: 10px; /* 可以根据需要调整元素之间的间距 */
+}
