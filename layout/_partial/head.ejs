@@ -7,7 +7,6 @@
 
     <% if(theme.cdn.enable) { %>
         <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/reset.css') %>
-        <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/style.css') %>
         <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/markdown.css') %>
         <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/fonts.css') %> 
         <!--注意：首页既不是post也不是page-->
@@ -16,7 +15,6 @@
         <% } %>
     <% } else { %>
         <%- css('css/reset.css') %>
-        <%- css('css/style.css') %>
         <%- css('css/markdown.css') %>
         <%- css('css/fonts.css') %> 
          <!--注意：首页既不是post也不是page-->
@@ -24,5 +22,6 @@
             <%- css('css/waline.css') %>
         <% } %>
     <% } %>
-    <%- css('css/ui.css') %>
+    <%- css('css/ui.css') %> 
+    <%- css('css/style.css') %>
 </head>
