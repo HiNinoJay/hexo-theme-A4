@@ -22,7 +22,8 @@
 
 </div>
 
-![](source/img/market.png)
+
+[![](source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特点
 
