@@ -43,10 +43,9 @@
                         <a href='<%- url_for(postCategories[j].path)%>'>
                             <%= postCategories[j].name %>
                         </a>
-                    <% }  %>
+                    <% break;}  %>
                 </span>
             <% } %>
-
         <% } %>
         </i>
     </div>
@@ -54,3 +53,5 @@
         <%- partial('_partial/comments/comment') %>
     <% } %> 
 </div>
+
+
