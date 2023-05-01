@@ -320,14 +320,18 @@ a
     text-align: left;
     margin-bottom: 1px;
 }
-.footer-last-span
+.footer-last-span-right
 {
-    margin-bottom: 1px;
-    margin-top: -30px;
-    font-size: 10px;
-    text-align: left;
-    border-top: 1px solid var(--line-1);
+    float: right; 
+    font-size: 10px; 
 }
+@media only screen and (max-width: 600px) {
+    .footer-last-span-right {
+        float: left; 
+        font-size: 10px; 
+    }
+  }
+
 .index-footer-last-span
 {
     margin-bottom: 1px;
