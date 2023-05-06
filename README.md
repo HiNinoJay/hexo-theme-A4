@@ -3,7 +3,7 @@
 
 <div align="center" >
 <a href="https://github.com/HiNinoJay/hexo-theme-A4">
-<img width=200px height=200px src="/source/img/A4-favicon.png" alt="A4" />
+<img width=200px height=200px src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
@@ -23,7 +23,7 @@
 </div>
 
 
-[![](/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特点
 
@@ -39,19 +39,19 @@
 ## 🔥效果展示
 ### 首页
 
-![](/source/img/index.png)
+![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/index.png)
 
 ### 文章列表
 
-![](/source/img/archive.png)
+![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
 
 ### 文章标签和分类信息
 
-![](/source/img/tags&&categories.png)
+![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
 
 ### 评论
 
-![](/source/img/comment.png)
+![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
 
 ## 如何使用
 
