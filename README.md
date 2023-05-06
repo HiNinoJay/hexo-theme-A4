@@ -3,7 +3,7 @@
 
 <div align="center" >
 <a href="https://github.com/HiNinoJay/hexo-theme-A4">
-<img width=200px height=200px src="source/img/A4-favicon.png" alt="A4" />
+<img width=200px height=200px src="/source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
@@ -23,7 +23,7 @@
 </div>
 
 
-[![](source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特点
 
