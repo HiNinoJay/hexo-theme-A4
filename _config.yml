@@ -39,5 +39,6 @@ comment:
 
 cdn:
   enable: true
+  choose: jsdelivr  # aliyun | jsdelivr  
 
 version: v1.6.5

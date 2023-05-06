@@ -5,13 +5,23 @@
     <link rel="alternate icon" type="image/webp" href="<%- url_for('/img/favicon.webp') %>">
     <title><%= config.title %> | <%= config.subtitle %></title>
 
-    <% if(theme.cdn.enable) { %>
-        <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/reset.css') %>
-        <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/markdown.css') %>
-        <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/fonts.css') %> 
-        <!--注意：首页既不是post也不是page-->
-        <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
-            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/waline.css') %>
+    <% if(theme.cdn.enable && theme.cdn.choose != "") { %>
+        <% if(theme.cdn.choose == "aliyun") { %>
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/reset.css') %>
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/markdown.css') %>
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/fonts.css') %> 
+            <!--注意：首页既不是post也不是page-->
+            <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
+                <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/waline.css') %>
+            <% } %>
+        <% } else if(theme.cdn.choose == "jsdelivr") { %>
+            <%- css('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/css/reset.css') %>
+            <%- css('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/css/markdown.css') %>
+            <%- css('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/css/fonts.css') %> 
+            <!--注意：首页既不是post也不是page-->
+            <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
+                <%- css('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/css/waline.css') %>
+            <% } %>
         <% } %>
     <% } else { %>
         <%- css('css/reset.css') %>
