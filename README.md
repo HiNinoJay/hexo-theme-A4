@@ -23,7 +23,7 @@
 </div>
 
 
-[![](source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](https://npm.elemecdn.com/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特点
 
