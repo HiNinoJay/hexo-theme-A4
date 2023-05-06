@@ -41,4 +41,4 @@ cdn: # 你可能会用到的帖子 https://ninojay.top/2023/website-cdn/
   enable: true
   choose: jsdelivr  # aliyun | unpkg | jsdelivr    # 都调整为利于国内的cdn，建议使用jsdelivr, 对速度还是不满意可选 aliyun
 
-version: v1.6.5
+version: v1.6.6
