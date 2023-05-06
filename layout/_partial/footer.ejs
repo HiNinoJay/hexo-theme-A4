@@ -40,9 +40,13 @@
         <%- js('https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/highlight.min.js') %>
         <%- js('https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js') %>
     <% } else if(theme.cdn.choose == "jsdelivr") { %>
-        <%- css('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
-        <%- js('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/js/highlight.min.js') %>
-        <%- js('https://cdn.jsdelivr.net/npm/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js') %>
+        <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
+        <%- js('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlight.min.js') %>
+        <%- js('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js') %>
+    <% } else if(theme.cdn.choose == "unpkg") { %>
+        <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
+        <%- js('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/js/highlight.min.js') %>
+        <%- js('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js') %>
     <% } %>
 <% } else { %>
     <%- css('css/a11y-dark.min.css') %>
