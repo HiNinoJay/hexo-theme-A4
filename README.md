@@ -19,6 +19,8 @@
 [![](https://img.shields.io/npm/dw/hexo-theme-a4?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/hexo-theme-a4)
 
 「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
+  
+_右上角一个star，更快更新功能_
 
 </div>
 
