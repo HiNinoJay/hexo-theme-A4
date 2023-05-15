@@ -16,7 +16,6 @@
 [![](https://img.shields.io/npm/v/hexo-theme-a4?label=VERSION&logo=npm&style=for-the-badge)]()
 [![](https://img.shields.io/npm/v/hexo?color=blue&label=hexo&logo=hexo&style=for-the-badge)](https://hexo.io/zh-cn/index.html)
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge)](https://nodejs.org/en)
-[![](https://img.shields.io/npm/dw/hexo-theme-a4?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/hexo-theme-a4)
 
 「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
   
