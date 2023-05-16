@@ -7,7 +7,7 @@
 <div class="index-header">
     首页
     <% for (name in theme.menu) { %>
-        <% if(name !== '首页') { %>
+        <% if(name !== '首页' && theme.showInMenu.includes(name)) { %>
             &nbsp / &nbsp<a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
         <% } %>
     <% } %>
