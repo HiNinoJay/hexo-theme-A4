@@ -7,6 +7,9 @@ menu:
   # 分类: /categories/ # 需要hexo new page categories
   # ...
 
+showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显示）
+  - 文章
+
 footerLink: # 底部的链接自定义
   info: © 1949-2023 china  # info这个单词不能修改，不想使用可为空
   # 添加链接格式 举例
