@@ -32,7 +32,7 @@ _右上角一个star，更快更新功能_
 - [x] 首页简历化，word化，内容自定义化
 - [x] 页面的页脚页眉自定义
 - [x] 文章可单独配置：隐藏文章、开关评论、开关目录、数学公式支持、文章加密访问
-- [x] 全局色调配置可自定义
+- [x] 全局色调配置可自定义，预览多种配色[请点击链接](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] 采用最美评论模块waline
 - [x] 预置md可使用的css样式
 - [x] 自带CDN加速国内访问速度
@@ -41,6 +41,10 @@ _右上角一个star，更快更新功能_
 
 
 ## 🔥效果展示
+
+### 多种主题配色
+本主题默认灰白配色，更多配色请看：[点击预览](https://ninojay.top/hexoplugin/A4-color-change/)，你也可以自行修改提交自己喜欢的配色。
+
 ### 首页
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/index.png)
@@ -56,6 +60,7 @@ _右上角一个star，更快更新功能_
 ### 评论
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
+
 
 ## 👋如何使用
 
