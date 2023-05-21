@@ -35,7 +35,9 @@ _右上角一个star，更快更新功能_
 - [x] 采用最美评论模块waline
 - [x] 预置md可使用的css样式
 - [x] 自带CDN加速国内访问速度
-- [x] 详细的使用文档
+- [x] [详细的使用文档](https://doc.ninojay.top)
+- [x] [A4可支持hexo插件使用文档](https://ninojay.top/tags/hexoPlugin/)
+
 
 ## 🔥效果展示
 ### 首页
