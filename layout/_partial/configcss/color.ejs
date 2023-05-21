@@ -1,0 +1,111 @@
+<% if(theme.color.enable) { %>
+    <style>
+        :root {
+            --waline-theme-color: <%=theme.color.font %>; 
+            --waline-color: <%=theme.color.font %>; 
+            --waline-border-color: <%=theme.color.font %>; 
+            --waline-white: <%=theme.color.font %>; 
+            --waline-bgcolor-light: <%=theme.color.postBackGround %>;  
+        }
+        body {
+            color: <%=theme.color.font %>;
+            background: <%=theme.color.background %>;
+        }
+        .wl-card span.wl-nick {
+            color: <%=theme.color.font %>; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid <%=theme.color.font %>;
+            color: <%=theme.color.font %>; 
+        }
+        .wl-btn {
+            border: 1px solid <%=theme.color.font %>; 
+            color:  <%=theme.color.font %>;  
+        }
+        .wl-btn.primary {
+            color: <%=theme.color.postBackGround %>; 
+        }
+        .wl-header label {
+            color: <%=theme.color.font %>;
+        }
+        a {
+            color: <%=theme.color.font %>;
+        }
+
+        .post-md a {
+            color: <%=theme.color.font %>;
+        }
+
+        .nav li a {
+            color: <%=theme.color.font %>;
+        }
+
+        .archive-main a:link {
+            color: <%=theme.color.font %>;
+        }
+
+        .archive li span {
+            color: <%=theme.color.font %>;
+        }
+
+        .post-main-title {
+            color: <%=theme.color.font %>;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: <%=theme.color.font %>;
+        }
+
+        [data-waline] p {
+            color: <%=theme.color.font %>;
+        }
+        [data-waline] a {
+            color: <%=theme.color.font %>;
+        } 
+        .wl-sort li.active {
+            color: <%=theme.color.font %>;
+        }
+
+        .wl-card .wl-meta>span {
+            background: <%=theme.color.postBackGround %>;
+        }
+
+        .paper {
+            background: <%=theme.color.background %>;
+        }
+
+        .index-main {
+            background: <%=theme.color.indexBackGround %>;
+        }
+
+        .paper-main {
+            background: <%=theme.color.postBackGround %>;
+        }
+
+        .wl-panel {
+            background: <%=theme.color.postBackGround %>;
+        }
+
+        .archive li:nth-child(odd) {
+            background: <%=theme.color.postBackGround %>;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: <%=theme.color.postBackGround %>;
+        }
+
+        .post-md>table tr:nth-child(odd) td {
+            background: <%=theme.color.postBackGround %>;
+        }
+
+        .post-md>table tr:nth-child(even) td {
+            background: <%=theme.color.postBackGround %>;
+        }
+    </style>
+<% } %>
