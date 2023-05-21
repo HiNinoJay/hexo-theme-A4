@@ -44,12 +44,15 @@ cdn:
 
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
 # 设置为 false 为 A4 默认色调，可设置为 true 直接hexo s 体验下 另一种预置色调
+# 注：颜色代码需加“#”，颜色单词不需要加“#”
 color: 
   enable: false # true | false 
   font: "#fec591" # 字体颜色
   background: "#005454" # 最底部层背景颜色
   indexBackGround: "#005454" # 首页层颜色
   postBackGround: "#005454" # 文章页层颜色
+  codeBackGround: "black" # 代码块背景颜色
+  codeFont: "white" # 代码块字体颜色 
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
