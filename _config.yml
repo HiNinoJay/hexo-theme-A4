@@ -43,7 +43,7 @@ cdn:
   choose: jsdelivr  # aliyun | unpkg| jsdelivr  
 
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
-# 设置为 false 为 A4 默认色调，可设置为 true 直接hexo s 体验下 另一种预置色调
+# 设置为 false 为 A4 默认灰白色调，可设置为 true 直接启动 体验下 另一种绿金预置色调
 # 注：颜色代码需加“#”，颜色单词不需要加“#”
 color: 
   enable: false # true | false 
