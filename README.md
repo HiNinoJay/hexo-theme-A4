@@ -90,15 +90,15 @@ hexo new page list
 其他详细配置请看：
 ➡️ [使用文档](https://doc.ninojay.top)，已上线。
 
+## ☕️支持
+
+欢迎提交pull request，请提交至dev分支。
+
+如果觉得我做的不错，请给我一个star，感谢。
 
 ## 🍺感谢：
 以下开源项目给予我很多灵感，促使我也能来开源这款主题：
 - https://github.com/fluid-dev/hexo-theme-fluid
 - https://github.com/EvanNotFound/hexo-theme-redefine
 - https://github.com/zheli-design/hexo-theme-one-paper
-
-
-## ☕️支持
-
-如果觉得我做的不错，请给我一个star，感谢。
 
