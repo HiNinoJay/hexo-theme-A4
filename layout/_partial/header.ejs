@@ -1,14 +1,22 @@
 <!-- 这个header就是特指首页的header -->
 
 <% if(theme.index.header != null || theme.index.header == "") {%>
-<div class="index-header-line"><span><%= theme.index.header %></span></div>
+    <div class="index-header-line" >
+        <span><%= theme.index.header %></span>
+    </div>
 <% } %>
-<a class="index-logo" href="<%- url_for() %>"><%= config.title %></a>
-<div class="index-header">
-    首页
-    <% for (name in theme.menu) { %>
-        <% if(name !== '首页' && theme.showInMenu.includes(name)) { %>
-            &nbsp / &nbsp<a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
-        <% } %>
-    <% } %>
-</div>
+<% if(theme.index.titlePosition == "left") { %>
+    <div style="text-align: left;">
+<% } else if(theme.index.titlePosition == "center") { %>
+    <div style="text-align: center;"> 
+<% } %>
+        <a class="index-logo" href="<%- url_for() %>"><%= config.title %></a>
+        <div> 
+            首页
+            <% for (name in theme.menu) { %>
+                <% if(name !== '首页' && theme.showInMenu.includes(name)) { %>
+                    &nbsp / &nbsp<a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
