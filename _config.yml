@@ -39,8 +39,8 @@ favicon: /img/favicon.webp
 
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
 cdn:
-  enable: true
-  choose: jsdelivr  # aliyun | unpkg| jsdelivr  
+  enable: true # 如果你修改了 css/js ，也许需要把cdn设置为false才会生效
+  choose: jsdelivr  # aliyun | unpkg| jsdelivr  # 都调整为利于国内的cdn，建议使用默认的 jsdelivr 即可
 
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
 # 设置为 false 为 A4 默认灰白色调，可设置为 true 直接启动 体验下 另一种绿金预置色调
