@@ -32,13 +32,15 @@ _右上角一个star，更快更新功能_
 - [x] 首页简历化，word化，内容自定义化
 - [x] 页面的页脚页眉自定义
 - [x] 文章可单独配置：隐藏文章、开关评论、开关目录、数学公式支持、文章加密访问
-- [x] **全局色调可自定义配置，预览多种配色**[请点击链接](https://ninojay.top/hexoplugin/A4-color-change/)
+- [x] [**全局色调可自定义配置，预览多种配色**](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] 采用最美评论模块waline
 - [x] 预置md可使用的css样式
 - [x] 自带CDN加速国内访问速度
 - [x] [详细的使用文档](https://doc.ninojay.top)
-- [x] [A4可支持hexo插件使用文档](https://ninojay.top/tags/hexoPlugin/)
-
+- [x] [经过作者验证可支持的hexo插件](https://ninojay.top/tags/hexoPlugin/)
+  - [x] [mathjax 数学公式](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
+  - [x] [encrypt 特定文章加密访问](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
+  - [x] [github-emojis 语法支持](https://ninojay.top/hexoplugin/hexo-filter-github-emojis/) 
 
 ## 🔥效果展示
 
@@ -95,6 +97,8 @@ hexo new page list
 欢迎提交pull request，请提交至dev分支。
 
 如果觉得我做的不错，请给我一个star，感谢。
+
+💰[金钱支持](https://ninojay.top/supportbymoney)
 
 ## 🍺感谢：
 以下开源项目给予我很多灵感，促使我也能来开源这款主题：
