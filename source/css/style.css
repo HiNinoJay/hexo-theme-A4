@@ -307,8 +307,8 @@ a
 .footer-last
 {
     padding-bottom: 24px;
-    padding-top: 6px;
-    font-size: 0.875rem;
+    /* padding-top: 6px; */
+    font-size: 10px;
     color: var(--font-color-3);
     display: flex;
     flex-direction: row;
@@ -320,7 +320,7 @@ a
 .footer span
 {
     text-align: left;
-    margin-bottom: 1px;
+    margin-bottom: -7px;
 }
 .footer-last-span-right
 {
@@ -329,7 +329,17 @@ a
     font-size: 10px; 
 }
 @media only screen and (max-width: 600px) {
+    .footer-last {
+        padding-top: 5px;
+        flex-direction: column;
+    }
+
+    .footer-last i{
+        font-style: normal;
+    }
+
     .footer-last-span-right {
+        padding-top: 10px;
         float: left; 
         font-size: 10px; 
     }
