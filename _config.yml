@@ -45,6 +45,7 @@ cdn:
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
 # 设置为 false 为 A4 默认灰白色调，可设置为 true 直接启动 体验下 另一种绿金预置色调
 # 注：颜色代码需加“#”，颜色单词不需要加“#”
+# 更多A4色调搭配推荐：https://ninojay.top/hexoplugin/A4-color-change/
 color: 
   enable: false # true | false 
   font: "#fec591" # 字体颜色
