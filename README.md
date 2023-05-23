@@ -46,7 +46,7 @@ _右上角一个star，更快更新功能_
 
 ### 多种主题配色
 
-### 灰白配色（默认）
+#### 灰白配色（默认）
 ![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greywhite.png)
 
 #### 绿金配色（已预置｜可一键启用）
