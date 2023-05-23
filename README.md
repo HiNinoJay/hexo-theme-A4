@@ -44,12 +44,15 @@ _右上角一个star，更快更新功能_
 
 ## 🔥效果展示
 
-### 多种主题配色（默认灰白配色）
-`颜色搭配是一门学问`，除A4推荐的两种配色外，你可以自行调色，并把颜色方案分享给大家。更多配色请看：[点击预览](https://ninojay.top/hexoplugin/A4-color-change/)。
+### 多种主题配色
+
+### 灰白配色（默认）
+![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greywhite.png)
 
 #### 绿金配色（已预置｜可一键启用）
 ![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greengolden.png)
 
+`颜色搭配是一门学问`，除A4推荐的两种配色外，你可以自行调色，并把颜色方案分享给大家。更多配色请看：[预览](https://ninojay.top/hexoplugin/A4-color-change/)。
 
 ### 首页
 
