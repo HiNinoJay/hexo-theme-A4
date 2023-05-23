@@ -96,6 +96,8 @@ hexo new page list
 
 欢迎提交pull request，请提交至dev分支。
 
+其他任何想交流的事，可发送邮件至：welcome@ninojay.top
+
 如果觉得我做的不错，请给我一个star，感谢。
 
 💰[金钱支持](https://ninojay.top/supportbymoney/)
