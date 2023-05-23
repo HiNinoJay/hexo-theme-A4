@@ -99,10 +99,3 @@ hexo new page list
 如果觉得我做的不错，请给我一个star，感谢。
 
 💰[金钱支持](https://ninojay.top/supportbymoney/)
-
-## 🍺感谢：
-以下开源项目给予我很多灵感，促使我也能来开源这款主题：
-- https://github.com/fluid-dev/hexo-theme-fluid
-- https://github.com/EvanNotFound/hexo-theme-redefine
-- https://github.com/zheli-design/hexo-theme-one-paper
-
