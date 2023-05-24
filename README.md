@@ -99,6 +99,32 @@ hexo new page list
 其他详细配置请看：
 ➡️ [使用文档](https://doc.ninojay.top)，已上线。
 
+## ⬆️如何更新
+根据你`安装`的方式，选择`对应的`更新方式。
+
+### npm方式
+命令行进入到你的博客网站`根目录`下
+执行命令：
+```shell
+npm install hexo-theme-a4@latest
+```
+
+### git方式
+
+命令行进入到`themes/A4`目录下
+执行命令:
+
+```shell
+git pull
+```
+---
+
+### 注意
+
+以上两种方式更新后，请去该[github页面](https://github.com/HiNinoJay/hexo-theme-A4/releases)查看最新的版本，作者会告诉配置文件有无新增/修改。
+
+如果有，则需要复制最新的[该文件](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)对应到你的`_config.a4.yml`新增/修改的部分。
+
 ## ☕️支持
 
 欢迎提交pull request，请提交至dev分支。
