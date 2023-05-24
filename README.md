@@ -128,7 +128,7 @@ git pull
 
 ## ☕️支持
 
-欢迎提交pull request 或 issue，请提交至dev分支。
+欢迎提交 pull request 或 issue，请提交至dev分支。
 
 其他任何想交流的事，可发送邮件至：welcome@ninojay.top
 
