@@ -41,6 +41,7 @@ _右上角一个star，更快更新功能_
   - [x] [mathjax 数学公式](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
   - [x] [encrypt 特定文章加密访问](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
   - [x] [github-emojis 语法支持](https://ninojay.top/hexoplugin/hexo-filter-github-emojis/) 
+  - [x] [reference 脚标支持](https://ninojay.top/hexoplugin/hexo-reference/) 
 
 ## 🔥效果展示
 
