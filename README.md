@@ -134,4 +134,4 @@ git pull
 
 如果觉得我做的不错，请给我一个star，感谢。
 
-💰[金钱支持](https://ninojay.top/supportbymoney/)
+💰[请我喝杯咖啡](https://ninojay.top/supportbymoney/)
