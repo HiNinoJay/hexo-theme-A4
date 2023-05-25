@@ -36,14 +36,14 @@ _右上角一个star，更快更新功能_
 - [x] 采用最美评论模块waline
 - [x] 预置md可使用的css样式
 - [x] 自带CDN加速国内访问速度
-- [x] [可压缩图片/css/js资源大幅度提升网站访问速度](https://github.com/chenzhutian/hexo-all-minifier)
+- [x] [可压缩图片/css/js资源大幅度提升网站访问速度](https://ninojay.top/hexoplugin/hexo-all-minifier/)
 - [x] [详细的使用文档](https://doc.ninojay.top)
 - [x] [经过作者验证可支持的hexo插件](https://ninojay.top/tags/hexoPlugin/)
   - [x] [mathjax 数学公式](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
   - [x] [encrypt 特定文章加密访问](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
   - [x] [github-emojis 语法支持](https://ninojay.top/hexoplugin/hexo-filter-github-emojis/) 
   - [x] [reference 脚标支持](https://ninojay.top/hexoplugin/hexo-reference/) 
-  - [x] [minifier 压缩网站图片/css/js等资源](https://github.com/chenzhutian/hexo-all-minifier) 
+  - [x] [minifier 压缩网站图片/css/js等资源](https://ninojay.top/hexoplugin/hexo-all-minifier/) 
 
 ## 🔥效果展示
 
