@@ -133,7 +133,7 @@ a
 .nav li a
 {
     color: var(--font-color-1);
-    opacity: .6;
+    /* opacity: .6; */
     /* transition: opacity ease-in-out .5s; */
 }
 .nav li a:hover
