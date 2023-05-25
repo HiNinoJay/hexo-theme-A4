@@ -99,8 +99,14 @@
         <% for(var j = 0; j < thisYearPostList.size(); j++) { %>
           <% var thisPost = thisYearPostList.get(j) %>
           <li>
-            <span class="archive-date"><%= date(thisPost.date, "MM/DD") %></span>
+            <span class="archive-date"><%= date(thisPost.date, "MM/DD") %> 
+            </span>
             <div class="archive-main">
+              <% if(thisPost.categories.length > 0) { %>
+                <a class="archive-title" target="_blank" href="/<%= thisPost.categories.data[0].path %>">
+                  <%= thisPost.categories.data[0].name %> 
+                </a> | 
+              <% } %>
                 <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>
             </div>
           </li>

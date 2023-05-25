@@ -15,7 +15,15 @@
     <ul class="nav">
         <% for (name in theme.menu) { %>
             <% if(theme.menu[name].substring(1, theme.menu[name].length - 1) == path.substring(0, path.indexOf("/"))) { %>
-                <li><i><a style="color: #4e7dde;" href="<%- url_for(theme.menu[name]) %>"><%= name %></a></i></li>
+                <li><i>
+                    <% if(theme.color.enable) { %>
+                        <u>
+                            <a  href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+                        </u>
+                    <% } else { %>
+                        <a style="color: #4e7dde;" href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+                    <% } %>
+                </i></li>
             <%} else {%>
                 <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
             <% } %>
