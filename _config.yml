@@ -55,6 +55,8 @@ color:
   postBackGround: "#005454" # 文章页层颜色
   codeBackGround: "black" # 代码块背景颜色
   codeFont: "white" # 代码块字体颜色 
+  linkBeforeClick: "#fec591" # 链接点击前的颜色
+  linkAfterClick: "#fec591" # 链接点击后的颜色
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
