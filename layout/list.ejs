@@ -91,7 +91,7 @@
       <% for (let i = 0; i < allYearList.size(); i++) { %>
         <% var year = allYearList.get(i) %>
         <li>
-          <span  style=""><%= year %>[<%= hashmap.get(year).size() %>]
+          <span><%= year %>[<%= hashmap.get(year).size() %>]
             <% if(i==0) { %> 🍃 <% } %>
           </span>
         </li>
@@ -103,7 +103,7 @@
             </span>
             <div class="archive-main">
               <% if(thisPost.categories.length > 0) { %>
-                <a class="archive-title" target="_blank" href="/<%= thisPost.categories.data[0].path %>">
+                <a class="archive-title"  href="/<%= thisPost.categories.data[0].path %>">
                   <%= thisPost.categories.data[0].name %> 
                 </a> | 
               <% } %>
