@@ -635,3 +635,7 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     display: inline-block;
     margin-right: 10px; /* 可以根据需要调整元素之间的间距 */
 }
+
+.year-font-color {
+    color: black !important;
+}

@@ -91,7 +91,7 @@
       <% for (let i = 0; i < allYearList.size(); i++) { %>
         <% var year = allYearList.get(i) %>
         <li>
-          <span><%= year %>[<%= hashmap.get(year).size() %>]
+          <span class="year-font-color"><%= year %>[<%= hashmap.get(year).size() %>]
             <% if(i==0) { %> 🍃 <% } %>
           </span>
         </li>
