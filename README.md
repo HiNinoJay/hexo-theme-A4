@@ -138,3 +138,9 @@ git pull
 如果觉得我做的不错，请给我一个star，感谢。
 
 💰[请我喝杯咖啡](https://ninojay.top/supportbymoney/)
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/HiNinoJay/hexo-theme-A4.svg)](https://starchart.cc/HiNinoJay/hexo-theme-A4)
+
