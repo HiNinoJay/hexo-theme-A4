@@ -9,7 +9,9 @@
 
 <div align="center">
 
-模仿A4纸张的一个hexo极简主题。主打一个简洁，体积小，配置少。
+Welcome to the A4!<br/>
+A4 is a simple, lightweight and elegant theme for Hexo.<br/>
+With minimal configuration, achieve a paper-like appearance resembling A4 size.<br/>
 
 
 
@@ -17,94 +19,92 @@
 [![](https://img.shields.io/badge/HEXO-v6.3.0-blue?style=for-the-badge&logo=hexo)](https://hexo.io/zh-cn/index.html)
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge&logo=node)](https://nodejs.org/en)
 
-「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
+Let the readers focus on reading the text, while the writers concentrate on writing.
+➡️ [Demo](https://ninojay.top) ➡️ [Docs](https://doc.ninojay.top)<br/>
   
-_右上角一个star，更快更新功能_
+_A star in the top right corner for faster feature updates_
 
 </div>
 
 
 [![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
-## 🏹️特点
+## 🏹️Features
 
-- [x] 博客网站基本功能：归档/标签/分类/目录
-- [x] 首页简历化，word化，内容自定义化
-- [x] 页面的页脚页眉自定义
-- [x] 文章可单独配置：隐藏文章、开关评论、开关目录、[数学公式支持](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)、[文章加密访问](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
-- [x] [**全局色调可自定义配置，预览多种配色**](https://ninojay.top/hexoplugin/A4-color-change/)
-- [x] 采用最美评论模块waline
-- [x] 预置md可使用的css样式
-- [x] 自带CDN加速国内访问速度
-- [x] [可压缩图片/css/js资源大幅度提升网站访问速度](https://ninojay.top/hexoplugin/hexo-all-minifier/)
-- [x] [详细的使用文档](https://doc.ninojay.top)
-- [x] [经过作者验证可支持的hexo插件](https://ninojay.top/tags/hexoPlugin/)
-  - [x] [mathjax 数学公式](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
-  - [x] [encrypt 特定文章加密访问](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
-  - [x] [github-emojis 语法支持](https://ninojay.top/hexoplugin/hexo-filter-github-emojis/) 
-  - [x] [reference 脚标支持](https://ninojay.top/hexoplugin/hexo-reference/) 
-  - [x] [minifier 压缩网站图片/css/js等资源](https://ninojay.top/hexoplugin/hexo-all-minifier/) 
+- [x] Basic functions of blog: archive/tag/category/index
+- [x] With the paper-like index page, content is up to you
+- [x] Footer and Header of pages can be customized
+- [x] Pages can be individually configured with the following functions：hidded page, comment module, [Mathjax support for Math writting](https://ninojay.top/hexoplugin/hexo-filter-mathjax/), [encrypted access](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
+- [x] [**Easily customized global color schemes, preview of two color schemes**](https://ninojay.top/hexoplugin/A4-color-change/)
+- [x] Adopt the most beautiful comment module `waline`
+- [x] Preset css styles that can be used by Markdown
+- [x] [Supported hexo plugins](https://ninojay.top/tags/hexoPlugin/)
+  - [x] [mathjax](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
+  - [x] [encrypt](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
+  - [x] [github-emojis language support](https://ninojay.top/hexoplugin/hexo-filter-github-emojis/) 
+  - [x] [markdown footnotes support](https://ninojay.top/hexoplugin/hexo-reference/) 
+  - [x] [minifier which can compress website images/css/js and other resources](https://ninojay.top/hexoplugin/hexo-all-minifier/) 
 
-## 🔥效果展示
+## 🔥Demonstration
 
-### 多种主题配色
+### Various Color Scheme
 
-#### 灰白配色（默认）
+#### Grey and white color scheme (Default)
 ![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greywhite.png)
 
-#### 绿金配色（已预置｜可一键启用）
+#### Green and gold color scheme (Pre-provided | One-click activation)
 ![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greengolden.png)
 
-`颜色搭配是一门学问`，除A4推荐的两种配色外，你可以自行调色，并把颜色方案分享给大家。更多配色请看：[预览](https://ninojay.top/hexoplugin/A4-color-change/)。
+Color coordination is an art. In addition to the two color schemes recommended for A4, I can also create my own color palettes and share them with everyone. If you would like to explore more color combinations, please refer to the following link: [Preview](https://ninojay.top/hexoplugin/A4-color-change/).
 
-### 首页
+### Index
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/index.png)
 
-### 文章列表
+### Page List
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
 
-### 文章标签和分类信息
+### Tags And Category
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
 
-### 评论
+### Comments
 
 ![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
 
 
-## 👋如何使用
+## 👋How To Use
 
-- 确认已通过命令`hexo init`创建好了文件夹,这里举例你的文件夹名为`website`
-- `命令行`进入到`website`文件夹路径下
-- **确保hexo版本为 v6.3.0版本**，如果不是请执行命令`npm install hexo@6.3.0`
-- 将`website`文件夹下的`_config.yml`文件中将主题设置为A4
-- 接下来正式安装`a4主题`，有两种方式,任选其一
+- make sure you have been created folder by `hexo init`, for convenience, suppose the name of the folder is `website`
+- navigate to the `website` by using the command line
+- **ensure the version of hex is v6.3.0**，if not please execute this: `npm install hexo@6.3.0`
+- set the theme to A4 in the `_config.yml` file under the `website` folder
+- install `a4 theme` next by any one of two methods below:
 
-### npm方式（推荐）
-- 执行命令 `npm install hexo-theme-a4@latest`
-- 在`website`文件夹路径下创建`_config.a4.yml`文件，将[这里的内容](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)复制进去
-- 对主题的所有个性化配置都将在`_config.a4.yml`文件中进行，可按照文件中的注释自行配置
-- 执行命令：`hexo s` 运行项目查看效果
+### By npm (Recommended)
+- execute `npm install hexo-theme-a4@latest`
+- create the `_config.a4.yml` file under the `website` folder，copy [the content here](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) into it
+- all personalized configurations for the theme will be performed in the `_config.a4.yml` file, which can be configured according to the comments in the file
+- execute `hexo s` to take a look of preview
 
-### git方式
-- 执行命令：`git clone git@github.com:HiNinoJay/hexo-theme-A4.git themes/A4`
-- 在`website`文件夹路径下创建`_config.a4.yml`文件，将[这里的内容](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) 复制进去
-- 对主题的所有个性化配置都将在`_config.a4.yml`文件中进行，可按照文件中的注释自行配置
-- 执行命令：`hexo s` 运行项目查看效果
+### By git
+- execute `git clone git@github.com:HiNinoJay/hexo-theme-A4.git themes/A4`
+- create the `_config.a4.yml` file under the `website` folder，copy [the content here](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) into it
+- all personalized configurations for the theme will be performed in the `_config.a4.yml` file, which can be configured according to the comments in the file
+- execute `hexo s` to take a look of preview
 
-## ⚠️必读配置
+## ⚠️Configuration (Required!)
 
-首页和文章列表页需要手动生成，执行以下命令即可：
+The homepage and article list pages need to be manually generated, just execute the following commands:
 ```shell
 hexo new page index
 hexo new page list
 ```
 
-### 我的markdown代码块怎么没渲染？
+### What happened to my markdown code block?
 
-答：检查你的_config.yml文件，将hexo自带的highlight和prismjs设置为false。
+If your code block cannot be rendered, check the `_config.yml` file，and find `highlight` and `prismjs`, set the `enable` option to `false`
 ```yml
 highlight:
   enable: false 
@@ -119,46 +119,46 @@ prismjs:
   line_number: true
   tab_replace: ''
 ```
+then execute `hexo c` and `hexo g` to regenerates web pages.
 
+For other detailed configurations, please see:
+➡️ [Online usage manual](https://doc.ninojay.top)
 
-其他详细配置请看：
-➡️ [使用文档](https://doc.ninojay.top)，已上线。
+## ⬆️ How to update
+According to your `install` method，choose the `corresponding` way to update.
 
-## ⬆️如何更新
-根据你`安装`的方式，选择`对应的`更新方式。
+### by npm
 
-### npm方式
-命令行进入到你的博客网站`根目录`下
-执行命令：
+Navigate to the root directory of your blog site by using the command line
+Excuting order below:
+
 ```shell
 npm install hexo-theme-a4@latest
 ```
 
-### git方式
-
-命令行进入到`themes/A4`目录下
-执行命令:
+### by git
+Navigate to the directory `themes/A4` by using the command line
+Excuting order below:
 
 ```shell
 git pull
 ```
 ---
 
-### 注意
+### Notice
+After updating through the above two methods, please visit the [GitHub page](https://github.com/HiNinoJay/hexo-theme-A4/releases) to check the latest version. I will indicate whether there are any additions or modifications to the configuration file.
 
-以上两种方式更新后，请去该[github页面](https://github.com/HiNinoJay/hexo-theme-A4/releases)查看最新的版本，作者会告诉配置文件有无新增/修改。
+If there are any modification, you need to copy the corresponding additions or modifications from the [latest file](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) and apply them to your `_config.a4.yml` file.
 
-如果有，则需要复制最新的[该文件](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)对应到你的`_config.a4.yml`新增/修改的部分。
+## ☕️Sponsor
 
-## ☕️支持
+Welcome to submit a pull request or issue. Please submit them to the 'dev' branch.
 
-欢迎提交 pull request 或 issue，请提交至dev分支。
+For any other matters you'd like to discuss, please feel free to send an email to welcome@ninojay.top.
 
-其他任何想交流的事，可发送邮件至：welcome@ninojay.top
+If you find my work satisfactory, I would greatly appreciate a star. Thank you!
 
-如果觉得我做的不错，请给我一个star，感谢。
-
-💰[请我喝杯咖啡](https://ninojay.top/supportbymoney/)
+💰[Joining me for a coffee](https://ninojay.top/supportbymoney/)
 
 
 ## Stargazers over time
