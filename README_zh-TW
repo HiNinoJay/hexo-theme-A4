@@ -98,4 +98,69 @@ _右上角一個star，更快更新功能_
 
 首頁和文章列表頁需要手動生成，執行以下命令即可：
 ```shell
-hexo
+hexo new page index
+hexo new page list
+```
+
+### 我的markdown代碼塊怎麼沒渲染？
+
+答：檢查你的_config.yml文件，將hexo自帶的highlight和prismjs設置為false。
+```yml
+highlight:
+  enable: false 
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false 
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+```
+
+
+其他詳細配置請看：
+➡️ [使用文檔](https://doc.ninojay.top)，已上線。
+
+## ⬆️如何更新
+根據你`安裝`的方式，選擇`對應的`更新方式。
+
+### npm方式
+命令行進入到你的博客網站`根目錄`下
+執行命令：
+```shell
+npm install hexo-theme-a4@latest
+```
+
+### git方式
+
+命令行進入到`themes/A4`目錄下
+執行命令:
+
+```shell
+git pull
+```
+---
+
+### 注意
+
+以上兩種方式更新後，請去該[github頁面](https://github.com/HiNinoJay/hexo-theme-A4/releases)查看最新的版本，作者會告訴配置文件有無新增/修改。
+
+如果有，則需要複製最新的[該文件](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml)對應到你的`_config.a4.yml`新增/修改的部分。
+
+## ☕️支持
+
+歡迎提交 pull request 或 issue，請提交至dev分支。
+
+其他任何想交流的事，可發送郵件至：welcome@ninojay.top
+
+如果覺得我做的不錯，請給我一個star，感謝。
+
+💰[請我喝杯咖啡](https://ninojay.top/supportbymoney/)
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/HiNinoJay/hexo-theme-A4.svg)](https://starchart.cc/HiNinoJay/hexo-theme-A4)
