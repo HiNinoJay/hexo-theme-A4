@@ -77,4 +77,4 @@ comment:
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
 
 
-version: v1.6.9
+version: v1.7.0
