@@ -1,7 +1,7 @@
 # hexo-theme-A4
 
 <div align="right">
-  <img src="https://img.shields.io/badge/-简体中文-ffffff?style=for-the-badge" alt="简体中文" />
+  <a title="zh-CN" href="README"> <img src="https://img.shields.io/badge/-简体中文-ffffff?style=for-the-badge" alt="简体中文" /></a>
   <a title="EN" href="README-EN.md">  <img src="https://img.shields.io/badge/-English-24292f?style=for-the-badge" alt="English"></a>
   <a title="zh-TW" href="README_zh-TW.md"><img src="https://img.shields.io/badge/-繁体中文-ffffff?style=for-the-badge" alt="繁体中文"></a>
 </div>
