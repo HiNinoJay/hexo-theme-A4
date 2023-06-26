@@ -639,3 +639,17 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 .year-font-color {
     color: black !important;
 }
+
+@media print {
+
+    /* All your print styles go here */
+    .paper {
+        margin: 0;
+        padding: 0;
+    }
+
+    .paper-main {
+        margin: 0 !important;
+        max-width: 100%;
+    }
+}
