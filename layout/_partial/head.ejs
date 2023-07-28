@@ -4,7 +4,7 @@
     <meta name="description" content="<%= page.title %>" />
     <meta name="hexo-theme-A4" content="<%= theme.version %>" />
     <link rel="alternate icon" type="image/webp" href="<%- url_for(theme.favicon) %>">
-    <title><%= config.title %> | <%= config.subtitle %></title>
+    <title><%= config.title + (config.subtitle ? ' | ' + config.subtitle : '') %></title>
 
     <% if(theme.cdn.enable && theme.cdn.choose != "") { %>
         <% if(theme.cdn.choose == "aliyun") { %>
