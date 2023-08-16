@@ -1,0 +1,17 @@
+<% if(
+        && theme.comment.artalk.server
+        && (!page.hasOwnProperty('comment'))
+        || (page.hasOwnProperty('comment') && page.comment)
+) { %>
+  <link href="https://npm.elemecdn.com/artalk/dist/Artalk.css" rel="stylesheet">
+  <script src="https://npm.elemecdn.com/artalk/dist/Artalk.js"></script>
+  <div id="Artalk"></div>
+  <script>
+    var artalk = new Artalk({
+      el: '#Artalk',
+      server: '<%= theme.comment.artalk.server %>',
+      site: '<%= config.title %>',
+    })
+  </script>
+</div>
+<% } %>
