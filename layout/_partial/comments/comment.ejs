@@ -4,6 +4,11 @@
     <div class="comment-area-title">
         以上。 
     </div>
+    <% if(theme.comment.use === 'waline') { %>
         <%- partial('waline') %>
+    <% } %>
+    <% if(theme.comment.use === 'twikoo') { %>
+        <%- partial('twikoo') %>
+    <% } %>
     </div>
 <% } %>

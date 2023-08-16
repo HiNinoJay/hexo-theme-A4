@@ -1,0 +1,19 @@
+<% if(
+        && theme.comment.twikoo.envId
+        && theme.comment.twikoo.lang
+        && (!page.hasOwnProperty('comment'))
+        || (page.hasOwnProperty('comment') && page.comment)
+) { %>
+
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.17/twikoo.all.min.js"></script>
+    <script>
+    twikoo.init({
+      envId: '<%= theme.comment.twikoo.envId %>',
+      el: '#tcomment',
+      region: '<%= theme.comment.twikoo.region %>',
+      lang: '<%= theme.comment.twikoo.lang %>',
+    })
+    </script>
+
+<% } %>
