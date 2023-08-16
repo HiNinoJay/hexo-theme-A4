@@ -68,7 +68,7 @@ color:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: false 
-  use: waline # values: waline、Twikoo
+  use: waline # values: waline、twikoo、artalk
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -79,8 +79,14 @@ comment:
   # Twikoo
   # See: https://twikoo.js.org/quick-start.html
   twikoo:
-    envId:  # 腾讯云环境填 envId；其它环境填地址]
+    envId:  # 腾讯云环境填 envId；其它环境填地址
     region:  # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；其它环境不填
     lang:  # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+
+
+  # Artalk
+  # See: https://artalk.js.org/guide/deploy.html
+  artalk:
+    server:  # Artalk 后端地址
 
 version: v1.7.0
