@@ -2,7 +2,12 @@
 
 <% if(theme.index.header != null || theme.index.header == "") {%>
     <div class="index-header-line" >
-        <span><%= theme.index.header %></span>
+        <% if(theme.index.hitokoto) { %>
+            <span id="quote"></span>
+            <script src="<%= url_for('/js/hitokoto.js') %>" ></script>
+        <% } else { %>
+            <span><%= theme.index.header %></span>
+        <% } %>
     </div>
 <% } %>
 <% if(theme.index.titlePosition == "left") { %>
