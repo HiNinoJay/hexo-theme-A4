@@ -36,7 +36,7 @@ _右上角一個star，更快更新功能_
 - [x] 博客網站基本功能：歸檔/標籤/分類/目錄
 - [x] 首頁簡歷化，word化，內容自定義化
 - [x] 頁面的頁腳頁眉自定義
-- [x] 文章可單獨配置：隱藏文章、開關評論、開關目錄、[數學公式支持](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)、[文章加密訪問](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
+- [x] 文章可單獨配置：隱藏文章、開關評論、開關目錄、文章置頂、[數學公式支持](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)、[文章加密訪問](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
 - [x] [**全局色調可自定義配置，預覽多種配色**](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] 採用最美評論模塊waline
 - [x] 預置md可使用的css樣式
