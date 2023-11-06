@@ -106,7 +106,7 @@
       <% for (let i = 0; i < topPostArray.length; i++) { %>
           <% var thisPost = topPostArray[i] %>
           <li>
-            <span class="archive-date"> &nbsp;&nbsp;TOP <%= thisPost.top %>
+            <span class="archive-date"> &nbsp;&nbsp;&nbsp;TOP<%= thisPost.top %>
             </span>
             <div class="archive-main">
                 <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>
@@ -126,7 +126,7 @@
         <% for(var j = 0; j < thisYearPostList.size(); j++) { %>
           <% var thisPost = thisYearPostList.get(j) %>
           <li>
-            <span class="archive-date"><%= date(thisPost.date, "MM/DD") %> 
+            <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.date, "MM/DD") %> 
             </span>
             <div class="archive-main">
               <% if(thisPost.categories.length > 0) { %>
