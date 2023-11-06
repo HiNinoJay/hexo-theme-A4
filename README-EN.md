@@ -39,7 +39,7 @@ _A star in the top right corner for faster feature updates_
 - [x] Basic functions of blog: archive/tag/category/index
 - [x] With the paper-like index page, content is up to you
 - [x] Footer and Header of pages can be customized
-- [x] Pages can be individually configured with the following functions：hidded page, comment module, [Mathjax support for Math writting](https://ninojay.top/hexoplugin/hexo-filter-mathjax/), [encrypted access](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
+- [x] Pages can be individually configured with the following functions：hidded page, comment module, top articles, [Mathjax support for Math writting](https://ninojay.top/hexoplugin/hexo-filter-mathjax/), [encrypted access](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
 - [x] [**Easily customized global color schemes, preview of two color schemes**](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] Adopt the most beautiful comment module `waline`
 - [x] Preset css styles that can be used by Markdown
