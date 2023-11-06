@@ -1,8 +1,9 @@
 <div class="archive-list">
   <ul class="archive">
-      <% var array = eval('site.posts.data') %>
+      <% var postArray = eval('site.posts.data') %>
 
-      <% array.sort((a, b) => {
+      <!--文章先按照时间排好序-->
+      <% postArray.sort((a, b) => {
           if (a.date > b.date) {
             return -1;
           }
@@ -76,18 +77,44 @@
 
       <% const hashmap = new HashMap() %>
       <% const allYearList = new List() %>
+      <% var topPostArray = [] %>
 
-      <% for (let i = 0; i < array.length; i++) { 
-        if(!('hide' in array[i]) || array[i].hide == false){
-          var postYear = new Date(array[i].date).getFullYear();
-          if(!hashmap.containsKey(postYear)) {
-            hashmap.put(postYear, new List());
-            allYearList.add(postYear);
-          } 
-          hashmap.get(postYear).add(array[i]);
+      <!--循环遍历文章数组-->
+      <% for (let i = 0; i < postArray.length; i++) { 
+        if(!('hide' in postArray[i]) || postArray[i].hide == false) {
+          if('top' in postArray[i]) {
+            topPostArray.push(postArray[i]);
+          } else {
+            var postYear = new Date(postArray[i].date).getFullYear();
+            if(!hashmap.containsKey(postYear)) {
+              hashmap.put(postYear, new List());
+              allYearList.add(postYear);
+            } 
+            hashmap.get(postYear).add(postArray[i]);
+          }
         }
       }  %>
 
+      <!--排序 置顶 文章-->
+      <% 
+        topPostArray.sort((a, b) => {
+          return a.top - b.top;
+        }) 
+      %>
+
+      <!--先放 置顶 文章-->
+      <% for (let i = 0; i < topPostArray.length; i++) { %>
+          <% var thisPost = topPostArray[i] %>
+          <li>
+            <span class="archive-date"> &nbsp;&nbsp;TOP <%= thisPost.top %>
+            </span>
+            <div class="archive-main">
+                <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>
+            </div>
+          </li>
+      <% } %>
+
+      <!--后放 其他 文章-->
       <% for (let i = 0; i < allYearList.size(); i++) { %>
         <% var year = allYearList.get(i) %>
         <li>
