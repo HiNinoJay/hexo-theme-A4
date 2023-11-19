@@ -7,6 +7,7 @@
 | Zree                                          | 微信 | 8¥     | 感谢A4主题ʕ ᵔᴥᵔ ʔ                                            | 2023.08.18 |
 | [ShinG1ai](https://noe.zone/)                 | 微信 | 18.88¥ | 支持  很喜欢A4！                                             | 2023.08.30 |
 | [yuanming](http://sirwym.github.io/)          | 微信 | 18.88¥ | 支持一下，期待后续功能![weibo_geili](https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_geili.png) | 2023.09.30 |
+| Robert                                        | 微信 | 20¥    | 在挑主题的时候，看一眼就爱上了                               | 2023.11.19 |
 
 
 
