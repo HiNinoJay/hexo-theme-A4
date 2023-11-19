@@ -1,3 +1,5 @@
+# ‘首页’ 和 ‘文章’ 较为 特殊
+# 目前如果你想修改 ‘文章’ 为 其他别名，记得去_config.yml中把，menu和showInMenu中的 '文章' 都也同步修改，或者注释掉，否则会产生影响
 menu:
   首页: /  #需要hexo new page index,在index/index.md填写的内容将会展现在首页上
   文章: /list/ # 需要hexo new page list
@@ -7,6 +9,7 @@ menu:
   # 分类: /categories/ # 需要hexo new page categories
   # ...
 
+# 首页你想要展示的menu链接，注意当你修改了menu中的别名，这里要随着更改，不然你会疑惑怎么首页没有修改后的别名
 showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显示）
   - 文章  # 将在首页显示 文章 链接
   # - 关于
