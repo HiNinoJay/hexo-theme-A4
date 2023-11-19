@@ -16,6 +16,10 @@ showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显
   # - 标签
   # - 分类
 
+# 因为 最终 页面的生成 会取 _config.a4.yml 和 _config.yml 的并集
+# 所以当你复制了一份该配置文件为 _config.a4.yml后，强烈建议你将 _config.yml 中的 menu,showInMenu中的配置都 注释掉
+# 甚至可以注释掉 _config.yml中所有的配置，这样最终只会基于你的 _config.a4.yml
+
 
 index:  # 首页的页眉页脚
   header: 看过大海的人不会忘记海的广阔 
