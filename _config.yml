@@ -98,4 +98,4 @@ comment:
   artalk:
     server:  # Artalk 后端地址
 
-version: v1.7.2
+version: v1.7.3
