@@ -40,41 +40,46 @@
                     <!--说明是文章post页面-->
                     <% if (!tags && !categories && !tagsInside && !categoriesInside) { %>
                         <%- partial('post') %>
-                        <!-- 回到顶部的按钮-->                
+                                      
                     <% } %>
                     
                     <%- partial('_partial/footer') %>
                 </div>
             <% } %>
-            <div class="progress-wrap">
-                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                </svg>
-            </div>
+            <% if(theme.tool.returnToTop) { %>
+                <!-- 回到顶部的按钮-->  
+                <div class="progress-wrap">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            <% } %>
     </body>
 
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-    function addDarkmodeWidget() {
-      const options = {
-          bottom: '48px', // default: '32px'
-          right: 'unset', // default: '32px'
-          left: '50px', // default: 'unset'
-          time: '0.3s', // default: '0.3s'
-          mixColor: '#fff', // default: '#fff'
-          backgroundColor: '<% if(theme.color.enable) { %> <%=theme.color.background %>  <% } else { %> #e4e4e4 <%}%>',  // default: '#fff'
-          buttonColorDark: '#100f2c',  // default: '#100f2c'
-          buttonColorLight: '#fff', // default: '#fff'
-          saveInCookies: true, // default: true,
-          label: '🌓', // default: ''
-          autoMatchOsTheme: true // default: true
-      }
-  
-      const darkmode = new Darkmode(options);
-      darkmode.showWidget();
-      
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-  </script>
-  
+<% if(theme.tool.darkMode) { %>
+    <!--暗黑模式-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+        const options = {
+            bottom: '48px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '50px', // default: 'unset'
+            time: '0.3s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '<% if(theme.color.enable) { %> <%=theme.color.background %>  <% } else { %> #e4e4e4 <%}%>',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+    
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+        
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+  <% } %>
 </html>
