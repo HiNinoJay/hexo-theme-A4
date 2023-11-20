@@ -2,7 +2,7 @@
     <div class="comments-container">
     <div id="comment-anchor"></div>
     <div class="comment-area-title">
-        以上。 
+        <%= theme.post.endContent %> 
     </div>
     <% if(theme.comment.use === 'waline') { %>
         <%- partial('waline') %>

@@ -38,9 +38,17 @@ footerLink: # 底部的链接自定义
 post: #除首页之外页面
   footer: 🌊看过大海的人不会忘记海的广阔🌊   # 底部左侧 自定义信息
   themeInfo: true # true | false  # 是否开启 底部右侧 声明本站信息
+  endContent: 以上 # 当你使用了 评论功能，此配置才会生效
 
 # 相对于source目录下的头像url
 favicon: /img/favicon.webp
+
+# 是否启用一些特色工具 false | true
+tool:
+  darkMode: true # 暗黑模式
+  returnToTop: true # 回到顶部按钮 
+  topToc: true # 文章顶部目录
+  leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
 
 # ---------------------------------------------------------------------------------------
 # 以上为基本配置，实现了A4主题追求的纯净风
@@ -84,6 +92,7 @@ comment:
   waline:
     serverUrl:  # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
+    placeholder: 留下你的评论吧。 # 评论框背景信息
 
   # Twikoo
   # See: https://twikoo.js.org/quick-start.html
