@@ -8,13 +8,15 @@
     <% } %>
 
     <div class="post-md">
-        <% if(is_post() && (!('toc' in page) || page.toc == true)) { %>
-            <%- toc(page.content, {
-                class: 'post-toc',
-                list_number: false,
-                min_depth: 1,
-                max_depth: 6
-            }) %>
+        <% if(theme.tool.topToc) { %>
+            <% if(is_post() && (!('toc' in page) || page.toc == true)) { %>
+                <%- toc(page.content, {
+                    class: 'post-toc',
+                    list_number: false,
+                    min_depth: 1,
+                    max_depth: 6
+                }) %>
+            <% } %>
         <% } %>
         <%- page.content %>
     </div>

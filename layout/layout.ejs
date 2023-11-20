@@ -3,6 +3,9 @@
     <%- partial('_partial/head') %>
     <%- partial('_partial/configcss/color') %>
     <body>
+        <% if(theme.tool.leftToc) { %>
+            <nav id="toc" class="bs-docs-sidebar"></nav>
+        <% } %>
         <div class="paper">
             
             <% var tags,tagsInside, categories, categoriesInside; %>
