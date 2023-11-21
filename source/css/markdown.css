@@ -57,13 +57,13 @@
 {
     color: var(--font-color-2);
     box-shadow: 0 2px 0 var(--line-1);
-    transition: color ease-in-out .65s, box-shadow ease-in-out .65s;
+    /* transition: color ease-in-out .65s, box-shadow ease-in-out .65s; */
 }
 .post-md a:hover
 {
     color: var(--font-color-0);
     box-shadow: 0 2px 0 var(--font-color-0);
-    transition: color ease-in-out .65s, box-shadow ease-in-out .65s;
+    /* transition: color ease-in-out .65s, box-shadow ease-in-out .65s; */
 }
 .post-md strong
 {
