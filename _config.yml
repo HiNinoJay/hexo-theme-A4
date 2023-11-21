@@ -21,9 +21,11 @@ showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显
 # 甚至可以注释掉 _config.yml中所有的配置，这样最终只会基于你的 _config.a4.yml
 
 
-index:  # 首页的页眉页脚
-  header: 看过大海的人不会忘记海的广阔 
-  hitokoto: false # 一言
+index:  # 首页相关配置
+  header:  # 首页的页眉，当你没开启一言，将会每次刷新页面随机展示下面的语句
+    - "It's gonna be okay."
+    - "人山人海，人来人往。"
+  hitokoto: false # 一言：调用网络语句展示的接口
   footer: Email:123456789@gmail.com # 除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
   titlePosition: left # center | left  # 首页标题的位置
 

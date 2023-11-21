@@ -1,4 +1,4 @@
-<!-- 这个header就是特指首页的header -->
+<!-- 这个header就是特指index的头部 -->
 
 <% if(theme.index.header != null || theme.index.header == "") {%>
     <div class="index-header-line" >
@@ -6,7 +6,14 @@
             <span id="quote"></span>
             <script src="<%= url_for('/js/hitokoto.js') %>" ></script>
         <% } else { %>
-            <span><%= theme.index.header %></span>
+            <div id="hiddenHeaderContentArray" style="display: none;">
+                <% var headerContentArray = theme.index.header %>
+                <% var headerContentArrayLength = headerContentArray.length %>
+                <% for(let i = 0; i < headerContentArrayLength; i++) { %>
+                    <span><%= theme.index.header[i] %></span>
+                <% } %>
+            </div>
+            <span id="targetSpan"></span>
         <% } %>
     </div>
 <% } %>
