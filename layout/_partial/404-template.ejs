@@ -1,0 +1,27 @@
+<div class="post-main">
+    <div class="post-md">
+            <h2>Page not found.</h2>
+            <br>
+            <div style="text-align: center;">
+                <!--这里要如何处理-->
+                <% if(theme.index.header != null || theme.index.header == "") {%>
+                    <div class="index-header-line" >
+                        <% if(theme.index.hitokoto) { %>
+                            <span id="quote" style="font-size: large;"></span>
+                            <script src="<%= url_for('/js/hitokoto.js') %>" ></script>
+                        <% } else { %>
+                            <div id="hiddenHeaderContentArray" style="display: none;">
+                                <% var headerContentArray = theme.index.header %>
+                                <% var headerContentArrayLength = headerContentArray.length %>
+                                <% for(let i = 0; i < headerContentArrayLength; i++) { %>
+                                    <span><%= theme.index.header[i] %></span>
+                                <% } %>
+                            </div>
+                            <span id="targetSpan" style="font-size: large;"></span>
+                        <% } %>
+                    </div>
+                <% } %>
+                <a href="/">Go Back Home</a>
+            </div>
+    </div>
+</div>
