@@ -23,7 +23,10 @@
                      <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "404.html") { %>
-                <h1>dsad</h1>
+                <div class="shadow-drop-2-top paper-main">
+                    <%- partial('_partial/404-template') %> 
+                    <%- partial('_partial/footer') %>
+                </div>
             <% } else { %>
                 <div class="shadow-drop-2-bottom paper-main">
                     <%- partial('_partial/post-header') %> 
