@@ -1,163 +1,187 @@
 
 
+.left-toc-container{ 
+  top: 206px;
+  left: 1px;
+  bottom: 110px;
+  overflow-y: auto; /* 或者使用 overflow-y: scroll; */
+  max-height: -webkit-fill-available; /* 设置最大高度，可以根据需要进行调整 */
+  position: fixed;
+  scrollbar-width: thin;
+}
+
+.left-toc-container::-webkit-scrollbar {
+  width: 10px; /* 设置滚动条宽度 */
+}
+
+.left-toc-container::-webkit-scrollbar-thumb {
+  background-color: white; /* 设置滚动条拖动块的颜色 */
+  border-radius: 5px; /* 设置圆角 */
+}
+
+.left-toc-container::-webkit-scrollbar-track {
+  background-color: transparent; /* 设置滚动条轨道的颜色 */
+}
+
 /* The Table of Contents container element */
 
 .tocify {
-    overflow: auto;
-    position: fixed;
-    left: -240px;
-  }
-  
-  
-  /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
-  
-  .tocify ul,
-  .tocify li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    line-height: 30px;
-  }
-  
-  
-  /* Top level header elements */
-  
-  .tocify-header {
-    text-indent: 10px;
-  }
-  
-  
-  /* Top level subheader elements.  These are the first nested items underneath a header element. */
-  
-  .tocify-subheader {
-    text-indent: 20px;
-    display: none;
-    border-left-width: 1px !important;
-  }
-  
-  
-  /* Makes the font smaller for all subheader elements. */
-  
-  .tocify-subheader li {
-    font-size: 12px;
-  }
-  
-  
-  /* Further indents second level subheader elements. */
-  
-  .tocify-subheader .tocify-subheader {
-    text-indent: 30px;
-  }
-  
-  
-  /* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
-  
-  .tocify-subheader .tocify-subheader .tocify-subheader {
-    text-indent: 40px;
-  }
-  
-  
-  /* Twitter Bootstrap Override Style */
-  
-  .nav-list > li > a,
-  .nav-list .nav-header {
-    margin: 0px;
-  }
-  
-  
-  /* Twitter Bootstrap Override Style */
-  
-  .nav-list > li > a {
-    padding: 5px;
-  }
-  
-  
-  /* sidebar */
-  
+  overflow: auto;
+  /* position: fixed;
+  left: -240px; */
+}
+
+/* sidebar */
+
+.bs-docs-sidebar {
+  /* top: 235px;
+  left: 1px; */
+}
+
+/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
+
+.tocify ul,
+.tocify li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 30px;
+}
+
+
+/* Top level header elements */
+
+.tocify-header {
+  text-indent: 10px;
+}
+
+
+/* Top level subheader elements.  These are the first nested items underneath a header element. */
+
+.tocify-subheader {
+  text-indent: 20px;
+  display: none;
+  border-left-width: 1px !important;
+}
+
+
+/* Makes the font smaller for all subheader elements. */
+
+.tocify-subheader li {
+  font-size: 12px;
+}
+
+
+/* Further indents second level subheader elements. */
+
+.tocify-subheader .tocify-subheader {
+  text-indent: 30px;
+}
+
+
+/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
+
+.tocify-subheader .tocify-subheader .tocify-subheader {
+  text-indent: 40px;
+}
+
+
+/* Twitter Bootstrap Override Style */
+
+.nav-list > li > a,
+.nav-list .nav-header {
+  margin: 0px;
+}
+
+
+/* Twitter Bootstrap Override Style */
+
+.nav-list > li > a {
+  padding: 5px;
+}
+
+
+
+
+
+/* all links */
+
+.bs-docs-sidebar .nav>li>a {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  border-left: 4px solid transparent;
+  padding: 4px 20px;
+}
+
+
+/* nested links */
+
+.bs-docs-sidebar .nav .nav>li>a {
+  border-left-width: 2px;
+}
+
+.bs-docs-sidebar .nav .nav>ul>li>a {
+  border-left-width: 1px;
+}
+
+.bs-docs-sidebar .nav .nav>li>a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+
+
+/* active & hover links */
+
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+  color: #4f7ddf;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #4f7ddf;
+}
+
+
+/* all active links */
+
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+  font-weight: 700;
+}
+
+
+/* nested active links */
+
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+  font-weight: 500;
+}
+
+
+/* hide inactive nested list */
+
+.bs-docs-sidebar .nav ul.nav {
+  display: none;
+}
+
+
+/* show active nested list */
+
+.bs-docs-sidebar .nav>.active>ul.nav {
+  display: block;
+}
+
+@media screen and (max-width: 1104px) {
   .bs-docs-sidebar {
-    top: 235px;
-    left: 1px;
+    display: none
   }
-  
-  
-  /* all links */
-  
-  .bs-docs-sidebar .nav>li>a {
-    color: #999;
-    font-size: 13px;
-    font-weight: 400;
-    border-left: 4px solid transparent;
-    padding: 4px 20px;
-  }
-  
-  
-  /* nested links */
-  
-  .bs-docs-sidebar .nav .nav>li>a {
-    border-left-width: 2px;
-  }
-  
-  .bs-docs-sidebar .nav .nav>ul>li>a {
-    border-left-width: 1px;
-  }
-  
-  .bs-docs-sidebar .nav .nav>li>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 12px;
-  }
-  
-  
-  /* active & hover links */
-  
-  .bs-docs-sidebar .nav>.active>a,
-  .bs-docs-sidebar .nav>li>a:hover,
-  .bs-docs-sidebar .nav>li>a:focus {
-    color: #4f7ddf;
-    text-decoration: none;
-    background-color: transparent;
-    border-left-color: #4f7ddf;
-  }
-  
-  
-  /* all active links */
-  
-  .bs-docs-sidebar .nav>.active>a,
-  .bs-docs-sidebar .nav>.active:hover>a,
-  .bs-docs-sidebar .nav>.active:focus>a {
-    font-weight: 700;
-  }
-  
-  
-  /* nested active links */
-  
-  .bs-docs-sidebar .nav .nav>.active>a,
-  .bs-docs-sidebar .nav .nav>.active:hover>a,
-  .bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 500;
-  }
-  
-  
-  /* hide inactive nested list */
-  
-  .bs-docs-sidebar .nav ul.nav {
-    display: none;
-  }
-  
-  
-  /* show active nested list */
-  
-  .bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;
-  }
-  
-  @media screen and (max-width: 1104px) {
-    .bs-docs-sidebar {
-      display: none
-    }
-  }
-  .tocify-extend-page {
-      height: 0px !important;
-  }
+}
+.tocify-extend-page {
+    height: 10px !important;
+}
