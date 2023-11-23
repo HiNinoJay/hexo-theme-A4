@@ -1,26 +1,11 @@
 
 @font-face
 {
-    font-family: "NotoSerifSC-Medium";
-    src: url("../fonts/NotoSerifSC-Medium.otf") , /* Chrome 26+, Opera 23+, Firefox 39+ */
-}
-
-
-@font-face
-{
-    font-family: "NotoSerifSC-Regular";
-    src: url("../fonts/NotoSerifSC-Regular.otf") , /* Chrome 26+, Opera 23+, Firefox 39+ */
-}
-
-@font-face
-{
-    font-family: "NotoSerifSC-Medium";
-    src: url("../fonts/NotoSerifSC-Medium.otf") , /* Chrome 26+, Opera 23+, Firefox 39+ */
-}
-
-
-@font-face
-{
-    font-family: "NotoSerifSC-Regular";
-    src: url("../fonts/NotoSerifSC-Regular.otf") , /* Chrome 26+, Opera 23+, Firefox 39+ */
+    font-family: "notoserifsc-medium";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""),
+        url("../fonts/notoserifsc-medium-webfont.woff2") format("woff2"),  /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/notoserifsc-medium-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    ;
 }
