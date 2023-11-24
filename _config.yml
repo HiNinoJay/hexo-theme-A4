@@ -69,19 +69,19 @@ cdn:
   # 因为是免费CDN，所以有挂的风险，一旦发现网站样式出现原来没有的问题，请尝试关闭CDN
 
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
-# 设置为 false 为 A4 默认灰白色调，可设置为 true 直接启动 体验下 另一种绿金预置色调
+# 设置为 false 为 A4 默认灰白色调，可设置为 true 直接启动 体验下 另一种护眼预置色调
 # 注：颜色代码需加“#”，颜色单词不需要加“#”
 # 更多A4色调搭配推荐：https://ninojay.top/hexoplugin/A4-color-change/
 color: 
   enable: false # true | false 
-  font: "#fec591" # 字体颜色
-  background: "#005454" # 最底部层背景颜色
-  indexBackGround: "#005454" # 首页层颜色
-  postBackGround: "#005454" # 文章页层颜色
-  codeBackGround: "black" # 代码块背景颜色
-  codeFont: "white" # 代码块字体颜色 
-  linkBeforeClick: "#fec591" # 链接点击前的颜色
-  linkAfterClick: "#fec591" # 链接点击后的颜色
+  font: "#9e5345" # 字体颜色
+  background: "#e8e0c9" # 最底部层背景颜色
+  indexBackGround: "#efeae2" # 首页层颜色
+  postBackGround: "#efeae2" # 文章页层颜色
+  codeBackGround: "#e8e0c9" # 代码块背景颜色
+  codeFont: "#2e5041" # 代码块字体颜色 
+  linkBeforeClick: "#2e5041" # 链接点击前的颜色
+  linkAfterClick: "#9c9caf" # 链接点击后的颜色
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
