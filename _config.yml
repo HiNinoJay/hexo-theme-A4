@@ -83,6 +83,12 @@ color:
   linkBeforeClick: "#2e5041" # 链接点击前的颜色
   linkAfterClick: "#9c9caf" # 链接点击后的颜色
 
+# A4背景引入图片
+# 图片你应该先放到 source下，下面选项的图片路径 即为 相对于 source 目录的路径
+imageShow:
+  enable: false
+  background: /img/favicon.webp # 最底部层背景
+
 # ---------------------------------------------------------------------------------------
 # Comment plugin
 # 评论插件：需要根据教程自行部署评论服务

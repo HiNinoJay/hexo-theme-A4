@@ -117,5 +117,30 @@
         .post-md>table tr:nth-child(even) td {
             background: <%=theme.color.postBackGround %>;
         }
+
+    
+        .progress-wrap::after {
+            color: <%=theme.color.font %>; /* 箭头的颜色 */
+        }
+        .progress-wrap svg.progress-circle path {
+	        stroke: <%=theme.color.font %>; /* 边框的颜色 */
+        }
+        .progress-wrap::before {
+	        background-image: linear-gradient(298deg, <%=theme.color.linkBeforeClick %>, <%=theme.color.linkBeforeClick %>); /* 鼠标滑过的箭头颜色 */
+         }
+
+         .left-toc-container::-webkit-scrollbar-thumb {
+            background-color: <%=theme.color.font %>; /* 设置滚动条拖动块的颜色 */
+        }
+
+        .bs-docs-sidebar .nav>.active>a,
+        .bs-docs-sidebar .nav>li>a:hover,
+        .bs-docs-sidebar .nav>li>a:focus {
+            color: <%=theme.color.linkBeforeClick %>;
+            border-left-color: <%=theme.color.linkBeforeClick %>;
+        }
+        .bs-docs-sidebar .nav>li>a {
+            color:  <%=theme.color.font %>;
+        }
     </style>
 <% } %>

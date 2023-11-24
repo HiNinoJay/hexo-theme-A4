@@ -24,6 +24,7 @@ body
     /* letter-spacing: 0.6px; */
     color: var(--font-color-1);
     background: #e4e4e4;
+    height: 100%;
 }
 a
 {
