@@ -117,4 +117,4 @@ comment:
   artalk:
     server:  # Artalk 后端地址
 
-version: v1.7.8
+version: v1.7.9
