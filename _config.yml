@@ -117,4 +117,7 @@ comment:
   artalk:
     server:  # Artalk 后端地址
 
+inject:
+  css: css/custom.css
+
 version: v1.7.9
