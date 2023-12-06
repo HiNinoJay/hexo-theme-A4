@@ -50,4 +50,9 @@
 
     <!--目录-->
     <%- css('css/toc.css') %>
+
+    <!--自定义css加载-->
+    <% if(theme.inject && theme.inject.css) { %>
+        <%- css(theme.inject.css) %>
+    <% } %>
 </head>
