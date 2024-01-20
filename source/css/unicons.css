@@ -1,1095 +1,1095 @@
 @font-face {
+  font-family: 'unicons';
+  src: url('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/fonts/unicons.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
     font-family: 'unicons';
-    src: url('/fonts/unicons.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../font/unicons.svg?50911815#unicons') format('svg');
   }
-  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-  /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'unicons';
-      src: url('../font/unicons.svg?50911815#unicons') format('svg');
-    }
-  }
-  */
-   
-   [class^="uil-"]:before, [class*=" uil-"]:before {
-    font-family: "unicons";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-   
-    display: inline-block;
-    text-decoration: inherit;
-    text-align: center;
-    /* opacity: .8; */
-   
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-   
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-   
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-   
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-   
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  }
-   
-  .uil-0-plus:before { content: '\e800'; } /* '顮€' */
-  .uil-10-plus:before { content: '\e801'; } /* '顮�' */
-  .uil-12-plus:before { content: '\e802'; } /* '顮�' */
-  .uil-13-plus:before { content: '\e803'; } /* '顮�' */
-  .uil-16-plus:before { content: '\e804'; } /* '顮�' */
-  .uil-17-plus:before { content: '\e805'; } /* '顮�' */
-  .uil-18-plus:before { content: '\e806'; } /* '顮�' */
-  .uil-21-plus:before { content: '\e807'; } /* '顮�' */
-  .uil-3-plus:before { content: '\e808'; } /* '顮�' */
-  .uil-500px:before { content: '\e809'; } /* '顮�' */
-  .uil-6-plus:before { content: '\e80a'; } /* '顮�' */
-  .uil-abacus:before { content: '\e80b'; } /* '顮�' */
-  .uil-accessible-icon-alt:before { content: '\e80c'; } /* '顮�' */
-  .uil-adjust-alt:before { content: '\e80d'; } /* '顮�' */
-  .uil-adjust-circle:before { content: '\e80e'; } /* '顮�' */
-  .uil-adjust-half:before { content: '\e80f'; } /* '顮�' */
-  .uil-adjust:before { content: '\e810'; } /* '顮�' */
-  .uil-adobe:before { content: '\e811'; } /* '顮�' */
-  .uil-airplay:before { content: '\e812'; } /* '顮�' */
-  .uil-align-alt:before { content: '\e813'; } /* '顮�' */
-  .uil-align-center-alt:before { content: '\e814'; } /* '顮�' */
-  .uil-align-center-h:before { content: '\e815'; } /* '顮�' */
-  .uil-align-center-justify:before { content: '\e816'; } /* '顮�' */
-  .uil-align-center-v:before { content: '\e817'; } /* '顮�' */
-  .uil-align-center:before { content: '\e818'; } /* '顮�' */
-  .uil-align-justify:before { content: '\e819'; } /* '顮�' */
-  .uil-align-left-justify:before { content: '\e81a'; } /* '顮�' */
-  .uil-align-left:before { content: '\e81b'; } /* '顮�' */
-  .uil-align-letter-right:before { content: '\e81c'; } /* '顮�' */
-  .uil-align-right-justify:before { content: '\e81d'; } /* '顮�' */
-  .uil-align-right:before { content: '\e81e'; } /* '顮�' */
-  .uil-align:before { content: '\e81f'; } /* '顮�' */
-  .uil-ambulance:before { content: '\e820'; } /* '顮�' */
-  .uil-analysis:before { content: '\e821'; } /* '顮�' */
-  .uil-analytics:before { content: '\e822'; } /* '顮�' */
-  .uil-anchor:before { content: '\e823'; } /* '顮�' */
-  .uil-android-phone-slash:before { content: '\e824'; } /* '顮�' */
-  .uil-angle-double-down:before { content: '\e825'; } /* '顮�' */
-  .uil-angle-double-left:before { content: '\e826'; } /* '顮�' */
-  .uil-angle-double-right:before { content: '\e827'; } /* '顮�' */
-  .uil-angle-double-up:before { content: '\e828'; } /* '顮�' */
-  .uil-angle-down:before { content: '\e829'; } /* '顮�' */
-  .uil-angle-left:before { content: '\e82a'; } /* '顮�' */
-  .uil-angle-right-b:before { content: '\e82b'; } /* '顮�' */
-  .uil-angle-right:before { content: '\e82c'; } /* '顮�' */
-  .uil-angle-up:before { content: '\e82d'; } /* '顮�' */
-  .uil-angry:before { content: '\e82e'; } /* '顮�' */
-  .uil-ankh:before { content: '\e82f'; } /* '顮�' */
-  .uil-annoyed-alt:before { content: '\e830'; } /* '顮�' */
-  .uil-annoyed:before { content: '\e831'; } /* '顮�' */
-  .uil-apple:before { content: '\e832'; } /* '顮�' */
-  .uil-apps:before { content: '\e833'; } /* '顮�' */
-  .uil-archive-alt:before { content: '\e834'; } /* '顮�' */
-  .uil-archive:before { content: '\e835'; } /* '顮�' */
-  .uil-archway:before { content: '\e836'; } /* '顮�' */
-  .uil-arrow-break:before { content: '\e837'; } /* '顮�' */
-  .uil-arrow-circle-down:before { content: '\e838'; } /* '顮�' */
-  .uil-arrow-circle-left:before { content: '\e839'; } /* '顮�' */
-  .uil-arrow-circle-right:before { content: '\e83a'; } /* '顮�' */
-  .uil-arrow-circle-up:before { content: '\e83b'; } /* '顮�' */
-  .uil-arrow-compress-h:before { content: '\e83c'; } /* '顮�' */
-  .uil-arrow-down-left:before { content: '\e83d'; } /* '顮�' */
-  .uil-arrow-down-right:before { content: '\e83e'; } /* '顮�' */
-  .uil-arrow-down:before { content: '\e83f'; } /* '顮�' */
-  .uil-arrow-from-right:before { content: '\e840'; } /* '睢€' */
-  .uil-arrow-from-top:before { content: '\e841'; } /* '睢�' */
-  .uil-arrow-growth:before { content: '\e842'; } /* '睢�' */
-  .uil-arrow-left:before { content: '\e843'; } /* '睢�' */
-  .uil-arrow-random:before { content: '\e844'; } /* '睢�' */
-  .uil-arrow-resize-diagonal:before { content: '\e845'; } /* '睢�' */
-  .uil-arrow-right:before { content: '\e846'; } /* '睢�' */
-  .uil-arrow-to-bottom:before { content: '\e847'; } /* '睢�' */
-  .uil-arrow-to-right:before { content: '\e848'; } /* '睢�' */
-  .uil-arrow-up-left:before { content: '\e849'; } /* '睢�' */
-  .uil-arrow-up-right:before { content: '\e84a'; } /* '睢�' */
-  .uil-arrow-up:before { content: '\e84b'; } /* '睢�' */
-  .uil-arrows-h-alt:before { content: '\e84c'; } /* '睢�' */
-  .uil-arrows-h:before { content: '\e84d'; } /* '睢�' */
-  .uil-arrows-left-down:before { content: '\e84e'; } /* '睢�' */
-  .uil-arrows-maximize:before { content: '\e84f'; } /* '睢�' */
-  .uil-arrows-merge:before { content: '\e850'; } /* '睢�' */
-  .uil-arrows-resize-h:before { content: '\e851'; } /* '睢�' */
-  .uil-arrows-resize-v:before { content: '\e852'; } /* '睢�' */
-  .uil-arrows-resize:before { content: '\e853'; } /* '睢�' */
-  .uil-arrows-right-down:before { content: '\e854'; } /* '睢�' */
-  .uil-arrows-shrink-h:before { content: '\e855'; } /* '睢�' */
-  .uil-arrows-shrink-v:before { content: '\e856'; } /* '睢�' */
-  .uil-arrows-up-right:before { content: '\e857'; } /* '睢�' */
-  .uil-arrows-v-alt:before { content: '\e858'; } /* '睢�' */
-  .uil-arrows-v:before { content: '\e859'; } /* '睢�' */
-  .uil-assistive-listening-systems:before { content: '\e85a'; } /* '睢�' */
-  .uil-at:before { content: '\e85b'; } /* '睢�' */
-  .uil-atm-card:before { content: '\e85c'; } /* '睢�' */
-  .uil-atom:before { content: '\e85d'; } /* '睢�' */
-  .uil-auto-flash:before { content: '\e85e'; } /* '睢�' */
-  .uil-award-alt:before { content: '\e85f'; } /* '睢�' */
-  .uil-award:before { content: '\e860'; } /* '睢�' */
-  .uil-baby-carriage:before { content: '\e861'; } /* '睢�' */
-  .uil-backpack:before { content: '\e862'; } /* '睢�' */
-  .uil-backspace:before { content: '\e863'; } /* '睢�' */
-  .uil-backward:before { content: '\e864'; } /* '睢�' */
-  .uil-bag-alt:before { content: '\e865'; } /* '睢�' */
-  .uil-bag-slash:before { content: '\e866'; } /* '睢�' */
-  .uil-bag:before { content: '\e867'; } /* '睢�' */
-  .uil-ball:before { content: '\e868'; } /* '睢�' */
-  .uil-ban:before { content: '\e869'; } /* '睢�' */
-  .uil-bars:before { content: '\e86a'; } /* '睢�' */
-  .uil-basketball-hoop:before { content: '\e86b'; } /* '睢�' */
-  .uil-basketball:before { content: '\e86c'; } /* '睢�' */
-  .uil-battery-bolt:before { content: '\e86d'; } /* '睢�' */
-  .uil-battery-empty:before { content: '\e86e'; } /* '睢�' */
-  .uil-bed-double:before { content: '\e86f'; } /* '睢�' */
-  .uil-bed:before { content: '\e870'; } /* '睢�' */
-  .uil-behance:before { content: '\e871'; } /* '睢�' */
-  .uil-bell-school:before { content: '\e872'; } /* '睢�' */
-  .uil-bell-slash:before { content: '\e873'; } /* '睢�' */
-  .uil-bell:before { content: '\e874'; } /* '睢�' */
-  .uil-bill:before { content: '\e875'; } /* '睢�' */
-  .uil-bitcoin-circle:before { content: '\e876'; } /* '睢�' */
-  .uil-bitcoin:before { content: '\e877'; } /* '睢�' */
-  .uil-black-berry:before { content: '\e878'; } /* '睢�' */
-  .uil-bluetooth-b:before { content: '\e879'; } /* '睢�' */
-  .uil-bold:before { content: '\e87a'; } /* '睢�' */
-  .uil-bolt-alt:before { content: '\e87b'; } /* '睢�' */
-  .uil-bolt-slash:before { content: '\e87c'; } /* '睢�' */
-  .uil-bolt:before { content: '\e87d'; } /* '睢�' */
-  .uil-book-alt:before { content: '\e87e'; } /* '睢�' */
-  .uil-book-medical:before { content: '\e87f'; } /* '睢�' */
-  .uil-book-open:before { content: '\e880'; } /* '睥€' */
-  .uil-book-reader:before { content: '\e881'; } /* '睥�' */
-  .uil-book:before { content: '\e882'; } /* '睥�' */
-  .uil-bookmark-full:before { content: '\e883'; } /* '睥�' */
-  .uil-bookmark:before { content: '\e884'; } /* '睥�' */
-  .uil-books:before { content: '\e885'; } /* '睥�' */
-  .uil-boombox:before { content: '\e886'; } /* '睥�' */
-  .uil-border-alt:before { content: '\e887'; } /* '睥�' */
-  .uil-border-bottom:before { content: '\e888'; } /* '睥�' */
-  .uil-border-clear:before { content: '\e889'; } /* '睥�' */
-  .uil-border-horizontal:before { content: '\e88a'; } /* '睥�' */
-  .uil-border-inner:before { content: '\e88b'; } /* '睥�' */
-  .uil-border-left:before { content: '\e88c'; } /* '睥�' */
-  .uil-border-out:before { content: '\e88d'; } /* '睥�' */
-  .uil-border-right:before { content: '\e88e'; } /* '睥�' */
-  .uil-border-top:before { content: '\e88f'; } /* '睥�' */
-  .uil-border-vertical:before { content: '\e890'; } /* '睥�' */
-  .uil-box:before { content: '\e891'; } /* '睥�' */
-  .uil-briefcase-alt:before { content: '\e892'; } /* '睥�' */
-  .uil-briefcase:before { content: '\e893'; } /* '睥�' */
-  .uil-bright:before { content: '\e894'; } /* '睥�' */
-  .uil-brightness-empty:before { content: '\e895'; } /* '睥�' */
-  .uil-brightness-half:before { content: '\e896'; } /* '睥�' */
-  .uil-brightness-low:before { content: '\e897'; } /* '睥�' */
-  .uil-brightness-minus:before { content: '\e898'; } /* '睥�' */
-  .uil-brightness-plus:before { content: '\e899'; } /* '睥�' */
-  .uil-brightness:before { content: '\e89a'; } /* '睥�' */
-  .uil-bring-bottom:before { content: '\e89b'; } /* '睥�' */
-  .uil-bring-front:before { content: '\e89c'; } /* '睥�' */
-  .uil-brush-alt:before { content: '\e89d'; } /* '睥�' */
-  .uil-bug:before { content: '\e89e'; } /* '睥�' */
-  .uil-building:before { content: '\e89f'; } /* '睥�' */
-  .uil-bullseye:before { content: '\e8a0'; } /* '睥�' */
-  .uil-bus-alt:before { content: '\e8a1'; } /* '睥�' */
-  .uil-bus-school:before { content: '\e8a2'; } /* '睥�' */
-  .uil-bus:before { content: '\e8a3'; } /* '睥�' */
-  .uil-calcualtor:before { content: '\e8a4'; } /* '睥�' */
-  .uil-calculator-alt:before { content: '\e8a5'; } /* '睥�' */
-  .uil-calendar-alt:before { content: '\e8a6'; } /* '睥�' */
-  .uil-calendar-slash:before { content: '\e8a7'; } /* '睥�' */
-  .uil-calender:before { content: '\e8a8'; } /* '睥�' */
-  .uil-calling:before { content: '\e8a9'; } /* '睥�' */
-  .uil-camera-change:before { content: '\e8aa'; } /* '睥�' */
-  .uil-camera-plus:before { content: '\e8ab'; } /* '睥�' */
-  .uil-camera-slash:before { content: '\e8ac'; } /* '睥�' */
-  .uil-camera:before { content: '\e8ad'; } /* '睥�' */
-  .uil-cancel:before { content: '\e8ae'; } /* '睥�' */
-  .uil-capsule:before { content: '\e8af'; } /* '睥�' */
-  .uil-capture:before { content: '\e8b0'; } /* '睥�' */
-  .uil-car-sideview:before { content: '\e8b1'; } /* '睥�' */
-  .uil-car-slash:before { content: '\e8b2'; } /* '睥�' */
-  .uil-car-wash:before { content: '\e8b3'; } /* '睥�' */
-  .uil-car:before { content: '\e8b4'; } /* '睥�' */
-  .uil-card-atm:before { content: '\e8b5'; } /* '睥�' */
-  .uil-caret-right:before { content: '\e8b6'; } /* '睥�' */
-  .uil-cart:before { content: '\e8b7'; } /* '睥�' */
-  .uil-cell:before { content: '\e8b8'; } /* '睥�' */
-  .uil-celsius:before { content: '\e8b9'; } /* '睥�' */
-  .uil-chart-bar-alt:before { content: '\e8ba'; } /* '睥�' */
-  .uil-chart-bar:before { content: '\e8bb'; } /* '睥�' */
-  .uil-chart-down:before { content: '\e8bc'; } /* '睥�' */
-  .uil-chart-growth-alt:before { content: '\e8bd'; } /* '睥�' */
-  .uil-chart-growth:before { content: '\e8be'; } /* '睥�' */
-  .uil-chart-line:before { content: '\e8bf'; } /* '睥�' */
-  .uil-chart-pie-alt:before { content: '\e8c0'; } /* '睿€' */
-  .uil-chart-pie:before { content: '\e8c1'; } /* '睿�' */
-  .uil-chart:before { content: '\e8c2'; } /* '睿�' */
-  .uil-chat-bubble-user:before { content: '\e8c3'; } /* '睿�' */
-  .uil-chat-info:before { content: '\e8c4'; } /* '睿�' */
-  .uil-chat:before { content: '\e8c5'; } /* '睿�' */
-  .uil-check-circle:before { content: '\e8c6'; } /* '睿�' */
-  .uil-check-square:before { content: '\e8c7'; } /* '睿�' */
-  .uil-check:before { content: '\e8c8'; } /* '睿�' */
-  .uil-circle-layer:before { content: '\e8c9'; } /* '睿�' */
-  .uil-circle:before { content: '\e8ca'; } /* '睿�' */
-  .uil-circuit:before { content: '\e8cb'; } /* '睿�' */
-  .uil-clapper-board:before { content: '\e8cc'; } /* '睿�' */
-  .uil-clipboard-alt:before { content: '\e8cd'; } /* '睿�' */
-  .uil-clipboard-blank:before { content: '\e8ce'; } /* '睿�' */
-  .uil-clipboard-notes:before { content: '\e8cf'; } /* '睿�' */
-  .uil-clipboard:before { content: '\e8d0'; } /* '睿�' */
-  .uil-clock-eight:before { content: '\e8d1'; } /* '睿�' */
-  .uil-clock-five:before { content: '\e8d2'; } /* '睿�' */
-  .uil-clock-nine:before { content: '\e8d3'; } /* '睿�' */
-  .uil-clock-seven:before { content: '\e8d4'; } /* '睿�' */
-  .uil-clock-ten:before { content: '\e8d5'; } /* '睿�' */
-  .uil-clock-three:before { content: '\e8d6'; } /* '睿�' */
-  .uil-clock-two:before { content: '\e8d7'; } /* '睿�' */
-  .uil-clock:before { content: '\e8d8'; } /* '睿�' */
-  .uil-closed-captioning:before { content: '\e8d9'; } /* '睿�' */
-  .uil-cloud-block:before { content: '\e8da'; } /* '睿�' */
-  .uil-cloud-bookmark:before { content: '\e8db'; } /* '睿�' */
-  .uil-cloud-check:before { content: '\e8dc'; } /* '睿�' */
-  .uil-cloud-computing:before { content: '\e8dd'; } /* '睿�' */
-  .uil-cloud-data-connection:before { content: '\e8de'; } /* '睿�' */
-  .uil-cloud-database-tree:before { content: '\e8df'; } /* '睿�' */
-  .uil-cloud-download:before { content: '\e8e0'; } /* '睿�' */
-  .uil-cloud-drizzle:before { content: '\e8e1'; } /* '睿�' */
-  .uil-cloud-exclamation:before { content: '\e8e2'; } /* '睿�' */
-  .uil-cloud-hail:before { content: '\e8e3'; } /* '睿�' */
-  .uil-cloud-heart:before { content: '\e8e4'; } /* '睿�' */
-  .uil-cloud-info:before { content: '\e8e5'; } /* '睿�' */
-  .uil-cloud-lock:before { content: '\e8e6'; } /* '睿�' */
-  .uil-cloud-meatball:before { content: '\e8e7'; } /* '睿�' */
-  .uil-cloud-moon-hail:before { content: '\e8e8'; } /* '睿�' */
-  .uil-cloud-moon-meatball:before { content: '\e8e9'; } /* '睿�' */
-  .uil-cloud-moon-rain:before { content: '\e8ea'; } /* '睿�' */
-  .uil-cloud-moon-showers:before { content: '\e8eb'; } /* '睿�' */
-  .uil-cloud-moon:before { content: '\e8ec'; } /* '睿�' */
-  .uil-cloud-question:before { content: '\e8ed'; } /* '睿�' */
-  .uil-cloud-rain-sun:before { content: '\e8ee'; } /* '睿�' */
-  .uil-cloud-rain:before { content: '\e8ef'; } /* '睿�' */
-  .uil-cloud-redo:before { content: '\e8f0'; } /* '睿�' */
-  .uil-cloud-set:before { content: '\e8f1'; } /* '睿�' */
-  .uil-cloud-share:before { content: '\e8f2'; } /* '睿�' */
-  .uil-cloud-shield:before { content: '\e8f3'; } /* '睿�' */
-  .uil-cloud-showers-alt:before { content: '\e8f4'; } /* '睿�' */
-  .uil-cloud-showers-heavy:before { content: '\e8f5'; } /* '睿�' */
-  .uil-cloud-showers:before { content: '\e8f6'; } /* '睿�' */
-  .uil-cloud-slash:before { content: '\e8f7'; } /* '睿�' */
-  .uil-cloud-sun-hail:before { content: '\e8f8'; } /* '睿�' */
-  .uil-cloud-sun-meatball:before { content: '\e8f9'; } /* '睿�' */
-  .uil-cloud-sun-rain-alt:before { content: '\e8fa'; } /* '睿�' */
-  .uil-cloud-sun-rain:before { content: '\e8fb'; } /* '睿�' */
-  .uil-cloud-sun-tear:before { content: '\e8fc'; } /* '睿�' */
-  .uil-cloud-sun:before { content: '\e8fd'; } /* '睿�' */
-  .uil-cloud-times:before { content: '\e8fe'; } /* '睿�' */
-  .uil-cloud-unlock:before { content: '\e8ff'; } /* '睿�' */
-  .uil-cloud-upload:before { content: '\e900'; } /* '瞍€' */
-  .uil-cloud-wifi:before { content: '\e901'; } /* '瞍�' */
-  .uil-cloud-wind:before { content: '\e902'; } /* '瞍�' */
-  .uil-cloud:before { content: '\e903'; } /* '瞍�' */
-  .uil-clouds:before { content: '\e904'; } /* '瞍�' */
-  .uil-club:before { content: '\e905'; } /* '瞍�' */
-  .uil-code:before { content: '\e906'; } /* '瞍�' */
-  .uil-coffee:before { content: '\e907'; } /* '瞍�' */
-  .uil-cog:before { content: '\e908'; } /* '瞍�' */
-  .uil-coins:before { content: '\e909'; } /* '瞍�' */
-  .uil-columns:before { content: '\e90a'; } /* '瞍�' */
-  .uil-comment-alt-block:before { content: '\e90b'; } /* '瞍�' */
-  .uil-comment-alt-chart-lines:before { content: '\e90c'; } /* '瞍�' */
-  .uil-comment-alt-check:before { content: '\e90d'; } /* '瞍�' */
-  .uil-comment-alt-dots:before { content: '\e90e'; } /* '瞍�' */
-  .uil-comment-alt-download:before { content: '\e90f'; } /* '瞍�' */
-  .uil-comment-alt-edit:before { content: '\e910'; } /* '瞍�' */
-  .uil-comment-alt-exclamation:before { content: '\e911'; } /* '瞍�' */
-  .uil-comment-alt-heart:before { content: '\e912'; } /* '瞍�' */
-  .uil-comment-alt-image:before { content: '\e913'; } /* '瞍�' */
-  .uil-comment-alt-info:before { content: '\e914'; } /* '瞍�' */
-  .uil-comment-alt-lines:before { content: '\e915'; } /* '瞍�' */
-  .uil-comment-alt-lock:before { content: '\e916'; } /* '瞍�' */
-  .uil-comment-alt-medical:before { content: '\e917'; } /* '瞍�' */
-  .uil-comment-alt-message:before { content: '\e918'; } /* '瞍�' */
-  .uil-comment-alt-notes:before { content: '\e919'; } /* '瞍�' */
-  .uil-comment-alt-plus:before { content: '\e91a'; } /* '瞍�' */
-  .uil-comment-alt-question:before { content: '\e91b'; } /* '瞍�' */
-  .uil-comment-alt-redo:before { content: '\e91c'; } /* '瞍�' */
-  .uil-comment-alt-search:before { content: '\e91d'; } /* '瞍�' */
-  .uil-comment-alt-share:before { content: '\e91e'; } /* '瞍�' */
-  .uil-comment-alt-shield:before { content: '\e91f'; } /* '瞍�' */
-  .uil-comment-alt-slash:before { content: '\e920'; } /* '瞍�' */
-  .uil-comment-alt-upload:before { content: '\e921'; } /* '瞍�' */
-  .uil-comment-alt-verify:before { content: '\e922'; } /* '瞍�' */
-  .uil-comment-alt:before { content: '\e923'; } /* '瞍�' */
-  .uil-comment-block:before { content: '\e924'; } /* '瞍�' */
-  .uil-comment-chart-line:before { content: '\e925'; } /* '瞍�' */
-  .uil-comment-check:before { content: '\e926'; } /* '瞍�' */
-  .uil-comment-dots:before { content: '\e927'; } /* '瞍�' */
-  .uil-comment-download:before { content: '\e928'; } /* '瞍�' */
-  .uil-comment-edit:before { content: '\e929'; } /* '瞍�' */
-  .uil-comment-exclamation:before { content: '\e92a'; } /* '瞍�' */
-  .uil-comment-heart:before { content: '\e92b'; } /* '瞍�' */
-  .uil-comment-image:before { content: '\e92c'; } /* '瞍�' */
-  .uil-comment-info-alt:before { content: '\e92d'; } /* '瞍�' */
-  .uil-comment-info:before { content: '\e92e'; } /* '瞍�' */
-  .uil-comment-lines:before { content: '\e92f'; } /* '瞍�' */
-  .uil-comment-lock:before { content: '\e930'; } /* '瞍�' */
-  .uil-comment-medical:before { content: '\e931'; } /* '瞍�' */
-  .uil-comment-message:before { content: '\e932'; } /* '瞍�' */
-  .uil-comment-notes:before { content: '\e933'; } /* '瞍�' */
-  .uil-comment-plus:before { content: '\e934'; } /* '瞍�' */
-  .uil-comment-question:before { content: '\e935'; } /* '瞍�' */
-  .uil-comment-redo:before { content: '\e936'; } /* '瞍�' */
-  .uil-comment-search:before { content: '\e937'; } /* '瞍�' */
-  .uil-comment-share:before { content: '\e938'; } /* '瞍�' */
-  .uil-comment-shield:before { content: '\e939'; } /* '瞍�' */
-  .uil-comment-slash:before { content: '\e93a'; } /* '瞍�' */
-  .uil-comment-upload:before { content: '\e93b'; } /* '瞍�' */
-  .uil-comment-verify:before { content: '\e93c'; } /* '瞍�' */
-  .uil-comment:before { content: '\e93d'; } /* '瞍�' */
-  .uil-comments-alt:before { content: '\e93e'; } /* '瞍�' */
-  .uil-comments:before { content: '\e93f'; } /* '瞍�' */
-  .uil-commnet-alt-slash:before { content: '\e940'; } /* '睽€' */
-  .uil-compact-disc:before { content: '\e941'; } /* '睽�' */
-  .uil-compass:before { content: '\e942'; } /* '睽�' */
-  .uil-compress-alt-left:before { content: '\e943'; } /* '睽�' */
-  .uil-compress-alt:before { content: '\e944'; } /* '睽�' */
-  .uil-compress-arrows:before { content: '\e945'; } /* '睽�' */
-  .uil-compress-lines:before { content: '\e946'; } /* '睽�' */
-  .uil-compress-point:before { content: '\e947'; } /* '睽�' */
-  .uil-compress-v:before { content: '\e948'; } /* '睽�' */
-  .uil-compress:before { content: '\e949'; } /* '睽�' */
-  .uil-computer-mouse:before { content: '\e94a'; } /* '睽�' */
-  .uil-confused:before { content: '\e94b'; } /* '睽�' */
-  .uil-constructor:before { content: '\e94c'; } /* '睽�' */
-  .uil-copy-alt:before { content: '\e94d'; } /* '睽�' */
-  .uil-copy-landscape:before { content: '\e94e'; } /* '睽�' */
-  .uil-copy:before { content: '\e94f'; } /* '睽�' */
-  .uil-copyright:before { content: '\e950'; } /* '睽�' */
-  .uil-corner-down-left:before { content: '\e951'; } /* '睽�' */
-  .uil-corner-down-right-alt:before { content: '\e952'; } /* '睽�' */
-  .uil-corner-down-right:before { content: '\e953'; } /* '睽�' */
-  .uil-corner-left-down:before { content: '\e954'; } /* '睽�' */
-  .uil-corner-right-down:before { content: '\e955'; } /* '睽�' */
-  .uil-corner-up-left-alt:before { content: '\e956'; } /* '睽�' */
-  .uil-corner-up-left:before { content: '\e957'; } /* '睽�' */
-  .uil-corner-up-right-alt:before { content: '\e958'; } /* '睽�' */
-  .uil-corner-up-right:before { content: '\e959'; } /* '睽�' */
-  .uil-creative-commons-pd-alt:before { content: '\e95a'; } /* '睽�' */
-  .uil-creative-commons-pd:before { content: '\e95b'; } /* '睽�' */
-  .uil-crockery:before { content: '\e95c'; } /* '睽�' */
-  .uil-crop-alt-rotate-left:before { content: '\e95d'; } /* '睽�' */
-  .uil-crop-alt-rotate-right:before { content: '\e95e'; } /* '睽�' */
-  .uil-crop-alt:before { content: '\e95f'; } /* '睽�' */
-  .uil-crosshair-alt:before { content: '\e960'; } /* '睽�' */
-  .uil-crosshair:before { content: '\e961'; } /* '睽�' */
-  .uil-crosshairs:before { content: '\e962'; } /* '睽�' */
-  .uil-cube:before { content: '\e963'; } /* '睽�' */
-  .uil-data-sharing:before { content: '\e964'; } /* '睽�' */
-  .uil-database-alt:before { content: '\e965'; } /* '睽�' */
-  .uil-database:before { content: '\e966'; } /* '睽�' */
-  .uil-desert:before { content: '\e967'; } /* '睽�' */
-  .uil-desktop-alt-slash:before { content: '\e968'; } /* '睽�' */
-  .uil-desktop-alt:before { content: '\e969'; } /* '睽�' */
-  .uil-desktop-cloud-alt:before { content: '\e96a'; } /* '睽�' */
-  .uil-desktop-slash:before { content: '\e96b'; } /* '睽�' */
-  .uil-desktop:before { content: '\e96c'; } /* '睽�' */
-  .uil-dialpad-alt:before { content: '\e96d'; } /* '睽�' */
-  .uil-dialpad:before { content: '\e96e'; } /* '睽�' */
-  .uil-diamond:before { content: '\e96f'; } /* '睽�' */
-  .uil-diary-alt:before { content: '\e970'; } /* '睽�' */
-  .uil-diary:before { content: '\e971'; } /* '睽�' */
-  .uil-dice-five:before { content: '\e972'; } /* '睽�' */
-  .uil-dice-four:before { content: '\e973'; } /* '睽�' */
-  .uil-dice-one:before { content: '\e974'; } /* '睽�' */
-  .uil-dice-six:before { content: '\e975'; } /* '睽�' */
-  .uil-dice-three:before { content: '\e976'; } /* '睽�' */
-  .uil-dice-two:before { content: '\e977'; } /* '睽�' */
-  .uil-direction:before { content: '\e978'; } /* '睽�' */
-  .uil-directions:before { content: '\e979'; } /* '睽�' */
-  .uil-dizzy-meh:before { content: '\e97a'; } /* '睽�' */
-  .uil-dna:before { content: '\e97b'; } /* '睽�' */
-  .uil-document-layout-center:before { content: '\e97c'; } /* '睽�' */
-  .uil-document-layout-left:before { content: '\e97d'; } /* '睽�' */
-  .uil-document-layout-right:before { content: '\e97e'; } /* '睽�' */
-  .uil-document:before { content: '\e97f'; } /* '睽�' */
-  .uil-dollar-alt:before { content: '\e980'; } /* '瞀€' */
-  .uil-dollar-sign-alt:before { content: '\e981'; } /* '瞀�' */
-  .uil-dollar-sign:before { content: '\e982'; } /* '瞀�' */
-  .uil-down-arrow:before { content: '\e983'; } /* '瞀�' */
-  .uil-download-alt:before { content: '\e984'; } /* '瞀�' */
-  .uil-dribbble:before { content: '\e985'; } /* '瞀�' */
-  .uil-drill:before { content: '\e986'; } /* '瞀�' */
-  .uil-dropbox:before { content: '\e987'; } /* '瞀�' */
-  .uil-dumbbell:before { content: '\e988'; } /* '瞀�' */
-  .uil-edit-alt:before { content: '\e98a'; } /* '瞀�' */
-  .uil-edit:before { content: '\e98b'; } /* '瞀�' */
-  .uil-ellipsis-h:before { content: '\e98c'; } /* '瞀�' */
-  .uil-ellipsis-v:before { content: '\e98d'; } /* '瞀�' */
-  .uil-emoji:before { content: '\e98e'; } /* '瞀�' */
-  .uil-enter:before { content: '\e98f'; } /* '瞀�' */
-  .uil-entry:before { content: '\e990'; } /* '瞀�' */
-  .uil-envelope-add:before { content: '\e991'; } /* '瞀�' */
-  .uil-envelope-alt:before { content: '\e992'; } /* '瞀�' */
-  .uil-envelope-block:before { content: '\e993'; } /* '瞀�' */
-  .uil-envelope-bookmark:before { content: '\e994'; } /* '瞀�' */
-  .uil-envelope-check:before { content: '\e995'; } /* '瞀�' */
-  .uil-envelope-download-alt:before { content: '\e996'; } /* '瞀�' */
-  .uil-envelope-download:before { content: '\e997'; } /* '瞀�' */
-  .uil-envelope-edit:before { content: '\e998'; } /* '瞀�' */
-  .uil-envelope-exclamation:before { content: '\e999'; } /* '瞀�' */
-  .uil-envelope-heart:before { content: '\e99a'; } /* '瞀�' */
-  .uil-envelope-info:before { content: '\e99b'; } /* '瞀�' */
-  .uil-envelope-lock:before { content: '\e99c'; } /* '瞀�' */
-  .uil-envelope-minus:before { content: '\e99d'; } /* '瞀�' */
-  .uil-envelope-open:before { content: '\e99e'; } /* '瞀�' */
-  .uil-envelope-question:before { content: '\e99f'; } /* '瞀�' */
-  .uil-envelope-receive:before { content: '\e9a0'; } /* '瞀�' */
-  .uil-envelope-redo:before { content: '\e9a1'; } /* '瞀�' */
-  .uil-envelope-search:before { content: '\e9a2'; } /* '瞀�' */
-  .uil-envelope-send:before { content: '\e9a3'; } /* '瞀�' */
-  .uil-envelope-share:before { content: '\e9a4'; } /* '瞀�' */
-  .uil-envelope-shield:before { content: '\e9a5'; } /* '瞀�' */
-  .uil-envelope-star:before { content: '\e9a6'; } /* '瞀�' */
-  .uil-envelope-times:before { content: '\e9a7'; } /* '瞀�' */
-  .uil-envelope-upload-alt:before { content: '\e9a8'; } /* '瞀�' */
-  .uil-envelope-upload:before { content: '\e9a9'; } /* '瞀�' */
-  .uil-envelope:before { content: '\e9aa'; } /* '瞀�' */
-  .uil-envelopes:before { content: '\e9ab'; } /* '瞀�' */
-  .uil-equal-circle:before { content: '\e9ac'; } /* '瞀�' */
-  .uil-euro-circle:before { content: '\e9ad'; } /* '瞀�' */
-  .uil-euro:before { content: '\e9ae'; } /* '瞀�' */
-  .uil-exchange-alt:before { content: '\e9af'; } /* '瞀�' */
-  .uil-exchange:before { content: '\e9b0'; } /* '瞀�' */
-  .uil-exclamation-circle:before { content: '\e9b1'; } /* '瞀�' */
-  .uil-exclamation-octagon:before { content: '\e9b2'; } /* '瞀�' */
-  .uil-exclamation-triangle:before { content: '\e9b3'; } /* '瞀�' */
-  .uil-exclude:before { content: '\e9b4'; } /* '瞀�' */
-  .uil-exit:before { content: '\e9b5'; } /* '瞀�' */
-  .uil-expand-alt:before { content: '\e9b6'; } /* '瞀�' */
-  .uil-expand-arrows-alt:before { content: '\e9b7'; } /* '瞀�' */
-  .uil-expand-arrows:before { content: '\e9b8'; } /* '瞀�' */
-  .uil-expand-from-corner:before { content: '\e9b9'; } /* '瞀�' */
-  .uil-expand-left:before { content: '\e9ba'; } /* '瞀�' */
-  .uil-expand-right:before { content: '\e9bb'; } /* '瞀�' */
-  .uil-export:before { content: '\e9bc'; } /* '瞀�' */
-  .uil-exposure-alt:before { content: '\e9bd'; } /* '瞀�' */
-  .uil-exposure-increase:before { content: '\e9be'; } /* '瞀�' */
-  .uil-external-link-alt:before { content: '\e9bf'; } /* '瞀�' */
-  .uil-eye-slash:before { content: '\e9c0'; } /* '瞌€' */
-  .uil-eye:before { content: '\e9c1'; } /* '瞌�' */
-  .uil-facebook-f:before { content: '\e9c2'; } /* '瞌�' */
-  .uil-facebook-messenger:before { content: '\e9c3'; } /* '瞌�' */
-  .uil-facebook:before { content: '\e9c4'; } /* '瞌�' */
-  .uil-fahrenheit:before { content: '\e9c5'; } /* '瞌�' */
-  .uil-fast-mail-alt:before { content: '\e9c6'; } /* '瞌�' */
-  .uil-fast-mail:before { content: '\e9c7'; } /* '瞌�' */
-  .uil-favorite:before { content: '\e9c8'; } /* '瞌�' */
-  .uil-feedback:before { content: '\e9c9'; } /* '瞌�' */
-  .uil-file-alt:before { content: '\e9ca'; } /* '瞌�' */
-  .uil-file-blank:before { content: '\e9cb'; } /* '瞌�' */
-  .uil-file-block-alt:before { content: '\e9cc'; } /* '瞌�' */
-  .uil-file-bookmark-alt:before { content: '\e9cd'; } /* '瞌�' */
-  .uil-file-check-alt:before { content: '\e9ce'; } /* '瞌�' */
-  .uil-file-check:before { content: '\e9cf'; } /* '瞌�' */
-  .uil-file-contract-dollar:before { content: '\e9d0'; } /* '瞌�' */
-  .uil-file-copy-alt:before { content: '\e9d1'; } /* '瞌�' */
-  .uil-file-download-alt:before { content: '\e9d2'; } /* '瞌�' */
-  .uil-file-download:before { content: '\e9d3'; } /* '瞌�' */
-  .uil-file-edit-alt:before { content: '\e9d4'; } /* '瞌�' */
-  .uil-file-exclamation-alt:before { content: '\e9d5'; } /* '瞌�' */
-  .uil-file-exclamation:before { content: '\e9d6'; } /* '瞌�' */
-  .uil-file-heart:before { content: '\e9d7'; } /* '瞌�' */
-  .uil-file-info-alt:before { content: '\e9d8'; } /* '瞌�' */
-  .uil-file-landscape-alt:before { content: '\e9d9'; } /* '瞌�' */
-  .uil-file-landscape:before { content: '\e9da'; } /* '瞌�' */
-  .uil-file-lanscape-slash:before { content: '\e9db'; } /* '瞌�' */
-  .uil-file-lock-alt:before { content: '\e9dc'; } /* '瞌�' */
-  .uil-file-medical-alt:before { content: '\e9dd'; } /* '瞌�' */
-  .uil-file-medical:before { content: '\e9de'; } /* '瞌�' */
-  .uil-file-minus-alt:before { content: '\e9df'; } /* '瞌�' */
-  .uil-file-minus:before { content: '\e9e0'; } /* '瞌�' */
-  .uil-file-network:before { content: '\e9e1'; } /* '瞌�' */
-  .uil-file-plus-alt:before { content: '\e9e2'; } /* '瞌�' */
-  .uil-file-plus:before { content: '\e9e3'; } /* '瞌�' */
-  .uil-file-question-alt:before { content: '\e9e4'; } /* '瞌�' */
-  .uil-file-question:before { content: '\e9e5'; } /* '瞌�' */
-  .uil-file-redo-alt:before { content: '\e9e6'; } /* '瞌�' */
-  .uil-file-search-alt:before { content: '\e9e7'; } /* '瞌�' */
-  .uil-file-share-alt:before { content: '\e9e8'; } /* '瞌�' */
-  .uil-file-shield-alt:before { content: '\e9e9'; } /* '瞌�' */
-  .uil-file-slash:before { content: '\e9ea'; } /* '瞌�' */
-  .uil-file-times-alt:before { content: '\e9eb'; } /* '瞌�' */
-  .uil-file-times:before { content: '\e9ec'; } /* '瞌�' */
-  .uil-file-upload-alt:before { content: '\e9ed'; } /* '瞌�' */
-  .uil-file-upload:before { content: '\e9ee'; } /* '瞌�' */
-  .uil-file:before { content: '\e9ef'; } /* '瞌�' */
-  .uil-files-landscapes-alt:before { content: '\e9f0'; } /* '瞌�' */
-  .uil-files-landscapes:before { content: '\e9f1'; } /* '瞌�' */
-  .uil-film:before { content: '\e9f2'; } /* '瞌�' */
-  .uil-filter-slash:before { content: '\e9f3'; } /* '瞌�' */
-  .uil-filter:before { content: '\e9f4'; } /* '瞌�' */
-  .uil-flask-potion:before { content: '\e9f5'; } /* '瞌�' */
-  .uil-flask:before { content: '\e9f6'; } /* '瞌�' */
-  .uil-flip-h-alt:before { content: '\e9f7'; } /* '瞌�' */
-  .uil-flip-h:before { content: '\e9f8'; } /* '瞌�' */
-  .uil-flip-v-alt:before { content: '\e9f9'; } /* '瞌�' */
-  .uil-flip-v:before { content: '\e9fa'; } /* '瞌�' */
-  .uil-flower:before { content: '\e9fb'; } /* '瞌�' */
-  .uil-focus-add:before { content: '\e9fc'; } /* '瞌�' */
-  .uil-focus-target:before { content: '\e9fd'; } /* '瞌�' */
-  .uil-focus:before { content: '\e9fe'; } /* '瞌�' */
-  .uil-folder-check:before { content: '\e9ff'; } /* '瞌�' */
-  .uil-folder-download:before { content: '\ea00'; } /* '瞑€' */
-  .uil-folder-exclamation:before { content: '\ea01'; } /* '瞑�' */
-  .uil-folder-heart:before { content: '\ea02'; } /* '瞑�' */
-  .uil-folder-info:before { content: '\ea03'; } /* '瞑�' */
-  .uil-folder-lock:before { content: '\ea04'; } /* '瞑�' */
-  .uil-folder-medical:before { content: '\ea05'; } /* '瞑�' */
-  .uil-folder-minus:before { content: '\ea06'; } /* '瞑�' */
-  .uil-folder-network:before { content: '\ea07'; } /* '瞑�' */
-  .uil-folder-plus:before { content: '\ea08'; } /* '瞑�' */
-  .uil-folder-question:before { content: '\ea09'; } /* '瞑�' */
-  .uil-folder-slash:before { content: '\ea0a'; } /* '瞑�' */
-  .uil-folder-times:before { content: '\ea0b'; } /* '瞑�' */
-  .uil-folder-upload:before { content: '\ea0c'; } /* '瞑�' */
-  .uil-folder:before { content: '\ea0d'; } /* '瞑�' */
-  .uil-food:before { content: '\ea0e'; } /* '瞑�' */
-  .uil-football-american:before { content: '\ea0f'; } /* '瞑�' */
-  .uil-football-ball:before { content: '\ea10'; } /* '瞑�' */
-  .uil-football:before { content: '\ea11'; } /* '瞑�' */
-  .uil-forecastcloud-moon-tear:before { content: '\ea12'; } /* '瞑�' */
-  .uil-forwaded-call:before { content: '\ea13'; } /* '瞑�' */
-  .uil-forward:before { content: '\ea14'; } /* '瞑�' */
-  .uil-frown:before { content: '\ea15'; } /* '瞑�' */
-  .uil-game-structure:before { content: '\ea16'; } /* '瞑�' */
-  .uil-game:before { content: '\ea17'; } /* '瞑�' */
-  .uil-gift:before { content: '\ea18'; } /* '瞑�' */
-  .uil-glass-martini-alt-slash:before { content: '\ea19'; } /* '瞑�' */
-  .uil-glass-martini-alt:before { content: '\ea1a'; } /* '瞑�' */
-  .uil-glass-martini:before { content: '\ea1b'; } /* '瞑�' */
-  .uil-glass-tea:before { content: '\ea1c'; } /* '瞑�' */
-  .uil-glass:before { content: '\ea1d'; } /* '瞑�' */
-  .uil-globe:before { content: '\ea1e'; } /* '瞑�' */
-  .uil-gold:before { content: '\ea1f'; } /* '瞑�' */
-  .uil-google-drive:before { content: '\ea20'; } /* '瞑�' */
-  .uil-graduation-hat:before { content: '\ea21'; } /* '瞑�' */
-  .uil-graph-bar:before { content: '\ea22'; } /* '瞑�' */
-  .uil-grid:before { content: '\ea23'; } /* '瞑�' */
-  .uil-grids:before { content: '\ea24'; } /* '瞑�' */
-  .uil-grin-tongue-wink-alt:before { content: '\ea25'; } /* '瞑�' */
-  .uil-grin-tongue-wink:before { content: '\ea26'; } /* '瞑�' */
-  .uil-grin:before { content: '\ea27'; } /* '瞑�' */
-  .uil-grip-horizontal-line:before { content: '\ea28'; } /* '瞑�' */
-  .uil-hdd:before { content: '\ea29'; } /* '瞑�' */
-  .uil-headphones-alt:before { content: '\ea2a'; } /* '瞑�' */
-  .uil-headphones:before { content: '\ea2b'; } /* '瞑�' */
-  .uil-heart-alt:before { content: '\ea2c'; } /* '瞑�' */
-  .uil-heart-medical:before { content: '\ea2d'; } /* '瞑�' */
-  .uil-heart-rate:before { content: '\ea2e'; } /* '瞑�' */
-  .uil-heart-sign:before { content: '\ea2f'; } /* '瞑�' */
-  .uil-heart:before { content: '\ea30'; } /* '瞑�' */
-  .uil-heartbeat:before { content: '\ea31'; } /* '瞑�' */
-  .uil-history-alt:before { content: '\ea32'; } /* '瞑�' */
-  .uil-history:before { content: '\ea33'; } /* '瞑�' */
-  .uil-home-alt:before { content: '\ea34'; } /* '瞑�' */
-  .uil-home:before { content: '\ea35'; } /* '瞑�' */
-  .uil-horizontal-align-center:before { content: '\ea36'; } /* '瞑�' */
-  .uil-horizontal-align-left:before { content: '\ea37'; } /* '瞑�' */
-  .uil-horizontal-align-right:before { content: '\ea38'; } /* '瞑�' */
-  .uil-horizontal-distribution-center:before { content: '\ea39'; } /* '瞑�' */
-  .uil-horizontal-distribution-left:before { content: '\ea3a'; } /* '瞑�' */
-  .uil-horizontal-distribution-right:before { content: '\ea3b'; } /* '瞑�' */
-  .uil-hunting:before { content: '\ea3c'; } /* '瞑�' */
-  .uil-image-alt-slash:before { content: '\ea3d'; } /* '瞑�' */
-  .uil-image-block:before { content: '\ea3e'; } /* '瞑�' */
-  .uil-image-broken:before { content: '\ea3f'; } /* '瞑�' */
-  .uil-image-check:before { content: '\ea40'; } /* '瞟€' */
-  .uil-image-download:before { content: '\ea41'; } /* '瞟�' */
-  .uil-image-edit:before { content: '\ea42'; } /* '瞟�' */
-  .uil-image-lock:before { content: '\ea43'; } /* '瞟�' */
-  .uil-image-minus:before { content: '\ea44'; } /* '瞟�' */
-  .uil-image-plus:before { content: '\ea45'; } /* '瞟�' */
-  .uil-image-question:before { content: '\ea46'; } /* '瞟�' */
-  .uil-image-redo:before { content: '\ea47'; } /* '瞟�' */
-  .uil-image-resize-landscape:before { content: '\ea48'; } /* '瞟�' */
-  .uil-image-resize-square:before { content: '\ea49'; } /* '瞟�' */
-  .uil-image-search:before { content: '\ea4a'; } /* '瞟�' */
-  .uil-image-share:before { content: '\ea4b'; } /* '瞟�' */
-  .uil-image-shield:before { content: '\ea4c'; } /* '瞟�' */
-  .uil-image-slash:before { content: '\ea4d'; } /* '瞟�' */
-  .uil-image-times:before { content: '\ea4e'; } /* '瞟�' */
-  .uil-image-upload:before { content: '\ea4f'; } /* '瞟�' */
-  .uil-image-v:before { content: '\ea50'; } /* '瞟�' */
-  .uil-image:before { content: '\ea51'; } /* '瞟�' */
-  .uil-images:before { content: '\ea52'; } /* '瞟�' */
-  .uil-incoming-call:before { content: '\ea53'; } /* '瞟�' */
-  .uil-info-circle:before { content: '\ea54'; } /* '瞟�' */
-  .uil-instagram-alt:before { content: '\ea55'; } /* '瞟�' */
-  .uil-instagram:before { content: '\ea56'; } /* '瞟�' */
-  .uil-intercom:before { content: '\ea57'; } /* '瞟�' */
-  .uil-invoice:before { content: '\ea58'; } /* '瞟�' */
-  .uil-italic:before { content: '\ea59'; } /* '瞟�' */
-  .uil-jackhammer:before { content: '\ea5a'; } /* '瞟�' */
-  .uil-kayak:before { content: '\ea5b'; } /* '瞟�' */
-  .uil-key-skeleton-alt:before { content: '\ea5c'; } /* '瞟�' */
-  .uil-key-skeleton:before { content: '\ea5d'; } /* '瞟�' */
-  .uil-keyboard-alt:before { content: '\ea5e'; } /* '瞟�' */
-  .uil-keyboard-hide:before { content: '\ea5f'; } /* '瞟�' */
-  .uil-keyboard-show:before { content: '\ea60'; } /* '瞟�' */
-  .uil-keyboard:before { content: '\ea61'; } /* '瞟�' */
-  .uil-keyhole-circle:before { content: '\ea62'; } /* '瞟�' */
-  .uil-keyhole-square-full:before { content: '\ea63'; } /* '瞟�' */
-  .uil-keyhole-square:before { content: '\ea64'; } /* '瞟�' */
-  .uil-kid:before { content: '\ea65'; } /* '瞟�' */
-  .uil-label-alt:before { content: '\ea66'; } /* '瞟�' */
-  .uil-label:before { content: '\ea67'; } /* '瞟�' */
-  .uil-lamp:before { content: '\ea68'; } /* '瞟�' */
-  .uil-laptop-cloud:before { content: '\ea69'; } /* '瞟�' */
-  .uil-laptop:before { content: '\ea6a'; } /* '瞟�' */
-  .uil-laughing:before { content: '\ea6b'; } /* '瞟�' */
-  .uil-layer-group-slash:before { content: '\ea6c'; } /* '瞟�' */
-  .uil-layer-group:before { content: '\ea6d'; } /* '瞟�' */
-  .uil-layers-alt:before { content: '\ea6e'; } /* '瞟�' */
-  .uil-layers-slash:before { content: '\ea6f'; } /* '瞟�' */
-  .uil-layers:before { content: '\ea70'; } /* '瞟�' */
-  .uil-left-arrow-from-left:before { content: '\ea71'; } /* '瞟�' */
-  .uil-left-arrow-to-left:before { content: '\ea72'; } /* '瞟�' */
-  .uil-left-indent-alt:before { content: '\ea73'; } /* '瞟�' */
-  .uil-left-indent:before { content: '\ea74'; } /* '瞟�' */
-  .uil-left-to-right-text-direction:before { content: '\ea75'; } /* '瞟�' */
-  .uil-life-ring:before { content: '\ea76'; } /* '瞟�' */
-  .uil-lightbulb-alt:before { content: '\ea77'; } /* '瞟�' */
-  .uil-lightbulb:before { content: '\ea78'; } /* '瞟�' */
-  .uil-line-alt:before { content: '\ea79'; } /* '瞟�' */
-  .uil-line-spacing:before { content: '\ea7a'; } /* '瞟�' */
-  .uil-line:before { content: '\ea7b'; } /* '瞟�' */
-  .uil-link-alt:before { content: '\ea7c'; } /* '瞟�' */
-  .uil-link-broken:before { content: '\ea7d'; } /* '瞟�' */
-  .uil-link-h:before { content: '\ea7e'; } /* '瞟�' */
-  .uil-link:before { content: '\ea7f'; } /* '瞟�' */
-  .uil-linkedin:before { content: '\ea80'; } /* '瞠€' */
-  .uil-list-ui-alt:before { content: '\ea81'; } /* '瞠�' */
-  .uil-list-ul:before { content: '\ea82'; } /* '瞠�' */
-  .uil-location-arrow-alt:before { content: '\ea83'; } /* '瞠�' */
-  .uil-location-arrow:before { content: '\ea84'; } /* '瞠�' */
-  .uil-location-pin-alt:before { content: '\ea85'; } /* '瞠�' */
-  .uil-location-point:before { content: '\ea86'; } /* '瞠�' */
-  .uil-location:before { content: '\ea87'; } /* '瞠�' */
-  .uil-lock-access:before { content: '\ea88'; } /* '瞠�' */
-  .uil-lock-alt:before { content: '\ea89'; } /* '瞠�' */
-  .uil-lock-open-alt:before { content: '\ea8a'; } /* '瞠�' */
-  .uil-lock-slash:before { content: '\ea8b'; } /* '瞠�' */
-  .uil-lock:before { content: '\ea8c'; } /* '瞠�' */
-  .uil-mailbox-alt:before { content: '\ea8d'; } /* '瞠�' */
-  .uil-mailbox:before { content: '\ea8e'; } /* '瞠�' */
-  .uil-map-marker-alt:before { content: '\ea8f'; } /* '瞠�' */
-  .uil-map-marker-edit:before { content: '\ea90'; } /* '瞠�' */
-  .uil-map-marker-info:before { content: '\ea91'; } /* '瞠�' */
-  .uil-map-marker-minus:before { content: '\ea92'; } /* '瞠�' */
-  .uil-map-marker-plus:before { content: '\ea93'; } /* '瞠�' */
-  .uil-map-marker-question:before { content: '\ea94'; } /* '瞠�' */
-  .uil-map-marker-shield:before { content: '\ea95'; } /* '瞠�' */
-  .uil-map-marker-slash:before { content: '\ea96'; } /* '瞠�' */
-  .uil-map-marker:before { content: '\ea97'; } /* '瞠�' */
-  .uil-map-pin-alt:before { content: '\ea98'; } /* '瞠�' */
-  .uil-map-pin:before { content: '\ea99'; } /* '瞠�' */
-  .uil-map:before { content: '\ea9a'; } /* '瞠�' */
-  .uil-mars:before { content: '\ea9b'; } /* '瞠�' */
-  .uil-maximize-left:before { content: '\ea9c'; } /* '瞠�' */
-  .uil-medal:before { content: '\ea9d'; } /* '瞠�' */
-  .uil-medical-drip:before { content: '\ea9e'; } /* '瞠�' */
-  .uil-medical-square-full:before { content: '\ea9f'; } /* '瞠�' */
-  .uil-medical-square:before { content: '\eaa0'; } /* '瞠�' */
-  .uil-medical:before { content: '\eaa1'; } /* '瞠�' */
-  .uil-medkit:before { content: '\eaa2'; } /* '瞠�' */
-  .uil-meeting-board:before { content: '\eaa3'; } /* '瞠�' */
-  .uil-meh-alt:before { content: '\eaa4'; } /* '瞠�' */
-  .uil-meh-closed-eye:before { content: '\eaa5'; } /* '瞠�' */
-  .uil-meh:before { content: '\eaa6'; } /* '瞠�' */
-  .uil-message:before { content: '\eaa7'; } /* '瞠�' */
-  .uil-microphone-slash:before { content: '\eaa8'; } /* '瞠�' */
-  .uil-microphone:before { content: '\eaa9'; } /* '瞠�' */
-  .uil-minus-circle:before { content: '\eaaa'; } /* '瞠�' */
-  .uil-minus-path:before { content: '\eaab'; } /* '瞠�' */
-  .uil-minus-square-full:before { content: '\eaac'; } /* '瞠�' */
-  .uil-minus-square:before { content: '\eaad'; } /* '瞠�' */
-  .uil-minus:before { content: '\eaae'; } /* '瞠�' */
-  .uil-missed-call:before { content: '\eaaf'; } /* '瞠�' */
-  .uil-mobey-bill-slash:before { content: '\eab0'; } /* '瞠�' */
-  .uil-mobile-android-alt:before { content: '\eab1'; } /* '瞠�' */
-  .uil-mobile-android:before { content: '\eab2'; } /* '瞠�' */
-  .uil-mobile-vibrate:before { content: '\eab3'; } /* '瞠�' */
-  .uil-modem:before { content: '\eab4'; } /* '瞠�' */
-  .uil-money-bill-stack:before { content: '\eab5'; } /* '瞠�' */
-  .uil-money-bill:before { content: '\eab6'; } /* '瞠�' */
-  .uil-money-insert:before { content: '\eab7'; } /* '瞠�' */
-  .uil-money-stack:before { content: '\eab8'; } /* '瞠�' */
-  .uil-money-withdraw:before { content: '\eab9'; } /* '瞠�' */
-  .uil-money-withdrawal:before { content: '\eaba'; } /* '瞠�' */
-  .uil-moneybag-alt:before { content: '\eabb'; } /* '瞠�' */
-  .uil-moneybag:before { content: '\eabc'; } /* '瞠�' */
-  .uil-monitor-heart-rate:before { content: '\eabd'; } /* '瞠�' */
-  .uil-monitor:before { content: '\eabe'; } /* '瞠�' */
-  .uil-moon-eclipse:before { content: '\eabf'; } /* '瞠�' */
-  .uil-moon:before { content: '\eac0'; } /* '瞰€' */
-  .uil-moonset:before { content: '\eac1'; } /* '瞰�' */
-  .uil-mountains-sun:before { content: '\eac2'; } /* '瞰�' */
-  .uil-mountains:before { content: '\eac3'; } /* '瞰�' */
-  .uil-mouse-alt:before { content: '\eac4'; } /* '瞰�' */
-  .uil-mouse:before { content: '\eac5'; } /* '瞰�' */
-  .uil-multiply:before { content: '\eac6'; } /* '瞰�' */
-  .uil-music-note:before { content: '\eac7'; } /* '瞰�' */
-  .uil-music-tune-slash:before { content: '\eac8'; } /* '瞰�' */
-  .uil-music:before { content: '\eac9'; } /* '瞰�' */
-  .uil-n-a:before { content: '\eaca'; } /* '瞰�' */
-  .uil-navigator:before { content: '\eacb'; } /* '瞰�' */
-  .uil-nerd:before { content: '\eacc'; } /* '瞰�' */
-  .uil-newspaper:before { content: '\eacd'; } /* '瞰�' */
-  .uil-ninja:before { content: '\eace'; } /* '瞰�' */
-  .uil-no-entry:before { content: '\eacf'; } /* '瞰�' */
-  .uil-notebooks:before { content: '\ead0'; } /* '瞰�' */
-  .uil-notes:before { content: '\ead1'; } /* '瞰�' */
-  .uil-object-group:before { content: '\ead2'; } /* '瞰�' */
-  .uil-object-ungroup:before { content: '\ead3'; } /* '瞰�' */
-  .uil-octagon:before { content: '\ead4'; } /* '瞰�' */
-  .uil-outgoing-call:before { content: '\ead5'; } /* '瞰�' */
-  .uil-package:before { content: '\ead6'; } /* '瞰�' */
-  .uil-padlock:before { content: '\ead7'; } /* '瞰�' */
-  .uil-paint-tool:before { content: '\ead8'; } /* '瞰�' */
-  .uil-palette:before { content: '\ead9'; } /* '瞰�' */
-  .uil-panorama-h-alt:before { content: '\eada'; } /* '瞰�' */
-  .uil-panorama-h:before { content: '\eadb'; } /* '瞰�' */
-  .uil-panorama-v:before { content: '\eadc'; } /* '瞰�' */
-  .uil-paperclip:before { content: '\eadd'; } /* '瞰�' */
-  .uil-paragraph:before { content: '\eade'; } /* '瞰�' */
-  .uil-parcel:before { content: '\eadf'; } /* '瞰�' */
-  .uil-parking-square:before { content: '\eae0'; } /* '瞰�' */
-  .uil-pathfinder-unite:before { content: '\eae1'; } /* '瞰�' */
-  .uil-pathfinder:before { content: '\eae2'; } /* '瞰�' */
-  .uil-pause-circle:before { content: '\eae3'; } /* '瞰�' */
-  .uil-pause:before { content: '\eae4'; } /* '瞰�' */
-  .uil-pen:before { content: '\eae5'; } /* '瞰�' */
-  .uil-pentagon:before { content: '\eae6'; } /* '瞰�' */
-  .uil-phone-alt:before { content: '\eae7'; } /* '瞰�' */
-  .uil-phone-pause:before { content: '\eae8'; } /* '瞰�' */
-  .uil-phone-slash:before { content: '\eae9'; } /* '瞰�' */
-  .uil-phone-times:before { content: '\eaea'; } /* '瞰�' */
-  .uil-phone-volume:before { content: '\eaeb'; } /* '瞰�' */
-  .uil-phone:before { content: '\eaec'; } /* '瞰�' */
-  .uil-picture:before { content: '\eaed'; } /* '瞰�' */
-  .uil-plane-arrival:before { content: '\eaee'; } /* '瞰�' */
-  .uil-plane-departure:before { content: '\eaef'; } /* '瞰�' */
-  .uil-plane-fly:before { content: '\eaf0'; } /* '瞰�' */
-  .uil-plane:before { content: '\eaf1'; } /* '瞰�' */
-  .uil-play-circle:before { content: '\eaf2'; } /* '瞰�' */
-  .uil-play:before { content: '\eaf3'; } /* '瞰�' */
-  .uil-plug:before { content: '\eaf4'; } /* '瞰�' */
-  .uil-plus-circle:before { content: '\eaf5'; } /* '瞰�' */
-  .uil-plus-square:before { content: '\eaf6'; } /* '瞰�' */
-  .uil-plus:before { content: '\eaf7'; } /* '瞰�' */
-  .uil-podium:before { content: '\eaf8'; } /* '瞰�' */
-  .uil-polygon:before { content: '\eaf9'; } /* '瞰�' */
-  .uil-post-stamp:before { content: '\eafa'; } /* '瞰�' */
-  .uil-postcard:before { content: '\eafb'; } /* '瞰�' */
-  .uil-pound-circle:before { content: '\eafc'; } /* '瞰�' */
-  .uil-pound:before { content: '\eafd'; } /* '瞰�' */
-  .uil-power:before { content: '\eafe'; } /* '瞰�' */
-  .uil-prescription-bottle:before { content: '\eaff'; } /* '瞰�' */
-  .uil-presentation-check:before { content: '\eb00'; } /* '瞵€' */
-  .uil-presentation-edit:before { content: '\eb01'; } /* '瞵�' */
-  .uil-presentation-line:before { content: '\eb02'; } /* '瞵�' */
-  .uil-presentation-lines-alt:before { content: '\eb03'; } /* '瞵�' */
-  .uil-presentation-minus:before { content: '\eb04'; } /* '瞵�' */
-  .uil-presentation-play:before { content: '\eb05'; } /* '瞵�' */
-  .uil-presentation-plus:before { content: '\eb06'; } /* '瞵�' */
-  .uil-presentation-times:before { content: '\eb07'; } /* '瞵�' */
-  .uil-presentation:before { content: '\eb08'; } /* '瞵�' */
-  .uil-previous:before { content: '\eb09'; } /* '瞵�' */
-  .uil-pricetag-alt:before { content: '\eb0a'; } /* '瞵�' */
-  .uil-print-slash:before { content: '\eb0b'; } /* '瞵�' */
-  .uil-print:before { content: '\eb0c'; } /* '瞵�' */
-  .uil-processor:before { content: '\eb0d'; } /* '瞵�' */
-  .uil-pump:before { content: '\eb0e'; } /* '瞵�' */
-  .uil-puzzle-piece:before { content: '\eb0f'; } /* '瞵�' */
-  .uil-question-circle:before { content: '\eb10'; } /* '瞵�' */
-  .uil-rainbow:before { content: '\eb11'; } /* '瞵�' */
-  .uil-raindrops-alt:before { content: '\eb12'; } /* '瞵�' */
-  .uil-raindrops:before { content: '\eb13'; } /* '瞵�' */
-  .uil-receipt-alt:before { content: '\eb14'; } /* '瞵�' */
-  .uil-receipt:before { content: '\eb15'; } /* '瞵�' */
-  .uil-record-audio:before { content: '\eb16'; } /* '瞵�' */
-  .uil-redo:before { content: '\eb17'; } /* '瞵�' */
-  .uil-refresh:before { content: '\eb18'; } /* '瞵�' */
-  .uil-registered:before { content: '\eb19'; } /* '瞵�' */
-  .uil-repeat:before { content: '\eb1a'; } /* '瞵�' */
-  .uil-restaurant:before { content: '\eb1b'; } /* '瞵�' */
-  .uil-right-indent-alt:before { content: '\eb1c'; } /* '瞵�' */
-  .uil-right-to-left-text-direction:before { content: '\eb1d'; } /* '瞵�' */
-  .uil-robot:before { content: '\eb1e'; } /* '瞵�' */
-  .uil-rope-way:before { content: '\eb1f'; } /* '瞵�' */
-  .uil-rotate-360:before { content: '\eb20'; } /* '瞵�' */
-  .uil-rss-alt:before { content: '\eb21'; } /* '瞵�' */
-  .uil-rss-interface:before { content: '\eb22'; } /* '瞵�' */
-  .uil-rss:before { content: '\eb23'; } /* '瞵�' */
-  .uil-ruler-combined:before { content: '\eb24'; } /* '瞵�' */
-  .uil-ruler:before { content: '\eb25'; } /* '瞵�' */
-  .uil-sad-cry:before { content: '\eb26'; } /* '瞵�' */
-  .uil-sad-crying:before { content: '\eb27'; } /* '瞵�' */
-  .uil-sad-dizzy:before { content: '\eb28'; } /* '瞵�' */
-  .uil-sad-squint:before { content: '\eb29'; } /* '瞵�' */
-  .uil-sad:before { content: '\eb2a'; } /* '瞵�' */
-  .uil-scaling-left:before { content: '\eb2b'; } /* '瞵�' */
-  .uil-scaling-right:before { content: '\eb2c'; } /* '瞵�' */
-  .uil-scenery:before { content: '\eb2d'; } /* '瞵�' */
-  .uil-schedule:before { content: '\eb2e'; } /* '瞵�' */
-  .uil-science:before { content: '\eb2f'; } /* '瞵�' */
-  .uil-screw:before { content: '\eb30'; } /* '瞵�' */
-  .uil-scroll-h:before { content: '\eb31'; } /* '瞵�' */
-  .uil-scroll:before { content: '\eb32'; } /* '瞵�' */
-  .uil-search-alt:before { content: '\eb33'; } /* '瞵�' */
-  .uil-search-minus:before { content: '\eb34'; } /* '瞵�' */
-  .uil-search-plus:before { content: '\eb35'; } /* '瞵�' */
-  .uil-search:before { content: '\eb36'; } /* '瞵�' */
-  .uil-selfie:before { content: '\eb37'; } /* '瞵�' */
-  .uil-server-alt:before { content: '\eb38'; } /* '瞵�' */
-  .uil-server-connection:before { content: '\eb39'; } /* '瞵�' */
-  .uil-server-network-alt:before { content: '\eb3a'; } /* '瞵�' */
-  .uil-server-network:before { content: '\eb3b'; } /* '瞵�' */
-  .uil-server:before { content: '\eb3c'; } /* '瞵�' */
-  .uil-servers:before { content: '\eb3d'; } /* '瞵�' */
-  .uil-servicemark:before { content: '\eb3e'; } /* '瞵�' */
-  .uil-share-alt:before { content: '\eb3f'; } /* '瞵�' */
-  .uil-shield-check:before { content: '\eb40'; } /* '瞽€' */
-  .uil-shield-exclamation:before { content: '\eb41'; } /* '瞽�' */
-  .uil-shield-question:before { content: '\eb42'; } /* '瞽�' */
-  .uil-shield-slash:before { content: '\eb43'; } /* '瞽�' */
-  .uil-shield:before { content: '\eb44'; } /* '瞽�' */
-  .uil-ship:before { content: '\eb45'; } /* '瞽�' */
-  .uil-shop:before { content: '\eb46'; } /* '瞽�' */
-  .uil-shopping-basket:before { content: '\eb47'; } /* '瞽�' */
-  .uil-shopping-cart-alt:before { content: '\eb48'; } /* '瞽�' */
-  .uil-shopping-trolley:before { content: '\eb49'; } /* '瞽�' */
-  .uil-shovel:before { content: '\eb4a'; } /* '瞽�' */
-  .uil-shrink:before { content: '\eb4b'; } /* '瞽�' */
-  .uil-shuffle:before { content: '\eb4c'; } /* '瞽�' */
-  .uil-shutter-alt:before { content: '\eb4d'; } /* '瞽�' */
-  .uil-shutter:before { content: '\eb4e'; } /* '瞽�' */
-  .uil-sick:before { content: '\eb4f'; } /* '瞽�' */
-  .uil-sigma:before { content: '\eb50'; } /* '瞽�' */
-  .uil-sign-alt:before { content: '\eb51'; } /* '瞽�' */
-  .uil-sign-in-alt:before { content: '\eb52'; } /* '瞽�' */
-  .uil-sign-left:before { content: '\eb53'; } /* '瞽�' */
-  .uil-sign-out-alt:before { content: '\eb54'; } /* '瞽�' */
-  .uil-sign-right:before { content: '\eb55'; } /* '瞽�' */
-  .uil-signal-alt-3:before { content: '\eb56'; } /* '瞽�' */
-  .uil-signal-alt:before { content: '\eb57'; } /* '瞽�' */
-  .uil-signal:before { content: '\eb58'; } /* '瞽�' */
-  .uil-silence:before { content: '\eb59'; } /* '瞽�' */
-  .uil-silent-squint:before { content: '\eb5a'; } /* '瞽�' */
-  .uil-sim-card:before { content: '\eb5b'; } /* '瞽�' */
-  .uil-sitemap:before { content: '\eb5c'; } /* '瞽�' */
-  .uil-skip-forward-alt:before { content: '\eb5d'; } /* '瞽�' */
-  .uil-skip-forward-circle:before { content: '\eb5e'; } /* '瞽�' */
-  .uil-skip-forward:before { content: '\eb5f'; } /* '瞽�' */
-  .uil-slack:before { content: '\eb60'; } /* '瞽�' */
-  .uil-sliders-v-alt:before { content: '\eb61'; } /* '瞽�' */
-  .uil-sliders-v:before { content: '\eb62'; } /* '瞽�' */
-  .uil-smile-beam:before { content: '\eb63'; } /* '瞽�' */
-  .uil-smile-dizzy:before { content: '\eb64'; } /* '瞽�' */
-  .uil-smile-squint-wink-alt:before { content: '\eb65'; } /* '瞽�' */
-  .uil-smile-squint-wink:before { content: '\eb66'; } /* '瞽�' */
-  .uil-smile-wink-alt:before { content: '\eb67'; } /* '瞽�' */
-  .uil-smile-wink:before { content: '\eb68'; } /* '瞽�' */
-  .uil-smile:before { content: '\eb69'; } /* '瞽�' */
-  .uil-snow-flake:before { content: '\eb6c'; } /* '瞽�' */
-  .uil-snowflake-alt:before { content: '\eb6d'; } /* '瞽�' */
-  .uil-snowflake:before { content: '\eb6e'; } /* '瞽�' */
-  .uil-sort-amount-down:before { content: '\eb6f'; } /* '瞽�' */
-  .uil-sort-amount-up:before { content: '\eb70'; } /* '瞽�' */
-  .uil-sort:before { content: '\eb71'; } /* '瞽�' */
-  .uil-sorting:before { content: '\eb72'; } /* '瞽�' */
-  .uil-space-key:before { content: '\eb73'; } /* '瞽�' */
-  .uil-spade:before { content: '\eb74'; } /* '瞽�' */
-  .uil-sperms:before { content: '\eb75'; } /* '瞽�' */
-  .uil-spin:before { content: '\eb76'; } /* '瞽�' */
-  .uil-sport:before { content: '\eb77'; } /* '瞽�' */
-  .uil-square-full:before { content: '\eb78'; } /* '瞽�' */
-  .uil-square-shape:before { content: '\eb79'; } /* '瞽�' */
-  .uil-square:before { content: '\eb7a'; } /* '瞽�' */
-  .uil-squint:before { content: '\eb7b'; } /* '瞽�' */
-  .uil-star-half-alt:before { content: '\eb7c'; } /* '瞽�' */
-  .uil-star:before { content: '\eb7d'; } /* '瞽�' */
-  .uil-step-backward-alt:before { content: '\eb7e'; } /* '瞽�' */
-  .uil-step-backward-circle:before { content: '\eb7f'; } /* '瞽�' */
-  .uil-step-backward:before { content: '\eb80'; } /* '町€' */
-  .uil-step-forward:before { content: '\eb81'; } /* '町�' */
-  .uil-stop-circle:before { content: '\eb82'; } /* '町�' */
-  .uil-stopwatch-slash:before { content: '\eb83'; } /* '町�' */
-  .uil-stopwatch:before { content: '\eb84'; } /* '町�' */
-  .uil-store-alt:before { content: '\eb85'; } /* '町�' */
-  .uil-store:before { content: '\eb86'; } /* '町�' */
-  .uil-streering:before { content: '\eb87'; } /* '町�' */
-  .uil-stretcher:before { content: '\eb88'; } /* '町�' */
-  .uil-subject:before { content: '\eb89'; } /* '町�' */
-  .uil-subway-alt:before { content: '\eb8a'; } /* '町�' */
-  .uil-subway:before { content: '\eb8b'; } /* '町�' */
-  .uil-suitcase-alt:before { content: '\eb8c'; } /* '町�' */
-  .uil-suitcase:before { content: '\eb8d'; } /* '町�' */
-  .uil-sun:before { content: '\eb8e'; } /* '町�' */
-  .uil-sunset:before { content: '\eb8f'; } /* '町�' */
-  .uil-surprise:before { content: '\eb90'; } /* '町�' */
-  .uil-swatchbook:before { content: '\eb91'; } /* '町�' */
-  .uil-swimmer:before { content: '\eb92'; } /* '町�' */
-  .uil-symbol:before { content: '\eb93'; } /* '町�' */
-  .uil-sync-exclamation:before { content: '\eb94'; } /* '町�' */
-  .uil-sync-slash:before { content: '\eb95'; } /* '町�' */
-  .uil-sync:before { content: '\eb96'; } /* '町�' */
-  .uil-syringe:before { content: '\eb97'; } /* '町�' */
-  .uil-table:before { content: '\eb98'; } /* '町�' */
-  .uil-tablet:before { content: '\eb99'; } /* '町�' */
-  .uil-tablets:before { content: '\eb9a'; } /* '町�' */
-  .uil-tachometer-fast:before { content: '\eb9b'; } /* '町�' */
-  .uil-tag-alt:before { content: '\eb9c'; } /* '町�' */
-  .uil-tag:before { content: '\eb9d'; } /* '町�' */
-  .uil-tape:before { content: '\eb9e'; } /* '町�' */
-  .uil-taxi:before { content: '\eb9f'; } /* '町�' */
-  .uil-tear:before { content: '\eba0'; } /* '町�' */
-  .uil-technology:before { content: '\eba1'; } /* '町�' */
-  .uil-telescope:before { content: '\eba2'; } /* '町�' */
-  .uil-temperature-empty:before { content: '\eba3'; } /* '町�' */
-  .uil-temperature-half:before { content: '\eba4'; } /* '町�' */
-  .uil-temperature-minus:before { content: '\eba5'; } /* '町�' */
-  .uil-temperature-plus:before { content: '\eba6'; } /* '町�' */
-  .uil-temperature-quarter:before { content: '\eba7'; } /* '町�' */
-  .uil-temperature-three-quarter:before { content: '\eba8'; } /* '町�' */
-  .uil-temperature:before { content: '\eba9'; } /* '町�' */
-  .uil-text-fields:before { content: '\ebaa'; } /* '町�' */
-  .uil-text-size:before { content: '\ebab'; } /* '町�' */
-  .uil-text-strike-through:before { content: '\ebac'; } /* '町�' */
-  .uil-text:before { content: '\ebad'; } /* '町�' */
-  .uil-th-large:before { content: '\ebae'; } /* '町�' */
-  .uil-th-slash:before { content: '\ebaf'; } /* '町�' */
-  .uil-th:before { content: '\ebb0'; } /* '町�' */
-  .uil-thermometer:before { content: '\ebb1'; } /* '町�' */
-  .uil-thumbs-down:before { content: '\ebb2'; } /* '町�' */
-  .uil-thumbs-up:before { content: '\ebb3'; } /* '町�' */
-  .uil-thunderstorm-moon:before { content: '\ebb4'; } /* '町�' */
-  .uil-thunderstorm-sun:before { content: '\ebb5'; } /* '町�' */
-  .uil-thunderstorm:before { content: '\ebb6'; } /* '町�' */
-  .uil-ticket:before { content: '\ebb7'; } /* '町�' */
-  .uil-times-circle:before { content: '\ebb8'; } /* '町�' */
-  .uil-times-square:before { content: '\ebb9'; } /* '町�' */
-  .uil-times:before { content: '\ebba'; } /* '町�' */
-  .uil-toggle-off:before { content: '\ebbb'; } /* '町�' */
-  .uil-toggle-on:before { content: '\ebbc'; } /* '町�' */
-  .uil-top-arrow-from-top:before { content: '\ebbd'; } /* '町�' */
-  .uil-top-arrow-to-top:before { content: '\ebbe'; } /* '町�' */
-  .uil-tornado:before { content: '\ebbf'; } /* '町�' */
-  .uil-trademark-circle:before { content: '\ebc0'; } /* '畀€' */
-  .uil-trademark:before { content: '\ebc1'; } /* '畀�' */
-  .uil-traffic-barrier:before { content: '\ebc2'; } /* '畀�' */
-  .uil-trash-alt:before { content: '\ebc3'; } /* '畀�' */
-  .uil-trash:before { content: '\ebc4'; } /* '畀�' */
-  .uil-trees:before { content: '\ebc5'; } /* '畀�' */
-  .uil-triangle:before { content: '\ebc6'; } /* '畀�' */
-  .uil-trophy:before { content: '\ebc7'; } /* '畀�' */
-  .uil-trowel:before { content: '\ebc8'; } /* '畀�' */
-  .uil-truck-case:before { content: '\ebc9'; } /* '畀�' */
-  .uil-truck-loading:before { content: '\ebca'; } /* '畀�' */
-  .uil-truck:before { content: '\ebcb'; } /* '畀�' */
-  .uil-tumblr-square:before { content: '\ebcc'; } /* '畀�' */
-  .uil-tumblr:before { content: '\ebcd'; } /* '畀�' */
-  .uil-tv-retro-slash:before { content: '\ebce'; } /* '畀�' */
-  .uil-tv-retro:before { content: '\ebcf'; } /* '畀�' */
-  .uil-twitter:before { content: '\ebd0'; } /* '畀�' */
-  .uil-umbrella:before { content: '\ebd1'; } /* '畀�' */
-  .uil-unamused:before { content: '\ebd2'; } /* '畀�' */
-  .uil-underline:before { content: '\ebd3'; } /* '畀�' */
-  .uil-unlock-alt:before { content: '\ebd4'; } /* '畀�' */
-  .uil-unlock:before { content: '\ebd5'; } /* '畀�' */
-  .uil-upload-alt:before { content: '\ebd6'; } /* '畀�' */
-  .uil-upload:before { content: '\ebd7'; } /* '畀�' */
-  .uil-usd-circle:before { content: '\ebd8'; } /* '畀�' */
-  .uil-usd-square:before { content: '\ebd9'; } /* '畀�' */
-  .uil-user-check:before { content: '\ebda'; } /* '畀�' */
-  .uil-user-circle:before { content: '\ebdb'; } /* '畀�' */
-  .uil-user-exclamation:before { content: '\ebdc'; } /* '畀�' */
-  .uil-user-hard-hat:before { content: '\ebdd'; } /* '畀�' */
-  .uil-user-minus:before { content: '\ebde'; } /* '畀�' */
-  .uil-user-plus:before { content: '\ebdf'; } /* '畀�' */
-  .uil-user-square:before { content: '\ebe0'; } /* '畀�' */
-  .uil-user-times:before { content: '\ebe1'; } /* '畀�' */
-  .uil-user:before { content: '\ebe2'; } /* '畀�' */
-  .uil-users-alt:before { content: '\ebe3'; } /* '畀�' */
-  .uil-utensils-alt:before { content: '\ebe4'; } /* '畀�' */
-  .uil-utensils:before { content: '\ebe5'; } /* '畀�' */
-  .uil-vector-square-alt:before { content: '\ebe6'; } /* '畀�' */
-  .uil-vector-square:before { content: '\ebe7'; } /* '畀�' */
-  .uil-venus:before { content: '\ebe8'; } /* '畀�' */
-  .uil-vertical-align-bottom:before { content: '\ebe9'; } /* '畀�' */
-  .uil-vertical-align-center:before { content: '\ebea'; } /* '畀�' */
-  .uil-vertical-align-top:before { content: '\ebeb'; } /* '畀�' */
-  .uil-vertical-distribute-bottom:before { content: '\ebec'; } /* '畀�' */
-  .uil-vertical-distribution-center:before { content: '\ebed'; } /* '畀�' */
-  .uil-vertical-distribution-top:before { content: '\ebee'; } /* '畀�' */
-  .uil-video-slash:before { content: '\ebef'; } /* '畀�' */
-  .uil-video:before { content: '\ebf0'; } /* '畀�' */
-  .uil-visual-studio:before { content: '\ebf1'; } /* '畀�' */
-  .uil-voicemail-rectangle:before { content: '\ebf2'; } /* '畀�' */
-  .uil-voicemail:before { content: '\ebf3'; } /* '畀�' */
-  .uil-volleyball:before { content: '\ebf4'; } /* '畀�' */
-  .uil-volume-down:before { content: '\ebf5'; } /* '畀�' */
-  .uil-volume-mute:before { content: '\ebf6'; } /* '畀�' */
-  .uil-volume-off:before { content: '\ebf7'; } /* '畀�' */
-  .uil-volume-up:before { content: '\ebf8'; } /* '畀�' */
-  .uil-volume:before { content: '\ebf9'; } /* '畀�' */
-  .uil-wall:before { content: '\ebfa'; } /* '畀�' */
-  .uil-wallet:before { content: '\ebfb'; } /* '畀�' */
-  .uil-watch-alt:before { content: '\ebfc'; } /* '畀�' */
-  .uil-watch:before { content: '\ebfd'; } /* '畀�' */
-  .uil-water-drop-slash:before { content: '\ebfe'; } /* '畀�' */
-  .uil-water-glass:before { content: '\ebff'; } /* '畀�' */
-  .uil-water:before { content: '\ec00'; } /* '畎€' */
-  .uil-web-grid-alt:before { content: '\ec01'; } /* '畎�' */
-  .uil-web-grid:before { content: '\ec02'; } /* '畎�' */
-  .uil-web-section-alt:before { content: '\ec03'; } /* '畎�' */
-  .uil-web-section:before { content: '\ec04'; } /* '畎�' */
-  .uil-webcam:before { content: '\ec05'; } /* '畎�' */
-  .uil-weight:before { content: '\ec06'; } /* '畎�' */
-  .uil-whatsapp:before { content: '\ec07'; } /* '畎�' */
-  .uil-wheel-barrow:before { content: '\ec08'; } /* '畎�' */
-  .uil-wheelchair-alt:before { content: '\ec09'; } /* '畎�' */
-  .uil-wheelchair:before { content: '\ec0a'; } /* '畎�' */
-  .uil-wifi-router:before { content: '\ec0b'; } /* '畎�' */
-  .uil-wifi-slash:before { content: '\ec0c'; } /* '畎�' */
-  .uil-wifi:before { content: '\ec0d'; } /* '畎�' */
-  .uil-wind:before { content: '\ec0e'; } /* '畎�' */
-  .uil-window-grid:before { content: '\ec0f'; } /* '畎�' */
-  .uil-window-maximize:before { content: '\ec10'; } /* '畎�' */
-  .uil-window-restore:before { content: '\ec11'; } /* '畎�' */
-  .uil-window-section:before { content: '\ec12'; } /* '畎�' */
-  .uil-window:before { content: '\ec13'; } /* '畎�' */
-  .uil-windsock:before { content: '\ec14'; } /* '畎�' */
-  .uil-wrap-text:before { content: '\ec15'; } /* '畎�' */
-  .uil-wrench:before { content: '\ec16'; } /* '畎�' */
-  .uil-yellow:before { content: '\ec17'; } /* '畎�' */
-  .uil-yen-circle:before { content: '\ec18'; } /* '畎�' */
-  .uil-yen:before { content: '\ec19'; } /* '畎�' */
-  .uil-youtube-alt:before { content: '\ec1a'; } /* '畎�' */
-  .uil-youtube:before { content: '\ec1b'; } /* '畎�' */
+}
+*/
+ 
+ [class^="uil-"]:before, [class*=" uil-"]:before {
+  font-family: "unicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.uil-0-plus:before { content: '\e800'; } /* '顮€' */
+.uil-10-plus:before { content: '\e801'; } /* '顮�' */
+.uil-12-plus:before { content: '\e802'; } /* '顮�' */
+.uil-13-plus:before { content: '\e803'; } /* '顮�' */
+.uil-16-plus:before { content: '\e804'; } /* '顮�' */
+.uil-17-plus:before { content: '\e805'; } /* '顮�' */
+.uil-18-plus:before { content: '\e806'; } /* '顮�' */
+.uil-21-plus:before { content: '\e807'; } /* '顮�' */
+.uil-3-plus:before { content: '\e808'; } /* '顮�' */
+.uil-500px:before { content: '\e809'; } /* '顮�' */
+.uil-6-plus:before { content: '\e80a'; } /* '顮�' */
+.uil-abacus:before { content: '\e80b'; } /* '顮�' */
+.uil-accessible-icon-alt:before { content: '\e80c'; } /* '顮�' */
+.uil-adjust-alt:before { content: '\e80d'; } /* '顮�' */
+.uil-adjust-circle:before { content: '\e80e'; } /* '顮�' */
+.uil-adjust-half:before { content: '\e80f'; } /* '顮�' */
+.uil-adjust:before { content: '\e810'; } /* '顮�' */
+.uil-adobe:before { content: '\e811'; } /* '顮�' */
+.uil-airplay:before { content: '\e812'; } /* '顮�' */
+.uil-align-alt:before { content: '\e813'; } /* '顮�' */
+.uil-align-center-alt:before { content: '\e814'; } /* '顮�' */
+.uil-align-center-h:before { content: '\e815'; } /* '顮�' */
+.uil-align-center-justify:before { content: '\e816'; } /* '顮�' */
+.uil-align-center-v:before { content: '\e817'; } /* '顮�' */
+.uil-align-center:before { content: '\e818'; } /* '顮�' */
+.uil-align-justify:before { content: '\e819'; } /* '顮�' */
+.uil-align-left-justify:before { content: '\e81a'; } /* '顮�' */
+.uil-align-left:before { content: '\e81b'; } /* '顮�' */
+.uil-align-letter-right:before { content: '\e81c'; } /* '顮�' */
+.uil-align-right-justify:before { content: '\e81d'; } /* '顮�' */
+.uil-align-right:before { content: '\e81e'; } /* '顮�' */
+.uil-align:before { content: '\e81f'; } /* '顮�' */
+.uil-ambulance:before { content: '\e820'; } /* '顮�' */
+.uil-analysis:before { content: '\e821'; } /* '顮�' */
+.uil-analytics:before { content: '\e822'; } /* '顮�' */
+.uil-anchor:before { content: '\e823'; } /* '顮�' */
+.uil-android-phone-slash:before { content: '\e824'; } /* '顮�' */
+.uil-angle-double-down:before { content: '\e825'; } /* '顮�' */
+.uil-angle-double-left:before { content: '\e826'; } /* '顮�' */
+.uil-angle-double-right:before { content: '\e827'; } /* '顮�' */
+.uil-angle-double-up:before { content: '\e828'; } /* '顮�' */
+.uil-angle-down:before { content: '\e829'; } /* '顮�' */
+.uil-angle-left:before { content: '\e82a'; } /* '顮�' */
+.uil-angle-right-b:before { content: '\e82b'; } /* '顮�' */
+.uil-angle-right:before { content: '\e82c'; } /* '顮�' */
+.uil-angle-up:before { content: '\e82d'; } /* '顮�' */
+.uil-angry:before { content: '\e82e'; } /* '顮�' */
+.uil-ankh:before { content: '\e82f'; } /* '顮�' */
+.uil-annoyed-alt:before { content: '\e830'; } /* '顮�' */
+.uil-annoyed:before { content: '\e831'; } /* '顮�' */
+.uil-apple:before { content: '\e832'; } /* '顮�' */
+.uil-apps:before { content: '\e833'; } /* '顮�' */
+.uil-archive-alt:before { content: '\e834'; } /* '顮�' */
+.uil-archive:before { content: '\e835'; } /* '顮�' */
+.uil-archway:before { content: '\e836'; } /* '顮�' */
+.uil-arrow-break:before { content: '\e837'; } /* '顮�' */
+.uil-arrow-circle-down:before { content: '\e838'; } /* '顮�' */
+.uil-arrow-circle-left:before { content: '\e839'; } /* '顮�' */
+.uil-arrow-circle-right:before { content: '\e83a'; } /* '顮�' */
+.uil-arrow-circle-up:before { content: '\e83b'; } /* '顮�' */
+.uil-arrow-compress-h:before { content: '\e83c'; } /* '顮�' */
+.uil-arrow-down-left:before { content: '\e83d'; } /* '顮�' */
+.uil-arrow-down-right:before { content: '\e83e'; } /* '顮�' */
+.uil-arrow-down:before { content: '\e83f'; } /* '顮�' */
+.uil-arrow-from-right:before { content: '\e840'; } /* '睢€' */
+.uil-arrow-from-top:before { content: '\e841'; } /* '睢�' */
+.uil-arrow-growth:before { content: '\e842'; } /* '睢�' */
+.uil-arrow-left:before { content: '\e843'; } /* '睢�' */
+.uil-arrow-random:before { content: '\e844'; } /* '睢�' */
+.uil-arrow-resize-diagonal:before { content: '\e845'; } /* '睢�' */
+.uil-arrow-right:before { content: '\e846'; } /* '睢�' */
+.uil-arrow-to-bottom:before { content: '\e847'; } /* '睢�' */
+.uil-arrow-to-right:before { content: '\e848'; } /* '睢�' */
+.uil-arrow-up-left:before { content: '\e849'; } /* '睢�' */
+.uil-arrow-up-right:before { content: '\e84a'; } /* '睢�' */
+.uil-arrow-up:before { content: '\e84b'; } /* '睢�' */
+.uil-arrows-h-alt:before { content: '\e84c'; } /* '睢�' */
+.uil-arrows-h:before { content: '\e84d'; } /* '睢�' */
+.uil-arrows-left-down:before { content: '\e84e'; } /* '睢�' */
+.uil-arrows-maximize:before { content: '\e84f'; } /* '睢�' */
+.uil-arrows-merge:before { content: '\e850'; } /* '睢�' */
+.uil-arrows-resize-h:before { content: '\e851'; } /* '睢�' */
+.uil-arrows-resize-v:before { content: '\e852'; } /* '睢�' */
+.uil-arrows-resize:before { content: '\e853'; } /* '睢�' */
+.uil-arrows-right-down:before { content: '\e854'; } /* '睢�' */
+.uil-arrows-shrink-h:before { content: '\e855'; } /* '睢�' */
+.uil-arrows-shrink-v:before { content: '\e856'; } /* '睢�' */
+.uil-arrows-up-right:before { content: '\e857'; } /* '睢�' */
+.uil-arrows-v-alt:before { content: '\e858'; } /* '睢�' */
+.uil-arrows-v:before { content: '\e859'; } /* '睢�' */
+.uil-assistive-listening-systems:before { content: '\e85a'; } /* '睢�' */
+.uil-at:before { content: '\e85b'; } /* '睢�' */
+.uil-atm-card:before { content: '\e85c'; } /* '睢�' */
+.uil-atom:before { content: '\e85d'; } /* '睢�' */
+.uil-auto-flash:before { content: '\e85e'; } /* '睢�' */
+.uil-award-alt:before { content: '\e85f'; } /* '睢�' */
+.uil-award:before { content: '\e860'; } /* '睢�' */
+.uil-baby-carriage:before { content: '\e861'; } /* '睢�' */
+.uil-backpack:before { content: '\e862'; } /* '睢�' */
+.uil-backspace:before { content: '\e863'; } /* '睢�' */
+.uil-backward:before { content: '\e864'; } /* '睢�' */
+.uil-bag-alt:before { content: '\e865'; } /* '睢�' */
+.uil-bag-slash:before { content: '\e866'; } /* '睢�' */
+.uil-bag:before { content: '\e867'; } /* '睢�' */
+.uil-ball:before { content: '\e868'; } /* '睢�' */
+.uil-ban:before { content: '\e869'; } /* '睢�' */
+.uil-bars:before { content: '\e86a'; } /* '睢�' */
+.uil-basketball-hoop:before { content: '\e86b'; } /* '睢�' */
+.uil-basketball:before { content: '\e86c'; } /* '睢�' */
+.uil-battery-bolt:before { content: '\e86d'; } /* '睢�' */
+.uil-battery-empty:before { content: '\e86e'; } /* '睢�' */
+.uil-bed-double:before { content: '\e86f'; } /* '睢�' */
+.uil-bed:before { content: '\e870'; } /* '睢�' */
+.uil-behance:before { content: '\e871'; } /* '睢�' */
+.uil-bell-school:before { content: '\e872'; } /* '睢�' */
+.uil-bell-slash:before { content: '\e873'; } /* '睢�' */
+.uil-bell:before { content: '\e874'; } /* '睢�' */
+.uil-bill:before { content: '\e875'; } /* '睢�' */
+.uil-bitcoin-circle:before { content: '\e876'; } /* '睢�' */
+.uil-bitcoin:before { content: '\e877'; } /* '睢�' */
+.uil-black-berry:before { content: '\e878'; } /* '睢�' */
+.uil-bluetooth-b:before { content: '\e879'; } /* '睢�' */
+.uil-bold:before { content: '\e87a'; } /* '睢�' */
+.uil-bolt-alt:before { content: '\e87b'; } /* '睢�' */
+.uil-bolt-slash:before { content: '\e87c'; } /* '睢�' */
+.uil-bolt:before { content: '\e87d'; } /* '睢�' */
+.uil-book-alt:before { content: '\e87e'; } /* '睢�' */
+.uil-book-medical:before { content: '\e87f'; } /* '睢�' */
+.uil-book-open:before { content: '\e880'; } /* '睥€' */
+.uil-book-reader:before { content: '\e881'; } /* '睥�' */
+.uil-book:before { content: '\e882'; } /* '睥�' */
+.uil-bookmark-full:before { content: '\e883'; } /* '睥�' */
+.uil-bookmark:before { content: '\e884'; } /* '睥�' */
+.uil-books:before { content: '\e885'; } /* '睥�' */
+.uil-boombox:before { content: '\e886'; } /* '睥�' */
+.uil-border-alt:before { content: '\e887'; } /* '睥�' */
+.uil-border-bottom:before { content: '\e888'; } /* '睥�' */
+.uil-border-clear:before { content: '\e889'; } /* '睥�' */
+.uil-border-horizontal:before { content: '\e88a'; } /* '睥�' */
+.uil-border-inner:before { content: '\e88b'; } /* '睥�' */
+.uil-border-left:before { content: '\e88c'; } /* '睥�' */
+.uil-border-out:before { content: '\e88d'; } /* '睥�' */
+.uil-border-right:before { content: '\e88e'; } /* '睥�' */
+.uil-border-top:before { content: '\e88f'; } /* '睥�' */
+.uil-border-vertical:before { content: '\e890'; } /* '睥�' */
+.uil-box:before { content: '\e891'; } /* '睥�' */
+.uil-briefcase-alt:before { content: '\e892'; } /* '睥�' */
+.uil-briefcase:before { content: '\e893'; } /* '睥�' */
+.uil-bright:before { content: '\e894'; } /* '睥�' */
+.uil-brightness-empty:before { content: '\e895'; } /* '睥�' */
+.uil-brightness-half:before { content: '\e896'; } /* '睥�' */
+.uil-brightness-low:before { content: '\e897'; } /* '睥�' */
+.uil-brightness-minus:before { content: '\e898'; } /* '睥�' */
+.uil-brightness-plus:before { content: '\e899'; } /* '睥�' */
+.uil-brightness:before { content: '\e89a'; } /* '睥�' */
+.uil-bring-bottom:before { content: '\e89b'; } /* '睥�' */
+.uil-bring-front:before { content: '\e89c'; } /* '睥�' */
+.uil-brush-alt:before { content: '\e89d'; } /* '睥�' */
+.uil-bug:before { content: '\e89e'; } /* '睥�' */
+.uil-building:before { content: '\e89f'; } /* '睥�' */
+.uil-bullseye:before { content: '\e8a0'; } /* '睥�' */
+.uil-bus-alt:before { content: '\e8a1'; } /* '睥�' */
+.uil-bus-school:before { content: '\e8a2'; } /* '睥�' */
+.uil-bus:before { content: '\e8a3'; } /* '睥�' */
+.uil-calcualtor:before { content: '\e8a4'; } /* '睥�' */
+.uil-calculator-alt:before { content: '\e8a5'; } /* '睥�' */
+.uil-calendar-alt:before { content: '\e8a6'; } /* '睥�' */
+.uil-calendar-slash:before { content: '\e8a7'; } /* '睥�' */
+.uil-calender:before { content: '\e8a8'; } /* '睥�' */
+.uil-calling:before { content: '\e8a9'; } /* '睥�' */
+.uil-camera-change:before { content: '\e8aa'; } /* '睥�' */
+.uil-camera-plus:before { content: '\e8ab'; } /* '睥�' */
+.uil-camera-slash:before { content: '\e8ac'; } /* '睥�' */
+.uil-camera:before { content: '\e8ad'; } /* '睥�' */
+.uil-cancel:before { content: '\e8ae'; } /* '睥�' */
+.uil-capsule:before { content: '\e8af'; } /* '睥�' */
+.uil-capture:before { content: '\e8b0'; } /* '睥�' */
+.uil-car-sideview:before { content: '\e8b1'; } /* '睥�' */
+.uil-car-slash:before { content: '\e8b2'; } /* '睥�' */
+.uil-car-wash:before { content: '\e8b3'; } /* '睥�' */
+.uil-car:before { content: '\e8b4'; } /* '睥�' */
+.uil-card-atm:before { content: '\e8b5'; } /* '睥�' */
+.uil-caret-right:before { content: '\e8b6'; } /* '睥�' */
+.uil-cart:before { content: '\e8b7'; } /* '睥�' */
+.uil-cell:before { content: '\e8b8'; } /* '睥�' */
+.uil-celsius:before { content: '\e8b9'; } /* '睥�' */
+.uil-chart-bar-alt:before { content: '\e8ba'; } /* '睥�' */
+.uil-chart-bar:before { content: '\e8bb'; } /* '睥�' */
+.uil-chart-down:before { content: '\e8bc'; } /* '睥�' */
+.uil-chart-growth-alt:before { content: '\e8bd'; } /* '睥�' */
+.uil-chart-growth:before { content: '\e8be'; } /* '睥�' */
+.uil-chart-line:before { content: '\e8bf'; } /* '睥�' */
+.uil-chart-pie-alt:before { content: '\e8c0'; } /* '睿€' */
+.uil-chart-pie:before { content: '\e8c1'; } /* '睿�' */
+.uil-chart:before { content: '\e8c2'; } /* '睿�' */
+.uil-chat-bubble-user:before { content: '\e8c3'; } /* '睿�' */
+.uil-chat-info:before { content: '\e8c4'; } /* '睿�' */
+.uil-chat:before { content: '\e8c5'; } /* '睿�' */
+.uil-check-circle:before { content: '\e8c6'; } /* '睿�' */
+.uil-check-square:before { content: '\e8c7'; } /* '睿�' */
+.uil-check:before { content: '\e8c8'; } /* '睿�' */
+.uil-circle-layer:before { content: '\e8c9'; } /* '睿�' */
+.uil-circle:before { content: '\e8ca'; } /* '睿�' */
+.uil-circuit:before { content: '\e8cb'; } /* '睿�' */
+.uil-clapper-board:before { content: '\e8cc'; } /* '睿�' */
+.uil-clipboard-alt:before { content: '\e8cd'; } /* '睿�' */
+.uil-clipboard-blank:before { content: '\e8ce'; } /* '睿�' */
+.uil-clipboard-notes:before { content: '\e8cf'; } /* '睿�' */
+.uil-clipboard:before { content: '\e8d0'; } /* '睿�' */
+.uil-clock-eight:before { content: '\e8d1'; } /* '睿�' */
+.uil-clock-five:before { content: '\e8d2'; } /* '睿�' */
+.uil-clock-nine:before { content: '\e8d3'; } /* '睿�' */
+.uil-clock-seven:before { content: '\e8d4'; } /* '睿�' */
+.uil-clock-ten:before { content: '\e8d5'; } /* '睿�' */
+.uil-clock-three:before { content: '\e8d6'; } /* '睿�' */
+.uil-clock-two:before { content: '\e8d7'; } /* '睿�' */
+.uil-clock:before { content: '\e8d8'; } /* '睿�' */
+.uil-closed-captioning:before { content: '\e8d9'; } /* '睿�' */
+.uil-cloud-block:before { content: '\e8da'; } /* '睿�' */
+.uil-cloud-bookmark:before { content: '\e8db'; } /* '睿�' */
+.uil-cloud-check:before { content: '\e8dc'; } /* '睿�' */
+.uil-cloud-computing:before { content: '\e8dd'; } /* '睿�' */
+.uil-cloud-data-connection:before { content: '\e8de'; } /* '睿�' */
+.uil-cloud-database-tree:before { content: '\e8df'; } /* '睿�' */
+.uil-cloud-download:before { content: '\e8e0'; } /* '睿�' */
+.uil-cloud-drizzle:before { content: '\e8e1'; } /* '睿�' */
+.uil-cloud-exclamation:before { content: '\e8e2'; } /* '睿�' */
+.uil-cloud-hail:before { content: '\e8e3'; } /* '睿�' */
+.uil-cloud-heart:before { content: '\e8e4'; } /* '睿�' */
+.uil-cloud-info:before { content: '\e8e5'; } /* '睿�' */
+.uil-cloud-lock:before { content: '\e8e6'; } /* '睿�' */
+.uil-cloud-meatball:before { content: '\e8e7'; } /* '睿�' */
+.uil-cloud-moon-hail:before { content: '\e8e8'; } /* '睿�' */
+.uil-cloud-moon-meatball:before { content: '\e8e9'; } /* '睿�' */
+.uil-cloud-moon-rain:before { content: '\e8ea'; } /* '睿�' */
+.uil-cloud-moon-showers:before { content: '\e8eb'; } /* '睿�' */
+.uil-cloud-moon:before { content: '\e8ec'; } /* '睿�' */
+.uil-cloud-question:before { content: '\e8ed'; } /* '睿�' */
+.uil-cloud-rain-sun:before { content: '\e8ee'; } /* '睿�' */
+.uil-cloud-rain:before { content: '\e8ef'; } /* '睿�' */
+.uil-cloud-redo:before { content: '\e8f0'; } /* '睿�' */
+.uil-cloud-set:before { content: '\e8f1'; } /* '睿�' */
+.uil-cloud-share:before { content: '\e8f2'; } /* '睿�' */
+.uil-cloud-shield:before { content: '\e8f3'; } /* '睿�' */
+.uil-cloud-showers-alt:before { content: '\e8f4'; } /* '睿�' */
+.uil-cloud-showers-heavy:before { content: '\e8f5'; } /* '睿�' */
+.uil-cloud-showers:before { content: '\e8f6'; } /* '睿�' */
+.uil-cloud-slash:before { content: '\e8f7'; } /* '睿�' */
+.uil-cloud-sun-hail:before { content: '\e8f8'; } /* '睿�' */
+.uil-cloud-sun-meatball:before { content: '\e8f9'; } /* '睿�' */
+.uil-cloud-sun-rain-alt:before { content: '\e8fa'; } /* '睿�' */
+.uil-cloud-sun-rain:before { content: '\e8fb'; } /* '睿�' */
+.uil-cloud-sun-tear:before { content: '\e8fc'; } /* '睿�' */
+.uil-cloud-sun:before { content: '\e8fd'; } /* '睿�' */
+.uil-cloud-times:before { content: '\e8fe'; } /* '睿�' */
+.uil-cloud-unlock:before { content: '\e8ff'; } /* '睿�' */
+.uil-cloud-upload:before { content: '\e900'; } /* '瞍€' */
+.uil-cloud-wifi:before { content: '\e901'; } /* '瞍�' */
+.uil-cloud-wind:before { content: '\e902'; } /* '瞍�' */
+.uil-cloud:before { content: '\e903'; } /* '瞍�' */
+.uil-clouds:before { content: '\e904'; } /* '瞍�' */
+.uil-club:before { content: '\e905'; } /* '瞍�' */
+.uil-code:before { content: '\e906'; } /* '瞍�' */
+.uil-coffee:before { content: '\e907'; } /* '瞍�' */
+.uil-cog:before { content: '\e908'; } /* '瞍�' */
+.uil-coins:before { content: '\e909'; } /* '瞍�' */
+.uil-columns:before { content: '\e90a'; } /* '瞍�' */
+.uil-comment-alt-block:before { content: '\e90b'; } /* '瞍�' */
+.uil-comment-alt-chart-lines:before { content: '\e90c'; } /* '瞍�' */
+.uil-comment-alt-check:before { content: '\e90d'; } /* '瞍�' */
+.uil-comment-alt-dots:before { content: '\e90e'; } /* '瞍�' */
+.uil-comment-alt-download:before { content: '\e90f'; } /* '瞍�' */
+.uil-comment-alt-edit:before { content: '\e910'; } /* '瞍�' */
+.uil-comment-alt-exclamation:before { content: '\e911'; } /* '瞍�' */
+.uil-comment-alt-heart:before { content: '\e912'; } /* '瞍�' */
+.uil-comment-alt-image:before { content: '\e913'; } /* '瞍�' */
+.uil-comment-alt-info:before { content: '\e914'; } /* '瞍�' */
+.uil-comment-alt-lines:before { content: '\e915'; } /* '瞍�' */
+.uil-comment-alt-lock:before { content: '\e916'; } /* '瞍�' */
+.uil-comment-alt-medical:before { content: '\e917'; } /* '瞍�' */
+.uil-comment-alt-message:before { content: '\e918'; } /* '瞍�' */
+.uil-comment-alt-notes:before { content: '\e919'; } /* '瞍�' */
+.uil-comment-alt-plus:before { content: '\e91a'; } /* '瞍�' */
+.uil-comment-alt-question:before { content: '\e91b'; } /* '瞍�' */
+.uil-comment-alt-redo:before { content: '\e91c'; } /* '瞍�' */
+.uil-comment-alt-search:before { content: '\e91d'; } /* '瞍�' */
+.uil-comment-alt-share:before { content: '\e91e'; } /* '瞍�' */
+.uil-comment-alt-shield:before { content: '\e91f'; } /* '瞍�' */
+.uil-comment-alt-slash:before { content: '\e920'; } /* '瞍�' */
+.uil-comment-alt-upload:before { content: '\e921'; } /* '瞍�' */
+.uil-comment-alt-verify:before { content: '\e922'; } /* '瞍�' */
+.uil-comment-alt:before { content: '\e923'; } /* '瞍�' */
+.uil-comment-block:before { content: '\e924'; } /* '瞍�' */
+.uil-comment-chart-line:before { content: '\e925'; } /* '瞍�' */
+.uil-comment-check:before { content: '\e926'; } /* '瞍�' */
+.uil-comment-dots:before { content: '\e927'; } /* '瞍�' */
+.uil-comment-download:before { content: '\e928'; } /* '瞍�' */
+.uil-comment-edit:before { content: '\e929'; } /* '瞍�' */
+.uil-comment-exclamation:before { content: '\e92a'; } /* '瞍�' */
+.uil-comment-heart:before { content: '\e92b'; } /* '瞍�' */
+.uil-comment-image:before { content: '\e92c'; } /* '瞍�' */
+.uil-comment-info-alt:before { content: '\e92d'; } /* '瞍�' */
+.uil-comment-info:before { content: '\e92e'; } /* '瞍�' */
+.uil-comment-lines:before { content: '\e92f'; } /* '瞍�' */
+.uil-comment-lock:before { content: '\e930'; } /* '瞍�' */
+.uil-comment-medical:before { content: '\e931'; } /* '瞍�' */
+.uil-comment-message:before { content: '\e932'; } /* '瞍�' */
+.uil-comment-notes:before { content: '\e933'; } /* '瞍�' */
+.uil-comment-plus:before { content: '\e934'; } /* '瞍�' */
+.uil-comment-question:before { content: '\e935'; } /* '瞍�' */
+.uil-comment-redo:before { content: '\e936'; } /* '瞍�' */
+.uil-comment-search:before { content: '\e937'; } /* '瞍�' */
+.uil-comment-share:before { content: '\e938'; } /* '瞍�' */
+.uil-comment-shield:before { content: '\e939'; } /* '瞍�' */
+.uil-comment-slash:before { content: '\e93a'; } /* '瞍�' */
+.uil-comment-upload:before { content: '\e93b'; } /* '瞍�' */
+.uil-comment-verify:before { content: '\e93c'; } /* '瞍�' */
+.uil-comment:before { content: '\e93d'; } /* '瞍�' */
+.uil-comments-alt:before { content: '\e93e'; } /* '瞍�' */
+.uil-comments:before { content: '\e93f'; } /* '瞍�' */
+.uil-commnet-alt-slash:before { content: '\e940'; } /* '睽€' */
+.uil-compact-disc:before { content: '\e941'; } /* '睽�' */
+.uil-compass:before { content: '\e942'; } /* '睽�' */
+.uil-compress-alt-left:before { content: '\e943'; } /* '睽�' */
+.uil-compress-alt:before { content: '\e944'; } /* '睽�' */
+.uil-compress-arrows:before { content: '\e945'; } /* '睽�' */
+.uil-compress-lines:before { content: '\e946'; } /* '睽�' */
+.uil-compress-point:before { content: '\e947'; } /* '睽�' */
+.uil-compress-v:before { content: '\e948'; } /* '睽�' */
+.uil-compress:before { content: '\e949'; } /* '睽�' */
+.uil-computer-mouse:before { content: '\e94a'; } /* '睽�' */
+.uil-confused:before { content: '\e94b'; } /* '睽�' */
+.uil-constructor:before { content: '\e94c'; } /* '睽�' */
+.uil-copy-alt:before { content: '\e94d'; } /* '睽�' */
+.uil-copy-landscape:before { content: '\e94e'; } /* '睽�' */
+.uil-copy:before { content: '\e94f'; } /* '睽�' */
+.uil-copyright:before { content: '\e950'; } /* '睽�' */
+.uil-corner-down-left:before { content: '\e951'; } /* '睽�' */
+.uil-corner-down-right-alt:before { content: '\e952'; } /* '睽�' */
+.uil-corner-down-right:before { content: '\e953'; } /* '睽�' */
+.uil-corner-left-down:before { content: '\e954'; } /* '睽�' */
+.uil-corner-right-down:before { content: '\e955'; } /* '睽�' */
+.uil-corner-up-left-alt:before { content: '\e956'; } /* '睽�' */
+.uil-corner-up-left:before { content: '\e957'; } /* '睽�' */
+.uil-corner-up-right-alt:before { content: '\e958'; } /* '睽�' */
+.uil-corner-up-right:before { content: '\e959'; } /* '睽�' */
+.uil-creative-commons-pd-alt:before { content: '\e95a'; } /* '睽�' */
+.uil-creative-commons-pd:before { content: '\e95b'; } /* '睽�' */
+.uil-crockery:before { content: '\e95c'; } /* '睽�' */
+.uil-crop-alt-rotate-left:before { content: '\e95d'; } /* '睽�' */
+.uil-crop-alt-rotate-right:before { content: '\e95e'; } /* '睽�' */
+.uil-crop-alt:before { content: '\e95f'; } /* '睽�' */
+.uil-crosshair-alt:before { content: '\e960'; } /* '睽�' */
+.uil-crosshair:before { content: '\e961'; } /* '睽�' */
+.uil-crosshairs:before { content: '\e962'; } /* '睽�' */
+.uil-cube:before { content: '\e963'; } /* '睽�' */
+.uil-data-sharing:before { content: '\e964'; } /* '睽�' */
+.uil-database-alt:before { content: '\e965'; } /* '睽�' */
+.uil-database:before { content: '\e966'; } /* '睽�' */
+.uil-desert:before { content: '\e967'; } /* '睽�' */
+.uil-desktop-alt-slash:before { content: '\e968'; } /* '睽�' */
+.uil-desktop-alt:before { content: '\e969'; } /* '睽�' */
+.uil-desktop-cloud-alt:before { content: '\e96a'; } /* '睽�' */
+.uil-desktop-slash:before { content: '\e96b'; } /* '睽�' */
+.uil-desktop:before { content: '\e96c'; } /* '睽�' */
+.uil-dialpad-alt:before { content: '\e96d'; } /* '睽�' */
+.uil-dialpad:before { content: '\e96e'; } /* '睽�' */
+.uil-diamond:before { content: '\e96f'; } /* '睽�' */
+.uil-diary-alt:before { content: '\e970'; } /* '睽�' */
+.uil-diary:before { content: '\e971'; } /* '睽�' */
+.uil-dice-five:before { content: '\e972'; } /* '睽�' */
+.uil-dice-four:before { content: '\e973'; } /* '睽�' */
+.uil-dice-one:before { content: '\e974'; } /* '睽�' */
+.uil-dice-six:before { content: '\e975'; } /* '睽�' */
+.uil-dice-three:before { content: '\e976'; } /* '睽�' */
+.uil-dice-two:before { content: '\e977'; } /* '睽�' */
+.uil-direction:before { content: '\e978'; } /* '睽�' */
+.uil-directions:before { content: '\e979'; } /* '睽�' */
+.uil-dizzy-meh:before { content: '\e97a'; } /* '睽�' */
+.uil-dna:before { content: '\e97b'; } /* '睽�' */
+.uil-document-layout-center:before { content: '\e97c'; } /* '睽�' */
+.uil-document-layout-left:before { content: '\e97d'; } /* '睽�' */
+.uil-document-layout-right:before { content: '\e97e'; } /* '睽�' */
+.uil-document:before { content: '\e97f'; } /* '睽�' */
+.uil-dollar-alt:before { content: '\e980'; } /* '瞀€' */
+.uil-dollar-sign-alt:before { content: '\e981'; } /* '瞀�' */
+.uil-dollar-sign:before { content: '\e982'; } /* '瞀�' */
+.uil-down-arrow:before { content: '\e983'; } /* '瞀�' */
+.uil-download-alt:before { content: '\e984'; } /* '瞀�' */
+.uil-dribbble:before { content: '\e985'; } /* '瞀�' */
+.uil-drill:before { content: '\e986'; } /* '瞀�' */
+.uil-dropbox:before { content: '\e987'; } /* '瞀�' */
+.uil-dumbbell:before { content: '\e988'; } /* '瞀�' */
+.uil-edit-alt:before { content: '\e98a'; } /* '瞀�' */
+.uil-edit:before { content: '\e98b'; } /* '瞀�' */
+.uil-ellipsis-h:before { content: '\e98c'; } /* '瞀�' */
+.uil-ellipsis-v:before { content: '\e98d'; } /* '瞀�' */
+.uil-emoji:before { content: '\e98e'; } /* '瞀�' */
+.uil-enter:before { content: '\e98f'; } /* '瞀�' */
+.uil-entry:before { content: '\e990'; } /* '瞀�' */
+.uil-envelope-add:before { content: '\e991'; } /* '瞀�' */
+.uil-envelope-alt:before { content: '\e992'; } /* '瞀�' */
+.uil-envelope-block:before { content: '\e993'; } /* '瞀�' */
+.uil-envelope-bookmark:before { content: '\e994'; } /* '瞀�' */
+.uil-envelope-check:before { content: '\e995'; } /* '瞀�' */
+.uil-envelope-download-alt:before { content: '\e996'; } /* '瞀�' */
+.uil-envelope-download:before { content: '\e997'; } /* '瞀�' */
+.uil-envelope-edit:before { content: '\e998'; } /* '瞀�' */
+.uil-envelope-exclamation:before { content: '\e999'; } /* '瞀�' */
+.uil-envelope-heart:before { content: '\e99a'; } /* '瞀�' */
+.uil-envelope-info:before { content: '\e99b'; } /* '瞀�' */
+.uil-envelope-lock:before { content: '\e99c'; } /* '瞀�' */
+.uil-envelope-minus:before { content: '\e99d'; } /* '瞀�' */
+.uil-envelope-open:before { content: '\e99e'; } /* '瞀�' */
+.uil-envelope-question:before { content: '\e99f'; } /* '瞀�' */
+.uil-envelope-receive:before { content: '\e9a0'; } /* '瞀�' */
+.uil-envelope-redo:before { content: '\e9a1'; } /* '瞀�' */
+.uil-envelope-search:before { content: '\e9a2'; } /* '瞀�' */
+.uil-envelope-send:before { content: '\e9a3'; } /* '瞀�' */
+.uil-envelope-share:before { content: '\e9a4'; } /* '瞀�' */
+.uil-envelope-shield:before { content: '\e9a5'; } /* '瞀�' */
+.uil-envelope-star:before { content: '\e9a6'; } /* '瞀�' */
+.uil-envelope-times:before { content: '\e9a7'; } /* '瞀�' */
+.uil-envelope-upload-alt:before { content: '\e9a8'; } /* '瞀�' */
+.uil-envelope-upload:before { content: '\e9a9'; } /* '瞀�' */
+.uil-envelope:before { content: '\e9aa'; } /* '瞀�' */
+.uil-envelopes:before { content: '\e9ab'; } /* '瞀�' */
+.uil-equal-circle:before { content: '\e9ac'; } /* '瞀�' */
+.uil-euro-circle:before { content: '\e9ad'; } /* '瞀�' */
+.uil-euro:before { content: '\e9ae'; } /* '瞀�' */
+.uil-exchange-alt:before { content: '\e9af'; } /* '瞀�' */
+.uil-exchange:before { content: '\e9b0'; } /* '瞀�' */
+.uil-exclamation-circle:before { content: '\e9b1'; } /* '瞀�' */
+.uil-exclamation-octagon:before { content: '\e9b2'; } /* '瞀�' */
+.uil-exclamation-triangle:before { content: '\e9b3'; } /* '瞀�' */
+.uil-exclude:before { content: '\e9b4'; } /* '瞀�' */
+.uil-exit:before { content: '\e9b5'; } /* '瞀�' */
+.uil-expand-alt:before { content: '\e9b6'; } /* '瞀�' */
+.uil-expand-arrows-alt:before { content: '\e9b7'; } /* '瞀�' */
+.uil-expand-arrows:before { content: '\e9b8'; } /* '瞀�' */
+.uil-expand-from-corner:before { content: '\e9b9'; } /* '瞀�' */
+.uil-expand-left:before { content: '\e9ba'; } /* '瞀�' */
+.uil-expand-right:before { content: '\e9bb'; } /* '瞀�' */
+.uil-export:before { content: '\e9bc'; } /* '瞀�' */
+.uil-exposure-alt:before { content: '\e9bd'; } /* '瞀�' */
+.uil-exposure-increase:before { content: '\e9be'; } /* '瞀�' */
+.uil-external-link-alt:before { content: '\e9bf'; } /* '瞀�' */
+.uil-eye-slash:before { content: '\e9c0'; } /* '瞌€' */
+.uil-eye:before { content: '\e9c1'; } /* '瞌�' */
+.uil-facebook-f:before { content: '\e9c2'; } /* '瞌�' */
+.uil-facebook-messenger:before { content: '\e9c3'; } /* '瞌�' */
+.uil-facebook:before { content: '\e9c4'; } /* '瞌�' */
+.uil-fahrenheit:before { content: '\e9c5'; } /* '瞌�' */
+.uil-fast-mail-alt:before { content: '\e9c6'; } /* '瞌�' */
+.uil-fast-mail:before { content: '\e9c7'; } /* '瞌�' */
+.uil-favorite:before { content: '\e9c8'; } /* '瞌�' */
+.uil-feedback:before { content: '\e9c9'; } /* '瞌�' */
+.uil-file-alt:before { content: '\e9ca'; } /* '瞌�' */
+.uil-file-blank:before { content: '\e9cb'; } /* '瞌�' */
+.uil-file-block-alt:before { content: '\e9cc'; } /* '瞌�' */
+.uil-file-bookmark-alt:before { content: '\e9cd'; } /* '瞌�' */
+.uil-file-check-alt:before { content: '\e9ce'; } /* '瞌�' */
+.uil-file-check:before { content: '\e9cf'; } /* '瞌�' */
+.uil-file-contract-dollar:before { content: '\e9d0'; } /* '瞌�' */
+.uil-file-copy-alt:before { content: '\e9d1'; } /* '瞌�' */
+.uil-file-download-alt:before { content: '\e9d2'; } /* '瞌�' */
+.uil-file-download:before { content: '\e9d3'; } /* '瞌�' */
+.uil-file-edit-alt:before { content: '\e9d4'; } /* '瞌�' */
+.uil-file-exclamation-alt:before { content: '\e9d5'; } /* '瞌�' */
+.uil-file-exclamation:before { content: '\e9d6'; } /* '瞌�' */
+.uil-file-heart:before { content: '\e9d7'; } /* '瞌�' */
+.uil-file-info-alt:before { content: '\e9d8'; } /* '瞌�' */
+.uil-file-landscape-alt:before { content: '\e9d9'; } /* '瞌�' */
+.uil-file-landscape:before { content: '\e9da'; } /* '瞌�' */
+.uil-file-lanscape-slash:before { content: '\e9db'; } /* '瞌�' */
+.uil-file-lock-alt:before { content: '\e9dc'; } /* '瞌�' */
+.uil-file-medical-alt:before { content: '\e9dd'; } /* '瞌�' */
+.uil-file-medical:before { content: '\e9de'; } /* '瞌�' */
+.uil-file-minus-alt:before { content: '\e9df'; } /* '瞌�' */
+.uil-file-minus:before { content: '\e9e0'; } /* '瞌�' */
+.uil-file-network:before { content: '\e9e1'; } /* '瞌�' */
+.uil-file-plus-alt:before { content: '\e9e2'; } /* '瞌�' */
+.uil-file-plus:before { content: '\e9e3'; } /* '瞌�' */
+.uil-file-question-alt:before { content: '\e9e4'; } /* '瞌�' */
+.uil-file-question:before { content: '\e9e5'; } /* '瞌�' */
+.uil-file-redo-alt:before { content: '\e9e6'; } /* '瞌�' */
+.uil-file-search-alt:before { content: '\e9e7'; } /* '瞌�' */
+.uil-file-share-alt:before { content: '\e9e8'; } /* '瞌�' */
+.uil-file-shield-alt:before { content: '\e9e9'; } /* '瞌�' */
+.uil-file-slash:before { content: '\e9ea'; } /* '瞌�' */
+.uil-file-times-alt:before { content: '\e9eb'; } /* '瞌�' */
+.uil-file-times:before { content: '\e9ec'; } /* '瞌�' */
+.uil-file-upload-alt:before { content: '\e9ed'; } /* '瞌�' */
+.uil-file-upload:before { content: '\e9ee'; } /* '瞌�' */
+.uil-file:before { content: '\e9ef'; } /* '瞌�' */
+.uil-files-landscapes-alt:before { content: '\e9f0'; } /* '瞌�' */
+.uil-files-landscapes:before { content: '\e9f1'; } /* '瞌�' */
+.uil-film:before { content: '\e9f2'; } /* '瞌�' */
+.uil-filter-slash:before { content: '\e9f3'; } /* '瞌�' */
+.uil-filter:before { content: '\e9f4'; } /* '瞌�' */
+.uil-flask-potion:before { content: '\e9f5'; } /* '瞌�' */
+.uil-flask:before { content: '\e9f6'; } /* '瞌�' */
+.uil-flip-h-alt:before { content: '\e9f7'; } /* '瞌�' */
+.uil-flip-h:before { content: '\e9f8'; } /* '瞌�' */
+.uil-flip-v-alt:before { content: '\e9f9'; } /* '瞌�' */
+.uil-flip-v:before { content: '\e9fa'; } /* '瞌�' */
+.uil-flower:before { content: '\e9fb'; } /* '瞌�' */
+.uil-focus-add:before { content: '\e9fc'; } /* '瞌�' */
+.uil-focus-target:before { content: '\e9fd'; } /* '瞌�' */
+.uil-focus:before { content: '\e9fe'; } /* '瞌�' */
+.uil-folder-check:before { content: '\e9ff'; } /* '瞌�' */
+.uil-folder-download:before { content: '\ea00'; } /* '瞑€' */
+.uil-folder-exclamation:before { content: '\ea01'; } /* '瞑�' */
+.uil-folder-heart:before { content: '\ea02'; } /* '瞑�' */
+.uil-folder-info:before { content: '\ea03'; } /* '瞑�' */
+.uil-folder-lock:before { content: '\ea04'; } /* '瞑�' */
+.uil-folder-medical:before { content: '\ea05'; } /* '瞑�' */
+.uil-folder-minus:before { content: '\ea06'; } /* '瞑�' */
+.uil-folder-network:before { content: '\ea07'; } /* '瞑�' */
+.uil-folder-plus:before { content: '\ea08'; } /* '瞑�' */
+.uil-folder-question:before { content: '\ea09'; } /* '瞑�' */
+.uil-folder-slash:before { content: '\ea0a'; } /* '瞑�' */
+.uil-folder-times:before { content: '\ea0b'; } /* '瞑�' */
+.uil-folder-upload:before { content: '\ea0c'; } /* '瞑�' */
+.uil-folder:before { content: '\ea0d'; } /* '瞑�' */
+.uil-food:before { content: '\ea0e'; } /* '瞑�' */
+.uil-football-american:before { content: '\ea0f'; } /* '瞑�' */
+.uil-football-ball:before { content: '\ea10'; } /* '瞑�' */
+.uil-football:before { content: '\ea11'; } /* '瞑�' */
+.uil-forecastcloud-moon-tear:before { content: '\ea12'; } /* '瞑�' */
+.uil-forwaded-call:before { content: '\ea13'; } /* '瞑�' */
+.uil-forward:before { content: '\ea14'; } /* '瞑�' */
+.uil-frown:before { content: '\ea15'; } /* '瞑�' */
+.uil-game-structure:before { content: '\ea16'; } /* '瞑�' */
+.uil-game:before { content: '\ea17'; } /* '瞑�' */
+.uil-gift:before { content: '\ea18'; } /* '瞑�' */
+.uil-glass-martini-alt-slash:before { content: '\ea19'; } /* '瞑�' */
+.uil-glass-martini-alt:before { content: '\ea1a'; } /* '瞑�' */
+.uil-glass-martini:before { content: '\ea1b'; } /* '瞑�' */
+.uil-glass-tea:before { content: '\ea1c'; } /* '瞑�' */
+.uil-glass:before { content: '\ea1d'; } /* '瞑�' */
+.uil-globe:before { content: '\ea1e'; } /* '瞑�' */
+.uil-gold:before { content: '\ea1f'; } /* '瞑�' */
+.uil-google-drive:before { content: '\ea20'; } /* '瞑�' */
+.uil-graduation-hat:before { content: '\ea21'; } /* '瞑�' */
+.uil-graph-bar:before { content: '\ea22'; } /* '瞑�' */
+.uil-grid:before { content: '\ea23'; } /* '瞑�' */
+.uil-grids:before { content: '\ea24'; } /* '瞑�' */
+.uil-grin-tongue-wink-alt:before { content: '\ea25'; } /* '瞑�' */
+.uil-grin-tongue-wink:before { content: '\ea26'; } /* '瞑�' */
+.uil-grin:before { content: '\ea27'; } /* '瞑�' */
+.uil-grip-horizontal-line:before { content: '\ea28'; } /* '瞑�' */
+.uil-hdd:before { content: '\ea29'; } /* '瞑�' */
+.uil-headphones-alt:before { content: '\ea2a'; } /* '瞑�' */
+.uil-headphones:before { content: '\ea2b'; } /* '瞑�' */
+.uil-heart-alt:before { content: '\ea2c'; } /* '瞑�' */
+.uil-heart-medical:before { content: '\ea2d'; } /* '瞑�' */
+.uil-heart-rate:before { content: '\ea2e'; } /* '瞑�' */
+.uil-heart-sign:before { content: '\ea2f'; } /* '瞑�' */
+.uil-heart:before { content: '\ea30'; } /* '瞑�' */
+.uil-heartbeat:before { content: '\ea31'; } /* '瞑�' */
+.uil-history-alt:before { content: '\ea32'; } /* '瞑�' */
+.uil-history:before { content: '\ea33'; } /* '瞑�' */
+.uil-home-alt:before { content: '\ea34'; } /* '瞑�' */
+.uil-home:before { content: '\ea35'; } /* '瞑�' */
+.uil-horizontal-align-center:before { content: '\ea36'; } /* '瞑�' */
+.uil-horizontal-align-left:before { content: '\ea37'; } /* '瞑�' */
+.uil-horizontal-align-right:before { content: '\ea38'; } /* '瞑�' */
+.uil-horizontal-distribution-center:before { content: '\ea39'; } /* '瞑�' */
+.uil-horizontal-distribution-left:before { content: '\ea3a'; } /* '瞑�' */
+.uil-horizontal-distribution-right:before { content: '\ea3b'; } /* '瞑�' */
+.uil-hunting:before { content: '\ea3c'; } /* '瞑�' */
+.uil-image-alt-slash:before { content: '\ea3d'; } /* '瞑�' */
+.uil-image-block:before { content: '\ea3e'; } /* '瞑�' */
+.uil-image-broken:before { content: '\ea3f'; } /* '瞑�' */
+.uil-image-check:before { content: '\ea40'; } /* '瞟€' */
+.uil-image-download:before { content: '\ea41'; } /* '瞟�' */
+.uil-image-edit:before { content: '\ea42'; } /* '瞟�' */
+.uil-image-lock:before { content: '\ea43'; } /* '瞟�' */
+.uil-image-minus:before { content: '\ea44'; } /* '瞟�' */
+.uil-image-plus:before { content: '\ea45'; } /* '瞟�' */
+.uil-image-question:before { content: '\ea46'; } /* '瞟�' */
+.uil-image-redo:before { content: '\ea47'; } /* '瞟�' */
+.uil-image-resize-landscape:before { content: '\ea48'; } /* '瞟�' */
+.uil-image-resize-square:before { content: '\ea49'; } /* '瞟�' */
+.uil-image-search:before { content: '\ea4a'; } /* '瞟�' */
+.uil-image-share:before { content: '\ea4b'; } /* '瞟�' */
+.uil-image-shield:before { content: '\ea4c'; } /* '瞟�' */
+.uil-image-slash:before { content: '\ea4d'; } /* '瞟�' */
+.uil-image-times:before { content: '\ea4e'; } /* '瞟�' */
+.uil-image-upload:before { content: '\ea4f'; } /* '瞟�' */
+.uil-image-v:before { content: '\ea50'; } /* '瞟�' */
+.uil-image:before { content: '\ea51'; } /* '瞟�' */
+.uil-images:before { content: '\ea52'; } /* '瞟�' */
+.uil-incoming-call:before { content: '\ea53'; } /* '瞟�' */
+.uil-info-circle:before { content: '\ea54'; } /* '瞟�' */
+.uil-instagram-alt:before { content: '\ea55'; } /* '瞟�' */
+.uil-instagram:before { content: '\ea56'; } /* '瞟�' */
+.uil-intercom:before { content: '\ea57'; } /* '瞟�' */
+.uil-invoice:before { content: '\ea58'; } /* '瞟�' */
+.uil-italic:before { content: '\ea59'; } /* '瞟�' */
+.uil-jackhammer:before { content: '\ea5a'; } /* '瞟�' */
+.uil-kayak:before { content: '\ea5b'; } /* '瞟�' */
+.uil-key-skeleton-alt:before { content: '\ea5c'; } /* '瞟�' */
+.uil-key-skeleton:before { content: '\ea5d'; } /* '瞟�' */
+.uil-keyboard-alt:before { content: '\ea5e'; } /* '瞟�' */
+.uil-keyboard-hide:before { content: '\ea5f'; } /* '瞟�' */
+.uil-keyboard-show:before { content: '\ea60'; } /* '瞟�' */
+.uil-keyboard:before { content: '\ea61'; } /* '瞟�' */
+.uil-keyhole-circle:before { content: '\ea62'; } /* '瞟�' */
+.uil-keyhole-square-full:before { content: '\ea63'; } /* '瞟�' */
+.uil-keyhole-square:before { content: '\ea64'; } /* '瞟�' */
+.uil-kid:before { content: '\ea65'; } /* '瞟�' */
+.uil-label-alt:before { content: '\ea66'; } /* '瞟�' */
+.uil-label:before { content: '\ea67'; } /* '瞟�' */
+.uil-lamp:before { content: '\ea68'; } /* '瞟�' */
+.uil-laptop-cloud:before { content: '\ea69'; } /* '瞟�' */
+.uil-laptop:before { content: '\ea6a'; } /* '瞟�' */
+.uil-laughing:before { content: '\ea6b'; } /* '瞟�' */
+.uil-layer-group-slash:before { content: '\ea6c'; } /* '瞟�' */
+.uil-layer-group:before { content: '\ea6d'; } /* '瞟�' */
+.uil-layers-alt:before { content: '\ea6e'; } /* '瞟�' */
+.uil-layers-slash:before { content: '\ea6f'; } /* '瞟�' */
+.uil-layers:before { content: '\ea70'; } /* '瞟�' */
+.uil-left-arrow-from-left:before { content: '\ea71'; } /* '瞟�' */
+.uil-left-arrow-to-left:before { content: '\ea72'; } /* '瞟�' */
+.uil-left-indent-alt:before { content: '\ea73'; } /* '瞟�' */
+.uil-left-indent:before { content: '\ea74'; } /* '瞟�' */
+.uil-left-to-right-text-direction:before { content: '\ea75'; } /* '瞟�' */
+.uil-life-ring:before { content: '\ea76'; } /* '瞟�' */
+.uil-lightbulb-alt:before { content: '\ea77'; } /* '瞟�' */
+.uil-lightbulb:before { content: '\ea78'; } /* '瞟�' */
+.uil-line-alt:before { content: '\ea79'; } /* '瞟�' */
+.uil-line-spacing:before { content: '\ea7a'; } /* '瞟�' */
+.uil-line:before { content: '\ea7b'; } /* '瞟�' */
+.uil-link-alt:before { content: '\ea7c'; } /* '瞟�' */
+.uil-link-broken:before { content: '\ea7d'; } /* '瞟�' */
+.uil-link-h:before { content: '\ea7e'; } /* '瞟�' */
+.uil-link:before { content: '\ea7f'; } /* '瞟�' */
+.uil-linkedin:before { content: '\ea80'; } /* '瞠€' */
+.uil-list-ui-alt:before { content: '\ea81'; } /* '瞠�' */
+.uil-list-ul:before { content: '\ea82'; } /* '瞠�' */
+.uil-location-arrow-alt:before { content: '\ea83'; } /* '瞠�' */
+.uil-location-arrow:before { content: '\ea84'; } /* '瞠�' */
+.uil-location-pin-alt:before { content: '\ea85'; } /* '瞠�' */
+.uil-location-point:before { content: '\ea86'; } /* '瞠�' */
+.uil-location:before { content: '\ea87'; } /* '瞠�' */
+.uil-lock-access:before { content: '\ea88'; } /* '瞠�' */
+.uil-lock-alt:before { content: '\ea89'; } /* '瞠�' */
+.uil-lock-open-alt:before { content: '\ea8a'; } /* '瞠�' */
+.uil-lock-slash:before { content: '\ea8b'; } /* '瞠�' */
+.uil-lock:before { content: '\ea8c'; } /* '瞠�' */
+.uil-mailbox-alt:before { content: '\ea8d'; } /* '瞠�' */
+.uil-mailbox:before { content: '\ea8e'; } /* '瞠�' */
+.uil-map-marker-alt:before { content: '\ea8f'; } /* '瞠�' */
+.uil-map-marker-edit:before { content: '\ea90'; } /* '瞠�' */
+.uil-map-marker-info:before { content: '\ea91'; } /* '瞠�' */
+.uil-map-marker-minus:before { content: '\ea92'; } /* '瞠�' */
+.uil-map-marker-plus:before { content: '\ea93'; } /* '瞠�' */
+.uil-map-marker-question:before { content: '\ea94'; } /* '瞠�' */
+.uil-map-marker-shield:before { content: '\ea95'; } /* '瞠�' */
+.uil-map-marker-slash:before { content: '\ea96'; } /* '瞠�' */
+.uil-map-marker:before { content: '\ea97'; } /* '瞠�' */
+.uil-map-pin-alt:before { content: '\ea98'; } /* '瞠�' */
+.uil-map-pin:before { content: '\ea99'; } /* '瞠�' */
+.uil-map:before { content: '\ea9a'; } /* '瞠�' */
+.uil-mars:before { content: '\ea9b'; } /* '瞠�' */
+.uil-maximize-left:before { content: '\ea9c'; } /* '瞠�' */
+.uil-medal:before { content: '\ea9d'; } /* '瞠�' */
+.uil-medical-drip:before { content: '\ea9e'; } /* '瞠�' */
+.uil-medical-square-full:before { content: '\ea9f'; } /* '瞠�' */
+.uil-medical-square:before { content: '\eaa0'; } /* '瞠�' */
+.uil-medical:before { content: '\eaa1'; } /* '瞠�' */
+.uil-medkit:before { content: '\eaa2'; } /* '瞠�' */
+.uil-meeting-board:before { content: '\eaa3'; } /* '瞠�' */
+.uil-meh-alt:before { content: '\eaa4'; } /* '瞠�' */
+.uil-meh-closed-eye:before { content: '\eaa5'; } /* '瞠�' */
+.uil-meh:before { content: '\eaa6'; } /* '瞠�' */
+.uil-message:before { content: '\eaa7'; } /* '瞠�' */
+.uil-microphone-slash:before { content: '\eaa8'; } /* '瞠�' */
+.uil-microphone:before { content: '\eaa9'; } /* '瞠�' */
+.uil-minus-circle:before { content: '\eaaa'; } /* '瞠�' */
+.uil-minus-path:before { content: '\eaab'; } /* '瞠�' */
+.uil-minus-square-full:before { content: '\eaac'; } /* '瞠�' */
+.uil-minus-square:before { content: '\eaad'; } /* '瞠�' */
+.uil-minus:before { content: '\eaae'; } /* '瞠�' */
+.uil-missed-call:before { content: '\eaaf'; } /* '瞠�' */
+.uil-mobey-bill-slash:before { content: '\eab0'; } /* '瞠�' */
+.uil-mobile-android-alt:before { content: '\eab1'; } /* '瞠�' */
+.uil-mobile-android:before { content: '\eab2'; } /* '瞠�' */
+.uil-mobile-vibrate:before { content: '\eab3'; } /* '瞠�' */
+.uil-modem:before { content: '\eab4'; } /* '瞠�' */
+.uil-money-bill-stack:before { content: '\eab5'; } /* '瞠�' */
+.uil-money-bill:before { content: '\eab6'; } /* '瞠�' */
+.uil-money-insert:before { content: '\eab7'; } /* '瞠�' */
+.uil-money-stack:before { content: '\eab8'; } /* '瞠�' */
+.uil-money-withdraw:before { content: '\eab9'; } /* '瞠�' */
+.uil-money-withdrawal:before { content: '\eaba'; } /* '瞠�' */
+.uil-moneybag-alt:before { content: '\eabb'; } /* '瞠�' */
+.uil-moneybag:before { content: '\eabc'; } /* '瞠�' */
+.uil-monitor-heart-rate:before { content: '\eabd'; } /* '瞠�' */
+.uil-monitor:before { content: '\eabe'; } /* '瞠�' */
+.uil-moon-eclipse:before { content: '\eabf'; } /* '瞠�' */
+.uil-moon:before { content: '\eac0'; } /* '瞰€' */
+.uil-moonset:before { content: '\eac1'; } /* '瞰�' */
+.uil-mountains-sun:before { content: '\eac2'; } /* '瞰�' */
+.uil-mountains:before { content: '\eac3'; } /* '瞰�' */
+.uil-mouse-alt:before { content: '\eac4'; } /* '瞰�' */
+.uil-mouse:before { content: '\eac5'; } /* '瞰�' */
+.uil-multiply:before { content: '\eac6'; } /* '瞰�' */
+.uil-music-note:before { content: '\eac7'; } /* '瞰�' */
+.uil-music-tune-slash:before { content: '\eac8'; } /* '瞰�' */
+.uil-music:before { content: '\eac9'; } /* '瞰�' */
+.uil-n-a:before { content: '\eaca'; } /* '瞰�' */
+.uil-navigator:before { content: '\eacb'; } /* '瞰�' */
+.uil-nerd:before { content: '\eacc'; } /* '瞰�' */
+.uil-newspaper:before { content: '\eacd'; } /* '瞰�' */
+.uil-ninja:before { content: '\eace'; } /* '瞰�' */
+.uil-no-entry:before { content: '\eacf'; } /* '瞰�' */
+.uil-notebooks:before { content: '\ead0'; } /* '瞰�' */
+.uil-notes:before { content: '\ead1'; } /* '瞰�' */
+.uil-object-group:before { content: '\ead2'; } /* '瞰�' */
+.uil-object-ungroup:before { content: '\ead3'; } /* '瞰�' */
+.uil-octagon:before { content: '\ead4'; } /* '瞰�' */
+.uil-outgoing-call:before { content: '\ead5'; } /* '瞰�' */
+.uil-package:before { content: '\ead6'; } /* '瞰�' */
+.uil-padlock:before { content: '\ead7'; } /* '瞰�' */
+.uil-paint-tool:before { content: '\ead8'; } /* '瞰�' */
+.uil-palette:before { content: '\ead9'; } /* '瞰�' */
+.uil-panorama-h-alt:before { content: '\eada'; } /* '瞰�' */
+.uil-panorama-h:before { content: '\eadb'; } /* '瞰�' */
+.uil-panorama-v:before { content: '\eadc'; } /* '瞰�' */
+.uil-paperclip:before { content: '\eadd'; } /* '瞰�' */
+.uil-paragraph:before { content: '\eade'; } /* '瞰�' */
+.uil-parcel:before { content: '\eadf'; } /* '瞰�' */
+.uil-parking-square:before { content: '\eae0'; } /* '瞰�' */
+.uil-pathfinder-unite:before { content: '\eae1'; } /* '瞰�' */
+.uil-pathfinder:before { content: '\eae2'; } /* '瞰�' */
+.uil-pause-circle:before { content: '\eae3'; } /* '瞰�' */
+.uil-pause:before { content: '\eae4'; } /* '瞰�' */
+.uil-pen:before { content: '\eae5'; } /* '瞰�' */
+.uil-pentagon:before { content: '\eae6'; } /* '瞰�' */
+.uil-phone-alt:before { content: '\eae7'; } /* '瞰�' */
+.uil-phone-pause:before { content: '\eae8'; } /* '瞰�' */
+.uil-phone-slash:before { content: '\eae9'; } /* '瞰�' */
+.uil-phone-times:before { content: '\eaea'; } /* '瞰�' */
+.uil-phone-volume:before { content: '\eaeb'; } /* '瞰�' */
+.uil-phone:before { content: '\eaec'; } /* '瞰�' */
+.uil-picture:before { content: '\eaed'; } /* '瞰�' */
+.uil-plane-arrival:before { content: '\eaee'; } /* '瞰�' */
+.uil-plane-departure:before { content: '\eaef'; } /* '瞰�' */
+.uil-plane-fly:before { content: '\eaf0'; } /* '瞰�' */
+.uil-plane:before { content: '\eaf1'; } /* '瞰�' */
+.uil-play-circle:before { content: '\eaf2'; } /* '瞰�' */
+.uil-play:before { content: '\eaf3'; } /* '瞰�' */
+.uil-plug:before { content: '\eaf4'; } /* '瞰�' */
+.uil-plus-circle:before { content: '\eaf5'; } /* '瞰�' */
+.uil-plus-square:before { content: '\eaf6'; } /* '瞰�' */
+.uil-plus:before { content: '\eaf7'; } /* '瞰�' */
+.uil-podium:before { content: '\eaf8'; } /* '瞰�' */
+.uil-polygon:before { content: '\eaf9'; } /* '瞰�' */
+.uil-post-stamp:before { content: '\eafa'; } /* '瞰�' */
+.uil-postcard:before { content: '\eafb'; } /* '瞰�' */
+.uil-pound-circle:before { content: '\eafc'; } /* '瞰�' */
+.uil-pound:before { content: '\eafd'; } /* '瞰�' */
+.uil-power:before { content: '\eafe'; } /* '瞰�' */
+.uil-prescription-bottle:before { content: '\eaff'; } /* '瞰�' */
+.uil-presentation-check:before { content: '\eb00'; } /* '瞵€' */
+.uil-presentation-edit:before { content: '\eb01'; } /* '瞵�' */
+.uil-presentation-line:before { content: '\eb02'; } /* '瞵�' */
+.uil-presentation-lines-alt:before { content: '\eb03'; } /* '瞵�' */
+.uil-presentation-minus:before { content: '\eb04'; } /* '瞵�' */
+.uil-presentation-play:before { content: '\eb05'; } /* '瞵�' */
+.uil-presentation-plus:before { content: '\eb06'; } /* '瞵�' */
+.uil-presentation-times:before { content: '\eb07'; } /* '瞵�' */
+.uil-presentation:before { content: '\eb08'; } /* '瞵�' */
+.uil-previous:before { content: '\eb09'; } /* '瞵�' */
+.uil-pricetag-alt:before { content: '\eb0a'; } /* '瞵�' */
+.uil-print-slash:before { content: '\eb0b'; } /* '瞵�' */
+.uil-print:before { content: '\eb0c'; } /* '瞵�' */
+.uil-processor:before { content: '\eb0d'; } /* '瞵�' */
+.uil-pump:before { content: '\eb0e'; } /* '瞵�' */
+.uil-puzzle-piece:before { content: '\eb0f'; } /* '瞵�' */
+.uil-question-circle:before { content: '\eb10'; } /* '瞵�' */
+.uil-rainbow:before { content: '\eb11'; } /* '瞵�' */
+.uil-raindrops-alt:before { content: '\eb12'; } /* '瞵�' */
+.uil-raindrops:before { content: '\eb13'; } /* '瞵�' */
+.uil-receipt-alt:before { content: '\eb14'; } /* '瞵�' */
+.uil-receipt:before { content: '\eb15'; } /* '瞵�' */
+.uil-record-audio:before { content: '\eb16'; } /* '瞵�' */
+.uil-redo:before { content: '\eb17'; } /* '瞵�' */
+.uil-refresh:before { content: '\eb18'; } /* '瞵�' */
+.uil-registered:before { content: '\eb19'; } /* '瞵�' */
+.uil-repeat:before { content: '\eb1a'; } /* '瞵�' */
+.uil-restaurant:before { content: '\eb1b'; } /* '瞵�' */
+.uil-right-indent-alt:before { content: '\eb1c'; } /* '瞵�' */
+.uil-right-to-left-text-direction:before { content: '\eb1d'; } /* '瞵�' */
+.uil-robot:before { content: '\eb1e'; } /* '瞵�' */
+.uil-rope-way:before { content: '\eb1f'; } /* '瞵�' */
+.uil-rotate-360:before { content: '\eb20'; } /* '瞵�' */
+.uil-rss-alt:before { content: '\eb21'; } /* '瞵�' */
+.uil-rss-interface:before { content: '\eb22'; } /* '瞵�' */
+.uil-rss:before { content: '\eb23'; } /* '瞵�' */
+.uil-ruler-combined:before { content: '\eb24'; } /* '瞵�' */
+.uil-ruler:before { content: '\eb25'; } /* '瞵�' */
+.uil-sad-cry:before { content: '\eb26'; } /* '瞵�' */
+.uil-sad-crying:before { content: '\eb27'; } /* '瞵�' */
+.uil-sad-dizzy:before { content: '\eb28'; } /* '瞵�' */
+.uil-sad-squint:before { content: '\eb29'; } /* '瞵�' */
+.uil-sad:before { content: '\eb2a'; } /* '瞵�' */
+.uil-scaling-left:before { content: '\eb2b'; } /* '瞵�' */
+.uil-scaling-right:before { content: '\eb2c'; } /* '瞵�' */
+.uil-scenery:before { content: '\eb2d'; } /* '瞵�' */
+.uil-schedule:before { content: '\eb2e'; } /* '瞵�' */
+.uil-science:before { content: '\eb2f'; } /* '瞵�' */
+.uil-screw:before { content: '\eb30'; } /* '瞵�' */
+.uil-scroll-h:before { content: '\eb31'; } /* '瞵�' */
+.uil-scroll:before { content: '\eb32'; } /* '瞵�' */
+.uil-search-alt:before { content: '\eb33'; } /* '瞵�' */
+.uil-search-minus:before { content: '\eb34'; } /* '瞵�' */
+.uil-search-plus:before { content: '\eb35'; } /* '瞵�' */
+.uil-search:before { content: '\eb36'; } /* '瞵�' */
+.uil-selfie:before { content: '\eb37'; } /* '瞵�' */
+.uil-server-alt:before { content: '\eb38'; } /* '瞵�' */
+.uil-server-connection:before { content: '\eb39'; } /* '瞵�' */
+.uil-server-network-alt:before { content: '\eb3a'; } /* '瞵�' */
+.uil-server-network:before { content: '\eb3b'; } /* '瞵�' */
+.uil-server:before { content: '\eb3c'; } /* '瞵�' */
+.uil-servers:before { content: '\eb3d'; } /* '瞵�' */
+.uil-servicemark:before { content: '\eb3e'; } /* '瞵�' */
+.uil-share-alt:before { content: '\eb3f'; } /* '瞵�' */
+.uil-shield-check:before { content: '\eb40'; } /* '瞽€' */
+.uil-shield-exclamation:before { content: '\eb41'; } /* '瞽�' */
+.uil-shield-question:before { content: '\eb42'; } /* '瞽�' */
+.uil-shield-slash:before { content: '\eb43'; } /* '瞽�' */
+.uil-shield:before { content: '\eb44'; } /* '瞽�' */
+.uil-ship:before { content: '\eb45'; } /* '瞽�' */
+.uil-shop:before { content: '\eb46'; } /* '瞽�' */
+.uil-shopping-basket:before { content: '\eb47'; } /* '瞽�' */
+.uil-shopping-cart-alt:before { content: '\eb48'; } /* '瞽�' */
+.uil-shopping-trolley:before { content: '\eb49'; } /* '瞽�' */
+.uil-shovel:before { content: '\eb4a'; } /* '瞽�' */
+.uil-shrink:before { content: '\eb4b'; } /* '瞽�' */
+.uil-shuffle:before { content: '\eb4c'; } /* '瞽�' */
+.uil-shutter-alt:before { content: '\eb4d'; } /* '瞽�' */
+.uil-shutter:before { content: '\eb4e'; } /* '瞽�' */
+.uil-sick:before { content: '\eb4f'; } /* '瞽�' */
+.uil-sigma:before { content: '\eb50'; } /* '瞽�' */
+.uil-sign-alt:before { content: '\eb51'; } /* '瞽�' */
+.uil-sign-in-alt:before { content: '\eb52'; } /* '瞽�' */
+.uil-sign-left:before { content: '\eb53'; } /* '瞽�' */
+.uil-sign-out-alt:before { content: '\eb54'; } /* '瞽�' */
+.uil-sign-right:before { content: '\eb55'; } /* '瞽�' */
+.uil-signal-alt-3:before { content: '\eb56'; } /* '瞽�' */
+.uil-signal-alt:before { content: '\eb57'; } /* '瞽�' */
+.uil-signal:before { content: '\eb58'; } /* '瞽�' */
+.uil-silence:before { content: '\eb59'; } /* '瞽�' */
+.uil-silent-squint:before { content: '\eb5a'; } /* '瞽�' */
+.uil-sim-card:before { content: '\eb5b'; } /* '瞽�' */
+.uil-sitemap:before { content: '\eb5c'; } /* '瞽�' */
+.uil-skip-forward-alt:before { content: '\eb5d'; } /* '瞽�' */
+.uil-skip-forward-circle:before { content: '\eb5e'; } /* '瞽�' */
+.uil-skip-forward:before { content: '\eb5f'; } /* '瞽�' */
+.uil-slack:before { content: '\eb60'; } /* '瞽�' */
+.uil-sliders-v-alt:before { content: '\eb61'; } /* '瞽�' */
+.uil-sliders-v:before { content: '\eb62'; } /* '瞽�' */
+.uil-smile-beam:before { content: '\eb63'; } /* '瞽�' */
+.uil-smile-dizzy:before { content: '\eb64'; } /* '瞽�' */
+.uil-smile-squint-wink-alt:before { content: '\eb65'; } /* '瞽�' */
+.uil-smile-squint-wink:before { content: '\eb66'; } /* '瞽�' */
+.uil-smile-wink-alt:before { content: '\eb67'; } /* '瞽�' */
+.uil-smile-wink:before { content: '\eb68'; } /* '瞽�' */
+.uil-smile:before { content: '\eb69'; } /* '瞽�' */
+.uil-snow-flake:before { content: '\eb6c'; } /* '瞽�' */
+.uil-snowflake-alt:before { content: '\eb6d'; } /* '瞽�' */
+.uil-snowflake:before { content: '\eb6e'; } /* '瞽�' */
+.uil-sort-amount-down:before { content: '\eb6f'; } /* '瞽�' */
+.uil-sort-amount-up:before { content: '\eb70'; } /* '瞽�' */
+.uil-sort:before { content: '\eb71'; } /* '瞽�' */
+.uil-sorting:before { content: '\eb72'; } /* '瞽�' */
+.uil-space-key:before { content: '\eb73'; } /* '瞽�' */
+.uil-spade:before { content: '\eb74'; } /* '瞽�' */
+.uil-sperms:before { content: '\eb75'; } /* '瞽�' */
+.uil-spin:before { content: '\eb76'; } /* '瞽�' */
+.uil-sport:before { content: '\eb77'; } /* '瞽�' */
+.uil-square-full:before { content: '\eb78'; } /* '瞽�' */
+.uil-square-shape:before { content: '\eb79'; } /* '瞽�' */
+.uil-square:before { content: '\eb7a'; } /* '瞽�' */
+.uil-squint:before { content: '\eb7b'; } /* '瞽�' */
+.uil-star-half-alt:before { content: '\eb7c'; } /* '瞽�' */
+.uil-star:before { content: '\eb7d'; } /* '瞽�' */
+.uil-step-backward-alt:before { content: '\eb7e'; } /* '瞽�' */
+.uil-step-backward-circle:before { content: '\eb7f'; } /* '瞽�' */
+.uil-step-backward:before { content: '\eb80'; } /* '町€' */
+.uil-step-forward:before { content: '\eb81'; } /* '町�' */
+.uil-stop-circle:before { content: '\eb82'; } /* '町�' */
+.uil-stopwatch-slash:before { content: '\eb83'; } /* '町�' */
+.uil-stopwatch:before { content: '\eb84'; } /* '町�' */
+.uil-store-alt:before { content: '\eb85'; } /* '町�' */
+.uil-store:before { content: '\eb86'; } /* '町�' */
+.uil-streering:before { content: '\eb87'; } /* '町�' */
+.uil-stretcher:before { content: '\eb88'; } /* '町�' */
+.uil-subject:before { content: '\eb89'; } /* '町�' */
+.uil-subway-alt:before { content: '\eb8a'; } /* '町�' */
+.uil-subway:before { content: '\eb8b'; } /* '町�' */
+.uil-suitcase-alt:before { content: '\eb8c'; } /* '町�' */
+.uil-suitcase:before { content: '\eb8d'; } /* '町�' */
+.uil-sun:before { content: '\eb8e'; } /* '町�' */
+.uil-sunset:before { content: '\eb8f'; } /* '町�' */
+.uil-surprise:before { content: '\eb90'; } /* '町�' */
+.uil-swatchbook:before { content: '\eb91'; } /* '町�' */
+.uil-swimmer:before { content: '\eb92'; } /* '町�' */
+.uil-symbol:before { content: '\eb93'; } /* '町�' */
+.uil-sync-exclamation:before { content: '\eb94'; } /* '町�' */
+.uil-sync-slash:before { content: '\eb95'; } /* '町�' */
+.uil-sync:before { content: '\eb96'; } /* '町�' */
+.uil-syringe:before { content: '\eb97'; } /* '町�' */
+.uil-table:before { content: '\eb98'; } /* '町�' */
+.uil-tablet:before { content: '\eb99'; } /* '町�' */
+.uil-tablets:before { content: '\eb9a'; } /* '町�' */
+.uil-tachometer-fast:before { content: '\eb9b'; } /* '町�' */
+.uil-tag-alt:before { content: '\eb9c'; } /* '町�' */
+.uil-tag:before { content: '\eb9d'; } /* '町�' */
+.uil-tape:before { content: '\eb9e'; } /* '町�' */
+.uil-taxi:before { content: '\eb9f'; } /* '町�' */
+.uil-tear:before { content: '\eba0'; } /* '町�' */
+.uil-technology:before { content: '\eba1'; } /* '町�' */
+.uil-telescope:before { content: '\eba2'; } /* '町�' */
+.uil-temperature-empty:before { content: '\eba3'; } /* '町�' */
+.uil-temperature-half:before { content: '\eba4'; } /* '町�' */
+.uil-temperature-minus:before { content: '\eba5'; } /* '町�' */
+.uil-temperature-plus:before { content: '\eba6'; } /* '町�' */
+.uil-temperature-quarter:before { content: '\eba7'; } /* '町�' */
+.uil-temperature-three-quarter:before { content: '\eba8'; } /* '町�' */
+.uil-temperature:before { content: '\eba9'; } /* '町�' */
+.uil-text-fields:before { content: '\ebaa'; } /* '町�' */
+.uil-text-size:before { content: '\ebab'; } /* '町�' */
+.uil-text-strike-through:before { content: '\ebac'; } /* '町�' */
+.uil-text:before { content: '\ebad'; } /* '町�' */
+.uil-th-large:before { content: '\ebae'; } /* '町�' */
+.uil-th-slash:before { content: '\ebaf'; } /* '町�' */
+.uil-th:before { content: '\ebb0'; } /* '町�' */
+.uil-thermometer:before { content: '\ebb1'; } /* '町�' */
+.uil-thumbs-down:before { content: '\ebb2'; } /* '町�' */
+.uil-thumbs-up:before { content: '\ebb3'; } /* '町�' */
+.uil-thunderstorm-moon:before { content: '\ebb4'; } /* '町�' */
+.uil-thunderstorm-sun:before { content: '\ebb5'; } /* '町�' */
+.uil-thunderstorm:before { content: '\ebb6'; } /* '町�' */
+.uil-ticket:before { content: '\ebb7'; } /* '町�' */
+.uil-times-circle:before { content: '\ebb8'; } /* '町�' */
+.uil-times-square:before { content: '\ebb9'; } /* '町�' */
+.uil-times:before { content: '\ebba'; } /* '町�' */
+.uil-toggle-off:before { content: '\ebbb'; } /* '町�' */
+.uil-toggle-on:before { content: '\ebbc'; } /* '町�' */
+.uil-top-arrow-from-top:before { content: '\ebbd'; } /* '町�' */
+.uil-top-arrow-to-top:before { content: '\ebbe'; } /* '町�' */
+.uil-tornado:before { content: '\ebbf'; } /* '町�' */
+.uil-trademark-circle:before { content: '\ebc0'; } /* '畀€' */
+.uil-trademark:before { content: '\ebc1'; } /* '畀�' */
+.uil-traffic-barrier:before { content: '\ebc2'; } /* '畀�' */
+.uil-trash-alt:before { content: '\ebc3'; } /* '畀�' */
+.uil-trash:before { content: '\ebc4'; } /* '畀�' */
+.uil-trees:before { content: '\ebc5'; } /* '畀�' */
+.uil-triangle:before { content: '\ebc6'; } /* '畀�' */
+.uil-trophy:before { content: '\ebc7'; } /* '畀�' */
+.uil-trowel:before { content: '\ebc8'; } /* '畀�' */
+.uil-truck-case:before { content: '\ebc9'; } /* '畀�' */
+.uil-truck-loading:before { content: '\ebca'; } /* '畀�' */
+.uil-truck:before { content: '\ebcb'; } /* '畀�' */
+.uil-tumblr-square:before { content: '\ebcc'; } /* '畀�' */
+.uil-tumblr:before { content: '\ebcd'; } /* '畀�' */
+.uil-tv-retro-slash:before { content: '\ebce'; } /* '畀�' */
+.uil-tv-retro:before { content: '\ebcf'; } /* '畀�' */
+.uil-twitter:before { content: '\ebd0'; } /* '畀�' */
+.uil-umbrella:before { content: '\ebd1'; } /* '畀�' */
+.uil-unamused:before { content: '\ebd2'; } /* '畀�' */
+.uil-underline:before { content: '\ebd3'; } /* '畀�' */
+.uil-unlock-alt:before { content: '\ebd4'; } /* '畀�' */
+.uil-unlock:before { content: '\ebd5'; } /* '畀�' */
+.uil-upload-alt:before { content: '\ebd6'; } /* '畀�' */
+.uil-upload:before { content: '\ebd7'; } /* '畀�' */
+.uil-usd-circle:before { content: '\ebd8'; } /* '畀�' */
+.uil-usd-square:before { content: '\ebd9'; } /* '畀�' */
+.uil-user-check:before { content: '\ebda'; } /* '畀�' */
+.uil-user-circle:before { content: '\ebdb'; } /* '畀�' */
+.uil-user-exclamation:before { content: '\ebdc'; } /* '畀�' */
+.uil-user-hard-hat:before { content: '\ebdd'; } /* '畀�' */
+.uil-user-minus:before { content: '\ebde'; } /* '畀�' */
+.uil-user-plus:before { content: '\ebdf'; } /* '畀�' */
+.uil-user-square:before { content: '\ebe0'; } /* '畀�' */
+.uil-user-times:before { content: '\ebe1'; } /* '畀�' */
+.uil-user:before { content: '\ebe2'; } /* '畀�' */
+.uil-users-alt:before { content: '\ebe3'; } /* '畀�' */
+.uil-utensils-alt:before { content: '\ebe4'; } /* '畀�' */
+.uil-utensils:before { content: '\ebe5'; } /* '畀�' */
+.uil-vector-square-alt:before { content: '\ebe6'; } /* '畀�' */
+.uil-vector-square:before { content: '\ebe7'; } /* '畀�' */
+.uil-venus:before { content: '\ebe8'; } /* '畀�' */
+.uil-vertical-align-bottom:before { content: '\ebe9'; } /* '畀�' */
+.uil-vertical-align-center:before { content: '\ebea'; } /* '畀�' */
+.uil-vertical-align-top:before { content: '\ebeb'; } /* '畀�' */
+.uil-vertical-distribute-bottom:before { content: '\ebec'; } /* '畀�' */
+.uil-vertical-distribution-center:before { content: '\ebed'; } /* '畀�' */
+.uil-vertical-distribution-top:before { content: '\ebee'; } /* '畀�' */
+.uil-video-slash:before { content: '\ebef'; } /* '畀�' */
+.uil-video:before { content: '\ebf0'; } /* '畀�' */
+.uil-visual-studio:before { content: '\ebf1'; } /* '畀�' */
+.uil-voicemail-rectangle:before { content: '\ebf2'; } /* '畀�' */
+.uil-voicemail:before { content: '\ebf3'; } /* '畀�' */
+.uil-volleyball:before { content: '\ebf4'; } /* '畀�' */
+.uil-volume-down:before { content: '\ebf5'; } /* '畀�' */
+.uil-volume-mute:before { content: '\ebf6'; } /* '畀�' */
+.uil-volume-off:before { content: '\ebf7'; } /* '畀�' */
+.uil-volume-up:before { content: '\ebf8'; } /* '畀�' */
+.uil-volume:before { content: '\ebf9'; } /* '畀�' */
+.uil-wall:before { content: '\ebfa'; } /* '畀�' */
+.uil-wallet:before { content: '\ebfb'; } /* '畀�' */
+.uil-watch-alt:before { content: '\ebfc'; } /* '畀�' */
+.uil-watch:before { content: '\ebfd'; } /* '畀�' */
+.uil-water-drop-slash:before { content: '\ebfe'; } /* '畀�' */
+.uil-water-glass:before { content: '\ebff'; } /* '畀�' */
+.uil-water:before { content: '\ec00'; } /* '畎€' */
+.uil-web-grid-alt:before { content: '\ec01'; } /* '畎�' */
+.uil-web-grid:before { content: '\ec02'; } /* '畎�' */
+.uil-web-section-alt:before { content: '\ec03'; } /* '畎�' */
+.uil-web-section:before { content: '\ec04'; } /* '畎�' */
+.uil-webcam:before { content: '\ec05'; } /* '畎�' */
+.uil-weight:before { content: '\ec06'; } /* '畎�' */
+.uil-whatsapp:before { content: '\ec07'; } /* '畎�' */
+.uil-wheel-barrow:before { content: '\ec08'; } /* '畎�' */
+.uil-wheelchair-alt:before { content: '\ec09'; } /* '畎�' */
+.uil-wheelchair:before { content: '\ec0a'; } /* '畎�' */
+.uil-wifi-router:before { content: '\ec0b'; } /* '畎�' */
+.uil-wifi-slash:before { content: '\ec0c'; } /* '畎�' */
+.uil-wifi:before { content: '\ec0d'; } /* '畎�' */
+.uil-wind:before { content: '\ec0e'; } /* '畎�' */
+.uil-window-grid:before { content: '\ec0f'; } /* '畎�' */
+.uil-window-maximize:before { content: '\ec10'; } /* '畎�' */
+.uil-window-restore:before { content: '\ec11'; } /* '畎�' */
+.uil-window-section:before { content: '\ec12'; } /* '畎�' */
+.uil-window:before { content: '\ec13'; } /* '畎�' */
+.uil-windsock:before { content: '\ec14'; } /* '畎�' */
+.uil-wrap-text:before { content: '\ec15'; } /* '畎�' */
+.uil-wrench:before { content: '\ec16'; } /* '畎�' */
+.uil-yellow:before { content: '\ec17'; } /* '畎�' */
+.uil-yen-circle:before { content: '\ec18'; } /* '畎�' */
+.uil-yen:before { content: '\ec19'; } /* '畎�' */
+.uil-youtube-alt:before { content: '\ec1a'; } /* '畎�' */
+.uil-youtube:before { content: '\ec1b'; } /* '畎�' */
