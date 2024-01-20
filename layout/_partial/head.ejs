@@ -8,14 +8,31 @@
 
     <% if(theme.cdn.enable && theme.cdn.choose != "") { %>
         <% if(theme.cdn.choose == "aliyun") { %>
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/markdown.css') %>
-            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/fonts.css') %> 
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/fonts.css') %>
+            
             <!--注意：首页既不是post也不是page-->
             <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
                 <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/waline.css') %>
             <% } %>
+
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/ui.css') %> 
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/style.css') %>
+    
+            <!--返回顶部css-->
+            <% if(theme.tool.returnToTop) { %>
+                <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/returnToTop.css') %>
+                <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/unicons.css') %>
+            <% } %>
+            <% if(theme.tool.leftToc) { %>
+                <!--目录-->
+                <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/toc.css') %>
+            <% } %>
+
         <% } else if(theme.cdn.choose == "jsdelivr") { %>
+            <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/markdown.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/fonts.css') %> 
@@ -23,7 +40,22 @@
             <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
                 <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/waline.css') %>
             <% } %>
+
+            <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/ui.css') %> 
+            <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/style.css') %>
+    
+            <!--返回顶部css-->
+            <% if(theme.tool.returnToTop) { %>
+                <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/returnToTop.css') %>
+                <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/unicons.css') %>
+            <% } %>
+            <% if(theme.tool.leftToc) { %>
+                <!--目录-->
+                <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/toc.css') %>
+            <% } %>
+
         <% }  else if(theme.cdn.choose == "unpkg") { %>
+            <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/markdown.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/fonts.css') %> 
@@ -31,8 +63,23 @@
             <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
                 <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/waline.css') %>
             <% } %>
+
+            <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/ui.css') %> 
+            <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/style.css') %>
+
+            <!--返回顶部css-->
+            <% if(theme.tool.returnToTop) { %>
+                <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/returnToTop.css') %>
+                <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/unicons.css') %>
+            <% } %>
+            <% if(theme.tool.leftToc) { %>
+                <!--目录-->
+                <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/toc.css') %>
+            <% } %>
+
         <% } %>
     <% } else { %>
+        <%- css('css/a11y-dark.min.css') %>
         <%- css('css/reset.css') %>
         <%- css('css/markdown.css') %>
         <%- css('css/fonts.css') %> 
@@ -40,19 +87,20 @@
         <% if((is_post() || is_page()) && theme.comment.enable && (!page.hasOwnProperty('comment') ||(page.hasOwnProperty('comment') && page.comment))) { %>
             <%- css('css/waline.css') %>
         <% } %>
+        
+        <%- css('css/ui.css') %> 
+        <%- css('css/style.css') %>
+
+        <% if(theme.tool.returnToTop) { %>
+            <!--返回顶部css-->
+            <%- css('css/returnToTop.css') %>
+            <%- css('css/unicons.css') %>
+        <% } %>
+        <% if(theme.tool.leftToc) { %>
+            <!--目录-->
+            <%- css('css/toc.css') %>
+        <% } %>
     <% } %>
-    <%- css('css/ui.css') %> 
-    <%- css('css/style.css') %>
+    
 
-    <!--返回顶部css-->
-    <%- css('css/returnToTop.css') %>
-    <%- css('css/unicons.css') %>
-
-    <!--目录-->
-    <%- css('css/toc.css') %>
-
-    <!--自定义css加载-->
-    <% if(theme.inject && theme.inject.css) { %>
-        <%- css(theme.inject.css) %>
-    <% } %>
 </head>
