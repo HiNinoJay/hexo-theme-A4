@@ -91,13 +91,15 @@
         <%- css('css/ui.css') %> 
         <%- css('css/style.css') %>
 
-        <!--返回顶部css-->
-        <%- css('css/returnToTop.css') %>
-        <%- css('css/unicons.css') %>
-
-        <!--目录-->
-        <%- css('css/toc.css') %>
-
+        <% if(theme.tool.returnToTop) { %>
+            <!--返回顶部css-->
+            <%- css('css/returnToTop.css') %>
+            <%- css('css/unicons.css') %>
+        <% } %>
+        <% if(theme.tool.leftToc) { %>
+            <!--目录-->
+            <%- css('css/toc.css') %>
+        <% } %>
     <% } %>
     
 
