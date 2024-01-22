@@ -9,3 +9,15 @@
         url("../fonts/notoserifsc-medium-webfont.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     ;
 }
+
+@font-face {
+    font-family: "LXGW WenKai";
+    font-style: normal;
+    font-weight: 600;
+    src: local("../fonts/LXGWWenKaiLite-Regular.woff2"),
+        url("https://jsd.onmicrosoft.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Regular.woff2") format("woff2"),
+        url("../fonts/LXGWWenKaiMono-Regular.woff2") format("woff2");
+}
+
+
+
