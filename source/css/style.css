@@ -66,7 +66,7 @@ a
 .index-header-line
 {
     margin-top: -28px;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
     /* border-bottom: 1px solid var(--line-1); */
     font-size: 0.6rem;
     color: var(--font-color-3);
