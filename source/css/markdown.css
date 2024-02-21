@@ -154,9 +154,9 @@
 .post-md code
 {
     border-radius: 4px;
-    background: #e4e4e4;
+    background: #000000;
     padding: 2px 4px;
-    color: #000000;
+    color: #ffffff;
     font-size: 1rem;
 }
 
