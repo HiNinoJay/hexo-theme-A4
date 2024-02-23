@@ -110,25 +110,6 @@ hexo new page index
 hexo new page list
 ```
 
-### 我的markdown代码块怎么没渲染？
-
-答：检查你的_config.yml文件，将hexo自带的highlight和prismjs设置为false。
-```yml
-highlight:
-  enable: false 
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  enable: false 
-  preprocess: true
-  line_number: true
-  tab_replace: ''
-```
-
-
 其他详细配置请看：
 ➡️ [使用文档](https://doc.ninojay.top)，已上线。
 
