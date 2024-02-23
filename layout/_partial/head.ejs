@@ -8,6 +8,7 @@
 
     <% if(theme.cdn.enable && theme.cdn.choose != "") { %>
         <% if(theme.cdn.choose == "aliyun") { %>
+            <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/highlight/style1.css') %>
             <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/markdown.css') %>
@@ -32,6 +33,7 @@
             <% } %>
 
         <% } else if(theme.cdn.choose == "jsdelivr") { %>
+            <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/highlight/style1.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/markdown.css') %>
@@ -55,6 +57,7 @@
             <% } %>
 
         <% }  else if(theme.cdn.choose == "unpkg") { %>
+            <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/highlight/style1.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/reset.css') %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/markdown.css') %>
@@ -79,7 +82,7 @@
 
         <% } %>
     <% } else { %>
-        <%- css('css/a11y-dark.min.css') %>
+        <%- css('css/highlight/style1.css') %>
         <%- css('css/reset.css') %>
         <%- css('css/markdown.css') %>
         <%- css('css/fonts.css') %> 
