@@ -83,7 +83,6 @@ Color coordination is an art. In addition to the two color schemes recommended f
 
 - make sure you have been created folder by `hexo init`, for convenience, suppose the name of the folder is `website`
 - navigate to the `website` by using the command line
-- **ensure the version of hexo is v6.3.0**，if not please execute this: `npm install hexo@6.3.0`
 - set the theme to A4 in the `_config.yml` file under the `website` folder
 - install `a4 theme` next by any one of two methods below:
 
