@@ -1,4 +1,17 @@
 
+<% if(is_post() && ('words' in page) && page.words != null) {%>
+    <div class="index-header-line" >
+        <div id="hiddenHeaderContentArray" style="display: none;">
+            <% var headerContentArray = page.words %>
+            <% var headerContentArrayLength = headerContentArray.length %>
+            <% for(let i = 0; i < headerContentArrayLength; i++) { %>
+                <span><%= page.words[i] %></span>
+            <% } %>
+        </div>
+        <span id="targetSpan"></span>
+    </div>
+<% } %>
+
 <div class="header">
     <div class="header-container">
         <img style="
