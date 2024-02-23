@@ -3,15 +3,8 @@
 
     <% var pageCategoriesName = path.substring("categories/".length, path.indexOf("/index.html")) %>
     <span>🔖<i><%= pageCategoriesName %></i></span>
-      <% var categoriesArray = eval('site.categories.data') %>
-      <% var pageCategoriesData %>
-      <% for (let i = 0; i < categoriesArray.length; i++) { 
-        if(categoriesArray[i].name == pageCategoriesName) {
-          pageCategoriesData = categoriesArray[i];
-        }}
-      %>
           
-    <% var array = pageCategoriesData.posts.data %>
+    <% var array = page.posts.data; %>
     <% array.sort((a, b) => {
       if (a.date > b.date) {
         return -1;

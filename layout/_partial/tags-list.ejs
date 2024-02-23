@@ -3,15 +3,9 @@
 
     <% var pageTagName = path.substring("tags/".length, path.indexOf("/index.html")) %>
     <span>📌<i><%= pageTagName %></i></span>
-      <% var tagsArray = eval('site.tags.data') %>
-      <% var pageTagData %>
-      <% for (let i = 0; i < tagsArray.length; i++) { 
-        if(tagsArray[i].name == pageTagName) {
-          pageTagData = tagsArray[i];
-        }}
-      %>
+ 
     
-    <% var array = pageTagData.posts.data %>
+    <% var array = page.posts.data %>
     <% array.sort((a, b) => {
       if (a.date > b.date) {
         return -1;
