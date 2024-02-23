@@ -107,25 +107,6 @@ hexo new page index
 hexo new page list
 ```
 
-### What happened to my markdown code block?
-
-If your code block cannot be rendered, check the `_config.yml` file，and find `highlight` and `prismjs`, set the `enable` option to `false`
-```yml
-highlight:
-  enable: false 
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  enable: false 
-  preprocess: true
-  line_number: true
-  tab_replace: ''
-```
-then execute `hexo c` and `hexo g` to regenerates web pages.
-
 For other detailed configurations, please see:
 ➡️ [Online usage manual](https://doc.ninojay.top)
 
