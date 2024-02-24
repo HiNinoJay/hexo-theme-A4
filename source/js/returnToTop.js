@@ -49,7 +49,7 @@
 		$('body').css('overflow', 'hidden');
 	});
 
-	$(document).on('click', '.lg-icon', function (e) {
+	$(document).on('click', '.lg-close', function (e) {
 
 		// 恢复滚动
 		$('body').css('overflow', 'auto');
