@@ -98,9 +98,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
         <%- js('js/toc.js') %>
     <% } %>
-    
-    <%- js('js/highlight.min.js') %>
-    <%- js('js/highlightjs-line-numbers.js') %>
 
     <%- js('js/randomHeaderContent.js') %>
     <!--回到顶部按钮-->
@@ -108,7 +105,9 @@
         <%- js('js/returnToTop.js') %>
     <% } %>
 
-
+    <% if(theme.tool.returnToTop) { %>
+        <%- js('js/returnToLastPage.js') %>
+    <% } %>
 
 <% } %>
 

@@ -29,8 +29,11 @@
 		var duration = 250;
 		jQuery(window).on('scroll', function() {
 			if (jQuery(this).scrollTop() > offset) {
+				// 执行你想要的操作，比如加载更多内容
+				jQuery('.return-to-last-progress-wrap').css('bottom', '100px');
 				jQuery('.progress-wrap').addClass('active-progress');
 			} else {
+				jQuery('.return-to-last-progress-wrap').css('bottom', '45px');
 				jQuery('.progress-wrap').removeClass('active-progress');
 			}
 		});				
@@ -43,17 +46,38 @@
 		
 	});
 
+	document.addEventListener('click', function(event) {
+		var lgOn = document.querySelector('.lg-on');
+		if (lgOn) {
+			// 如果页面中存在具有类名 .lg 的元素
+		} else {
+			// 如果页面中不存在具有类名 .lg 的元素
+			// 恢复滚动
+			$('body').css('overflow', 'auto');
+			jQuery('.return-to-last-progress-wrap').addClass('active-progress');
+		}
+	});
+
 	$(document).on('click', '.gallery-item', function (e) {
+		console.log("得消失");
 		window.scrollTo(0, 0);
 		// 禁止滚动
 		$('body').css('overflow', 'hidden');
+		jQuery('.return-to-last-progress-wrap').removeClass('active-progress');
 	});
 
 	$(document).on('click', '.lg-close', function (e) {
 
 		// 恢复滚动
 		$('body').css('overflow', 'auto');
+		jQuery('.return-to-last-progress-wrap').addClass('active-progress');
 	});
+	
+
+
+
+
+
 
 
 	

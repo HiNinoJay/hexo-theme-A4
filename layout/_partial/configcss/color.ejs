@@ -120,11 +120,11 @@
             background: <%=theme.color.postBackGround %>;
         }
 
-        .post-md>table tr:nth-child(odd) td {
+        .post-md table tr:nth-child(odd) td {
             background: <%=theme.color.postBackGround %>;
         }
 
-        .post-md>table tr:nth-child(even) td {
+        .post-md table tr:nth-child(even) td {
             background: <%=theme.color.postBackGround %>;
         }
 
@@ -136,6 +136,16 @@
 	        stroke: <%=theme.color.font %>; /* 边框的颜色 */
         }
         .progress-wrap::before {
+	        background-image: linear-gradient(298deg, <%=theme.color.linkBeforeClick %>, <%=theme.color.linkBeforeClick %>); /* 鼠标滑过的箭头颜色 */
+         }
+
+        .return-to-last-progress-wrap::after {
+            color: <%=theme.color.font %>; /* 箭头的颜色 */
+        }
+        .return-to-last-progress-wrap svg.progress-circle path {
+	        stroke: <%=theme.color.font %>; /* 边框的颜色 */
+        }
+        .return-to-last-progress-wrap::before {
 	        background-image: linear-gradient(298deg, <%=theme.color.linkBeforeClick %>, <%=theme.color.linkBeforeClick %>); /* 鼠标滑过的箭头颜色 */
          }
 
