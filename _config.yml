@@ -50,6 +50,7 @@ favicon: /img/favicon.webp
 tool:
   darkMode: true # 暗黑模式
   returnToTop: true # 回到顶部按钮 
+  returnToLast: true # 回退页面按钮
   topToc: true # 文章顶部目录
   leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
 
