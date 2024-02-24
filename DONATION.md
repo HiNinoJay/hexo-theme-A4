@@ -12,6 +12,7 @@
 | [v2ish1yan](https://v2ish1yan.github.io/)     | 微信   | 20¥    | 加油加油                                                     | 2024.01.29 |
 | [tlyu0419](https://github.com/tlyu0419)       | 支付宝 | 20¥    | 很喜歡這個主題，希望能繼續更新~!                             | 2024.02.19 |
 | [Vogel](https://github.com/VVogelimkafig)     | 微信   | 18¥    | 感谢分享！                                                   | 2024.02.23 |
+| *宽                                           | 微信   | 20¥    | 赞一个a4主题                                                 | 2024.0224  |
 
 
 
