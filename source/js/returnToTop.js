@@ -42,5 +42,19 @@
 		
 		
 	});
+
+	$(document).on('click', '.gallery-item', function (e) {
+		window.scrollTo(0, 0);
+		// 禁止滚动
+		$('body').css('overflow', 'hidden');
+	});
+
+	$(document).on('click', '.lg-icon', function (e) {
+
+		// 恢复滚动
+		$('body').css('overflow', 'auto');
+	});
+
+
 	
 })(jQuery); 
