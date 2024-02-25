@@ -135,15 +135,17 @@ After updating through the above two methods, please visit the [GitHub page](htt
 
 If there are any modification, you need to copy the corresponding additions or modifications from the [latest file](https://github.com/HiNinoJay/hexo-theme-A4/blob/main/_config.yml) and apply them to your `_config.a4.yml` file.
 
-## ☕️Sponsor
+## ☕️ support
 
-Welcome to submit a pull request or issue. Please submit them to the 'dev' branch.
+Welcome to submit pull request or issue, please submit to dev branch.
 
-For any other matters you'd like to discuss, please feel free to send an email to welcome@ninojay.top.
+Anything else you want to communicate with, you can send an email to: welcome@ninojay.top
 
-If you find my work satisfactory, I would greatly appreciate a star. Thank you!
+If you think I'm not doing too well, please give me a star for the project, or [buy me a cup of coffee ☕️](https://ninojay.top/supportbymoney/)
 
-💰[Joining me for a coffee](https://ninojay.top/supportbymoney/)
+## 💗 feeling
+
+Heartfelt thanks to A4 supporters: https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md)
 
 
 ## Stargazers over time
