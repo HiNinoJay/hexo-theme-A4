@@ -141,10 +141,11 @@ git pull
 
 其他任何想交流的事，可發送郵件至：welcome@ninojay.top
 
-如果覺得我做的不錯，請給我一個star，感謝。
+如果覺得我做的不錯，請給該專案一個star，或者[請我喝杯咖啡☕️](https://ninojay.top/supportbymoney/)
 
-💰[請我喝杯咖啡](https://ninojay.top/supportbymoney/)
+## 💗感謝
 
+由衷感謝A4支持者們：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md)
 
 ## Stargazers over time
 
