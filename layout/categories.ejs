@@ -65,12 +65,19 @@
   <% var array = eval('site.posts.data') %>
 
   <% var categoriesHashMap = new HashMap() %>
+  <% var categoryChildHashmap = new HashMap() %>
   <% var categoriesList = new List() %>
   
   <% for(var i = 0; i < array.length; i++) {
      if(!('hide' in array[i]) || array[i].hide == false){
+
         var postCategories = array[i].categories.data;
         for(var j = 0; j < postCategories.length; j++) {
+
+          if(postCategories.length > 1) {
+            categoryChildHashmap.put(postCategories[0].name, postCategories[1]);
+          }
+
           if(!categoriesHashMap.containsKey(postCategories[j].name)) {
             categoriesHashMap.put(postCategories[j].name, 1);
             categoriesList.add(postCategories[j].name);
@@ -80,7 +87,7 @@
           break;
         } 
      }
-  } %>
+  }  %>
       <% for (let i = 0; i < categoriesList.size(); i++) { %>
         <li class="">
             <a href="/categories<%- url_for(categoriesList.get(i)) %>"><%= categoriesList.get(i) %></a>

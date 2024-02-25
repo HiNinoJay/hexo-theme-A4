@@ -1,12 +1,66 @@
+<% class HashMap {
+  constructor() {
+    this.map = {};
+  }
+
+  put(key, value) {
+    this.map[key] = value;
+  }
+
+  get(key) {
+    return this.map[key];
+  }
+
+  containsKey(key) {
+    return key in this.map;
+  }
+
+  remove(key) {
+    delete this.map[key];
+  }
+
+  size() {
+    return Object.keys(this.map).length;
+  }
+
+  isEmpty() {
+    return this.size() === 0;
+  }
+
+  clear() {
+    this.map = {};
+  }
+}
+%>
+
+
 <div class="archive-list">
   <ul class="archive">
 
     <% var pageTagName = path.substring("tags/".length, path.indexOf("/index.html")) %>
     <span>📌<i><%= pageTagName %></i></span>
  
-    
-    <% var array = page.posts.data %>
-    <% array.sort((a, b) => {
+    <% const tagHashmap = new HashMap() %>
+
+    <% var allPostArray = eval('site.posts.data'); %>
+    <% for(var i = 0; i < allPostArray.length; i++) {  
+       var postTemp = allPostArray[i];
+       var postTempTags = postTemp.tags.data;
+        
+       for(var j = 0; j < postTempTags.length; j++) {
+          if(!tagHashmap.containsKey(postTempTags[j].name)) {
+            var tempArray = [];
+            tempArray.push(postTemp);
+            tagHashmap.put(postTempTags[j].name, tempArray);
+          } else {
+            tagHashmap.get(postTempTags[j].name).push(postTemp);
+          }
+       }
+    } %>
+
+    <% var array = tagHashmap.containsKey(pageTagName) ? tagHashmap.get(pageTagName) : []  %>
+
+    <% if(Array.isArray(array)) { array.sort((a, b) => {
       if (a.date > b.date) {
         return -1;
       }
@@ -15,7 +69,7 @@
       }
       return 0;
     }) 
-  %>
+    }%>
   <% for (let i = 0; i < array.length; i++) { %>
     <% if (!('hide' in array[i]) || array[i].hide == false) {%>
         <li>
@@ -28,5 +82,3 @@
   <% } %>
   </ul>
 </div>
-
-<!-- <%- partial('_partial/paginator') %> -->
