@@ -2,8 +2,8 @@
 var renderer = require('./renderer');
 
 hexo.config.lightgallery = Object.assign({
-    js: 'https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css',
+    js: 'https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/lightgallery.min.js'
+    css: 'https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/lightgallery.min.css',
     plugins: {},
 }, hexo.config.lightgallery);
 
