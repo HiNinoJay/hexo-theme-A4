@@ -26,7 +26,7 @@ With minimal configuration, achieve a paper-like appearance resembling A4 size.<
 
 Let the readers focus on reading the text, while the writers concentrate on writing.
 ➡️ [Demo](https://ninojay.top) ➡️ [Docs](https://doc.ninojay.top)<br/>
-  
+
 _A star in the top right corner for faster feature updates_
 
 </div>
@@ -145,11 +145,10 @@ If you think I'm not doing too well, please give me a star for the project, or [
 
 ## 💗 feeling
 
-Heartfelt thanks to A4 supporters: https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md)
+Heartfelt thanks to A4 supporters: https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md
 
 
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/HiNinoJay/hexo-theme-A4.svg)](https://starchart.cc/HiNinoJay/hexo-theme-A4)
-
 
