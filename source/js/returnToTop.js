@@ -59,7 +59,6 @@
 	});
 
 	$(document).on('click', '.gallery-item', function (e) {
-		console.log("得消失");
 		window.scrollTo(0, 0);
 		// 禁止滚动
 		$('body').css('overflow', 'hidden');
