@@ -26,7 +26,7 @@
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge&logo=node)](https://nodejs.org/en)
 
 「让读者专注于阅读文字，写者专注于写作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文档](https://doc.ninojay.top)
-  
+
 _右上角一个star，更快更新功能_
 
 </div>
@@ -148,7 +148,7 @@ git pull
 
 ## 💗感谢
 
-由衷感谢A4支持者们：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md)
+由衷感谢A4支持者们：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md
 
 
 ## Stargazers over time

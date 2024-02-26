@@ -23,7 +23,7 @@
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge&logo=node)](https://nodejs.org/en)
 
 「讓讀者專注於閱讀文字，作者專注於寫作。」➡️ [效果展示](https://ninojay.top) ➡️ [使用文檔](https://doc.ninojay.top)
-  
+
 _右上角一個star，更快更新功能_
 
 </div>
@@ -145,7 +145,7 @@ git pull
 
 ## 💗感謝
 
-由衷感謝A4支持者們：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md)
+由衷感謝A4支持者們：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md
 
 ## Stargazers over time
 
