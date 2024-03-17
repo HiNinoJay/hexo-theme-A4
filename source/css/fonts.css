@@ -22,9 +22,10 @@
 }
 
 @font-face {
-    font-family: "LXGW WenKai bold";
+    font-family: "LXGW WenKai Bold";
     font-style: normal;
-    font-weight: 700;
-    src: local(""),
-        url("https://jsd.onmicrosoft.cn/gh/hininojay/images/source/img/a4color/LXGWWenKai-Bold.woff2") format("woff2");
+    font-weight: bold;
+    src: local("../fonts/LXGWWenKaiLite-Bold.woff2"),
+        url("https://jsd.onmicrosoft.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Bold.woff2") format("woff2"),
+        url("../fonts/LXGWWenKaiLite-Bold.woff2") format("woff2");
 }
