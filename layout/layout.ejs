@@ -15,24 +15,24 @@
             <% var tags,tagsInside, categories, categoriesInside; %>
             
             <% if(path == "index.html") { %>
-                <div class="shadow-drop-2-bottom index-main">
+                <div class="index-main">
                     <%- partial('_partial/header') %>
                     <%- partial('index') %> 
                     <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "list/index.html") { %>
-                <div class="shadow-drop-2-top paper-main">
+                <div class="paper-main">
                      <%- partial('_partial/post-header') %> 
                      <%- partial('list') %> 
                      <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "404.html") { %>
-                <div class="shadow-drop-2-top paper-main">
+                <div class="paper-main">
                     <%- partial('_partial/404-template') %> 
                     <%- partial('_partial/footer') %>
                 </div>
             <% } else { %>
-                <div class="shadow-drop-2-bottom paper-main">
+                <div class="paper-main">
                     <%- partial('_partial/post-header') %> 
         
                     <% if(tags = (path == "tags/index.html")) { %>
