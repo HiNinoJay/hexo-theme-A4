@@ -677,9 +677,9 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     }
 }
 
-.darkmode-layer, .darkmode-toggle {
+/* .darkmode-layer, .darkmode-toggle {
     z-index: 500;
-}
+} */
 
 .darkmode-background {
     background: transparent !important;
