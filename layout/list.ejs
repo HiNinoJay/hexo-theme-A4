@@ -106,7 +106,7 @@
       <% for (let i = 0; i < topPostArray.length; i++) { %>
           <% var thisPost = topPostArray[i] %>
           <li>
-            <span class="archive-date"> &nbsp;&nbsp;&nbsp;TOP<%= thisPost.top %>
+            <span class="archive-date"> &nbsp;&nbsp;&nbsp;TOP
             </span>
             <div class="archive-main">
                 <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>

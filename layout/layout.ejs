@@ -4,7 +4,28 @@
     <%- partial('_partial/head') %>
     <%- partial('_partial/configcss/color') %>
     <%- partial('_partial/configcss/imageShow') %>
+    
     <body>
+        <script src="/js/darkmode-js.min.js"></script>
+        <% if(theme.tool.darkMode) { %>
+        <script>
+            const options = {
+                bottom: '53px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '42px', // default: 'unset'
+                time: '0.3s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '<% if(theme.color.enable) { %> <%=theme.color.background %>  <% } else { %> #e4e4e4 <%}%>',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        </script>
+        <% } %>
         <% if(theme.tool.leftToc) { %>
             <div class="left-toc-container">
                 <nav id="toc" class="bs-docs-sidebar"></nav>
@@ -75,31 +96,4 @@
                 </div>
             <% } %>
     </body>
-
-<% if(theme.tool.darkMode) { %>
-    <!--暗黑模式-->
-    <script src="/js/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-        const options = {
-            bottom: '53px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '42px', // default: 'unset'
-            time: '0.3s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '<% if(theme.color.enable) { %> <%=theme.color.background %>  <% } else { %> #e4e4e4 <%}%>',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: true, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
-    
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-        
-        }
-        window.addEventListener('DOMContentLoaded', addDarkmodeWidget);
-    </script>
-  <% } %>
 </html>
