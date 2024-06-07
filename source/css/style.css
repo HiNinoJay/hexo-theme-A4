@@ -39,6 +39,7 @@ a
 {
     padding: 4vw;
     background: #e4e4e4;
+    min-height: 100vh;
 }
 .paper-main
 {
@@ -60,7 +61,7 @@ a
     padding: 36px 4.5vw 0px;
     border-radius: 0px;
     background: #ffffff;
-    box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff;
+    /* box-shadow:  0px 5px 13px #616161, -5px -5px 13px #ffffff; */
 }
 
 .index-header-line
@@ -684,4 +685,8 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 .darkmode-background {
     background: transparent !important;
 }
-
+/* 覆盖原始darkmode样式 */
+.darkmode-ignore{
+    isolation:isolate;
+    display: initial;
+}
