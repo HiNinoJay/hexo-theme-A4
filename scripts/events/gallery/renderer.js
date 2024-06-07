@@ -33,11 +33,11 @@ function addTag(data){
 
 function addRunnableTag(data){
     data.content+='<script>'+
-        `if (typeof lightGallery !== 'undefined') {
-        var options = {
+        `if("undefined"!=typeof lightGallery) {
+        var options1 = {
             selector: '.gallery-item'
         };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1);
         }`
         +'</script>';
 }
