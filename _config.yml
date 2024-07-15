@@ -1,8 +1,11 @@
-# ‘首页’ 和 ‘文章’ 较为 特殊
-# 目前如果你想修改 ‘文章’ 为 其他别名，记得去_config.yml中把，menu和showInMenu中的 '文章' 都也同步修改，或者注释掉，否则会产生影响
+# 当你第一次玩A4，想直接看效果的话：
+# 1. 请直接去掉 menu 配置中的  ‘首页’ 和 ‘文章’ 前的 ‘#’ 注释符号
+# 2. 请直接去掉 showInMenu 配置中的 ‘- 文章’ 前的 ‘#’ 注释符号
+# 3. 执行命令：hexo new page index 生成首页；执行命令：hexo new page list 生成列表页面；
+# 4. 执行命令：hexo clean && hexo g && hexo s 直接查看页面效果
 menu:
-  首页: /  #需要hexo new page index,在index/index.md填写的内容将会展现在首页上
-  文章: /list/ # 需要hexo new page list
+  # 首页: /  #需要hexo new page index,在index/index.md填写的内容将会展现在首页上
+  # 文章: /list/ # 需要hexo new page list
   # 添加其他页面格式举例：
   # 关于: /about/ # 需要hexo new page about
   # 标签: /tags/ #需要hexo new page tags
@@ -10,15 +13,12 @@ menu:
   # ...
 
 # 首页你想要展示的menu链接，注意当你修改了menu中的别名，这里要随着更改，不然你会疑惑怎么首页没有修改后的别名
+# 请直接去掉 ‘#’ 注释符号，启用 ‘文章’
 showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显示）
-  - 文章  # 将在首页显示 文章 链接
+  # - 文章  # 将在首页显示 文章 链接
   # - 关于
   # - 标签
   # - 分类
-
-# 因为 最终 页面的生成 会取 _config.a4.yml 和 _config.yml 的并集
-# 所以当你复制了一份该配置文件为 _config.a4.yml后，强烈建议你将 _config.yml 中的 menu,showInMenu中的配置都 注释掉
-# 甚至可以注释掉 _config.yml中所有的配置，这样最终只会基于你的 _config.a4.yml
 
 index:  # 首页相关配置
   header:  # 首页的页眉 以及 404页面，当你没开启一言，将会每次刷新页面随机展示下面的语句
@@ -65,7 +65,7 @@ tool:
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
 cdn:
   enable: false # 如果你修改了 css/js ，也许需要把cdn设置为false才会生效
-  choose: jsdelivr  # aliyun | unpkg| jsdelivr  # 都调整为利于国内的cdn，建议使用默认的 jsdelivr 即可
+  choose: zzko  # zzko | aliyun | unpkg| jsdelivr  # 都调整为利于国内的cdn，建议使用默认的 zzko 即可
   # 因为是免费CDN，所以有挂的风险，一旦发现网站样式出现原来没有的问题，请尝试关闭CDN
 
 # 实验性功能：A4色调调整：颜色搭配是很主观的行为
@@ -125,4 +125,4 @@ comment:
 inject:
   css: css/custom.css
 
-version: v1.9.0
+version: v1.9.1
