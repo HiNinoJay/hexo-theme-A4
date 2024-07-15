@@ -8,7 +8,7 @@
 
 <div align="center" >
 <a href="https://ninojay.top">
-<img width=200px height=200px src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
+<img width=200px height=200px src="https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
@@ -32,7 +32,7 @@ _A star in the top right corner for faster feature updates_
 </div>
 
 
-[![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️Features
 
@@ -55,28 +55,28 @@ _A star in the top right corner for faster feature updates_
 ### Various Color Scheme
 
 #### Grey and white color scheme (Default)
-![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greywhite.png)
+![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greywhite.png)
 
 #### Green and gold color scheme (Pre-provided | One-click activation)
-![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greengolden.png)
+![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greengolden.png)
 
 Color coordination is an art. In addition to the two color schemes recommended for A4, I can also create my own color palettes and share them with everyone. If you would like to explore more color combinations, please refer to the following link: [Preview](https://ninojay.top/hexoplugin/A4-color-change/).
 
 ### Index
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/index.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/index.png)
 
 ### Page List
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
 
 ### Tags And Category
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
 
 ### Comments
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
 
 
 ## 👋How To Use
