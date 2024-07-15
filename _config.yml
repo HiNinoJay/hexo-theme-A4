@@ -29,6 +29,7 @@ index:  # 首页相关配置
   hitokoto: false # 一言：调用网络语句展示的接口
   footer: Email:123456789@gmail.com # 除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
   titlePosition: left # center | left  # 首页标题的位置
+  width: small  # small | middle | big # 首页的宽度
 
 footerLink: # 底部的链接自定义
   info: © 1949-2024 China  # info这个单词不能修改，不想使用可为空
@@ -42,6 +43,7 @@ post: #除首页之外页面
   footer: 🌊看过大海的人不会忘记海的广阔🌊   # 底部左侧 自定义信息
   themeInfo: true # true | false  # 是否开启 底部右侧 声明本站信息
   endContent: 以上 # 当你使用了 评论功能，此配置才会生效
+  width: middle  # middle | big # 宽度
 
 # 相对于source目录下的头像url
 favicon: /img/favicon.webp

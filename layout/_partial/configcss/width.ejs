@@ -1,0 +1,38 @@
+<% if(theme.index.width != "") { %>
+    <% if(theme.index.width == "small") { %>
+
+    <% } else if(theme.index.width == "middle") {%>
+        <style>
+            .index-main{
+                max-width:  880px;
+            }
+        </style>
+
+    <% } else if(theme.index.width == "big") { %>
+        <style>
+            .index-main{
+                max-width:  1200px;
+            }
+        </style>
+
+    <% } else {%>
+
+    <% } %>
+    
+<% } %>
+
+<% if(theme.post.width != "") { %>
+    <% if(theme.post.width == "middle") { %>
+
+    <% } else if(theme.post.width == "big") { %>
+        <style>
+            .paper-main{
+                max-width:  1200px;
+            }
+        </style>
+
+    <% } else { %>
+
+    <% } %>
+    
+<% } %>
