@@ -8,7 +8,7 @@
 
 <div align="center" >
 <a href="https://ninojay.top">
-<img width=200px height=200px src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
+<img width=200px height=200px src="https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
@@ -29,7 +29,7 @@ _右上角一個star，更快更新功能_
 </div>
 
 
-[![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特點
 
@@ -55,28 +55,28 @@ _右上角一個star，更快更新功能_
 ### 多種主題配色
 
 #### 灰白配色（默認）
-![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greywhite.png)
+![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greywhite.png)
 
 #### 綠金配色（已預置｜可一鍵啟用）
-![](https://jsd.onmicrosoft.cn/gh/hininojay/images/a4color/greengolden.png)
+![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greengolden.png)
 
 `顏色搭配是一門學問`，除A4推薦的兩種配色外，你可以自行調色，並把顏色方案分享給大家。更多配色請看：[預覽](https://ninojay.top/hexoplugin/A4-color-change/)。
 
 ### 首頁
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/index.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/index.png)
 
 ### 文章列表
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
 
 ### 文章標籤和分類信息
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
 
 ### 評論
 
-![](https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
+![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
 
 
 ## 👋如何使用
