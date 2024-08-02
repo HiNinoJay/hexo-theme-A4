@@ -47,7 +47,8 @@ post: #除首页之外页面
     status: true # true | false # 设置为true,下面两项才会生效
     prevInfo: 上一篇 # 上一篇提示文案，照顾到英文用户，你可以设置为英语单词
     nextInfo: 下一篇 # 下一篇提示文案，照顾到英文用户，你可以设置为英语单词
-
+  titlePosition: left # left ｜ center 文章标题的位置
+  
 # 相对于source目录下的头像url
 favicon: /img/favicon.webp
 

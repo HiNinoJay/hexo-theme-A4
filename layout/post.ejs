@@ -1,9 +1,29 @@
 <div class="post-main">
 
     <% if(is_post()) { %>
-        <div class="post-main-title">
-            <%= page.title %>
-        </div>
+        <% if(page.hasOwnProperty('titlePosition') && (page.titlePosition == 'left' || page.titlePosition == 'center')) { %>
+            <% console.log(page.titlePosition) %>
+            <% if(page.titlePosition == 'left') {  %>
+                <div class="post-main-title">
+                    <%= page.title %>
+                </div>
+            <% } else {  %>
+                <div class="post-main-title" style="text-align: center;">
+                    <%= page.title %>
+                </div>
+            <% } %>
+
+        <% } else {%>
+            <% if(theme.post.titlePosition == 'left') {  %>
+                <div class="post-main-title">
+                    <%= page.title %>
+                </div>
+            <% } else {  %>
+                <div class="post-main-title" style="text-align: center;">
+                    <%= page.title %>
+                </div>
+            <% } %>
+        <% } %>
       
     <% } %>
 
