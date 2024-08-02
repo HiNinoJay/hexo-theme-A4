@@ -2,7 +2,6 @@
 
     <% if(is_post()) { %>
         <% if(page.hasOwnProperty('titlePosition') && (page.titlePosition == 'left' || page.titlePosition == 'center')) { %>
-            <% console.log(page.titlePosition) %>
             <% if(page.titlePosition == 'left') {  %>
                 <div class="post-main-title">
                     <%= page.title %>
