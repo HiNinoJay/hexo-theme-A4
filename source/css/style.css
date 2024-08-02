@@ -368,6 +368,13 @@ a
         float: left; 
         font-size: 10px; 
     }
+    .post-footer-pre-next{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .post-footer-pre-next-last-span-right{
+        text-align: left;
+    }
   }
 
 .index-footer-last-span

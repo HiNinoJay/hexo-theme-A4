@@ -53,10 +53,33 @@
     </div>
     <br>
     
-    <!-- <div class="post-footer-pre-next">
-        <span>上一篇：<a href=""></a></span>
-        <span class="post-footer-pre-next-last-span-right">上一篇：<a href=""></a></span>
-    </div> -->
+    <% if(theme.post.prevAndNextLink.status == true) { %>
+        <% if(!(page.hasOwnProperty('hide') && page.hide == true)) { %>
+            <% var prev_page = page.prev;
+                while(prev_page != null && prev_page.hasOwnProperty('hide') && prev_page.hide == true) {
+                    prev_page = prev_page.prev;
+                };
+                var next_page = page.next;
+                while(next_page != null && next_page.hasOwnProperty('hide') && next_page.hide == true) {
+                    next_page = next_page.next;
+                }
+            %>
+    
+        
+            <div class="post-footer-pre-next">
+                <% if(prev_page != null) { %>
+                    <span><%= theme.post.prevAndNextLink.prevInfo %>：<a href='<%- url_for(prev_page.path) %>'><%= prev_page.title %></a></span>
+                <% } %>
+
+                <% if(next_page != null) { %>
+                    <span class="post-footer-pre-next-last-span-right"><%= theme.post.prevAndNextLink.nextInfo %>：
+                        <a href="<%- url_for(next_page.path) %>"><%= next_page.title %></a>
+                    </span>
+                <% } %>
+            </div>
+
+        <% } %>
+    <% } %>
 
     <% if (!page.hasOwnProperty('comment') || page.comment == true) { %>
         <%- partial('_partial/comments/comment') %>

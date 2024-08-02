@@ -43,6 +43,10 @@ post: #除首页之外页面
   themeInfo: true # true | false  # 是否开启 底部右侧 声明本站信息
   endContent: 以上 # 当你使用了 评论功能，此配置才会生效
   width: middle  # middle | big # 宽度
+  prevAndNextLink: # 链接：上一篇和下一篇文章
+    status: true # true | false # 设置为true,下面两项才会生效
+    prevInfo: 上一篇 # 上一篇提示文案，照顾到英文用户，你可以设置为英语单词
+    nextInfo: 下一篇 # 下一篇提示文案，照顾到英文用户，你可以设置为英语单词
 
 # 相对于source目录下的头像url
 favicon: /img/favicon.webp
