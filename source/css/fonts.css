@@ -15,10 +15,10 @@
     font-style: normal;
     font-weight: 600;
     src: local("../fonts/LXGWWenKaiLite-Regular.woff2"),
-        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Regular.woff2") format("woff2"),
-        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiMono-Regular.woff2") format("woff2"),
         url("../fonts/LXGWWenKaiLite-Regular.woff2") format("woff2"),
-        url("../fonts/LXGWWenKaiMono-Regular.woff2") format("woff2");
+        url("../fonts/LXGWWenKaiMono-Regular.woff2") format("woff2"),
+        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Regular.woff2") format("woff2"),
+        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -26,6 +26,6 @@
     font-style: normal;
     font-weight: bold;
     src: local("../fonts/LXGWWenKaiLite-Bold.woff2"),
-        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Bold.woff2") format("woff2"),
-        url("../fonts/LXGWWenKaiLite-Bold.woff2") format("woff2");
+        url("../fonts/LXGWWenKaiLite-Bold.woff2") format("woff2"),
+        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Bold.woff2") format("woff2");
 }
