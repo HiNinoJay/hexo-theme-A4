@@ -15,7 +15,7 @@
 | *宽                                           | 微信   | 20¥    | 赞一个a4主题                                                 | 2024.02.24 |
 | ao                                            | 微信   | 10¥    | 非常喜欢A4，有问必答，处理速度非常快                         | 2024.03.17 |
 | [shawshai](https://shawshai.cn/)              | 微信   | 10¥    | 支持一下，主题很棒！                                         | 2024.03.19 |
-| [mars](https://github.com/marsevilspirit)                                        | 微信   | 20¥    | 能拉我进群吗                                                | 2024.09.17 |
+| [marsevilspirit](https://github.com/marsevilspirit)                                        | 微信   | 20¥    | nb大佬，我的github名叫marsevilspirit                                                | 2024.09.17 |
 
 
 
