@@ -11,7 +11,7 @@
 
 <div align="center" >
 <a href="https://ninojay.top">
-<img width=200px height=200px src="https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/A4-favicon.png" alt="A4" />
+<img width=200px height=200px src="./source/img/A4-favicon.png" alt="A4" />
 </a>
 </div>
 
@@ -32,7 +32,7 @@ _右上角一个star，更快更新功能_
 </div>
 
 
-[![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
+[![](./source/img/market.png)](https://github.com/HiNinoJay/hexo-theme-A4)
 
 ## 🏹️特点
 
@@ -67,19 +67,19 @@ _右上角一个star，更快更新功能_
 
 ### 首页
 
-![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/index.png)
+![](./source/img/index.png)
 
 ### 文章列表
 
-![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/archive.png)
+![](./source/img/archive.png)
 
 ### 文章标签和分类信息
 
-![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/tags&&categories.png)
+![](./source/img/tags&&categories.png)
 
 ### 评论
 
-![](https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/img/comment.png)
+![](./source/img/comment.png)
 
 
 ## 👋如何使用
