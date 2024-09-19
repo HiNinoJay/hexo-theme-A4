@@ -100,6 +100,15 @@ font:
   enable: false # 是否使用字体开关功能
   LXGWWenKai: true # 霞鹜文楷 如果关闭，中文则使用的是 思源宋体，思源宋体不提供关闭 
 
+# 图片幻灯片配置
+lightgallery:
+  thumbnail: true # 显示缩略图
+  zoom: true # 启用缩放功能
+  rotate: true # 启用旋转功能能
+  autoplay: true # 启用自动播放功能
+  fullScreen: true # 启用全屏功能
+  pager: false # 页码
+  
 # ---------------------------------------------------------------------------------------
 # Comment plugin
 # 评论插件：需要根据教程自行部署评论服务
