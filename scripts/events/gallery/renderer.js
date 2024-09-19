@@ -17,18 +17,18 @@ function addTag(data){
 
     // add js
     data.content = '<div class=".article-gallery">'+data.content+'</div>';
-    data.content+='<script src="'+config.js+'"></script>';
+    // data.content+='<script src="'+config.js+'"></script>';
 
     // add css
-    var css = '<link rel="stylesheet" type="text/css" href="'+config.css+'" />';
-    data.content = css + data.content;
+    // var css = '<link rel="stylesheet" type="text/css" href="'+config.css+'" />';
+    // data.content = css + data.content;
 
     // add plugins
-    var plugins = Object.keys(config.plugins);
-    for (var plugin of plugins){
-        var jsTag = '<script src="'+config.plugins[plugin]+'"></script>';
-        data.content += jsTag;
-    }
+    // var plugins = Object.keys(config.plugins);
+    // for (var plugin of plugins){
+    //     var jsTag = '<script src="'+config.plugins[plugin]+'"></script>';
+    //     data.content += jsTag;
+    // }
 }
 
 function addRunnableTag(data){
@@ -66,7 +66,7 @@ function render(data){
     }
     wrapImage.call(this,data);
     addTag.call(this,data);
-    addRunnableTag.call(this,data);
+    // addRunnableTag.call(this,data);
 };
 
 exports.render = render;
