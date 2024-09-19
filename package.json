@@ -30,5 +30,5 @@
     "url": "https://github.com/HiNinojay/hexo-theme-A4/issues"
   },
   "homepage": "https://github.com/HiNinojay/hexo-theme-A4#readme",
-  "main": "_config.yml"
+  "main": "_config.yml" 
 }
