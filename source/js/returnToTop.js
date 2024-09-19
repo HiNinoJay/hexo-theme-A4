@@ -46,38 +46,43 @@
 		
 	});
 
-	document.addEventListener('click', function(event) {
-		var lgOn = document.querySelector('.lg-on');
-		if (lgOn) {
-			// 如果页面中存在具有类名 .lg 的元素
-		} else {
-			// 如果页面中不存在具有类名 .lg 的元素
-			// 恢复滚动
-			$('body').css('overflow', 'auto');
-			jQuery('.return-to-last-progress-wrap').addClass('active-progress');
-		}
-	});
+	$(document).ready(function() {
+		// 选择你想要观察的元素
+		var targetNode = document.querySelector('.lg-container');
+	
+		// 观察配置，观察属性变化
+		var config = { attributes: true, attributeFilter: ['class'] };
+	
+		// 当检测到属性变化时的回调函数
+		var callback = function(mutationsList, observer) {
+			mutationsList.forEach(function(mutation) {
+				if (mutation.attributeName === 'class') {
+					// 获取当前的 class
+					var currentClass = mutation.target.className;
+					
+					// 检查 lg-show 类是否存在
+					if ($(mutation.target).hasClass('lg-show')) {
+						$('.return-to-last-progress-wrap').hide();
+						$('.progress-wrap').hide();
+					}
 
-	$(document).on('click', '.gallery-item', function (e) {
-		window.scrollTo(0, 0);
-		// 禁止滚动
-		$('body').css('overflow', 'hidden');
-		jQuery('.return-to-last-progress-wrap').removeClass('active-progress');
-	});
-
-	$(document).on('click', '.lg-close', function (e) {
-
-		// 恢复滚动
-		$('body').css('overflow', 'auto');
-		jQuery('.return-to-last-progress-wrap').addClass('active-progress');
+					// 检查 lg-show 类是否存在
+					if (!$(mutation.target).hasClass('lg-show')) {
+						$('.return-to-last-progress-wrap').show();
+						$('.progress-wrap').show();
+					}
+					
+					
+				}
+			});
+		};
+	
+		// 创建一个观察者实例并传入回调函数
+		var observer = new MutationObserver(callback);
+	
+		// 开始观察目标节点
+		observer.observe(targetNode, config);
 	});
 	
-
-
-
-
-
-
-
 	
 })(jQuery); 
