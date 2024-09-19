@@ -49,6 +49,7 @@
 	$(document).ready(function() {
 		// 选择你想要观察的元素
 		var targetNode = document.querySelector('.lg-container');
+		if(targetNode == undefined || targetNode == null) return;
 	
 		// 观察配置，观察属性变化
 		var config = { attributes: true, attributeFilter: ['class'] };
