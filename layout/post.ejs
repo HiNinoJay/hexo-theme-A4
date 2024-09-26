@@ -27,7 +27,7 @@
       
     <% } %>
 
-    <% if(is_post()) { %>
+    <% if(is_post() && !(page.hasOwnProperty('postInfo') && page.postInfo == false)) { %>
 
         <% if(titlePosition == "left") { %>
             <div class="post-head-meta-left">
