@@ -38,16 +38,11 @@ footerLink: # 底部的链接自定义
   # 支持: /support/ # 需要hexo new page support
   # ...
 
-post: #除首页之外页面
-  footer: 🌊看过大海的人不会忘记海的广阔🌊   # 底部左侧 自定义信息
-  themeInfo: true # true | false  # 是否开启 底部右侧 声明本站信息
-  endContent: 以上 # 当你使用了 评论功能，此配置才会生效
-  width: middle  # middle | big # 宽度
-  prevAndNextLink: # 链接：上一篇和下一篇文章
-    status: true # true | false # 设置为true,下面两项才会生效
-    prevInfo: 上一篇 # 上一篇提示文案，照顾到英文用户，你可以设置为英语单词
-    nextInfo: 下一篇 # 下一篇提示文案，照顾到英文用户，你可以设置为英语单词
-  titlePosition: left # left ｜ center 文章标题的位置
+post:
+  footer: 🌊看过大海的人不会忘记海的广阔🌊
+  themeInfo: true # 是否开启底部右侧声明本站信息
+  width: middle  #  middle | big 
+  titlePosition: center # left ｜ center 文章标题的位置
   
 # 相对于source目录下的头像url
 favicon: /img/favicon.webp
@@ -67,6 +62,23 @@ tool:
 #
 # ps：还有经过A4作者测试，可供你使用的插件，详见：https://ninojay.top/tags/hexoPlugin/
 # ---------------------------------------------------------------------------------------
+
+# 首页页面的其他配置
+indexInfo:
+  allWordCount: true # 是否显示全站字数统计
+  allViewCount: true # 是否显示全站访问量统计
+  
+# 文章页面的信息
+postInfo: 
+  updateDate: true # 是否显示文章最近更新时间
+  wordCount: true # 是否显示文章字数统计
+  readTime: true # 是否显示文章预计阅读耗时
+  viewCount: true # 阅读量统计
+  prevAndNextLink: # 链接：上一篇和下一篇文章
+    status: true # true | false # 设置为true,下面两项才会生效
+    prevInfo: 上一篇 # 上一篇提示文案，照顾到英文用户，你可以设置为英语单词
+    nextInfo: 下一篇 # 下一篇提示文案，照顾到英文用户，你可以设置为英语单词
+  endContent: 以上 # 当你使用了 评论功能，此配置才会生效
 
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
 cdn:
