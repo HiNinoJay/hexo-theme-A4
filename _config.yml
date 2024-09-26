@@ -54,7 +54,10 @@ tool:
   returnToLast: true # 回退页面按钮
   topToc: true # 文章顶部目录
   leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
-  recentUpdatePost: false # list页面最近更新模块，展示最近的5篇文章(A4启动自动创建了最近更新页面：url为 /recent-updates 请自行使用)
+  recentUpdatePost: false # list页面将会新增一个“最近更新”模块，展示最近3篇文章，最近更新可点击跳转至 "最近更新列表页面"
+  # A4启动将会自动创建“最近更新页面”：url为 /recent-updates 请自行使用
+  # 如果你发现你的最近更新时间总是当天部署的时间，请看 https://ninojay.top/2023/writeByGithub-2/#2024.09.26更新说明
+
 
 # ---------------------------------------------------------------------------------------
 # 以上为基本配置，实现了A4主题追求的纯净风
