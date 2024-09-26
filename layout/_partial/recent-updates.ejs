@@ -1,0 +1,112 @@
+<div class="archive-list">
+    <ul class="archive">
+        <% var postArray = eval('site.posts.data') %>
+  
+        <!--文章先按照时间排好序-->
+        <% postArray.sort((a, b) => {
+            if (a.updated > b.updated) {
+              return -1;
+            }
+            if (a.updated < b.updated) {
+              return 1;
+            }
+            return 0;
+          }) 
+        %>
+  
+  
+        
+        <% class HashMap {
+          constructor() {
+            this.map = {};
+          }
+        
+          put(key, value) {
+            this.map[key] = value;
+          }
+        
+          get(key) {
+            return this.map[key];
+          }
+        
+          containsKey(key) {
+            return key in this.map;
+          }
+        
+          remove(key) {
+            delete this.map[key];
+          }
+        
+          size() {
+            return Object.keys(this.map).length;
+          }
+        
+          isEmpty() {
+            return this.size() === 0;
+          }
+        
+          clear() {
+            this.map = {};
+          }
+        }
+        %>
+  
+        <% class List {
+          constructor() {
+            this.items = [];
+          }
+        
+          add(item) {
+            this.items.push(item);
+          }
+        
+          remove(item) {
+            const index = this.items.indexOf(item);
+            if (index > -1) {
+              this.items.splice(index, 1);
+            }
+          }
+        
+          get(index) {
+            return this.items[index];
+          }
+        
+          size() {
+            return this.items.length;
+          }
+        }
+         %>
+  
+        <% const hashmap = new HashMap() %>
+        <% const allPostList = new List() %>
+  
+        <!--循环遍历文章数组-->
+        <% for (let i = 0; i < postArray.length; i++) { 
+          if(!('hide' in postArray[i]) || postArray[i].hide == false) {
+              allPostList.add(postArray[i]);
+          }
+        }  %>
+  
+        <li>
+            <span class="year-font-color">
+                最近更新：
+            </span>
+        </li>
+        <!--放 文章-->
+        <% for (let i = 0; i < allPostList.size(); i++) { %>
+            <% var thisPost = allPostList.get(i) %>
+            <li>
+              <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.updated, "YYYY/MM/DD") %> 
+              </span>
+              <div class="archive-main">
+                <% if(thisPost.categories.length > 0) { %>
+                  <a class="archive-title"  href="/<%= thisPost.categories.data[0].path %>">
+                    <%= thisPost.categories.data[0].name %> 
+                  </a> | 
+                <% } %>
+                  <a class="archive-title" href="<%- url_for(thisPost.path) %>"><%= thisPost.title %></a>
+              </div>
+            </li>
+        <% } %>
+    </ul>
+  </div>
