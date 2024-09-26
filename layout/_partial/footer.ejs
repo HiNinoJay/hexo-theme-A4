@@ -10,8 +10,29 @@
 
             <% } %>
         </span>
+       
     <% } %>
 </div>
+
+<% if(path == 'index.html' && (theme.indexInfo.allWordCount || theme.indexInfo.allViewCount)){ %>
+    <div class="footer-last-without-line">
+        <% if(theme.indexInfo.allWordCount) { %>
+        <span>本站总字数：<%= totalcount(site) %></span>
+        <% } %>
+        <% if(theme.indexInfo.allWordCount && theme.indexInfo.allViewCount) { %>
+            <div class="footer-last-span-right">
+        <% } else if(!theme.indexInfo.allWordCount && theme.indexInfo.allViewCount) { %>
+            <div>
+        <% } %>
+        <% if(theme.indexInfo.allViewCount) { %>
+                <span id="busuanzi_container_site_pv" class="">
+                    本站总访问：<span id="busuanzi_value_site_pv"></span>次
+                </span>
+            </div>
+        <% } %>
+    </div>
+<% } %>
+
 <!--这是指一条线往下的内容-->
 <div class="footer-last">
     <% if(path == 'index.html'){ %>
@@ -160,3 +181,7 @@
     }
     
 </script>
+
+<% if(theme.postInfo.viewCount) { %>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+<% } %>
