@@ -135,7 +135,9 @@
             <a class="archive-title"  href="/recent-updates/">Recent-Updates</a>
           </span>
         </li>
-        <% for (let i = 0; i < postArray.length && i < 3; i++) { %>
+        <% var countRecentPost = 0 %>
+        <% for (let i = 0; i < postArray.length && countRecentPost < 3; i++) { %>
+          <% if(('hide' in postArray[i]) && postArray[i].hide == true) { continue; } else { countRecentPost++;}%>
           <% var thisPost = postArray[i] %>
           <li>
             <span class="archive-date"><%= date(thisPost.updated, "YYYY/MM/DD") %> 
