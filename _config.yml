@@ -45,7 +45,9 @@ post:
   titlePosition: center # left ｜ center 文章标题的位置
   
 # 相对于source目录下的头像url
-favicon: /img/favicon.webp
+favicon: /img/favicon.webp # 默认方形头像
+isRoundedAvatar: false # 是否圆形头像
+isAvatarRotating: false # 圆形头像是否开启悬浮旋转
 
 # 是否启用一些特色工具 false | true
 tool:
