@@ -14,14 +14,38 @@
 
 <div class="header">
     <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="<%- url_for(theme.favicon) %>" width="10%"></img>
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: <%= theme.isRoundedAvatar ? '50%' : '0' %>; 
+            }
+            <% if (theme.isAvatarRotating && theme.isRoundedAvatar) { %>
+            .header-img:hover {
+                animation: rotateAnimation 2s linear infinite; /* 悬停旋转动画 */
+            }
+            @keyframes rotateAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            <% } %>
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="<%- url_for(theme.favicon) %>" 
+        />
         <div class="header-content">
             <a class="logo" href="<%- url_for() %>"><%= config.title %></a> 
             <span class="description"><%= config.description %></span> 
         </div>
-        
     </div>
     
    
