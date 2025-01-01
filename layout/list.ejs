@@ -116,6 +116,34 @@
           </li>
       <% } %>
 
+      <!--rough-notation风格效果-->
+      <% if(theme && theme.tool && theme.tool.hoverStyle) { %>
+        <script src="<%= url_for('/js/roughNotation.js') %>" defer></script>
+        <script>
+          // 浏览器严格模式
+          if (typeof window !== 'undefined') {
+            window.themeConfig = <%- JSON.stringify(theme) %>;
+          }
+          document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.archive-title').forEach(el => {
+              const annotation = RoughNotation.annotate(el, {
+                type: themeConfig?.tool?.hoverStyle || 'underline', // 效果,默认为'underline'
+                color: themeConfig?.tool?.hoverColor || '#4f7dde', // 自定义效果颜色
+                animationDuration: themeConfig?.tool?.animationDuration || 800, // 动画持续时间ms
+              });
+              el.addEventListener('mouseenter', () => {
+                if(annotation){
+                annotation.show();
+            }});
+              el.addEventListener('mouseleave', () => {
+                if(annotation){
+                annotation.hide();
+            }});
+            });
+          });
+        </script>
+        <% } %>
+
       <!--文章先按照时间排好序-->
       <% postArray.sort((a, b) => {
         if (a.updated > b.updated) {
