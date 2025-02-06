@@ -117,7 +117,7 @@
       <% } %>
 
       <!--rough-notation风格效果-->
-      <% if(theme && theme.tool && theme.tool.hoverStyle) { %>
+      <% if(theme && theme.listInfo.enable) { %>
         <script src="<%= url_for('/js/roughNotation.js') %>" defer></script>
         <script>
           // 浏览器严格模式
