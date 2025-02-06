@@ -57,10 +57,6 @@ tool:
   topToc: true # 文章顶部目录
   leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
   recentUpdatePost: false # list页面将会新增一个“最近更新”模块，展示最近3篇文章，最近更新可点击跳转至 "最近更新列表页面"
-
-  hoverStyle: underline # box | circle | underline | highlight | strike-through | crossed-off # 鼠标悬浮在文章列表上时的样式
-  hoverColor: #4f7dde # 鼠标悬浮在文章列表上时的颜色
-  animationDuration: 800 # 鼠标悬浮在文章列表上时的动画时长,单位ms毫秒
   # A4启动将会自动创建“最近更新页面”：url为 /recent-updates 请自行使用
   # 如果你发现你的最近更新时间总是当天部署的时间，请看 https://ninojay.top/2023/writeByGithub-2/#2024.09.26更新说明
 
@@ -89,6 +85,13 @@ postInfo:
     prevInfo: 上一篇 # 上一篇提示文案，照顾到英文用户，你可以设置为英语单词
     nextInfo: 下一篇 # 下一篇提示文案，照顾到英文用户，你可以设置为英语单词
   endContent: 以上 # 当你使用了 评论功能，此配置才会生效
+
+# 列表页面的配置
+listInfo:
+  enable: false
+  hoverStyle: underline # box | circle | underline | highlight | strike-through | crossed-off # 鼠标悬浮在文章列表上时的样式
+  hoverColor: #4f7dde # 鼠标悬浮在文章列表上时的颜色
+  animationDuration: 800 # 鼠标悬浮在文章列表上时的动画时长,单位ms毫秒
 
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
 cdn:
@@ -162,4 +165,4 @@ comment:
 inject:
   css: css/custom.css
 
-version: v1.9.6
+version: v1.9.7
