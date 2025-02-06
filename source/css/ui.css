@@ -19,36 +19,36 @@
 
 @keyframes shadow-drop-2-right {
   0% {
-    margin-left: 0;
+    margin-left: 12px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 
   100% {
-    margin-left: -12px;
+    margin-left: 0;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.35);
   }
 }
 
 @keyframes shadow-drop-2-top {
   0% {
-    margin-top: 0;
+    margin-top: 12px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 
   100% {
-    margin-top: 12px;
+    margin-top: 0;
     box-shadow: 0 5px 13px rgba(0, 0, 0, 0.35);
   }
 }
 
 @keyframes shadow-drop-2-bottom {
   0% {
-    margin-top: 0;
+    margin-top: 12px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 
   100% {
-    margin-top: -12px;
+    margin-top: 0;
     box-shadow: 0 5px 13px rgba(0, 0, 0, 0.35);
   }
 }
