@@ -603,7 +603,7 @@ a
 } 
 .archive-main a:hover {
     color:#000000;
-    /* text-decoration: underline;  */
+    text-decoration: underline; 
 }
 
 .index-header a:link { 
