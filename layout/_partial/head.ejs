@@ -134,4 +134,8 @@
     
    <%- css('css/lightgallery-bundle.min.css') %>
 
+   <% if(theme.inject.css) { %>
+        <%- css(theme.inject.css) %>
+    <% } %>
+
 </head>
