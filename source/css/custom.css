@@ -1,0 +1,10 @@
+.circle-pink {
+    padding: 40px 25px 50px;
+    border: solid 1px rgb(233, 137, 212);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
