@@ -90,7 +90,7 @@ postInfo:
 listInfo:
   enable: false
   hoverStyle: underline # box | circle | underline | highlight | strike-through | crossed-off # 鼠标悬浮在文章列表上时的样式
-  hoverColor: #4f7dde # 鼠标悬浮在文章列表上时的颜色
+  hoverColor: "#4f7dde" # 鼠标悬浮在文章列表上时的颜色
   animationDuration: 800 # 鼠标悬浮在文章列表上时的动画时长,单位ms毫秒
 
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
