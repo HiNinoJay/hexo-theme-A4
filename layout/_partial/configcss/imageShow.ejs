@@ -1,10 +1,18 @@
 <% if(theme.imageShow.enable) { %>
     <style>
-        body{
+        body {
             background-image: url(<%= theme.imageShow.background %>);
+            background-attachment: fixed;  /* 背景固定，不随页面滚动 */
+            background-repeat: no-repeat;  /* 防止背景图片重复 */
+            background-size: cover;       /* 背景自适应大小，覆盖整个背景 */
+            background-position: center;   /* 背景居中显示 */
         }
         .paper {
             background-image: url(<%= theme.imageShow.background %>);
+            background-attachment: fixed;  /* 背景固定，不随页面滚动 */
+            background-repeat: no-repeat;  /* 防止背景图片重复 */
+            background-size: cover;       /* 背景自适应大小，覆盖整个背景 */
+            background-position: center;   /* 背景居中显示 */
         }  
     </style>
 <% } %>
