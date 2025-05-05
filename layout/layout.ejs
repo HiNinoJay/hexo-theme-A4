@@ -28,9 +28,11 @@
         </script>
         <% } %>
         <% if(theme.tool.leftToc) { %>
-            <div class="left-toc-container">
-                <nav id="toc" class="bs-docs-sidebar"></nav>
-            </div>
+            <% if(is_post() && (!('leftToc' in page) || page.leftToc == true)) { %>
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            <% } %>
         <% } %>
         <div class="paper">
             

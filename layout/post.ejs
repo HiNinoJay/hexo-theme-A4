@@ -62,7 +62,7 @@
 
     <div class="post-md">
         <% if(theme.tool.topToc) { %>
-            <% if(is_post() && (!('toc' in page) || page.toc == true)) { %>
+            <% if(is_post() && (!('topToc' in page) || page.topToc == true)) { %>
                 <%- toc(page.content, {
                     class: 'post-toc',
                     list_number: false,
