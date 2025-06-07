@@ -5,7 +5,7 @@
     <%- partial('_partial/configcss/width') %>
     <%- partial('_partial/configcss/color') %>
     <%- partial('_partial/configcss/imageShow') %>
-    
+
     <body>
         <script src="/js/darkmode-js.min.js"></script>
         <% if(theme.tool.darkMode) { %>
@@ -35,36 +35,39 @@
             <% } %>
         <% } %>
         <div class="paper">
-            
+
             <% var tags,tagsInside, categories, categoriesInside; %>
-            
+
             <% if(path == "index.html") { %>
                 <div class="shadow-drop-2-bottom index-main">
                     <%- partial('_partial/header') %>
-                    <%- partial('index') %> 
+                    <%- partial('index') %>
+                    <% if(theme.index.list) { %>
+                        <%- partial('list') %>
+                    <% } %>
                     <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "list/index.html") { %>
                 <div class="shadow-drop-2-top paper-main">
-                     <%- partial('_partial/post-header') %> 
-                     <%- partial('list') %> 
+                     <%- partial('_partial/post-header') %>
+                     <%- partial('list') %>
                      <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "404.html") { %>
                 <div class="shadow-drop-2-top paper-main">
-                    <%- partial('_partial/404-template') %> 
+                    <%- partial('_partial/404-template') %>
                     <%- partial('_partial/footer') %>
                 </div>
             <% } else if(path == "recent-updates/index.html") { %>
                 <div class="shadow-drop-2-top paper-main">
-                    <%- partial('_partial/post-header') %> 
-                    <%- partial('_partial/recent-updates') %> 
+                    <%- partial('_partial/post-header') %>
+                    <%- partial('_partial/recent-updates') %>
                     <%- partial('_partial/footer') %>
                </div>
             <% } else { %>
                 <div class="shadow-drop-2-bottom paper-main">
-                    <%- partial('_partial/post-header') %> 
-        
+                    <%- partial('_partial/post-header') %>
+
                     <% if(tags = (path == "tags/index.html")) { %>
                             <%- partial('tags') %>
                     <% } %>
@@ -73,23 +76,23 @@
                     <% } %>
 
                     <% if(tagsInside = (path.length > "tags/index.html".length && path.substring(0, 5) == "tags/")) { %>
-                            <%- partial('_partial/tags-list') %> 
+                            <%- partial('_partial/tags-list') %>
                     <% } %>
                     <% if(categoriesInside = (path.length > "categories/index.html".length && path.substring(0, 11) == "categories/")) { %>
-                        <%- partial('_partial/categories-list') %> 
+                        <%- partial('_partial/categories-list') %>
                     <% } %>
-                    
+
                     <!--说明是文章post页面-->
                     <% if (!tags && !categories && !tagsInside && !categoriesInside) { %>
                         <%- partial('post') %>
-                                      
+
                     <% } %>
-                    
+
                     <%- partial('_partial/footer') %>
                 </div>
             <% } %>
             <% if(theme.tool.returnToTop) { %>
-                <!-- 回到顶部的按钮-->  
+                <!-- 回到顶部的按钮-->
                 <div class="progress-wrap shadow-drop-2-bottom">
                     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
@@ -97,7 +100,7 @@
                 </div>
             <% } %>
             <% if(theme.tool.returnToLast) { %>
-                <!-- 返回的按钮-->  
+                <!-- 返回的按钮-->
                 <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
                     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
