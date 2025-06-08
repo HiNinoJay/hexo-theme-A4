@@ -141,7 +141,7 @@ lightgallery:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: false
-  use: waline # values: waline、twikoo、artalk
+  use: waline # values: waline、twikoo、giscus、artalk
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
@@ -157,6 +157,24 @@ comment:
     region:  # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；其它环境不填
     lang:  # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
 
+  # Giscus
+  # See: https://giscus.app
+  giscus:
+    dataRepo: # data-repo，必填
+    dataRepoId: # data-repo-id，必填
+    dataCategory: # data-category，选填
+    dataCategoryId: # data-category-id，data-mapping="number"时不填，其他情况下必填
+    dataMapping: pathname # data-mapping
+    dataTerm: # data-term，data-mapping="number"或"specific"时必填，其他情况下不填
+    dataStrict: "0" # data-strict
+    dataReactionsEnabled: "1" # data-reactions-enabled
+    dataEmitMetadata: "0" # data-emit-metadata
+    dataInputPosition: bottom # data-input-position
+    dataTheme: preferred_color_scheme # data-theme
+    dataLang: zh-CN # data-lang
+    dataLoading: # data-loading，选填
+    crossorigin: anonymous # crossorigin
+    async: true # async
 
   # Artalk
   # See: https://artalk.js.org/guide/deploy.html
