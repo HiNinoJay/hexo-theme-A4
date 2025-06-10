@@ -2,13 +2,16 @@
     <div class="comments-container">
     <div id="comment-anchor"></div>
     <div class="comment-area-title">
-        <%= theme.post.endContent %> 
+        <%= theme.post.endContent %>
     </div>
     <% if(theme.comment.use === 'waline') { %>
         <%- partial('waline') %>
     <% } %>
     <% if(theme.comment.use === 'twikoo') { %>
         <%- partial('twikoo') %>
+    <% } %>
+    <% if(theme.comment.use === 'giscus') { %>
+        <%- partial('giscus') %>
     <% } %>
     <% if(theme.comment.use === 'artalk') { %>
         <%- partial('artalk') %>
