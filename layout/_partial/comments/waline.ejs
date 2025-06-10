@@ -1,12 +1,11 @@
-<% if(theme.comment.waline.serverUrl
-        && theme.comment.waline.lang
-        && (!page.hasOwnProperty('comment'))
-        || (page.hasOwnProperty('comment') && page.comment)
+<% if(page.hasOwnProperty('comment') ? page.comment
+    : theme.comment.waline.serverUrl
+    && theme.comment.waline.lang
 ) { %>
 
     <div id="waline"></div>
     <script type="module"  >
-        import { init } from 'https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/waline.mjs'; 
+        import { init } from 'https://npm.elemecdn.com/hexo-theme-a4@latest/source/js/waline.mjs';
         function loadWaline() {
             init({
                 el: '#waline',
@@ -20,11 +19,11 @@
                 comment: false, // 评论数统计
 
                 locale: {
-                    placeholder: '<%= theme.comment.waline.placeholder %>', 
+                    placeholder: '<%= theme.comment.waline.placeholder %>',
                     sofa: ''
                 },
             });
-            
+
         }
         window.addEventListener('DOMContentLoaded', loadWaline);
     </script>
