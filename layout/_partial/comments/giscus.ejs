@@ -1,0 +1,35 @@
+<% if(page.hasOwnProperty('comment') ? page.comment
+    : theme.comment.giscus.dataRepo
+    && theme.comment.giscus.dataRepoId
+) { %>
+    <div id="giscus"></div>
+    <script src="https://giscus.app/client.js"
+        data-repo="<%= theme.comment.giscus.dataRepo %>"
+        data-repo-id="<%= theme.comment.giscus.dataRepoId %>"
+        <% if(theme.comment.giscus.dataCategory) { %>
+            data-category="<%= theme.comment.giscus.dataCategory %>"
+        <% } %>
+        <% if(theme.comment.giscus.dataCategoryId) { %>
+            data-category-id="<%= theme.comment.giscus.dataCategoryId %>"
+        <% } %>
+        data-mapping="<%= theme.comment.giscus.dataMapping %>"
+        <% if(theme.comment.giscus.dataTerm) { %>
+            data-term="<%= theme.comment.giscus.dataTerm %>"
+        <% } %>
+        <% if(theme.comment.giscus.dataMapping != 'number') { %>
+            data-strict="<%= theme.comment.giscus.dataStrict %>"
+        <% } %>
+        data-reactions-enabled="<%= theme.comment.giscus.dataReactionsEnabled %>"
+        data-emit-metadata="<%= theme.comment.giscus.dataEmitMetadata %>"
+        data-input-position="<%= theme.comment.giscus.dataInputPosition %>"
+        data-theme="<%= theme.comment.giscus.dataTheme %>"
+        data-lang="<%= theme.comment.giscus.dataLang %>"
+        <% if(theme.comment.giscus.dataLoading) { %>
+            data-loading="<%= theme.comment.giscus.dataLoading %>"
+        <% } %>
+        crossorigin="<%= theme.comment.giscus.crossorigin %>"
+        <% if(theme.comment.giscus.async) { %>
+            async
+        <% } %>
+    ></script>
+<% } %>
