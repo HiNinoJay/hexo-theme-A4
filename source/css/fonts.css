@@ -10,8 +10,19 @@
     ;
 }
 
+
 @font-face {
     font-family: "LXGW WenKai";
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "LXGW WenKai";
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Local LXGW WenKai";
     font-style: normal;
     font-weight: 600;
     src: local("../fonts/LXGWWenKaiLite-Regular.woff2"),
@@ -22,7 +33,7 @@
 }
 
 @font-face {
-    font-family: "LXGW WenKai Bold";
+    font-family: "Local LXGW WenKai Bold";
     font-style: normal;
     font-weight: bold;
     src: local("../fonts/LXGWWenKaiLite-Bold.woff2"),
