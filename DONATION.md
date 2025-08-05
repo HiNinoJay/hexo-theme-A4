@@ -18,6 +18,7 @@
 | [marsevilspirit](https://github.com/marsevilspirit)          | 微信   | 20¥    | nb大佬，我的github名叫marsevilspirit                         | 2024.09.17 |
 | [*辉](https://xuehui.life/)                                  | 微信   | 28.88¥ | 很喜欢博主的a4，赞助一个                                     | 2024.09.18 |
 | [yefan-zhi](https://yefan-zhi.github.io/) | 微信   | 30¥    | 用来做了学术主页，感谢                                       | 2025.02.06 |
+| [sweet2honey](https://yefan-zhi.github.io/) | 微信   | 28.88¥    |  轻松用上 谢谢你的A4主题 牛逼 我的github是 sweet2honey | 2025.08.05 |
 
 
 
