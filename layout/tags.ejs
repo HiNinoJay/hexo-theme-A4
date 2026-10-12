@@ -2,89 +2,30 @@
 <span><span class="darkmode-ignore">📌</span><i>tags</i></span>
 <ul class="inline-ul" >
 
-  <% class HashMap {
-    constructor() {
-      this.map = {};
-    }
-  
-    put(key, value) {
-      this.map[key] = value;
-    }
-  
-    get(key) {
-      return this.map[key];
-    }
-  
-    containsKey(key) {
-      return key in this.map;
-    }
-  
-    remove(key) {
-      delete this.map[key];
-    }
-  
-    size() {
-      return Object.keys(this.map).length;
-    }
-  
-    isEmpty() {
-      return this.size() === 0;
-    }
-  
-    clear() {
-      this.map = {};
-    }
-  }
-  %>
 
-  <% class List {
-    constructor() {
-      this.items = [];
-    }
-  
-    add(item) {
-      this.items.push(item);
-    }
-  
-    remove(item) {
-      const index = this.items.indexOf(item);
-      if (index > -1) {
-        this.items.splice(index, 1);
-      }
-    }
-  
-    get(index) {
-      return this.items[index];
-    }
-  
-    size() {
-      return this.items.length;
-    }
-  }
-   %>
 
   <% var array = eval('site.posts.data') %>
 
-  <% var tagHashMap = new HashMap() %>
-  <% var tagList = new List() %>
+  <% var tagHashMap = new Map() %>
+  <% var tagList = [] %>
   
   <% for(var i = 0; i < array.length; i++) {
      if(!('hide' in array[i]) || array[i].hide == false){
         var postTags = array[i].tags.data;
         for(var j = 0; j < postTags.length; j++) {
-          if(!tagHashMap.containsKey(postTags[j].name)) {
-            tagHashMap.put(postTags[j].name, 1);
-            tagList.add(postTags[j].name);
+          if(!tagHashMap.has(postTags[j].name)) {
+            tagHashMap.set(postTags[j].name, 1);
+            tagList.push(postTags[j].name);
           } else {
-            tagHashMap.put(postTags[j].name, tagHashMap.get(postTags[j].name) + 1);
+            tagHashMap.set(postTags[j].name, tagHashMap.get(postTags[j].name) + 1);
           }
         } 
      }
   } %>
-      <% for (let i = 0; i < tagList.size(); i++) { %>
+      <% for (let i = 0; i < tagList.length; i++) { %>
         <li class="inline-li">
-            <a href="/tags<%- url_for(tagList.get(i)) %>"><%= tagList.get(i) %></a>
-            <span><i><%= tagHashMap.get(tagList.get(i)) %></i></span>
+            <a href="/tags<%- url_for(tagList[i]) %>"><%= tagList[i] %></a>
+            <span><i><%= tagHashMap.get(tagList[i]) %></i></span>
         </li>
     <% } %>
     

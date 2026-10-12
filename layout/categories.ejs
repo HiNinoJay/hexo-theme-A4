@@ -1,72 +1,13 @@
 <br>
 <span><span class="darkmode-ignore">🔖</span><i>categories</i></span>
 <ul class="" >
-  <% class HashMap {
-    constructor() {
-      this.map = {};
-    }
-  
-    put(key, value) {
-      this.map[key] = value;
-    }
-  
-    get(key) {
-      return this.map[key];
-    }
-  
-    containsKey(key) {
-      return key in this.map;
-    }
-  
-    remove(key) {
-      delete this.map[key];
-    }
-  
-    size() {
-      return Object.keys(this.map).length;
-    }
-  
-    isEmpty() {
-      return this.size() === 0;
-    }
-  
-    clear() {
-      this.map = {};
-    }
-  }
-  %>
 
-  <% class List {
-    constructor() {
-      this.items = [];
-    }
-  
-    add(item) {
-      this.items.push(item);
-    }
-  
-    remove(item) {
-      const index = this.items.indexOf(item);
-      if (index > -1) {
-        this.items.splice(index, 1);
-      }
-    }
-  
-    get(index) {
-      return this.items[index];
-    }
-  
-    size() {
-      return this.items.length;
-    }
-  }
-   %>
 
   <% var array = eval('site.posts.data') %>
 
-  <% var categoriesHashMap = new HashMap() %>
-  <% var categoryChildHashmap = new HashMap() %>
-  <% var categoriesList = new List() %>
+  <% var categoriesHashMap = new Map() %>
+  <% var categoryChildHashmap = new Map() %>
+  <% var categoriesList = [] %>
   
   <% for(var i = 0; i < array.length; i++) {
      if(!('hide' in array[i]) || array[i].hide == false){
@@ -75,23 +16,23 @@
         for(var j = 0; j < postCategories.length; j++) {
 
           if(postCategories.length > 1) {
-            categoryChildHashmap.put(postCategories[0].name, postCategories[1]);
+            categoryChildHashmap.set(postCategories[0].name, postCategories[1]);
           }
 
-          if(!categoriesHashMap.containsKey(postCategories[j].name)) {
-            categoriesHashMap.put(postCategories[j].name, 1);
-            categoriesList.add(postCategories[j].name);
+          if(!categoriesHashMap.has(postCategories[j].name)) {
+            categoriesHashMap.set(postCategories[j].name, 1);
+            categoriesList.push(postCategories[j].name);
           } else {
-            categoriesHashMap.put(postCategories[j].name, categoriesHashMap.get(postCategories[j].name) + 1);
+            categoriesHashMap.set(postCategories[j].name, categoriesHashMap.get(postCategories[j].name) + 1);
           }
           break;
         } 
      }
   }  %>
-      <% for (let i = 0; i < categoriesList.size(); i++) { %>
+      <% for (let i = 0; i < categoriesList.length; i++) { %>
         <li class="">
-            <a href="/categories<%- url_for(categoriesList.get(i)) %>"><%= categoriesList.get(i) %></a>
-            <span><i><%= categoriesHashMap.get(categoriesList.get(i)) %></i></span>
+            <a href="/categories<%- url_for(categoriesList[i]) %>"><%= categoriesList[i] %></a>
+            <span><i><%= categoriesHashMap.get(categoriesList[i]) %></i></span>
         </li>
     <% } %>
     

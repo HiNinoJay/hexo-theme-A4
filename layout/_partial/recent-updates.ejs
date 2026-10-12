@@ -16,74 +16,15 @@
   
   
         
-        <% class HashMap {
-          constructor() {
-            this.map = {};
-          }
-        
-          put(key, value) {
-            this.map[key] = value;
-          }
-        
-          get(key) {
-            return this.map[key];
-          }
-        
-          containsKey(key) {
-            return key in this.map;
-          }
-        
-          remove(key) {
-            delete this.map[key];
-          }
-        
-          size() {
-            return Object.keys(this.map).length;
-          }
-        
-          isEmpty() {
-            return this.size() === 0;
-          }
-        
-          clear() {
-            this.map = {};
-          }
-        }
-        %>
   
-        <% class List {
-          constructor() {
-            this.items = [];
-          }
-        
-          add(item) {
-            this.items.push(item);
-          }
-        
-          remove(item) {
-            const index = this.items.indexOf(item);
-            if (index > -1) {
-              this.items.splice(index, 1);
-            }
-          }
-        
-          get(index) {
-            return this.items[index];
-          }
-        
-          size() {
-            return this.items.length;
-          }
-        }
-         %>
   
-        <% const hashmap = new HashMap() %>
-        <% const allPostList = new List() %>
+        <% const hashmap = new Map() %>
+        <% const allPostList = [] %>
   
         <!--循环遍历文章数组-->
         <% for (let i = 0; i < postArray.length; i++) { 
           if(!('hide' in postArray[i]) || postArray[i].hide == false) {
-              allPostList.add(postArray[i]);
+              allPostList.push(postArray[i]);
           }
         }  %>
   
@@ -93,8 +34,8 @@
             </span>
         </li>
         <!--放 文章-->
-        <% for (let i = 0; i < allPostList.size(); i++) { %>
-            <% var thisPost = allPostList.get(i) %>
+        <% for (let i = 0; i < allPostList.length; i++) { %>
+            <% var thisPost = allPostList[i] %>
             <li>
               <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.updated, "YYYY/MM/DD") %> 
               </span>
