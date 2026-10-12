@@ -1,46 +1,10 @@
-<% class HashMap {
-  constructor() {
-    this.map = {};
-  }
-
-  put(key, value) {
-    this.map[key] = value;
-  }
-
-  get(key) {
-    return this.map[key];
-  }
-
-  containsKey(key) {
-    return key in this.map;
-  }
-
-  remove(key) {
-    delete this.map[key];
-  }
-
-  size() {
-    return Object.keys(this.map).length;
-  }
-
-  isEmpty() {
-    return this.size() === 0;
-  }
-
-  clear() {
-    this.map = {};
-  }
-}
-%>
-
-
 <div class="archive-list">
   <ul class="archive">
 
     <% var pageTagName = path.substring("tags/".length, path.indexOf("/index.html")) %>
     <span><span class="darkmode-ignore">📌</span><i><%= pageTagName %></i></span>
  
-    <% const tagHashmap = new HashMap() %>
+    <% const tagHashmap = new Map() %>
 
     <% var allPostArray = eval('site.posts.data'); %>
     <% for(var i = 0; i < allPostArray.length; i++) {  
@@ -48,17 +12,17 @@
        var postTempTags = postTemp.tags.data;
         
        for(var j = 0; j < postTempTags.length; j++) {
-          if(!tagHashmap.containsKey(postTempTags[j].name)) {
+          if(!tagHashmap.has(postTempTags[j].name)) {
             var tempArray = [];
             tempArray.push(postTemp);
-            tagHashmap.put(postTempTags[j].name, tempArray);
+            tagHashmap.set(postTempTags[j].name, tempArray);
           } else {
             tagHashmap.get(postTempTags[j].name).push(postTemp);
           }
        }
     } %>
 
-    <% var array = tagHashmap.containsKey(pageTagName) ? tagHashmap.get(pageTagName) : []  %>
+    <% var array = tagHashmap.has(pageTagName) ? tagHashmap.get(pageTagName) : []  %>
 
     <% if(Array.isArray(array)) { array.sort((a, b) => {
       if (a.date > b.date) {

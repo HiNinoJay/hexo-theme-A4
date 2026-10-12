@@ -16,69 +16,10 @@
 
 
       
-      <% class HashMap {
-        constructor() {
-          this.map = {};
-        }
-      
-        put(key, value) {
-          this.map[key] = value;
-        }
-      
-        get(key) {
-          return this.map[key];
-        }
-      
-        containsKey(key) {
-          return key in this.map;
-        }
-      
-        remove(key) {
-          delete this.map[key];
-        }
-      
-        size() {
-          return Object.keys(this.map).length;
-        }
-      
-        isEmpty() {
-          return this.size() === 0;
-        }
-      
-        clear() {
-          this.map = {};
-        }
-      }
-      %>
 
-      <% class List {
-        constructor() {
-          this.items = [];
-        }
-      
-        add(item) {
-          this.items.push(item);
-        }
-      
-        remove(item) {
-          const index = this.items.indexOf(item);
-          if (index > -1) {
-            this.items.splice(index, 1);
-          }
-        }
-      
-        get(index) {
-          return this.items[index];
-        }
-      
-        size() {
-          return this.items.length;
-        }
-      }
-       %>
 
-      <% const hashmap = new HashMap() %>
-      <% const allYearList = new List() %>
+      <% const hashmap = new Map() %>
+      <% const allYearList = [] %>
       <% var topPostArray = [] %>
 
       <!--循环遍历文章数组-->
@@ -88,11 +29,11 @@
             topPostArray.push(postArray[i]);
           } else {
             var postYear = new Date(postArray[i].date).getFullYear();
-            if(!hashmap.containsKey(postYear)) {
-              hashmap.put(postYear, new List());
-              allYearList.add(postYear);
+            if(!hashmap.has(postYear)) {
+              hashmap.set(postYear, []);
+              allYearList.push(postYear);
             } 
-            hashmap.get(postYear).add(postArray[i]);
+            hashmap.get(postYear).push(postArray[i]);
           }
         }
       }  %>
@@ -178,16 +119,16 @@
       <% } %>
 
       <!--后放 其他 文章-->
-      <% for (let i = 0; i < allYearList.size(); i++) { %>
-        <% var year = allYearList.get(i) %>
+      <% for (let i = 0; i < allYearList.length; i++) { %>
+        <% var year = allYearList[i] %>
         <li>
-          <span class="year-font-color"><%= year %>[<%= hashmap.get(year).size() %>]
+          <span class="year-font-color"><%= year %>[<%= hashmap.get(year).length %>]
             <% if(i==0) { %> <span class="darkmode-ignore">🍃</span> <% } %>
           </span>
         </li>
         <% var thisYearPostList = hashmap.get(year) %>
-        <% for(var j = 0; j < thisYearPostList.size(); j++) { %>
-          <% var thisPost = thisYearPostList.get(j) %>
+        <% for(var j = 0; j < thisYearPostList.length; j++) { %>
+          <% var thisPost = thisYearPostList[j] %>
           <li>
             <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.date, "MM/DD") %> 
             </span>
