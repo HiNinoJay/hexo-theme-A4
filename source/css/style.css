@@ -793,3 +793,12 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     color: #999;
     text-align: center;
 }
+/* 年份折叠（listInfo.collapseYear） */
+.hidden-year {
+    display: none;
+}
+
+.year-arrow {
+    font-size: 12px;
+    margin-left: 2px;
+}
