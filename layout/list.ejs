@@ -178,17 +178,20 @@
       <% } %>
 
       <!--后放 其他 文章-->
+      <% var collapseYear = theme.listInfo.collapseYear > 0 ? theme.listInfo.collapseYear : 0 %>
       <% for (let i = 0; i < allYearList.size(); i++) { %>
         <% var year = allYearList.get(i) %>
-        <li>
+        <% var yearHidden = collapseYear > 0 && i >= collapseYear %>
+        <li <% if(collapseYear > 0) { %>class="year-toggle" data-year="<%= year %>" style="cursor: pointer;"<% } %>>
           <span class="year-font-color"><%= year %>[<%= hashmap.get(year).size() %>]
+            <% if(collapseYear > 0) { %><span class="year-arrow"><%= yearHidden ? '▸' : '▾' %></span><% } %>
             <% if(i==0) { %> <span class="darkmode-ignore">🍃</span> <% } %>
           </span>
         </li>
         <% var thisYearPostList = hashmap.get(year) %>
         <% for(var j = 0; j < thisYearPostList.size(); j++) { %>
           <% var thisPost = thisYearPostList.get(j) %>
-          <li>
+          <li class="year-posts<%= yearHidden ? ' hidden-year' : '' %>" data-year="<%= year %>">
             <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.date, "MM/DD") %> 
             </span>
             <div class="archive-main">
@@ -205,3 +208,21 @@
   </ul>
 </div>
 <!-- <%- partial('_partial/paginator') %> -->
+<% if(collapseYear > 0) { %>
+<script>
+  // 年份折叠：点击年份展开/收起该年份下的文章
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.archive .year-toggle').forEach(head => {
+      head.addEventListener('click', () => {
+        const year = head.getAttribute('data-year');
+        const posts = document.querySelectorAll('.archive .year-posts[data-year="' + year + '"]');
+        if (!posts.length) return;
+        const willShow = posts[0].classList.contains('hidden-year');
+        posts.forEach(li => li.classList.toggle('hidden-year', !willShow));
+        const arrow = head.querySelector('.year-arrow');
+        if (arrow) arrow.textContent = willShow ? '▾' : '▸';
+      });
+    });
+  });
+</script>
+<% } %>
