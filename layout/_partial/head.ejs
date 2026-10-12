@@ -31,6 +31,10 @@
                 <!--目录-->
                 <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/toc.css') %>
             <% } %>
+            <% if(theme.index.waterfall) { %>
+                <!--瀑布流-->
+                <%- css('https://npm.elemecdn.com/hexo-theme-a4@latest/source/css/waterfall.css') %>
+            <% } %>
         <% } else if(theme.cdn.choose == "jsdelivr") { %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/highlight/style1.css') %>
             <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css') %>
@@ -53,6 +57,10 @@
             <% if(theme.tool.leftToc) { %>
                 <!--目录-->
                 <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/toc.css') %>
+            <% } %>
+            <% if(theme.index.waterfall) { %>
+                <!--瀑布流-->
+                <%- css('https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/waterfall.css') %>
             <% } %>
 
         <% } else if(theme.cdn.choose == "zzko") { %>
@@ -78,6 +86,10 @@
                 <!--目录-->
                 <%- css('https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/css/toc.css') %>
             <% } %>
+            <% if(theme.index.waterfall) { %>
+                <!--瀑布流-->
+                <%- css('https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/css/waterfall.css') %>
+            <% } %>
 
         <% }  else if(theme.cdn.choose == "unpkg") { %>
             <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/highlight/style1.css') %>
@@ -102,6 +114,10 @@
                 <!--目录-->
                 <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/toc.css') %>
             <% } %>
+            <% if(theme.index.waterfall) { %>
+                <!--瀑布流-->
+                <%- css('https://npm.onmicrosoft.cn/hexo-theme-a4@latest/source/css/waterfall.css') %>
+            <% } %>
 
         <% } %>
     <% } else { %>
@@ -125,6 +141,10 @@
         <% if(theme.tool.leftToc) { %>
             <!--目录-->
             <%- css('css/toc.css') %>
+        <% } %>
+        <% if(theme.index.waterfall) { %>
+            <!--瀑布流-->
+            <%- css('css/waterfall.css') %>
         <% } %>
     <% } %>
 

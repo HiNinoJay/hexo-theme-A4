@@ -85,7 +85,9 @@
                 <div class="shadow-drop-2-bottom index-main">
                     <%- partial('_partial/header') %>
                     <%- partial('index') %>
-                    <% if(theme.index.list) { %>
+                    <% if(theme.index.waterfall) { %>
+                        <%- partial('_partial/waterfall') %>
+                    <% } else if(theme.index.list) { %>
                         <%- partial('list') %>
                     <% } %>
                     <%- partial('_partial/footer') %>
