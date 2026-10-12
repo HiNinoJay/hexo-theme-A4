@@ -66,6 +66,7 @@
 
   <% var categoriesHashMap = new HashMap() %>
   <% var categoryChildHashmap = new HashMap() %>
+  <% var childCountMap = new HashMap() %>
   <% var categoriesList = new List() %>
   
   <% for(var i = 0; i < array.length; i++) {
@@ -75,7 +76,24 @@
         for(var j = 0; j < postCategories.length; j++) {
 
           if(postCategories.length > 1) {
-            categoryChildHashmap.put(postCategories[0].name, postCategories[1]);
+            var childCat = postCategories[1];
+            var parentName = postCategories[0].name;
+            // 记录父分类下的子分类（去重），用于二级分类展示
+            if(!categoryChildHashmap.containsKey(parentName)) {
+              categoryChildHashmap.put(parentName, new List());
+            }
+            var childListOfParent = categoryChildHashmap.get(parentName);
+            var childExists = false;
+            for(var k = 0; k < childListOfParent.size(); k++) {
+              if(childListOfParent.get(k).name == childCat.name) { childExists = true; break; }
+            }
+            if(!childExists) { childListOfParent.add(childCat); }
+            // 子分类文章计数
+            if(!childCountMap.containsKey(childCat.name)) {
+              childCountMap.put(childCat.name, 1);
+            } else {
+              childCountMap.put(childCat.name, childCountMap.get(childCat.name) + 1);
+            }
           }
 
           if(!categoriesHashMap.containsKey(postCategories[j].name)) {
@@ -89,10 +107,21 @@
      }
   }  %>
       <% for (let i = 0; i < categoriesList.size(); i++) { %>
+        <% var catName = categoriesList.get(i) %>
         <li class="">
-            <a href="/categories<%- url_for(categoriesList.get(i)) %>"><%= categoriesList.get(i) %></a>
-            <span><i><%= categoriesHashMap.get(categoriesList.get(i)) %></i></span>
+            <a href="/categories<%- url_for(catName) %>"><%= catName %></a>
+            <span><i><%= categoriesHashMap.get(catName) %></i></span>
         </li>
+        <% if(categoryChildHashmap.containsKey(catName)) { %>
+          <% var childListOfParent = categoryChildHashmap.get(catName) %>
+          <% for (let k = 0; k < childListOfParent.size(); k++) { %>
+            <% var childCat = childListOfParent.get(k) %>
+            <li class="category-child">
+                <a href="<%- url_for(childCat.path) %>"><%= childCat.name %></a>
+                <span><i><%= childCountMap.containsKey(childCat.name) ? childCountMap.get(childCat.name) : 0 %></i></span>
+            </li>
+          <% } %>
+        <% } %>
     <% } %>
     
 

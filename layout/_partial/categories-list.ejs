@@ -37,6 +37,7 @@
   <ul class="archive">
 
     <% var pageCategoriesName = path.substring("categories/".length, path.indexOf("/index.html")) %>
+    <% var pageCatKey = pageCategoriesName.replace(/\/index\.html$/, '').replace(/\/+$/, '') %>
     <span><span class="darkmode-ignore">🔖</span><i><%= pageCategoriesName %></i></span>
           
     <% const categoriesHashmap = new HashMap() %>
@@ -47,18 +48,20 @@
        var postTempCategory = postTemp.categories.data;
         
        for(var j = 0; j < postTempCategory.length; j++) {
-          if(!categoriesHashmap.containsKey(postTempCategory[j].name)) {
+          // 使用分类路径作为键，兼容二级分类（如 categories/前端/JavaScript）
+          var catKey = String(postTempCategory[j].path || '').replace(/^categories\//, '').replace(/\/+$/, '');
+          if(!categoriesHashmap.containsKey(catKey)) {
               var tempArray = [];
               tempArray.push(postTemp);
-              categoriesHashmap.put(postTempCategory[j].name, tempArray);
+              categoriesHashmap.put(catKey, tempArray);
             } else {
-              categoriesHashmap.get(postTempCategory[j].name).push(postTemp);
+              categoriesHashmap.get(catKey).push(postTemp);
             }
           
        }
     }  %>
 
-    <% var array = categoriesHashmap.containsKey(pageCategoriesName) ? categoriesHashmap.get(pageCategoriesName) : [] %>
+    <% var array = categoriesHashmap.containsKey(pageCatKey) ? categoriesHashmap.get(pageCatKey) : [] %>
     <% if(Array.isArray(array)) { array.sort((a, b) => {
       if (a.date > b.date) {
         return -1;
