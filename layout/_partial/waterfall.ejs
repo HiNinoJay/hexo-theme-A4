@@ -1,0 +1,15 @@
+<div class="waterfall">
+    <% var posts = site.posts.data.slice().sort((a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0)) %>
+    <% for (var i = 0; i < posts.length; i++) { %>
+        <% var post = posts[i] %>
+        <% if('hide' in post && post.hide == true) { continue; } %>
+        <% var stripHtml = (html) => String(html || '').replace(/<(pre|figure|table)[\s\S]*?<\/\1>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() %>
+        <% var summary = post.excerpt ? stripHtml(post.excerpt) : stripHtml(post.content) %>
+        <% if(summary.length > 80) { summary = summary.slice(0, 80) + '…'; } %>
+        <a class="waterfall-card" href="<%- url_for(post.path) %>">
+            <span class="waterfall-date"><%= date(post.date, "YYYY/MM/DD") %></span>
+            <span class="waterfall-title"><%= post.title %></span>
+            <% if(summary) { %><span class="waterfall-summary"><%= summary %></span><% } %>
+        </a>
+    <% } %>
+</div>
