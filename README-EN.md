@@ -43,6 +43,14 @@ _A star in the top right corner for faster feature updates_
 - [x] [**Easily customized global color schemes, preview of two color schemes**](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] Adopt the most beautiful comment module `waline`
 - [x] Preset css styles that can be used by Markdown
+- [x] Built-in CDN to accelerate access speed in China
+- [x] Built-in site search out of the box (no plugin needed)
+- [x] UI i18n: Chinese/English, strings are customizable
+- [x] One-click copy button for code blocks, drawer TOC on mobile, native lazy loading for images (all toggleable)
+- [x] One-click Word export for posts
+- [x] Optional: list pagination / collapsible years / waterfall layout / nested categories / vertical writing
+- [x] [Minifier to compress images/css/js and greatly improve the site speed](https://ninojay.top/hexoplugin/hexo-all-minifier/)
+- [x] [Detailed usage manual](https://doc.ninojay.top)
 - [x] [Supported hexo plugins](https://ninojay.top/tags/hexoPlugin/)
   - [x] [mathjax](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
   - [x] [encrypt](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
@@ -100,7 +108,7 @@ Color coordination is an art. In addition to the two color schemes recommended f
 
 ## ⚠️Configuration (Required!)
 
-The homepage and article list pages need to be manually generated, just execute the following commands:
+The homepage and article list pages need to be generated. Recent versions create the `index` and `list` pages automatically on startup (no manual command needed); if your version does not, just execute the following commands:
 ```shell
 hexo new page index
 hexo new page list
@@ -108,6 +116,13 @@ hexo new page list
 
 For other detailed configurations, please see:
 ➡️ [Online usage manual](https://doc.ninojay.top)
+
+## 🌍 i18n
+
+The theme UI strings ship with built-in Chinese/English support. Chinese is the default (same behavior as previous versions):
+
+- Switch to English: set `language` to `en` in the root `_config.yml` of your Hexo site
+- Customize strings: edit the keys in `languages/default.yml` (Chinese fallback) or `languages/en.yml` (English) of the theme
 
 ## ⬆️ How to update
 According to your `install` method，choose the `corresponding` way to update.
