@@ -35,26 +35,26 @@
             <div class="post-head-meta-center">
         <% } %>
                 <% if(theme.postInfo.updateDate) { %>
-                    <span>最近更新：<%- date(page.updated, "YYYY-MM-DD") %></span> 
+                    <span><%= __('post_updated') %><%- date(page.updated, "YYYY-MM-DD") %></span> 
                 <% } %>
                 <% if(theme.postInfo.wordCount) { %>
                     <% if(theme.postInfo.updateDate) {  %>
                         &nbsp; | &nbsp;
                     <% } %>
-                     <span>字数总计：<%= wordcount(page.content) %></span>
+                     <span><%= __('post_wordcount') %><%= wordcount(page.content) %></span>
                 <% } %>
                 <% if(theme.postInfo.readTime) { %>
                     <% if(theme.postInfo.wordCount || theme.postInfo.updateDate) {  %>
                         &nbsp; | &nbsp;
                     <% } %>
-                    <span>阅读估时：<%= min2read(page.content) %>分钟</span>
+                    <span><%= __('post_readtime') %><%= min2read(page.content) %><%= __('post_readtime_unit') %></span>
                 <% } %>
                 <% if(theme.postInfo.viewCount) { %>
                     <% if(theme.postInfo.wordCount || theme.postInfo.updateDate|| theme.postInfo.readTime) {  %>
                         &nbsp; | &nbsp;
                     <% } %>
                     <span id="busuanzi_container_page_pv">
-                        阅读量：<span id="busuanzi_value_page_pv"></span>次
+                        <%= __('post_views') %><span id="busuanzi_value_page_pv"></span><%= __('post_views_unit') %>
                     </span>
                 <% } %>
             </div>
@@ -79,10 +79,10 @@
         <% if(is_post()) { %>
             <span><%- date(page.date, "YYYY-MM-DD") %></span>
             <% if(page.tags.data.length > 0 || page.categories.data.length > 0) { %>
-                <span>该篇文章被 <%= config.author %></span>
+                <span><%= __('post_author_prefix') %> <%= config.author %></span>
             <% } %>
             <% if(page.tags.data.length > 0) { %>
-                <span>打上标签:
+                <span><%= __('post_tags_label') %>
                     <% var postTags = page.tags.data; %>
                     <%   for(var j = 0; j < postTags.length; j++) { %>
                         <a href='<%- url_for(postTags[j].path)%>'>
@@ -92,7 +92,7 @@
                 </span>
              <% } %>
              <% if(page.categories.data.length > 0) { %>
-                <span>归为分类:
+                <span><%= __('post_categories_label') %>
                     <% var postCategories = page.categories.data; %>
                     <%   for(var j = 0; j < postCategories.length; j++) { %>
                         <a href='<%- url_for(postCategories[j].path)%>'>
