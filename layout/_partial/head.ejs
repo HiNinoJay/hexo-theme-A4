@@ -1,7 +1,24 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <meta name="description" content="<%= page.title %>" />
+    <%
+    // SEO：description 优先取页面自定义 description，其次文章摘要（去标签），最后站点描述；避免与标题重复
+    var seoDescription = page.description || (page.excerpt ? String(page.excerpt).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '') || config.description || '';
+    if (seoDescription.length > 150) { seoDescription = seoDescription.slice(0, 150) + '…'; }
+    var canonicalUrl = String(config.url || '').replace(/\/+$/, '') + '/' + (page.path === 'index.html' ? '' : page.path);
+    %>
+    <meta name="description" content="<%= seoDescription %>" />
+    <link rel="canonical" href="<%- canonicalUrl.replace(/index\.html$/, '') %>" />
+    <% if (is_post() || is_page()) { %>
+    <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
+    <meta property="og:title" content="<%= page.title %>" />
+    <meta property="og:description" content="<%= seoDescription %>" />
+    <meta property="og:url" content="<%- canonicalUrl.replace(/index\.html$/, '') %>" />
+    <meta property="og:site_name" content="<%= config.title %>" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<%= page.title %>" />
+    <meta name="twitter:description" content="<%= seoDescription %>" />
+    <% } %>
     <meta name="hexo-theme-A4" content="<%= theme.version %>" />
     <link rel="alternate icon" type="image/webp" href="<%- url_for(theme.favicon) %>">
     <title><%= (theme.displayTitleInTab && page.title ? page.title + ' | ' : '') + config.title + (config.subtitle ? ' | ' + config.subtitle : '') %></title>
