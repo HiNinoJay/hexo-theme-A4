@@ -42,6 +42,7 @@ footerLink: # 底部的链接自定义
 post:
   footer: 🌊看过大海的人不会忘记海的广阔🌊
   themeInfo: true # 是否开启底部右侧声明本站信息
+  lazyImage: true # 文章图片原生懒加载（渲染时为 <img> 添加 loading="lazy"）；设为 false 关闭
   width: middle  #  middle | big
   titlePosition: center # left ｜ center 文章标题的位置
 
@@ -58,6 +59,7 @@ tool:
   returnToLast: true # 回退页面按钮
   topToc: true # 文章顶部目录
   leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
+  search: false # 站内搜索（开启后文章列表页显示搜索框；搜索数据由主题内置生成器输出的 /search.xml 提供，无需安装插件）
   recentUpdatePost: false # list页面将会新增一个“最近更新”模块，展示最近3篇文章，最近更新可点击跳转至 "最近更新列表页面"
   # A4启动将会自动创建“最近更新页面”：url为 /recent-updates 请自行使用
   # 如果你发现你的最近更新时间总是当天部署的时间，请看 https://ninojay.top/2023/writeByGithub-2/#2024.09.26更新说明
