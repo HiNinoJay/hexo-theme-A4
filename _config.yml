@@ -42,6 +42,7 @@ footerLink: # 底部的链接自定义
 post:
   footer: 🌊看过大海的人不会忘记海的广阔🌊
   themeInfo: true # 是否开启底部右侧声明本站信息
+  wordExport: false # 是否在文章页显示「导出 Word」按钮（将文章正文导出为 .doc 文档）
   width: middle  #  middle | big
   titlePosition: center # left ｜ center 文章标题的位置
 

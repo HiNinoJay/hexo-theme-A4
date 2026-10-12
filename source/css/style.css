@@ -793,3 +793,14 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     color: #999;
     text-align: center;
 }
+/* 文章导出 Word 按钮（post.wordExport） */
+.post-word-export {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.post-word-export a {
+    font-size: 14px;
+    color: #4f7dde;
+    cursor: pointer;
+}
