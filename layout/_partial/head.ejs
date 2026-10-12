@@ -150,5 +150,8 @@
     <% } %>
 
     <!-- <link rel="stylesheet" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css" /> -->
+    <% if(theme.font.webfont !== false) { %>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkai@3.0.0/dist/LXGWWenKai-Regular/result.css' /> 
+    <% } %>
 </head>

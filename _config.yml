@@ -125,6 +125,7 @@ imageShow:
 # A4默认中文使用霞鹜文楷，如果你想关闭这种字体，首先保证enable为 true 接着可以开关对应字体
 font:
   enable: false # 是否使用字体开关功能
+  webfont: true # 是否从 CDN 加载霞鹜文楷 web 字体；false 时不再请求 CDN（改用系统字体栈，页面加载更快）
   LXGWWenKai: true # 霞鹜文楷 如果关闭，中文则使用的是 思源宋体，思源宋体不提供关闭
 
 # 图片幻灯片配置
