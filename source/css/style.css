@@ -793,3 +793,112 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
     color: #999;
     text-align: center;
 }
+
+/* 移动端抽屉式目录 */
+#mobile-toc-btn,
+#mobile-toc-mask,
+#mobile-toc-drawer {
+    display: none;
+}
+
+#mobile-toc-drawer .mobile-toc-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#mobile-toc-drawer ul {
+    margin: 0;
+    padding: 0 0 0 4px;
+    list-style: none;
+}
+
+#mobile-toc-drawer li {
+    margin: 6px 0;
+}
+
+#mobile-toc-drawer .mobile-toc-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#mobile-toc-drawer .mobile-toc-h1 {
+    font-weight: bold;
+}
+
+#mobile-toc-drawer .mobile-toc-h2 {
+    padding-left: 10px;
+}
+
+#mobile-toc-drawer .mobile-toc-h3 {
+    padding-left: 22px;
+    font-size: 13px;
+}
+
+#mobile-toc-drawer .mobile-toc-h4 {
+    padding-left: 34px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    #mobile-toc-btn {
+        display: block;
+        position: fixed;
+        left: 16px;
+        bottom: 24px;
+        z-index: 1200;
+        padding: 6px 14px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background: #f7f5ed;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    #mobile-toc-mask {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1300;
+        background: rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s;
+    }
+
+    #mobile-toc-mask.mobile-toc-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #mobile-toc-drawer {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 70vw;
+        max-width: 280px;
+        z-index: 1400;
+        padding: 18px 16px;
+        box-sizing: border-box;
+        background: #fff;
+        border-right: 1px solid #eee;
+        box-shadow: 4px 0 16px rgba(0, 0, 0, 0.12);
+        overflow-y: auto;
+        transform: translateX(-105%);
+        transition: transform 0.25s;
+    }
+
+    #mobile-toc-drawer.mobile-toc-open {
+        transform: translateX(0);
+    }
+}
