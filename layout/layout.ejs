@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="<%= config.language || 'en' %>">
-    <%- partial('_partial/configcss/font') %>
-    <%- partial('_partial/head') %>
-    <%- partial('_partial/configcss/width') %>
-    <%- partial('_partial/configcss/color') %>
-    <%- partial('_partial/configcss/imageShow') %>
+    <head>
+        <%- partial('_partial/configcss/font') %>
+        <%- partial('_partial/head') %>
+        <%- partial('_partial/configcss/width') %>
+        <%- partial('_partial/configcss/color') %>
+        <%- partial('_partial/configcss/imageShow') %>
+    </head>
 
     <body>
         <% if(theme.tool.darkMode) { %>
