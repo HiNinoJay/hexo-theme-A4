@@ -100,11 +100,7 @@ Color coordination is an art. In addition to the two color schemes recommended f
 
 ## ⚠️Configuration (Required!)
 
-The homepage and article list pages need to be manually generated, just execute the following commands:
-```shell
-hexo new page index
-hexo new page list
-```
+The homepage (index) and article list page (list) are created automatically on startup (`hexo g` / `hexo s`), so there is no need to run `hexo new page` manually. To customise the homepage content, edit `source/index/index.md` directly.
 
 For other detailed configurations, please see:
 ➡️ [Online usage manual](https://doc.ninojay.top)
