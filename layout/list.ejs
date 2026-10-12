@@ -1,6 +1,6 @@
 <div class="archive-list">
   <ul class="archive">
-      <% var postArray = eval('site.posts.data') %>
+      <% var postArray = site.posts.data.slice() %>
 
       <!--文章先按照时间排好序-->
       <% postArray.sort((a, b) => {
