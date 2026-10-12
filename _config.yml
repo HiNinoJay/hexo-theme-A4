@@ -56,6 +56,7 @@ tool:
   darkMode: true # 暗黑模式
   returnToTop: true # 回到顶部按钮
   returnToLast: true # 回退页面按钮
+  copyCode: true # 代码块一键复制按钮
   topToc: true # 文章顶部目录
   leftToc: true # 文章左侧目录 目前仅支持大屏幕浮现
   recentUpdatePost: false # list页面将会新增一个“最近更新”模块，展示最近3篇文章，最近更新可点击跳转至 "最近更新列表页面"
