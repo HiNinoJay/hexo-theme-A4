@@ -154,6 +154,9 @@
 </html>
 <script src="<%= url_for('/js/emojiHandler.js') %>"></script>
 <script src="<%= url_for('/js/search.js') %>"></script>
+<% if(theme.tool.copyCode) { %>
+<script src="<%= url_for('/js/copyCode.js') %>"></script>
+<% } %>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         wrapEmojis('.paper');

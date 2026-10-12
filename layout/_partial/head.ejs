@@ -134,6 +134,10 @@
 
     <%- css('css/lightgallery-bundle.min.css') %>
 
+    <% if(theme.tool.copyCode) { %>
+        <%- css('css/copyCode.css') %>
+    <% } %>
+
     <% if(theme.inject.css) { %>
         <%- css(theme.inject.css) %>
     <% } %>

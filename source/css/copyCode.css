@@ -1,0 +1,30 @@
+/* 代码块一键复制按钮 */
+figure.highlight {
+    position: relative;
+}
+
+.copy-code-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #cccccc;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity 0.2s;
+}
+
+figure.highlight:hover .copy-code-btn,
+.copy-code-btn:focus {
+    opacity: 1;
+}
+
+.copy-code-btn.copied {
+    color: #99cc99;
+    border-color: #99cc99;
+}
