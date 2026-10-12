@@ -1,0 +1,18 @@
+<% var pageVertical = ('vertical' in page) ? page.vertical : null %>
+<% var useVertical = pageVertical == true || (pageVertical === null && theme.tool.verticalWriting) %>
+<% if(useVertical) { %>
+    <style>
+        /* 竖排显示：全局 tool.verticalWriting 或页面 front-matter vertical: true 开启 */
+        body {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        /* 图片、代码块、表格保持横向，保证可读性 */
+        img,
+        pre,
+        table,
+        .highlight {
+            writing-mode: horizontal-tb;
+        }
+    </style>
+<% } %>
