@@ -65,11 +65,11 @@
                 <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
             <% } %>
         <% } %>
-        <!-- 暂时注释掉，还需要调整css <% if(path == "list/index.html") { %>
+        <% if(theme.tool.search && path == "list/index.html") { %>
         <li class="search">
             <input type="text" id="search-input" placeholder="搜索文章..." />
             <div id="search-results"></div>
         </li>
-        <% } %> -->
+        <% } %>
     </ul>
 </div>
