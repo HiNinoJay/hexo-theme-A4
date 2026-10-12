@@ -62,7 +62,7 @@
   }
    %>
 
-  <% var array = eval('site.posts.data') %>
+  <% var array = site.posts.data.slice() %>
 
   <% var categoriesHashMap = new HashMap() %>
   <% var categoryChildHashmap = new HashMap() %>
@@ -84,8 +84,7 @@
           } else {
             categoriesHashMap.put(postCategories[j].name, categoriesHashMap.get(postCategories[j].name) + 1);
           }
-          break;
-        } 
+        }
      }
   }  %>
       <% for (let i = 0; i < categoriesList.size(); i++) { %>
