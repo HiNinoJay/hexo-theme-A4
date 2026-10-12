@@ -150,5 +150,10 @@
     <% } %>
 
     <!-- <link rel="stylesheet" href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css" /> -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkai@3.0.0/dist/LXGWWenKai-Regular/result.css' /> 
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkai@3.0.0/dist/LXGWWenKai-Regular/result.css' />
+
+    <% if(theme.font.googleFontUrl) { %>
+        <!--自定义字体链接：支持填入 Google Fonts 或其他字体 CSS 的 URL，留空则不加载-->
+        <link rel="stylesheet" href="<%= theme.font.googleFontUrl %>" />
+    <% } %>
 </head>
