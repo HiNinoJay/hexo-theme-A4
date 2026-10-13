@@ -1,0 +1,15 @@
+/* Mermaid 图表样式 */
+.mermaid-container {
+    margin: 16px auto;
+    text-align: center;
+    overflow-x: auto; /* 超宽图表可横向滚动 */
+}
+
+.mermaid-container .mermaid {
+    display: inline-block;
+}
+
+.mermaid-container svg {
+    max-width: 100%;
+    height: auto;
+}

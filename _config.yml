@@ -63,6 +63,14 @@ tool:
   # 如果你发现你的最近更新时间总是当天部署的时间，请看 https://ninojay.top/2023/writeByGithub-2/#2024.09.26更新说明
 
 
+# 全局 Mermaid 图表支持
+# 开启后文章中的 ```mermaid 代码块将自动渲染为图表，无需安装插件
+# theme 可选：default | neutral | dark | forest，暗黑模式下自动使用 dark 主题
+mermaid:
+  enable: false # true | false
+  theme: default # 图表主题
+
+
 # ---------------------------------------------------------------------------------------
 # 以上为基本配置，实现了A4主题追求的纯净风
 #

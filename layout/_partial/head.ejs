@@ -134,6 +134,11 @@
 
     <%- css('css/lightgallery-bundle.min.css') %>
 
+    <% if(theme.mermaid && theme.mermaid.enable) { %>
+        <!--Mermaid 图表样式-->
+        <%- css('css/mermaid.css') %>
+    <% } %>
+
     <% if(theme.inject.css) { %>
         <%- css(theme.inject.css) %>
     <% } %>
