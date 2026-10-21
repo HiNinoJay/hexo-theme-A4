@@ -736,7 +736,8 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 /* 搜索功能样式 */
 .nav .search {
     position: relative;
-    margin-left: 20px;
+    /* 靠右显示；当菜单项过多换行时，搜索框独占一行并保持靠右 */
+    margin-left: auto;
 }
 
 #search-input {
@@ -757,7 +758,9 @@ margin-left: 10px; /* 调整a标签和span之间的距离 */
 #search-results {
     position: absolute;
     top: 100%;
-    left: 0;
+    /* 搜索框靠右，结果面板同样右对齐，避免溢出页面右侧 */
+    right: 0;
+    left: auto;
     width: 250px;
     background: white;
     border: 1px solid #ddd;
