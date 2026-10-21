@@ -183,5 +183,20 @@
 </script>
 
 <% if(theme.postInfo.viewCount) { %>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+        // 不蒜子服务不可用时自动隐藏访问量模块，避免出现「阅读量：次」的空白
+        (function () {
+            function hideEmptyBusuanzi() {
+                document.querySelectorAll('#busuanzi_container_site_pv, #busuanzi_container_page_pv').forEach(function (el) {
+                    var value = el.querySelector('[id^="busuanzi_value_"]');
+                    if (!value || !value.textContent.trim()) el.style.display = 'none';
+                });
+            }
+            document.querySelectorAll('script[src*="busuanzi"]').forEach(function (s) {
+                s.addEventListener('error', hideEmptyBusuanzi);
+            });
+            setTimeout(hideEmptyBusuanzi, 5000);
+        })();
+    </script>
 <% } %>
