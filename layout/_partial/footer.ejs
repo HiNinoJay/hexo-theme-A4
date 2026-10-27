@@ -1,7 +1,7 @@
 <div class="footer">
     <% if(path != 'index.html') { %>
         <span> 
-            <%= theme.footerLink.info %> 
+            <%= theme.footerLink.info %>
 
             <% for (name in theme.footerLink) { %>
                 <% if(name != 'info') { %>
@@ -44,8 +44,24 @@
                 <span class="index-footer-last-span"><%= theme.index.footer %></span>
             <% } %>
         <% } %>
+        <% if(theme.beian.enable) { %>
+            <span class="footer-last-span-right">
+                <a href="<%= theme.beian.url %>" target="_blank" rel="noopener noreferrer"><%= theme.beian.icp %></a>
+                <% if(theme.beian.gongan.enable) { %>
+                    | <a href="<%= theme.beian.gongan.url %>" target="_blank" rel="noopener noreferrer"><%= theme.beian.gongan.code %></a>
+                <% } %>
+            </span>
+        <% } %>
     <% } else { %>
             <span><%= theme.post.footer %></span>
+            <% if(theme.beian.enable) { %>
+                <span class="footer-last-span-right">
+                    <a href="<%= theme.beian.url %>" target="_blank" rel="noopener noreferrer"><%= theme.beian.icp %></a>
+                    <% if(theme.beian.gongan.enable) { %>
+                        | <a href="<%= theme.beian.gongan.url %>" target="_blank" rel="noopener noreferrer"><%= theme.beian.gongan.code %></a>
+                    <% } %>
+                </span>
+            <% } %>
             <% if(theme.post.themeInfo) { %>
                 <span class="footer-last-span-right"><i>本站由<a href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
             <% } %>
