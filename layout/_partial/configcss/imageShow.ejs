@@ -1,4 +1,6 @@
 <% if(theme.imageShow.enable) { %>
+    <!-- 预加载背景图片：让浏览器在解析 CSS 的同时就开始下载图片，避免背景图加载完成前先显示纯色再跳变造成的闪烁 -->
+    <link rel="preload" as="image" href="<%= theme.imageShow.background %>" fetchpriority="high" />
     <style>
         body {
             background-image: url(<%= theme.imageShow.background %>);
