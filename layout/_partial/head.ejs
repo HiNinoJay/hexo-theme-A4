@@ -165,4 +165,9 @@
         </script>
         <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <% } %>
+
+    <% if(theme.font.googleFontUrl) { %>
+        <!--自定义字体链接：支持填入 Google Fonts 或其他字体 CSS 的 URL，留空则不加载-->
+        <link rel="stylesheet" href="<%= theme.font.googleFontUrl %>" />
+    <% } %>
 </head>

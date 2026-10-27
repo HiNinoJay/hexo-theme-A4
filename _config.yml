@@ -141,6 +141,8 @@ imageShow:
 font:
   enable: false # 是否使用字体开关功能
   LXGWWenKai: true # 霞鹜文楷 如果关闭，中文则使用的是 思源宋体，思源宋体不提供关闭
+  googleFontUrl: "" # 自定义字体样式链接：填入 Google Fonts 等字体 CSS 的 URL（如 https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap），留空则不加载
+  googleFontFamily: "" # 自定义字体族名：对应 googleFontUrl 中的字体名（如 "Noto Serif SC"），填写后优先应用于全站正文，留空则不覆盖
 
 # 图片幻灯片配置
 lightgallery:

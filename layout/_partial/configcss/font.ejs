@@ -1,8 +1,8 @@
-<% if(theme.font.enable) { %>
+<% if(theme.font.enable || theme.font.googleFontFamily) { %>
     <style>
         body
         {
-            font-family: "Times New Roman", Helvetica, Tahoma, Arial, <% if(theme.font.LXGWWenKai) { %>  <%= "LXGW WenKai" , %> <% } %>  "notoserifsc-medium", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif !important;
+            font-family: <% if(theme.font.googleFontFamily) { %>"<%= theme.font.googleFontFamily %>", <% } %>"Times New Roman", Helvetica, Tahoma, Arial, <% if(theme.font.LXGWWenKai) { %>"LXGW WenKai", <% } %>"notoserifsc-medium", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif !important;
 
         }
     </style>
