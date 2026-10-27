@@ -8,6 +8,8 @@
   max-height: -webkit-fill-available; /* 设置最大高度，可以根据需要进行调整 */
   position: fixed;
   scrollbar-width: none;
+  /* 宽度跟随内容宽度适配：正文 .paper-main 最大 880px 居中，目录最大不超过内容区左侧留白，避免长标题时与正文重叠 */
+  max-width: calc((100vw - 880px) / 2 - 2vw);
 }
 
 .left-toc-container::-webkit-scrollbar {

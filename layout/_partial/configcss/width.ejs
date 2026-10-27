@@ -29,6 +29,10 @@
             .paper-main{
                 max-width:  1200px;
             }
+            /* 文章宽度为大图模式时，左侧目录同步适配更大的内容宽度 */
+            .left-toc-container{
+                max-width: calc((100vw - 1200px) / 2 - 2vw);
+            }
         </style>
 
     <% } else { %>
