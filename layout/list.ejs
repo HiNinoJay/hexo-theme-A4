@@ -1,6 +1,7 @@
 <div class="archive-list">
   <ul class="archive">
-      <% var postArray = eval('site.posts.data') %>
+      <% var isPaged = !!(theme.index.pagination && page.posts && (path == "index.html" || /^page\/\d+\/index\.html$/.test(path))) %>
+      <% var postArray = isPaged ? page.posts.data : eval('site.posts.data') %>
 
       <!--文章先按照时间排好序-->
       <% postArray.sort((a, b) => {
@@ -204,4 +205,6 @@
       <% } %>
   </ul>
 </div>
-<!-- <%- partial('_partial/paginator') %> -->
+<% if(isPaged) { %>
+    <%- partial('_partial/paginator') %>
+<% } %>
