@@ -1,7 +1,7 @@
 # 当你第一次玩A4，想直接看效果的话：
 # 1. 请直接去掉 menu 配置中的  ‘首页’ 和 ‘文章’ 前的 ‘#’ 注释符号
 # 2. 请直接去掉 showInMenu 配置中的 ‘- 文章’ 前的 ‘#’ 注释符号
-# 3. 执行命令：hexo new page index 生成首页；执行命令：hexo new page list 生成列表页面；
+# 3. 首页(index)与列表页(list)会在启动时自动创建，无需手动执行 hexo new page
 # 4. 执行命令：hexo clean && hexo g && hexo s 直接查看页面效果
 menu:
   # 首页: /  #需要hexo new page index,在index/index.md填写的内容将会展现在首页上
@@ -30,6 +30,7 @@ index:  # 首页相关配置
   titlePosition: left # center | left  # 首页标题的位置
   width: small  # small | middle | big # 首页的宽度
   list: false # 开启后会在首页展示文章列表
+  waterfall: false # 开启后首页以「类似朋友圈」的瀑布流卡片展示文章（优先于 list）
 
 footerLink: # 底部的链接自定义
   info: © 1949-2024 China  # info这个单词不能修改，不想使用可为空

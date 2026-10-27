@@ -1,0 +1,71 @@
+/* 朋友圈式瀑布流（index.waterfall） */
+
+.waterfall
+{
+    column-count: 3;
+    column-gap: 16px;
+    margin: 24px 0;
+}
+
+.waterfall-card
+{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(97, 97, 97, 0.18);
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    text-decoration: none;
+}
+
+.waterfall-card:hover
+{
+    text-decoration: none;
+    box-shadow: 0px 4px 14px rgba(97, 97, 97, 0.28);
+}
+
+.waterfall-card .waterfall-date
+{
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.waterfall-card .waterfall-title
+{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.waterfall-card .waterfall-summary
+{
+    display: block;
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1104px)
+{
+    .waterfall
+    {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .waterfall
+    {
+        column-count: 1;
+    }
+}
