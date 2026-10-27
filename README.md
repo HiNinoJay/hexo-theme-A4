@@ -103,11 +103,7 @@ _右上角一个star，更快更新功能_
 
 ## ⚠️必读配置
 
-首页和文章列表页需要手动生成，执行以下命令即可：
-```shell
-hexo new page index
-hexo new page list
-```
+首页（index）和文章列表页（list）会在启动时（`hexo g` / `hexo s`）自动创建，无需手动执行命令。如需自定义首页内容，直接编辑 `source/index/index.md` 即可。
 
 其他详细配置请看：
 ➡️ [使用文档](https://doc.ninojay.top)，已上线。
