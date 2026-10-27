@@ -106,6 +106,7 @@ postInfo:
 # 列表页面的配置
 listInfo:
   enable: false
+  hideCategory: false # 是否隐藏文章标题前的分类（列表页与最近更新页生效） true | false
   hoverStyle: underline # box | circle | underline | highlight | strike-through | crossed-off # 鼠标悬浮在文章列表上时的样式
   hoverColor: "#4f7dde" # 鼠标悬浮在文章列表上时的颜色
   animationDuration: 800 # 鼠标悬浮在文章列表上时的动画时长,单位ms毫秒

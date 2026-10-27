@@ -99,7 +99,7 @@
               <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.updated, "YYYY/MM/DD") %> 
               </span>
               <div class="archive-main">
-                <% if(thisPost.categories.length > 0) { %>
+                <% if(!theme.listInfo.hideCategory && thisPost.categories.length > 0) { %>
                   <a class="archive-title"  href="/<%= thisPost.categories.data[0].path %>">
                     <%= thisPost.categories.data[0].name %> 
                   </a> | 
