@@ -56,7 +56,7 @@ hexo.extend.generator.register('page', function(locals) {
   });
 
   const pages = pagination('list/', posts, {
-    perPage: typeof this.config.per_page === 'undefined' ? 10 : this.config.per_page,
+    perPage: typeof this.config.index_generator.per_page === 'undefined' ? 10 : this.config.index_generator.per_page,
     layout: ['page', 'post', 'index'],
     format: (this.config.pagination_dir || 'page') + '/%d/'
   });
