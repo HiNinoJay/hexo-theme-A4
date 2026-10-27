@@ -51,6 +51,12 @@ isRoundedAvatar: false # 是否圆形头像
 isAvatarRotating: false # 圆形头像是否开启悬浮旋转
 displayTitleInTab: false # 是否在浏览器标签页显示文章标题
 
+# 全局数学公式支持（MathJax 3）
+# 开启后所有页面自动渲染 $...$ 行内公式与 $$...$$ 块级公式，无需额外安装插件
+# 如需在单篇文章关闭，在该文章 front-matter 中添加 mathjax: false
+mathjax:
+  enable: false # true | false
+
 # 是否启用一些特色工具 false | true
 tool:
   darkMode: true # 暗黑模式
