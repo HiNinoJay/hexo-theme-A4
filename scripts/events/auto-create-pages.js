@@ -13,6 +13,11 @@ const path = require('path')
  * list  页面：文章列表页，url 为 /list/
  */
 const PAGES = ['index', 'list']
+const INDEX_CONTENT = '欢迎您使用A4主题：<br><br>' +
+  '<center>「让读者专注于阅读文字，写者专注于写作」</center><br><br>' +
+  'ps:最新版A4已支持安装主题后，首次 `hexo s` 命令启动就为你自动生成index页面（你正看到的页面）和list页面。<br><br>' +
+  '无需你自己再去执行`hexo new page index`和 `hexo new page list` 命令。 <br><br>' +
+ '你可以直接去修改配置文件配置你自己的A4了，比如说先显示index首页和list页面按钮：<br>1.menu的‘首页和‘文章’前的注释打开 <br>2.showInMenu的‘文章’注释打开  <br>3.重新启动查看效果。'
 
 function pad(n) {
   return n < 10 ? '0' + n : '' + n
@@ -31,7 +36,13 @@ hexo.on('ready', () => {
     if (fs.existsSync(file)) return
 
     fs.mkdirSync(path.dirname(file), { recursive: true })
-    fs.writeFileSync(file, `---\ntitle: ${name}\ndate: ${now()}\n---\n`)
+    const content = name === 'index' ? INDEX_CONTENT : ''
+    if(name === 'index') {
+      fs.writeFileSync(file, `---\ntitle: ${name}\ndate: ${now()}\n---\n\n${content}\n`)
+    } else {
+      fs.writeFileSync(file, `---\ntitle: ${name}\ndate: ${now()}\n---\n`)
+    }
+    
     hexo.log.info(`Created page: source/${name}/index.md`)
   })
 })
