@@ -44,6 +44,11 @@ _右上角一个star，更快更新功能_
 - [x] 采用最美评论模块waline
 - [x] 预置md可使用的css样式
 - [x] 自带CDN加速国内访问速度
+- [x] 站内搜索开箱即用（内置生成器，无需安装插件）
+- [x] 界面多语言：中文/英文，文案可自定义
+- [x] 代码块一键复制按钮、移动端抽屉式目录、文章图片原生懒加载（均可开关）
+- [x] 文章一键导出 Word 文档
+- [x] 列表分页 / 年份收缩 / 瀑布流 / 二级分类 / 全局竖排（可选功能）
 - [x] [可压缩图片/css/js资源大幅度提升网站访问速度](https://ninojay.top/hexoplugin/hexo-all-minifier/)
 - [x] [详细的使用文档](https://doc.ninojay.top)
 - [x] [经过作者验证可支持的hexo插件](https://ninojay.top/tags/hexoPlugin/)
@@ -103,7 +108,7 @@ _右上角一个star，更快更新功能_
 
 ## ⚠️必读配置
 
-首页和文章列表页需要手动生成，执行以下命令即可：
+首页和文章列表页需要生成。新版本启动时会自动创建 `index` 与 `list` 页面（无需手动执行）；如果你的版本没有自动创建，执行以下命令即可：
 ```shell
 hexo new page index
 hexo new page list
@@ -111,6 +116,13 @@ hexo new page list
 
 其他详细配置请看：
 ➡️ [使用文档](https://doc.ninojay.top)，已上线。
+
+## 🌍多语言
+
+主题界面文案内置中/英双语，默认中文（与历史版本行为一致）：
+
+- 切换英文：把 Hexo 根目录 `_config.yml` 的 `language` 设置为 `en`
+- 自定义文案：修改主题 `languages/default.yml`（中文回退）或 `languages/en.yml`（英文）中对应的 key
 
 ## ⬆️如何更新
 根据你`安装`的方式，选择`对应的`更新方式。
