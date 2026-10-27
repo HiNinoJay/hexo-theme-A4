@@ -39,16 +39,6 @@ footerLink: # 底部的链接自定义
   # 支持: /support/ # 需要hexo new page support
   # ...
 
-# 网站备案信息
-beian:
-  enable: true # 是否启用备案号
-  icp: "京ICP备xxxxxxxx号" # 备案号
-  url: "https://beian.miit.gov.cn/" # 备案查询链接
-  gongan: # 公安备案信息
-    enable: false # 是否启用公安备案
-    code: "京公网安备xxxxxxxx号" # 公安备案号
-    url: "https://beian.miit.gov.cn/" # 公安备案查询链接
-
 post:
   footer: 🌊看过大海的人不会忘记海的广阔🌊
   themeInfo: true # 是否开启底部右侧声明本站信息
@@ -72,6 +62,15 @@ tool:
   # A4启动将会自动创建“最近更新页面”：url为 /recent-updates 请自行使用
   # 如果你发现你的最近更新时间总是当天部署的时间，请看 https://ninojay.top/2023/writeByGithub-2/#2024.09.26更新说明
 
+# 网站备案信息
+beian:
+  enable: false # 是否启用备案号
+  icp: "京ICP备xxxxxxxx号" # 备案号
+  url: "https://beian.miit.gov.cn/" # 备案查询链接
+  gongan: # 公安备案信息
+    enable: false # 是否启用公安备案
+    code: "京公网安备xxxxxxxx号" # 公安备案号
+    url: "https://beian.miit.gov.cn/" # 公安备案查询链接
 
 # ---------------------------------------------------------------------------------------
 # 以上为基本配置，实现了A4主题追求的纯净风
