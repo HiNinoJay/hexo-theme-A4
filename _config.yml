@@ -30,7 +30,11 @@ index:  # 首页相关配置
   titlePosition: left # center | left  # 首页标题的位置
   width: small  # small | middle | big # 首页的宽度
   list: false # 开启后会在首页展示文章列表
-  pagination: false # 首页文章列表分页（需同时开启 list；每页篇数取站点根配置 per_page），开启后自动生成上一页/下一页导航
+  pagination: false # 首页文章列表分页（需同时开启上方的 list；每页篇数取站点根配置 hexo配置文件里的 per_page），开启后自动生成上一页/下一页导航
+
+
+list:
+  pagination: true # /list/ 页面分页（每页篇数取站点根配置 hexo配置文件里的 per_page）
 
 footerLink: # 底部的链接自定义
   info: © 1949-2024 China  # info这个单词不能修改，不想使用可为空

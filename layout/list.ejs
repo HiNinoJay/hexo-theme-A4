@@ -1,6 +1,8 @@
 <div class="archive-list">
   <ul class="archive">
-      <% var isPaged = !!(theme.index.pagination && page.posts && (path == "index.html" || /^page\/\d+\/index\.html$/.test(path))) %>
+      <% var isIndexPaged = !!(theme.index.pagination && (path == "index.html" || /^page\/\d+\/index\.html$/.test(path))) %>
+      <% var isListPaged = !!(theme.list.pagination && /^list\/(?:index\.html|page\/\d+\/index\.html)$/.test(path)) %>
+      <% var isPaged = !!(page.posts && (isIndexPaged || isListPaged)) %>
       <% var postArray = isPaged ? page.posts.data : eval('site.posts.data') %>
 
       <!--文章先按照时间排好序-->

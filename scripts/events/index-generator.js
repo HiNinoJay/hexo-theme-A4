@@ -30,7 +30,7 @@ hexo.extend.generator.register('index', function(locals) {
   const path = indexConfig.path || '';
 
   return pagination(path, posts, {
-    perPage: indexConfig.per_page,
+    perPage: typeof indexConfig.per_page === 'undefined' ? 10 : indexConfig.per_page,
     layout: ['index', 'archive'],
     format: paginationDir + '/%d/',
     data: { __index: true }
