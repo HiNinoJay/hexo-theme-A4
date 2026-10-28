@@ -272,7 +272,7 @@ a
     padding: 8px 16px;
     border-radius: 18px;
     background: #fff;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 .paginator .space
 {
