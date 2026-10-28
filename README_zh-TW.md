@@ -55,10 +55,10 @@ _右上角一個star，更快更新功能_
 ### 多種主題配色
 
 #### 灰白配色（默認）
-![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greywhite.png)
+![](https://cdn.jsdelivr.net/gh/hininojay/images/a4color/greywhite.png)
 
 #### 綠金配色（已預置｜可一鍵啟用）
-![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greengolden.png)
+![](https://cdn.jsdelivr.net/gh/hininojay/images/a4color/greengolden.png)
 
 `顏色搭配是一門學問`，除A4推薦的兩種配色外，你可以自行調色，並把顏色方案分享給大家。更多配色請看：[預覽](https://ninojay.top/hexoplugin/A4-color-change/)。
 
