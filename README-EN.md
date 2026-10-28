@@ -21,7 +21,7 @@ With minimal configuration, achieve a paper-like appearance resembling A4 size.<
 
 
 [![](https://img.shields.io/npm/v/hexo-theme-a4?label=VERSION&logo=npm&style=for-the-badge)]()
-[![](https://img.shields.io/badge/HEXO-v6.3.0-blue?style=for-the-badge&logo=hexo)](https://hexo.io/zh-cn/index.html)
+[![](https://img.shields.io/badge/HEXO-v7.3.0-blue?style=for-the-badge&logo=hexo)](https://hexo.io/zh-cn/index.html)
 [![](https://img.shields.io/node/v/hexo?style=for-the-badge&logo=node)](https://nodejs.org/en)
 
 Let the readers focus on reading the text, while the writers concentrate on writing.
