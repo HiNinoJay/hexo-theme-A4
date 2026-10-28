@@ -96,8 +96,9 @@
         <% for (let i = 0; i < allPostList.size(); i++) { %>
             <% var thisPost = allPostList.get(i) %>
             <li>
-              <span class="archive-date">&nbsp;&nbsp;&nbsp;<%= date(thisPost.updated, "YYYY/MM/DD") %> 
+              <span class="archive-date"><%= date(thisPost.updated, "YYYY/MM/DD") %> 
               </span>
+              &nbsp;&nbsp;&nbsp;
               <div class="archive-main">
                 <% if(!theme.listInfo.hideCategory && thisPost.categories.length > 0) { %>
                   <a class="archive-title"  href="/<%= thisPost.categories.data[0].path %>">
