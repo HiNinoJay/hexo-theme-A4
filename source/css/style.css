@@ -311,6 +311,13 @@ a
     border: 1px solid var(--font-color-0);
 }
 
+body.lightbox-open .progress-wrap,
+body.lightbox-open .return-to-last-progress-wrap,
+body.lightbox-open .theme-dark-mode-toggle
+{
+    display: none !important;
+}
+
 .footer
 {
     padding: 4px 0;

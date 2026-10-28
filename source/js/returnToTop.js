@@ -47,43 +47,22 @@
 	});
 
 	$(document).ready(function() {
-		// 选择你想要观察的元素
-		var targetNode = document.querySelector('.lg-container');
-		if(targetNode == undefined || targetNode == null) return;
-	
-		// 观察配置，观察属性变化
-		var config = { attributes: true, attributeFilter: ['class'] };
-	
-		// 当检测到属性变化时的回调函数
-		var callback = function(mutationsList, observer) {
-			mutationsList.forEach(function(mutation) {
-				if (mutation.attributeName === 'class') {
-					// 获取当前的 class
-					var currentClass = mutation.target.className;
-					
-					// 检查 lg-show 类是否存在
-					if ($(mutation.target).hasClass('lg-show')) {
-						$('.return-to-last-progress-wrap').hide();
-						$('.progress-wrap').hide();
-					}
-
-					// 检查 lg-show 类是否存在
-					if (!$(mutation.target).hasClass('lg-show')) {
-						$('.return-to-last-progress-wrap').show();
-						$('.progress-wrap').show();
-					}
-					
-					
-				}
-			});
+		// lightGallery may create its container only after the first image click.
+		var syncLightboxControls = function() {
+			var isOpen = !!document.querySelector('.lg-container.lg-show');
+			document.body.classList.toggle('lightbox-open', isOpen);
 		};
-	
-		// 创建一个观察者实例并传入回调函数
-		var observer = new MutationObserver(callback);
-	
-		// 开始观察目标节点
-		observer.observe(targetNode, config);
+
+		syncLightboxControls();
+		var observer = new MutationObserver(syncLightboxControls);
+		observer.observe(document.body, {
+			attributes: true,
+			attributeFilter: ['class'],
+			childList: true,
+			subtree: true
+		});
 	});
+
 	
 	
 })(jQuery); 
