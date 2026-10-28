@@ -67,6 +67,10 @@
                         btn.style.backgroundColor = '#1e1e1e';
                         btn.style.color = '#fff';
                     }
+                    // Mermaid 图表跟随明暗主题重渲染
+                    if (window.A4RenderMermaid) {
+                        window.A4RenderMermaid();
+                    }
                 });
             });
         </script>
@@ -155,6 +159,11 @@
 </html>
 <script src="<%= url_for('/js/emojiHandler.js') %>"></script>
 <script src="<%= url_for('/js/search.js') %>"></script>
+<% if(theme.mermaid && theme.mermaid.enable) { %>
+<script>window.A4_MERMAID_THEME = '<%= theme.mermaid.theme || 'default' %>';</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script src="<%= url_for('/js/mermaid.js') %>"></script>
+<% } %>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         wrapEmojis('.paper');

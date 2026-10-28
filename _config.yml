@@ -78,6 +78,14 @@ beian:
     code: "京公网安备xxxxxxxx号" # 公安备案号
     url: "https://beian.miit.gov.cn/" # 公安备案查询链接
 
+# 全局 Mermaid 图表支持
+# 开启后文章中的 ```mermaid 代码块将自动渲染为图表，无需安装插件
+# theme 可选：default | neutral | dark | forest，暗黑模式下自动使用 dark 主题
+mermaid:
+  enable: false # true | false
+  theme: default # 图表主题
+
+
 # ---------------------------------------------------------------------------------------
 # 以上为基本配置，实现了A4主题追求的纯净风
 #

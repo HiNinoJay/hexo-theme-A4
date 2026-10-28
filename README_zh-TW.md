@@ -41,6 +41,7 @@ _右上角一個star，更快更新功能_
 - [x] 採用最美評論模塊waline
 - [x] 預置md可使用的css樣式
 - [x] 自帶CDN加速國內訪問速度
+- [x] Mermaid 圖表支持（mermaid.enable 開關，無需安裝外掛，自動適配暗黑模式）
 - [x] [可壓縮圖片/css/js資源大幅度提升網站訪問速度](https://ninojay.top/hexoplugin/hexo-all-minifier/)
 - [x] [詳細的使用文檔](https://doc.ninojay.top)
 - [x] [經過作者驗證可支持的hexo插件](https://ninojay.top/tags/hexoPlugin/)

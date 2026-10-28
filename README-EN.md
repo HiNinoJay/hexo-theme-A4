@@ -43,6 +43,7 @@ _A star in the top right corner for faster feature updates_
 - [x] [**Easily customized global color schemes, preview of two color schemes**](https://ninojay.top/hexoplugin/A4-color-change/)
 - [x] Adopt the most beautiful comment module `waline`
 - [x] Preset css styles that can be used by Markdown
+- [x] Mermaid diagram support (mermaid.enable toggle, no plugin needed, auto dark mode)
 - [x] [Supported hexo plugins](https://ninojay.top/tags/hexoPlugin/)
   - [x] [mathjax](https://ninojay.top/hexoplugin/hexo-filter-mathjax/)
   - [x] [encrypt](https://ninojay.top/hexoplugin/hexo-blog-encrypt/)
