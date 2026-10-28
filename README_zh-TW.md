@@ -143,6 +143,15 @@ git pull
 
 由衷感謝A4支持者們：https://github.com/HiNinoJay/hexo-theme-A4/blob/main/DONATION.md
 
-## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/HiNinoJay/hexo-theme-A4.svg)](https://starchart.cc/HiNinoJay/hexo-theme-A4)
+## 🌟 Stargazers over time
+
+<p align="left">
+<a href="https://star-history.com/#hininojay/hexo-theme-a4&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hininojay/hexo-theme-a4&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=hininojay/hexo-theme-a4&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=hininojay/hexo-theme-a4&type=Date" />
+  </picture>
+</a>
+</p>
