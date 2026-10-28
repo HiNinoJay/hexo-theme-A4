@@ -55,10 +55,10 @@ _A star in the top right corner for faster feature updates_
 ### Various Color Scheme
 
 #### Grey and white color scheme (Default)
-![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greywhite.png)
+![](https://cdn.jsdelivr.net/gh/hininojay/images/a4color/greywhite.png)
 
 #### Green and gold color scheme (Pre-provided | One-click activation)
-![](https://jsd.cdn.zzko.cn/gh/hininojay/images/a4color/greengolden.png)
+![](https://cdn.jsdelivr.net/gh/hininojay/images/a4color/greengolden.png)
 
 Color coordination is an art. In addition to the two color schemes recommended for A4, I can also create my own color palettes and share them with everyone. If you would like to explore more color combinations, please refer to the following link: [Preview](https://ninojay.top/hexoplugin/A4-color-change/).
 
