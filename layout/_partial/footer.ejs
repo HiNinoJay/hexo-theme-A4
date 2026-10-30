@@ -17,7 +17,7 @@
 <% if(path == 'index.html' && (theme.indexInfo.allWordCount || theme.indexInfo.allViewCount)){ %>
     <div class="footer-last-without-line">
         <% if(theme.indexInfo.allWordCount) { %>
-        <span>本站总字数：<%= totalcount(site) %></span>
+        <span><%= __('site_wordcount') %><%= totalcount(site) %></span>
         <% } %>
         <% if(theme.indexInfo.allWordCount && theme.indexInfo.allViewCount) { %>
             <div class="footer-last-span-right">
@@ -26,7 +26,7 @@
         <% } %>
         <% if(theme.indexInfo.allViewCount) { %>
                 <span id="busuanzi_container_site_pv" class="">
-                    本站总访问：<span id="busuanzi_value_site_pv"></span>次
+                    <%= __('site_views') %><span id="busuanzi_value_site_pv"></span><%= __('site_views_unit') %>
                 </span>
             </div>
         <% } %>
@@ -63,7 +63,7 @@
                 </span>
             <% } %>
             <% if(theme.post.themeInfo) { %>
-                <span class="footer-last-span-right"><i>本站由<a href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+                <span class="footer-last-span-right"><i><%= __('footer_powered') %><a href="https://hexo.io/zh-cn/index.html">Hexo</a><%= __('footer_powered_mid') %><a href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a><%= __('footer_powered_tail') %></i></span>
             <% } %>
     <% } %>
 </div>
